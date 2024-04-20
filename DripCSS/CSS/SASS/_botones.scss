@@ -1,0 +1,29 @@
+.my-button-rojo {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+
+.my-button-azul {
+  background-color: #0051ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+
+.my-button-amarillo {
+  background-color: #ffea00;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px white solid;
+  border-radius: 5px;
+
+  
+&:hover  {
+  background-color: bisque;
+}
+
+}

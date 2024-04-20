@@ -1,0 +1,30 @@
+@import 'Variables';
+
+.Display-flex {
+    display: flex;
+}
+
+.-col {
+    flex-direction: column;
+}
+
+.-center {
+    @extend .Display-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.-left {
+    @extend .Display-flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.mid_screen {
+    height: 70vh;
+}
+
+.Gap-sm {
+    gap: $small;
+}

@@ -1,0 +1,35 @@
+@import 'Variables';
+
+.grid1x3
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b c d";
+    gap: $small;
+    align-items: center;
+}
+
+.area-1x1
+{
+    grid-area: a;
+}
+
+.area-1x2
+{
+    grid-area: b ;
+}
+
+.area-1x3
+{
+    grid-area: c;
+}
+
+.area-1x4
+{
+    grid-area: d;
+}
+
+
+

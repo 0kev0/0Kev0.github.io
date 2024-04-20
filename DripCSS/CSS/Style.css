@@ -1,0 +1,207 @@
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+header {
+  height: 10vh;
+  background-color: rgb(142, 5, 194);
+}
+header a {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.my-button-rojo {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+
+.my-button-azul {
+  background-color: #0051ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+
+.my-button-amarillo {
+  background-color: #ffea00;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+.my-button-amarillo:hover {
+  background-color: bisque;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+.Display-flex, .-left, .-center {
+  display: flex;
+}
+
+.-col {
+  flex-direction: column;
+}
+
+.-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.-left {
+  align-items: center;
+  justify-content: left;
+}
+
+.mid_screen {
+  height: 70vh;
+}
+
+.Gap-sm {
+  gap: 10px;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+.Pd-lf-rg-small {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Pd-lf-rg-meduium {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Pd-lf-rg-large {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+.grid1x3 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "a b c d";
+  gap: 10px;
+  align-items: center;
+}
+
+.area-1x1 {
+  grid-area: a;
+}
+
+.area-1x2 {
+  grid-area: b;
+}
+
+.area-1x3 {
+  grid-area: c;
+}
+
+.area-1x4 {
+  grid-area: d;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+.Bg-Base {
+  background-color: rgb(52, 52, 52);
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+.Font-base {
+  color: rgb(255, 255, 255);
+}
+
+.titulo {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px; /* Ajusta el espacio entre h2 y h1 */
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+.welcome {
+  border: rgb(133, 133, 133) solid 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px 4px rgb(112, 11, 151);
+}/*# sourceMappingURL=Style.css.map */
