@@ -6,6 +6,7 @@
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
 header {
   height: 10vh;
   background-color: rgb(142, 5, 194);
@@ -51,6 +52,7 @@ header a {
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -59,6 +61,7 @@ header a {
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
 .Display-flex, .-left, .-center {
   display: flex;
 }
@@ -81,6 +84,10 @@ header a {
   height: 70vh;
 }
 
+.small_scrren {
+  height: 40vh;
+}
+
 .Gap-sm {
   gap: 10px;
 }
@@ -93,6 +100,7 @@ header a {
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
 .Pd-lf-rg-small {
   padding-left: 10px;
   padding-right: 10px;
@@ -116,6 +124,32 @@ header a {
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Border radius*/
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
 .grid1x3 {
   height: 100%;
   display: grid;
@@ -142,6 +176,64 @@ header a {
   grid-area: d;
 }
 
+.Bento_grid {
+  padding: 10px;
+  margin: 5%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "A A A B B" "A A A B B" "C C X B B " "C C D D D" "C C D D D";
+  background: linear-gradient(rgb(112, 11, 151), rgb(62, 6, 95));
+  gap: 10px;
+  border-radius: 0px 12px 0px 12px;
+}
+
+.bentoAx3 {
+  margin: 10px;
+  border-radius: 12px;
+  grid-area: A;
+  color: white;
+  background-color: RGB(0, 128, 255);
+}
+
+.bentoBx2 {
+  margin: 10px;
+  border-radius: 12px;
+  grid-area: B;
+  color: white;
+  background-color: RGB(255, 0, 128);
+}
+
+.bentoCx3 {
+  margin: 10px;
+  border-radius: 12px;
+  grid-area: C;
+  color: white;
+  background-color: RGB(255, 128, 0);
+}
+
+.bentoDx3 {
+  margin: 10px;
+  border-radius: 12px;
+  grid-area: D;
+  color: white;
+  background-color: RGB(0, 168, 107);
+}
+
+.bentoXx1 {
+  grid-area: X;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bentoXx1 h1 {
+  font-size: larger;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -150,6 +242,7 @@ header a {
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
 .Bg-Base {
   background-color: rgb(52, 52, 52);
 }
@@ -162,22 +255,41 @@ header a {
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
 .Font-base {
   color: rgb(255, 255, 255);
 }
 
-.titulo {
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter {
+.titulo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
-  margin-right: 10px; /* Ajusta el espacio entre h2 y h1 */
+  margin-right: 10px;
   text-shadow: 3px 6px white;
   font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
 }
 
 .contenido {
@@ -189,6 +301,30 @@ header a {
   margin-right: 10%;
 }
 
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -197,11 +333,43 @@ header a {
 /*tamanos de fuentes*/
 /*fuentes*/
 /*tamanos de paddings*/
+/*Border radius*/
 .welcome {
   border: rgb(133, 133, 133) solid 1px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 5%;
   border-radius: 12px;
   box-shadow: 0px 0px 4px 4px rgb(112, 11, 151);
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Border radius*/
+.Letter_hover:hover {
+  transition: 0.45s all ease-in-out;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 3px 3px rgb(142, 5, 194);
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div_hover_Scale_Up_Down, .bentoAx3, .bentoBx2, .bentoCx3, .bentoDx3 {
+  transition: 0.45s all ease-in;
+}
+.div_hover_Scale_Up_Down:hover, .bentoAx3:hover, .bentoBx2:hover, .bentoCx3:hover, .bentoDx3:hover {
+  transform: scale(1.05);
+}
+.div_hover_Scale_Up_Down:after, .bentoAx3:after, .bentoBx2:after, .bentoCx3:after, .bentoDx3:after {
+  transition: 0.45s all ease-out;
+  transform: scale(1);
 }/*# sourceMappingURL=Style.css.map */

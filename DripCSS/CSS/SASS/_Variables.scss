@@ -25,7 +25,7 @@ $color-secundario : rgb(112, 11, 151);
 $FontColorBase: rgb(255, 255, 255);
 
 /*tamanos de fuentes*/
-$FontSize : ("pequeno": 10px,
+$FontSize : ("pequeno": 18px,
     "mediano": 20px,
     "grande": 30px,
     "Xgrande": 50px);
@@ -37,3 +37,7 @@ $FontSize : ("pequeno": 10px,
 $small: 10px;
 $meduium: 15px;
 $large: 20px;
+
+/*Border radius*/
+$estandar : 12px
+

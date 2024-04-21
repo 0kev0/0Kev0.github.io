@@ -1,7 +1,7 @@
 @import 'Variables';
+@import 'Shadow';
 
-.grid1x3
-{
+.grid1x3 {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,25 +11,94 @@
     align-items: center;
 }
 
-.area-1x1
-{
+.area-1x1 {
     grid-area: a;
 }
 
-.area-1x2
-{
-    grid-area: b ;
+.area-1x2 {
+    grid-area: b;
 }
 
-.area-1x3
-{
+.area-1x3 {
     grid-area: c;
 }
 
-.area-1x4
-{
+.area-1x4 {
     grid-area: d;
 }
 
+.Bento_grid {
+    padding: $small;
+    margin: 5%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "A A A B B"
+        "A A A B B"
+        "C C X B B "
+        "C C D D D"
+        "C C D D D";
 
+    background: linear-gradient($color-secundario, $colorBg-secundario);
+    gap: 10px;
+    border-radius: 0px 12px 0px 12px;
+}
 
+.bentoAx3 {
+    @extend .shadow-top;
+    @extend .div_hover_Scale_Up_Down;
+    margin: 10px;
+    border-radius: $estandar;
+    grid-area: A;
+    color: white;
+    background-color: RGB(0, 128, 255);
+}
+
+.bentoBx2 {
+    @extend .div_hover_Scale_Up_Down;
+    @extend .shadow-right;
+    
+    margin: 10px;
+    border-radius: $estandar;
+    grid-area: B;
+    color: white;
+    background-color: RGB(255, 0, 128);
+}
+
+.bentoCx3 {
+    @extend .div_hover_Scale_Up_Down;
+
+    @extend .shadow-left;
+    margin: 10px;
+    border-radius: $estandar;
+    grid-area: C;
+    color: white;
+    background-color: RGB(255, 128, 0);
+}
+
+.bentoDx3 {
+    @extend .div_hover_Scale_Up_Down;
+    @extend .shadow-bottom;
+    margin: 10px;
+    border-radius: $estandar;
+    grid-area: D;
+    color: white;
+    background-color: RGB(0, 168, 107);
+}
+
+.bentoXx1 {
+    grid-area: X;
+    color: white;
+    @extend.titulo;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: larger;
+    }
+}

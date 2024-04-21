@@ -1,0 +1,26 @@
+@import 'Variables';
+
+.Letter_hover {
+    &:hover {
+        transition: .45s all ease-in-out;
+        font-size: map-get($map: $FontSize, $key:"grande")+10;
+        font-weight: bold;
+        box-shadow: 3px 3px $color-primario;
+        background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.div_hover_Scale_Up_Down {
+    transition: .45s all ease-in;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:after {
+        transition: .45s all ease-out;
+        transform: scale(1);
+    }
+}
