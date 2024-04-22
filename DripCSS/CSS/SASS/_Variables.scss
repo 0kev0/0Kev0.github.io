@@ -11,21 +11,23 @@ $color-primarioB : rgb(255, 0, 0);
 $color-secundarioB : rgb(149, 1, 1);
 
 /*Paleta de colores C*/
-$colorbg-primarioC:rgb(3, 6, 55);
-$colorBg-secundarioC :rgb(60, 7, 83);
-$color-primarioC :rgb(114, 4, 85);
-$color-secundarioC : rgb(145, 10, 103);
+$colorbg-primarioC: rgb(7, 15, 43);
+$colorBg-secundarioC :rgb(27, 26, 85);
+$color-primarioC : rgb(146, 144, 195);
+$color-secundarioC : rgb(83, 92, 145);
 
 /*Paleta de colores D*/
-$colorbg-primario: rgb(22, 22, 22);
-$colorBg-secundario :rgb(52, 103, 81);
-$color-primario : rgb(200, 75, 49);
-$color-secundario :rgb(236, 219, 186);
+$colorbg-primario: rgb(52, 52, 52);
+$colorBg-secundario :rgb(62, 6, 95);
+$color-primario : rgb(142, 5, 194);
+$color-secundario : rgb(112, 11, 151);
+
 /*Colores para texto */
 $FontColorBase: rgb(255, 255, 255);
 
 /*tamanos de fuentes*/
-$FontSize : ("pequeno": 18px,
+$FontSize : (
+    "pequeno": 18px,
     "mediano": 20px,
     "grande": 30px,
     "Xgrande": 50px);

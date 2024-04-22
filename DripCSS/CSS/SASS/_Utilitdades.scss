@@ -3,4 +3,23 @@
 // Ocultar
 .hidden {
     display: none;
+}
+
+/* CSS */
+.img-set {
+
+    height: 80vh;
+    margin-top: 5%;
+    padding-top: 2px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Recorte en diagonal sin afectar el texto */
+    background-image: url('/DripCSS/IMG/metro\ .jpg');
+    background-size: cover;
+    object-fit: cover;
+
   }
+  
+
+  
+
+  
+  
