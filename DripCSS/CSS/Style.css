@@ -44,6 +44,25 @@ header a {
   background-color: bisque;
 }
 
+button {
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: rgb(112, 11, 151);
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -148,6 +167,34 @@ header a {
 
 .shadow-right, .bentoBx2 {
   box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .grid1x3 {
@@ -372,4 +419,30 @@ header a {
 .div_hover_Scale_Up_Down:after, .bentoAx3:after, .bentoBx2:after, .bentoCx3:after, .bentoDx3:after {
   transition: 0.45s all ease-out;
   transform: scale(1);
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Border radius*/
+.hidden {
+  display: none;
+}
+
+/* CSS */
+.img-set {
+  height: 80vh;
+  margin-top: 5%;
+  padding-top: 2px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Recorte en diagonal sin afectar el texto */
+  background-image: url("/DripCSS/IMG/metro .jpg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Style.css.map */
