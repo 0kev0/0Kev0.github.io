@@ -4,7 +4,7 @@
     box-shadow: 00px 10px 00px 0px white;
 }
 
-.shadow-left{
+.shadow-left {
     box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -14,4 +14,32 @@
 
 .shadow-right {
     box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left {
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right {
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
