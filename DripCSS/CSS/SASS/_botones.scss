@@ -78,7 +78,6 @@ $color-boton-defecto: #3498db;
     @include boton-estilos(rgb(92, 5, 185));
     transition: 0.45s all ease-in;
   }
-
   &:after {
     transition: 0.45s all ease-out;
   }
