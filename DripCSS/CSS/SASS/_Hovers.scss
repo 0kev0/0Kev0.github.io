@@ -14,13 +14,12 @@
 
 .div_hover_Scale_Up_Down {
     transition: .45s all ease-in;
-
     &:hover {
         transform: scale(1.05);
     }
 
     &:after {
-        transition: .45s all ease-out;
+        transition: .35s all ease-out;
         transform: scale(1);
     }
 }

@@ -105,7 +105,7 @@
 
 /*Template 2*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Sedan:ital@0;1&display=swap');
-@import 'boton';
+//@import 'boton';
 $color2: rgb(112, 11, 151);
 $color1: rgb(83, 92, 145);
 
@@ -116,6 +116,7 @@ $color1: rgb(83, 92, 145);
 }
 
 .layout {
+  
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr auto;
@@ -162,12 +163,13 @@ $color1: rgb(83, 92, 145);
   /*Template 3*/
 
 @mixin box-styling {
-    @extend .div_hover_Scale-Up_Down;
-  border-radius: 10px;
+  @extend .div_hover_Scale_Up_Down;
+    border-radius: 10px;
   border: $color-primario solid 3px;
   &:hover {
-    @extend .shadow-top;
+    @extend .shadow-bottom_sm;
   }
+
 }
 
 .container-padre {
@@ -176,6 +178,7 @@ $color1: rgb(83, 92, 145);
   width: 960px;
   height: 600px;
   margin: auto;
+  margin-top: 15px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   padding: 20px;
