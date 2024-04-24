@@ -445,7 +445,7 @@ button:active {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-}/*# sourceMappingURL=Style.css.map */
+}
 
 
 /*///////////////////
@@ -536,4 +536,4 @@ ALERTAS / ALERTAS ///
 
 .alert.slide-out-right, .slide-out-right.alert-success, .slide-out-right.alert-error, .slide-out-right.alert-warning, .slide-out-right.alert-info {
   animation: slideOutRight 0.5s forwards;
-}/*# sourceMappingURL=custom.css.map */
+}/*# sourceMappingURL=Style.css.map */
