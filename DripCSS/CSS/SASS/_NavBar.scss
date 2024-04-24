@@ -1,0 +1,43 @@
+
+$color-primario : rgb(142, 5, 194);
+$color-secundario : rgb(112, 11, 151);
+
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+nav {
+  background-color: $color-primario;
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    float: left;
+
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $color-secundario;
+        color: black;
+      }
+    }
+  }
+}
+
+.nav {
+  @include center;
+}
