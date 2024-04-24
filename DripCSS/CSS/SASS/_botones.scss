@@ -1,3 +1,4 @@
+@import 'Shadow';
 .my-button-rojo {
   background-color: #ff0000;
   color: #ffffff;
@@ -29,7 +30,7 @@
 }
 
 
-button {
+.button_st1 {
   font-family: monospace;
   font-size: 1.5rem;
   color: #FAFAFA;
@@ -44,14 +45,36 @@ button {
 
   &:hover {
     transition: .45s all ease-out;
-
     background: lighten($color: $color-secundario, $amount: 5);
     transform: translate(1px, 1px);
   }
 
   &:active {
     transition: .05s all ease-in;
+    box-shadow: none;
+    transform: translate(3px, 3px);
+    font-weight: bold;
+  }
+}
 
+.button_Squear {
+  @extend .button_st1;
+  border-radius: 0px;
+  border: 0px;
+  font-family: 'Quicksand';
+  background: darken($color: $color-primarioB, $amount: 5);
+  @include shadow-bottom_imput;
+  cursor: pointer;
+  margin: 30px 0px 5px;
+
+  &:hover {
+    transition: .45s all ease-out;
+    background: lighten($color: $color-primarioB, $amount: 5);
+    transform: translate(1px, 1px);
+  }
+
+  &:active {
+    transition: .05s all ease-in;
     box-shadow: none;
     transform: translate(3px, 3px);
     font-weight: bold;

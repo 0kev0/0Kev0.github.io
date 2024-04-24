@@ -1,11 +1,13 @@
 @import 'Variables';
+@import 'FontsStyles';
+
 
 .TituloForm {
     display: inline;
     width: 100%;
     align-self: flex-start;
     padding-left: 0px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -52,9 +54,83 @@
     border: 2px gray solid;
     border-radius: 5px;
     background-color: rgb(230, 230, 230);
+    margin-bottom: 10px;
 
     &:hover {
         @include shadow-difum;
+    }
+}
+
+  
+  .TituloForm2 {
+    font-family: map-get($map: $FontPack2, $key: "Oswald");
+    text-decoration: underline;
+  }
+  
+
+.lable_sm2 {
+    font-family: map-get($map: $FontPack2, $key: "Oswald");
+    font-size: larger;
+    color: $color-primarioB;
+    align-self: self-start;
+    margin-left: 10px;
+}
+
+
+.input_Xsm2 {
+    width: map-get($map: $inputWithSizes, $key: "pequeno");
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    font-family: map-get($map: $FontPack2, $key: "Lato");
+
+    border-radius: 5px;
+    border: 3px white solid;
+    background-color: rgb(255, 255, 255);
+    @include shadow-bottom_imput;
+
+    &:hover {
+        @include shadow-difum;
+    }
+
+    ;
+
+}
+
+.input_sm2 {
+    width: map-get($map: $inputWithSizes, $key: "grande");
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    border: 3px white solid;
+    border-radius: 5px;
+    background-color: white;
+    @include shadow-bottom_imput;
+
+
+    &:hover {
+        @include shadow-difum;
+    }
+}
+
+.input_md2 {
+    width: 90%;
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    border: transparent;
+    @include shadow-bottom_imput;
+
+    &:hover {
+        @include Hover_shadow-difum_imput;
+    }
+}
+
+.txtarea2 {
+    color: grey;
+    width: 90%;
+    border: transparent;
+    max-height: 20vh;
+    min-height: 10vh;
+
+    @include shadow-bottom_imput;
+
+    &:hover {
+        @include Hover_shadow-difum_imput;
     }
 }
 

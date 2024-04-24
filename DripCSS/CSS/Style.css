@@ -9,6 +9,30 @@
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 header {
   height: 10vh;
   background-color: rgb(142, 5, 194);
@@ -17,6 +41,61 @@ header a {
   font-size: 30px;
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .my-button-rojo {
@@ -46,7 +125,7 @@ header a {
   background-color: bisque;
 }
 
-button {
+.button_st1, .button_Squear {
   font-family: monospace;
   font-size: 1.5rem;
   color: #FAFAFA;
@@ -59,12 +138,33 @@ button {
   cursor: pointer;
   margin: 15px 0px;
 }
-button:hover {
+.button_st1:hover, .button_Squear:hover {
   transition: 0.45s all ease-out;
   background: #820daf;
   transform: translate(1px, 1px);
 }
-button:active {
+.button_st1:active, .button_Squear:active {
+  transition: 0.05s all ease-in;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  font-weight: bold;
+}
+
+.button_Squear {
+  border-radius: 0px;
+  border: 0px;
+  font-family: "Quicksand";
+  background: #e60000;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+  cursor: pointer;
+  margin: 30px 0px 5px;
+}
+.button_Squear:hover {
+  transition: 0.45s all ease-out;
+  background: #ff1a1a;
+  transform: translate(1px, 1px);
+}
+.button_Squear:active {
   transition: 0.05s all ease-in;
   box-shadow: none;
   transform: translate(3px, 3px);
@@ -325,6 +425,58 @@ button:active {
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
 .Font-base {
   color: rgb(255, 255, 255);
 }
@@ -486,6 +638,16 @@ button:active {
      object-fit: cover;
 }
 
+.self-start {
+  margin-left: 10px;
+  align-self: flex-start;
+}
+
+.self-right {
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -497,12 +659,155 @@ button:active {
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(255, 255, 255);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
 .TituloForm {
   display: inline;
   width: 100%;
   align-self: flex-start;
   padding-left: 0px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .input_Xsm {
@@ -540,9 +845,70 @@ button:active {
   border: 2px gray solid;
   border-radius: 5px;
   background-color: rgb(230, 230, 230);
+  margin-bottom: 10px;
 }
 .txtarea:hover {
   box-shadow: 0px 0px 10px 2px rgb(169, 21, 255);
+}
+
+.TituloForm2 {
+  font-family: Oswald;
+  text-decoration: underline;
+}
+
+.lable_sm2 {
+  font-family: Oswald;
+  font-size: larger;
+  color: rgb(255, 0, 0);
+  align-self: self-start;
+  margin-left: 10px;
+}
+
+.input_Xsm2 {
+  width: 8vh;
+  height: 4vh;
+  font-family: Lato;
+  border-radius: 5px;
+  border: 3px white solid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_Xsm2:hover {
+  box-shadow: 0px 0px 10px 2px rgb(169, 21, 255);
+}
+
+.input_sm2 {
+  width: 25vh;
+  height: 4vh;
+  border: 3px white solid;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_sm2:hover {
+  box-shadow: 0px 0px 10px 2px rgb(169, 21, 255);
+}
+
+.input_md2 {
+  width: 90%;
+  height: 4vh;
+  border: transparent;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_md2:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+
+.txtarea2 {
+  color: grey;
+  width: 90%;
+  border: transparent;
+  max-height: 20vh;
+  min-height: 10vh;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.txtarea2:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
 }
 
 .self-start {
@@ -633,7 +999,6 @@ button:active {
   height: auto;
   width: 70vh;
   border-radius: 15px;
-  border: 3px whitesmoke solid;
   padding-bottom: 0px;
   box-shadow: 0px 0px 10px 2px rgb(169, 21, 255);
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
@@ -653,7 +1018,6 @@ button:active {
   height: auto;
   width: 70vh;
   border-radius: 15px;
-  border: 3px whitesmoke solid;
   padding-bottom: 0px;
   box-shadow: 0px 0px 10px 2px rgb(169, 21, 255);
   background: rgba(68, 68, 68, 0.5);
@@ -677,7 +1041,6 @@ button:active {
   height: auto;
   width: 70vh;
   border-radius: 15px;
-  border: 3px whitesmoke solid;
   padding-bottom: 0px;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
   width: 130vh;
@@ -723,4 +1086,27 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+.form3 {
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 15px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  height: auto;
+  width: 80vh;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: white;
 }/*# sourceMappingURL=Style.css.map */

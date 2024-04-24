@@ -31,7 +31,6 @@
     height: auto;
     width: 70vh;
     border-radius: 15px;
-    border: 3px whitesmoke solid;
     padding-bottom: 0px;
 }
 
@@ -104,4 +103,16 @@
     align-items: center;
     justify-content: end;
 
+}
+
+.form3 {
+    @include boxmodelStandar();
+border-radius: 5px;
+    height: auto;
+    width: 80vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: white;
 }

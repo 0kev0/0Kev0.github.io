@@ -48,3 +48,13 @@
 {
     box-shadow: 0px 0px 10px 2px rgb(169, 21, 255);
 }
+
+@mixin Hover_shadow-difum_imput
+{
+    box-shadow: 0px 2px 0px 0px  $color-primarioB ;
+}
+
+@mixin shadow-bottom_imput
+{
+    box-shadow: 0px 2px 0px 0px  lighten($color: $color-primarioB, $amount: 25);
+}
