@@ -447,6 +447,13 @@ button:active {
      object-fit: cover;
 }
 
+
+/*///////////////////
+
+ALERTAS / ALERTAS ///
+
+///////////////////*/
+
 .alert, .alert-info, .alert-warning, .alert-error, .alert-success {
   padding: 10px 15px;
   border-radius: 4px;
@@ -455,11 +462,12 @@ button:active {
   z-index: 9999;
   opacity: 0.9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 .alert:hover, .alert-info:hover, .alert-warning:hover, .alert-error:hover, .alert-success:hover {
   opacity: 1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
 }
 .alert.closeable, .closeable.alert-info, .closeable.alert-warning, .closeable.alert-error, .closeable.alert-success {
   padding-right: 40px;
@@ -479,6 +487,7 @@ button:active {
 }
 
 .alert-success {
+
   background-color: #4caf50;
   border: 1px solid #388e3c;
   color: #ffffff;
@@ -500,6 +509,29 @@ button:active {
   background-color: #2196f3;
   border: 1px solid #1976d2;
   color: #ffffff;
+
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  color: #0c5460;
+
 }
 
 @keyframes slideInRight {

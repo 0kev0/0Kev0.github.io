@@ -1,115 +1,116 @@
 // Definición de colores como variables
-$alert-success-bg: #4caf50; 
-$alert-success-border: #388e3c;
-$alert-success-text: #ffffff; 
+$alert-success-bg: #d4edda;
+$alert-success-border: #c3e6cb;
+$alert-success-text: #155724;
 
-$alert-error-bg: #f44336; 
-$alert-error-border: #d32f2f; 
-$alert-error-text: #ffffff; 
+$alert-error-bg: #f8d7da;
+$alert-error-border: #f5c6cb;
+$alert-error-text: #721c24;
 
-$alert-warning-bg: #ff9800; 
-$alert-warning-border: #f57c00; 
-$alert-warning-text: #ffffff; 
+$alert-warning-bg: #fff3cd;
+$alert-warning-border: #ffeeba;
+$alert-warning-text: #856404;
 
-$alert-info-bg: #2196f3;
-$alert-info-border: #1976d2; 
-$alert-info-text: #ffffff; 
+$alert-info-bg: #d1ecf1;
+$alert-info-border: #bee5eb;
+$alert-info-text: #0c5460;
 
 // Estilos base para todas las alertas
 .alert {
-    padding: 10px 15px;
-    border-radius: 4px;
-    position: relative;
-    margin-bottom: 10px;
-    z-index: 9999;
-    opacity: 0.9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  
+  padding: 10px 15px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 9999;
+  opacity: 0.9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); // Levanta la alerta al hacer hover
+  }
+
+  &.closeable {
+    padding-right: 40px;
+  }
+
+  .close {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    opacity: 0.5;
+
     &:hover {
       opacity: 1;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-  
-    &.closeable {
-      padding-right: 40px;
-    }
-  
-    .close {
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      opacity: 0.5;
-  
-      &:hover {
-        opacity: 1;
-        transform: scale(1.2);
-      }
+      transform: scale(1.2);
     }
   }
-  
-  // Estilos para la alerta de éxito
-  .alert-success {
-    @extend .alert;
-    background-color: $alert-success-bg;
-    border: 1px solid $alert-success-border;
-    color: $alert-success-text;
+}
+
+// Estilos para la alerta de éxito
+.alert-success {
+  @extend .alert;
+  background-color: $alert-success-bg;
+  border: 1px solid $alert-success-border;
+  color: $alert-success-text;
+}
+
+// Estilos para la alerta de error
+.alert-error {
+  @extend .alert;
+  background-color: $alert-error-bg;
+  border: 1px solid $alert-error-border;
+  color: $alert-error-text;
+}
+
+// Estilos para la alerta de advertencia
+.alert-warning {
+  @extend .alert;
+  background-color: $alert-warning-bg;
+  border: 1px solid $alert-warning-border;
+  color: $alert-warning-text;
+}
+
+// Estilos para la alerta de información
+.alert-info {
+  @extend .alert;
+  background-color: $alert-info-bg;
+  border: 1px solid $alert-info-border;
+  color: $alert-info-text;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  // Estilos para la alerta de error
-  .alert-error {
-    @extend .alert;
-    background-color: $alert-error-bg;
-    border: 1px solid $alert-error-border;
-    color: $alert-error-text;
+  to {
+    transform: translateX(0);
+    opacity: 0.9;
   }
-  
-  // Estilos para la alerta de advertencia
-  .alert-warning {
-    @extend .alert;
-    background-color: $alert-warning-bg;
-    border: 1px solid $alert-warning-border;
-    color: $alert-warning-text;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 0.9;
   }
-  
-  // Estilos para la alerta de información
-  .alert-info {
-    @extend .alert;
-    background-color: $alert-info-bg;
-    border: 1px solid $alert-info-border;
-    color: $alert-info-text;
+  to {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 0.9;
-    }
-  }
-  
-  @keyframes slideOutRight {
-    from {
-      transform: translateX(0);
-      opacity: 0.9;
-    }
-    to {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-  }
-  
-  // Aplicar animación a las alertas
-  .alert.slide-in-right {
-    animation: slideInRight 0.5s forwards;
-  }
-  
-  .alert.slide-out-right {
-    animation: slideOutRight 0.5s forwards;
-  }
+}
+
+// Aplicar animación a las alertas
+.alert.slide-in-right {
+  animation: slideInRight 0.5s forwards;
+}
+
+.alert.slide-out-right {
+  animation: slideOutRight 0.5s forwards;
+}
