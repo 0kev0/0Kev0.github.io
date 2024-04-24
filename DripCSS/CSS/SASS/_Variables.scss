@@ -1,7 +1,7 @@
 /*Paleta de colores A*/
 $colorbg-primario: rgb(52, 52, 52);
 $colorBg-secundario :rgb(62, 6, 95);
-$color-primario : rgb(142, 5, 194);
+$color-primario : rgb(142, 5, 194)rgb(142, 5, 194);
 $color-secundario : rgb(112, 11, 151);
 
 /*Paleta de colores B*/
@@ -25,14 +25,25 @@ $color-secundario : rgb(112, 11, 151);
 /*Colores para texto */
 $FontColorBase: rgb(255, 255, 255);
 
+$colorForm-primario: rgb(209, 208, 208);
+$colorForm-secundario :rgb(97, 0, 154);
 /*tamanos de fuentes*/
-$FontSize : (
-    "pequeno": 18px,
+$FontSize : ("pequeno": 18px,
     "mediano": 20px,
     "grande": 30px,
     "Xgrande": 50px);
 
 /*fuentes*/
+$inputHeigtSizes : ("pequeno": 4vh,
+    "mediano": 5vh,
+    "grande": 6vh,
+    "Xgrande": 7vh);
+
+    /*fuentes*/
+$inputWithSizes : ("pequeno": 8vh,
+"mediano": 15vh,
+"grande": 25vh,
+"Xgrande": 55vh);
 
 
 /*tamanos de paddings*/
@@ -41,5 +52,9 @@ $meduium: 15px;
 $large: 20px;
 
 /*Border radius*/
-$estandar : 12px
+$estandar : 12px;
+
+/*forms bg*/
+$GrayRdBg: radial-gradient(at left top, #373737,#4f4f4f, #5a5a5a,#636363,#929292);
+
 

@@ -1,0 +1,107 @@
+@import 'Variables';
+@import 'Shadow';
+
+@mixin Display-flex {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60vh;
+}
+
+@mixin Display-flex-row {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    height: auto;
+}
+
+@mixin boxmodelStandar {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    width: 70vh;
+    border-radius: 15px;
+    border: 3px whitesmoke solid;
+    padding-bottom: 0px;
+}
+
+.form1 {
+    @include boxmodelStandar;
+    @include shadow-difum;
+    background: $GrayRdBg;
+    color: white;
+    gap: 8px;
+}
+
+.form1Test {
+    @include boxmodelStandar;
+    @include shadow-difum;
+    background: rgba(68, 68, 68, 0.5);
+    -webkit-backdrop-filter: blur(39px);
+    backdrop-filter: blur(39px);
+    border: 1px solid rgba(68, 68, 68, 0.25);
+
+    color: white;
+
+    gap: 8px;
+}
+
+.form2 {
+    @include shadow-difum;
+    @include boxmodelStandar;
+    background: $GrayRdBg;
+    width: 130vh;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 3fr .5fr;
+    grid-template-areas:
+        "title title "
+        "info card"
+        "end end";
+    gap: 8px;
+    margin: 10%;
+    padding: 10px;
+    color: white;
+
+
+}
+
+.title {
+    grid-area: title;
+
+}
+
+.info {
+    @include Display-flex;
+    gap: 8px;
+    grid-area: info;
+
+}
+
+.cardinfo {
+    @include Display-flex;
+    grid-area: card;
+    gap: 8px;
+
+}
+
+
+
+.end {
+    grid-area: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}

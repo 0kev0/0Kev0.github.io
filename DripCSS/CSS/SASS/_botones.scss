@@ -21,10 +21,10 @@
   border: 2px white solid;
   border-radius: 5px;
 
-  
-&:hover  {
-  background-color: bisque;
-}
+
+  &:hover {
+    background-color: bisque;
+  }
 
 }
 
@@ -40,10 +40,20 @@ button {
   background: $color-secundario;
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
-  margin: 35px 0;
-}
+  margin: 15px 0px;
 
-button:active {
-  box-shadow: none;
-  transform: translate(3px, 3px);
+  &:hover {
+    transition: .45s all ease-out;
+
+    background: lighten($color: $color-secundario, $amount: 5);
+    transform: translate(1px, 1px);
+  }
+
+  &:active {
+    transition: .05s all ease-in;
+
+    box-shadow: none;
+    transform: translate(3px, 3px);
+    font-weight: bold;
+  }
 }
