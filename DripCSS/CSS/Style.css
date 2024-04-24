@@ -445,4 +445,152 @@ button:active {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.alert, .alert-info, .alert-warning, .alert-error, .alert-success {
+  padding: 10px 15px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 9999;
+  opacity: 0.9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.alert:hover, .alert-info:hover, .alert-warning:hover, .alert-error:hover, .alert-success:hover {
+  opacity: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.alert.closeable, .closeable.alert-info, .closeable.alert-warning, .closeable.alert-error, .closeable.alert-success {
+  padding-right: 40px;
+}
+.alert .close, .alert-info .close, .alert-warning .close, .alert-error .close, .alert-success .close {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  opacity: 0.5;
+}
+.alert .close:hover, .alert-info .close:hover, .alert-warning .close:hover, .alert-error .close:hover, .alert-success .close:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.alert-success {
+  background-color: #4caf50;
+  border: 1px solid #388e3c;
+  color: #ffffff;
+}
+
+.alert-error {
+  background-color: #f44336;
+  border: 1px solid #d32f2f;
+  color: #ffffff;
+}
+
+.alert-warning {
+  background-color: #ff9800;
+  border: 1px solid #f57c00;
+  color: #ffffff;
+}
+
+.alert-info {
+  background-color: #2196f3;
+  border: 1px solid #1976d2;
+  color: #ffffff;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 0.9;
+  }
+}
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.alert.slide-in-right, .slide-in-right.alert-success, .slide-in-right.alert-error, .slide-in-right.alert-warning, .slide-in-right.alert-info {
+  animation: slideInRight 0.5s forwards;
+}
+
+.alert.slide-out-right, .slide-out-right.alert-success, .slide-out-right.alert-error, .slide-out-right.alert-warning, .slide-out-right.alert-info {
+  animation: slideOutRight 0.5s forwards;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Border radius*/
+.container-regular {
+  height: 60vh;
+}
+
+.container-fluid {
+  height: 80vh;
+}
+
+.container-full-width {
+  padding: 2%;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 100vh;
+}
+
+.container-regular {
+  background-color: rgb(52, 52, 52);
+  border: 1px solid rgb(62, 6, 95);
+  box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(61, 0, 0);
+}
+
+.container-full-width {
+  background-color: rgb(7, 15, 43);
+  border: 1px solid rgb(27, 26, 85);
+}
+
+.container-regular:hover,
+.container-fluid:hover,
+.container-full-width:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1% 2% rgba(0, 0, 0, 0.2);
+}
+
+.container-regular h2,
+.container-fluid h2,
+.container-full-width h2 {
+  margin-top: 0;
+  font-size: 2.4vw;
+  color: rgb(142, 5, 194);
+}
+
+.container-regular p,
+.container-fluid p,
+.container-full-width p {
+  font-size: 1.6vw;
+  color: rgb(112, 11, 151);
+  line-height: 1.5;
 }/*# sourceMappingURL=Style.css.map */
