@@ -49,6 +49,11 @@
     box-shadow: 0px 0px 10px 2px rgb(169, 21, 255);
 }
 
+@mixin shadow-difum_color ($color)
+{
+    box-shadow: 0px 0px 10px 2px $color;
+}
+
 @mixin Hover_shadow-difum_imput
 {
     box-shadow: 0px 2px 0px 0px  $color-primarioB ;

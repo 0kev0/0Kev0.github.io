@@ -72,8 +72,6 @@
     margin: 10%;
     padding: 10px;
     color: white;
-
-
 }
 
 .title {
@@ -107,7 +105,7 @@
 
 .form3 {
     @include boxmodelStandar();
-border-radius: 5px;
+    border-radius: 5px;
     height: auto;
     width: 80vh;
     padding: 20px;
@@ -115,4 +113,56 @@ border-radius: 5px;
     justify-content: center;
     gap: 15px;
     background-color: white;
+}
+
+.form4 {
+    @include shadow-difum_color($color-secundarioB);
+    @include boxmodelStandar;
+    @extend .form3;
+    width: 130vh;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 3fr .5fr;
+    grid-template-areas:
+        "title img "
+        "info img"
+        "end img";
+    gap: 8px;
+    margin: 10%;
+    color: white;
+    padding: 0;
+}
+
+.title4 {
+    padding: 5%;
+    grid-area: title;
+    color: grey;
+
+}
+
+.info {
+    @include Display-flex;
+    gap: 8px;
+    grid-area: info;
+    padding: 5%;
+
+}
+
+.img {
+    grid-area: img;
+    background-image: url('/DripCSS/IMG/stock_red.jpg');
+    height: 100%;
+    background-size: cover;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+
+}
+
+
+
+.end {
+    grid-area: end;
+    display: flex;
+    justify-content: center;
 }

@@ -136,7 +136,6 @@ header a {
   background: rgb(112, 11, 151);
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
-  margin: 15px 0px;
 }
 .button_st1:hover, .button_Squear:hover {
   transition: 0.45s all ease-out;
@@ -631,7 +630,7 @@ header a {
   margin-top: 5%;
   padding-top: 2px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Recorte en diagonal sin afectar el texto */
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   background-image: url("/DripCSS/IMG/metro .jpg");
   background-size: cover;
   -o-object-fit: cover;
@@ -1088,7 +1087,7 @@ header a {
   justify-content: end;
 }
 
-.form3 {
+.form3, .form4 {
   margin-top: 20px;
   box-sizing: border-box;
   padding: 15px;
@@ -1109,4 +1108,63 @@ header a {
   justify-content: center;
   gap: 15px;
   background-color: white;
+}
+
+.form4 {
+  box-shadow: 0px 0px 10px 2px rgb(149, 1, 1);
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 15px;
+  padding-bottom: 0px;
+  width: 130vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+  grid-template-areas: "title img " "info img" "end img";
+  gap: 8px;
+  margin: 10%;
+  color: white;
+  padding: 0;
+}
+
+.title4 {
+  padding: 5%;
+  grid-area: title;
+  color: grey;
+}
+
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 60vh;
+  gap: 8px;
+  grid-area: info;
+  padding: 5%;
+}
+
+.img {
+  grid-area: img;
+  background-image: url("/DripCSS/IMG/stock_red.jpg");
+  height: 100%;
+  background-size: cover;
+  padding: 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.end {
+  grid-area: end;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=Style.css.map */
