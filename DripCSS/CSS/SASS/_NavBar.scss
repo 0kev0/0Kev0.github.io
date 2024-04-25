@@ -11,6 +11,7 @@ $color-secundario : rgb(112, 11, 151);
 
 
 nav {
+  @include center;
   background-color: $color-primario;
   overflow: hidden;
 
@@ -38,6 +39,5 @@ nav {
   }
 }
 
-.nav {
-  @include center;
-}
+
+
