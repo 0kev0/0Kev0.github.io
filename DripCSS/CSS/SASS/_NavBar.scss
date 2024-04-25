@@ -1,7 +1,7 @@
 
 $color-primario : rgb(142, 5, 194);
 $color-secundario : rgb(112, 11, 151);
-
+@import 'FontsStyles';
 
 @mixin center {
   display: flex;
@@ -10,7 +10,7 @@ $color-secundario : rgb(112, 11, 151);
 }
 
 
-nav {
+.nav {
   @include center;
   background-color: $color-primario;
   overflow: hidden;
@@ -38,6 +38,47 @@ nav {
     }
   }
 }
+
+.nav2
+{
+  @extend .nav;
+  justify-content: space-between;
+  padding: $color-primario;
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+
+  .logo{
+    @extend .titulo;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+
+    &::first-letter {
+      color: $color-primarioC;
+      margin-right: 10px;
+      text-shadow: 3px 4px white;
+      font-size: 40px;
+   }
+
+  }
+}
+
+.nav3{
+justify-self: flex-start;
+background: #119aaf;
+height: 100vh;
+width: 130px;
+
+
+  label .close-btn{
+      display: none;
+  }
+
+}
+
 
 
 

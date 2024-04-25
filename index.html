@@ -16,6 +16,8 @@
     />
     <link rel="stylesheet" href="DripCSS/CSS/Style.css" />
     <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <header class="Display-flex -left Pd-lf-rg-meduium Gap-sm">
@@ -34,12 +36,60 @@
     </ul>
   </nav>
   
-  
-  <div id="inicio">
+ 
+  <nav class="nav2">
+    <a href="#" class="logo">Drip_CSS</a>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#acerca">Acerca de</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-  </div>
-  
-  
+  <nav class="nav3">
+
+      <input type="checkbox" id="click">
+      <label for="click">
+          <i class='menu-btn bx bx-menu'></i>
+          <i class='close-btn bx bx-x-circle'></i>
+      </label>
+      <div class="sidenav">
+          <div class="logo">
+              <h2>DripCSS</h2>
+          </div>
+          <div class="search_bar">
+              <form action="#">
+                  <i class='bx bx-search'></i>
+                  <input type="text" placeholder="buscar...">
+              </form>
+          </div>
+          <div class="menu_text">
+              <p>Menu</p>
+          </div>
+          <div class="icon_items">
+              <ul>
+                  <li class="active">
+                      <i class='bx bxs-home'></i>
+                      <a href="#">Inicio</a>
+                  </li>
+                  <li>
+                      <i class='bx bxs-user-circle'></i>
+                      <a href="#">Acerca de</a>
+                  </li>
+                  <li>
+                      <i class='bx bxs-bar-chart-alt-2'></i>
+                      <a href="#">Servicios</a>
+                  </li>
+                  <li>
+                      <i class='bx bxs-message-dots'></i>
+                      <a href="#">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  </div> 
 
   <body class="Bg-Base">
     <div
@@ -77,12 +127,8 @@
       </p>
     </article>
     </div>
-    <div id="acerca">
-      <h2>Acerca de</h2>
-      <p>Aquí encontrarás información sobre nosotros.</p>
+     
     </div>
-    
-
     <div id="bento" class="Bento_grid ">
 
       <div id="bentoA" class="bentoAx3">
@@ -139,21 +185,9 @@
 
     <button>ejemplo</button>
   </body>
-  <div id="servicios">
-    <h2>Servicios</h2>
-    <p>Descubre los servicios que ofrecemos.</p>
+
   </div>
   
-  <div id="contacto">
-    <h2>Contacto</h2>
-    <p>¡Contáctanos para más información!</p>
-    <hr>
-    <h1>
-      7363726362
-
-
-
-    </h1>
   </div>
 
   <script

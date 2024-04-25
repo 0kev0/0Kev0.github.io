@@ -314,14 +314,14 @@ button:active {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .tema, .bentoXx1 {
+.titulo, .nav2 .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+.titulo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -447,29 +447,138 @@ button:active {
      object-fit: cover;
 }
 
-nav {
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*fuentes*/
+/*tamanos de paddings*/
+/*Border radius*/
+.Font-base {
+  color: rgb(255, 255, 255);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.nav, .nav2 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(142, 5, 194);
   overflow: hidden;
 }
-nav ul {
+.nav ul, .nav2 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-nav ul li {
+.nav ul li, .nav2 ul li {
   float: left;
 }
-nav ul li a {
+.nav ul li a, .nav2 ul li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
-nav ul li a:hover {
+.nav ul li a:hover, .nav2 ul li a:hover {
   background-color: rgb(112, 11, 151);
   color: black;
+}
+
+.nav2 {
+  justify-content: space-between;
+  padding: rgb(142, 5, 194);
+  display: flex;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.nav2 .logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav2 .logo::first-letter {
+  color: rgb(146, 144, 195);
+  margin-right: 10px;
+  text-shadow: 3px 4px white;
+  font-size: 40px;
+}
+
+.nav3 {
+  justify-self: flex-start;
+  background: #119aaf;
+  height: 100vh;
+  width: 130px;
+}
+.nav3 label .close-btn {
+  display: none;
 }/*# sourceMappingURL=Style.css.map */
