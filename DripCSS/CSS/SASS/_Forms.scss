@@ -36,7 +36,7 @@
 
 .form1 {
     @include boxmodelStandar;
-    @include shadow-difum;
+    @include shadow-difum_imputs($color-primario);
     background: $GrayRdBg;
     color: white;
     gap: 8px;
@@ -44,7 +44,7 @@
 
 .form1Test {
     @include boxmodelStandar;
-    @include shadow-difum;
+    @include shadow-difum_imputs($color-primario);
     background: rgba(68, 68, 68, 0.5);
     -webkit-backdrop-filter: blur(39px);
     backdrop-filter: blur(39px);
@@ -56,7 +56,7 @@
 }
 
 .form2 {
-    @include shadow-difum;
+    @include shadow-difum_imputs($color-primario);
     @include boxmodelStandar;
     background: $GrayRdBg;
     width: 130vh;
@@ -69,8 +69,9 @@
         "info card"
         "end end";
     gap: 8px;
-    margin: 10%;
-    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+        padding: 10px;
     color: white;
 }
 
@@ -109,6 +110,7 @@
     height: auto;
     width: 80vh;
     padding: 20px;
+    
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -116,8 +118,8 @@
 }
 
 .form4 {
-    @include shadow-difum_color($color-secundarioB);
     @include boxmodelStandar;
+    @include shadow-difum_color($color-primarioB);
     @extend .form3;
     width: 130vh;
     height: auto;
@@ -129,9 +131,11 @@
         "info img"
         "end img";
     gap: 8px;
-    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     color: white;
-    padding: 0;
+    padding: 0px;
+
 }
 
 .title4 {

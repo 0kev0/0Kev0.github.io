@@ -76,7 +76,7 @@
       <button class="button_Squear">ENVIAR Comentarios</button>
     </form>
 
-    <div class="form2">
+    <form class="form2">
         <div class="title">
           <h2 class="TituloForm">Formulario de compra</h2>
 
@@ -106,17 +106,17 @@
         </div>
 
         <div class="cardinfo">
-          <label class="temasm " for="nombre">Titular de la terjeta:</label>
-          <input class="input_md" type="text" id="nombre" name="nombre" required="required" placeholder="DIEGO MORATAYA GUSTAVO MARINO">
+          <label class="temasm " for="titular">Titular de la terjeta:</label>
+          <input class="input_md" type="text" id="titular" name="nombre" required="required" placeholder="DIEGO MORATAYA GUSTAVO MARINO">
 
-          <label class="temasm " for="nombre">Numero de tarjeta:</label>
-          <input class="input_md" type="text" id="nombre" name="nombre" required="required" placeholder="#### #### #### ####">
+          <label class="temasm " for="num tarjeta">Numero de tarjeta:</label>
+          <input class="input_md" type="text" id="num tarjeta" name="nombre" required="required" placeholder="#### #### #### ####">
         
-            <label class="temasm " for="email">Fecha de vencimiento:</label>
-            <input  class="input_Xsm" type="email" id="email" name="email" required="required" placeholder="##/##" >
-          
-            <label class="temasm " class=" " for="edad">csv:</label>
-            <input class=" input_Xsm" type="number" id="edad" name="edad" min="18" max="99" required="required" placeholder="***" >
+            <label class="temasm " for="vencimiento">Fecha de vencimiento:</label>
+            <input  class="input_Xsm" type="email" id="vencimiento" name="email" required="required" placeholder="##/##" >
+
+            <label class="temasm " class=" " for="CVC">csv:</label>
+            <input class=" input_Xsm" type="number" id="CVC" name="edad" min="18" max="99" required="required" placeholder="***" >
 
 
         </div>
@@ -124,29 +124,18 @@
         <div class="end">     
           <button class="self-right button_st1" type="submit">Realizar compra</button>
         </div>
-    </div>
+    </form>
 
     <div class="form1 ">
-      <h2 class="TituloForm">Formulario</h2>
+      <h2 class="TituloForm">Formulario p</h2>
 
-      <label class="temasm " for="nombre">Nombre:</label>
+      <label class="label_sm " for="nombre">Nombre:</label>
       <input class="input_md" type="text" id="nombre" name="nombre" required="required" placeholder="Introduzca su nombre">
     
-      <label class="temasm " for="email">Email:</label>
+      <label class="label_sm " for="email">Email:</label>
       <input  class="input_md" type="email" id="email" name="email" required="required" placeholder="Introduzca su email" >
     
-      <label class="temasm " class=" " for="edad">Edad:</label>
-      <input class=" input_Xsm" type="number" id="edad" name="edad" min="18" max="99" required="required" >
-    
-      <label class="temasm " for="pais">País:</label>
-      <select  class="input_sm" id="pais" name="pais" required="required" placeholder="Introduzca su pais de origen" >
-        <option value="">Selecciona un país</option>
-        <option value="es">España</option>
-        <option value="mx">México</option>
-        <option value="ar">Argentina</option>
-      </select>
-      
-      <label class="temasm "  for="frutas">Selecione departamento :</label>
+      <label class="label_sm "  for="frutas">Ingrese su departamento :</label>
       <input class="input_md"  type="text" id="frutas" list="lista-frutas" placeholder="Introduzca su fruta favorita">
   
   <datalist id="lista-frutas">
@@ -156,8 +145,21 @@
   <option value="Uva">
   <option value="Pera">
   </datalist>
+
+
+      <label class="label_sm " for="pais">País:</label>
+      <select  class="input_sm" id="pais" name="pais" required="required" placeholder="Introduzca su pais de origen" >
+        <option value="">Selecciona un país</option>
+        <option value="es">España</option>
+        <option value="mx">México</option>
+        <option value="ar">Argentina</option>
+      </select>
+      
+      <label class="label_sm " class=" " for="edad">Edad:</label>
+      <input class=" input_Xsm" type="number" id="edad" name="edad" min="18" max="99" required="required" >
+    
   
-  <label class="temasm " for="comentarios">Comentarios:</label>
+  <label class="label_sm " for="comentarios">Comentarios:</label>
   <textarea class="txtarea" id="comentarios" name="comentarios" rows="3" cols="50">
     Escribe tus comentarios aquí...
   </textarea>
