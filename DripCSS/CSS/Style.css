@@ -314,14 +314,14 @@ button:active {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .tema, .bentoXx1 {
+.titulo, .nav3 .logo, .nav2 .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+.titulo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -467,14 +467,14 @@ button:active {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -575,10 +575,129 @@ button:active {
 
 .nav3 {
   justify-self: flex-start;
-  background: #119aaf;
+  background: rgb(142, 5, 194);
   height: 100vh;
-  width: 130px;
+  width: 260px;
 }
 .nav3 label .close-btn {
+  display: none;
+}
+.nav3 .container .logo h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.nav3 .logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav3 .logo::first-letter {
+  color: rgb(146, 144, 195);
+  margin-right: 10px;
+  text-shadow: 3px 4px white;
+  font-size: 40px;
+}
+.nav3 .sidenav .search_bar {
+  margin-top: 32px;
+  position: relative;
+}
+.nav3 .sidenav .search_bar i {
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  left: 38px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav3 .sidenav .search_bar input {
+  width: 50%;
+  padding: 11px;
+  padding-left: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+}
+.nav3 .sidenav .menu_text {
+  margin-top: 24px;
+}
+.nav3 .sidenav .menu_text p {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.nav3 .sidenav .icon_items ul {
+  list-style: none;
+  margin-top: 32px;
+  padding: 0 10px;
+}
+.nav3 .sidenav .icon_items ul li {
+  cursor: pointer;
+  margin: 4px;
+  padding: 12px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: 1s ease;
+}
+.nav3 .icon_items .active,
+.nav3 .sidenav .icon_items ul li:hover {
+  background: white;
+}
+.nav3 .sidenav .icon_items ul li i {
+  font-size: 26px;
+  padding: 0 12px;
+}
+.nav3 .sidenav .icon_items ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  padding-left: 18px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.nav3 #click {
+  display: none;
+}
+.nav3 .container label {
+  position: absolute;
+  left: 3%;
+  top: 1.5%;
+  font-size: 24px;
+  z-index: 1;
+  cursor: pointer;
+}
+.nav3 #click:checked ~ .sidenav {
+  width: 260px;
+}
+.nav3 #click:checked ~ .sidenav .icon_items ul li a {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav3 #click:checked ~ .sidenav .logo h2 {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav3 #click:checked ~ .sidenav .search_bar input {
+  width: 100%;
+  margin-left: 0;
+}
+.nav3 #click:checked ~ .sidenav .search_bar i {
+  left: 20px;
+}
+.nav3 #click:checked ~ label {
+  left: 1%;
+}
+.nav3 #click:checked ~ label .close-btn {
+  display: block;
+}
+.nav3 #click:checked ~ label .menu-btn {
   display: none;
 }/*# sourceMappingURL=Style.css.map */
