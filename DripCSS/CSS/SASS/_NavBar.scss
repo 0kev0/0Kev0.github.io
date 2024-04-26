@@ -87,6 +87,7 @@ $color-secundario : rgb(112, 11, 151);
     pointer-events: none;
     transition: 0.3s ease;
   }
+  
   .logo{
     @extend .titulo;
     font-size: 32px;
