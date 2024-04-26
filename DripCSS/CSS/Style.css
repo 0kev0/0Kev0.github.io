@@ -702,4 +702,28 @@ button:active {
 }
 .nav3 #click:checked ~ label .menu-btn {
   display: none;
+}
+
+.badge1 {
+  background-color: blue;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
+}
+
+.badge2 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
+}
+
+.badge3 {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
 }/*# sourceMappingURL=Style.css.map */
