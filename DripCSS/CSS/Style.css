@@ -584,7 +584,6 @@ ALERTAS / ALERTAS ///
   margin-bottom: 2%;
   box-sizing: border-box;
   border-radius: 5px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   height: 100vh;
 }
 
@@ -607,7 +606,6 @@ ALERTAS / ALERTAS ///
 .container-regular:hover,
 .container-fluid:hover,
 .container-full-width:hover {
-  transform: scale(1.05);
   box-shadow: 0 1% 2% rgba(0, 0, 0, 0.2);
 }
 
