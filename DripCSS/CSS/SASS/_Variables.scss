@@ -28,22 +28,13 @@ $FontColorBase: rgb(255, 255, 255);
 $colorForm-primario: rgb(209, 208, 208);
 $colorForm-secundario :rgb(97, 0, 154);
 /*tamanos de fuentes*/
-$FontSize : ("pequeno": 18px,
-    "mediano": 20px,
-    "grande": 30px,
-    "Xgrande": 50px);
+$FontSize : ("pequeno": 18px, "mediano": 20px, "grande": 30px, "Xgrande": 50px);
 
-/*fuentes*/
-$inputHeigtSizes : ("pequeno": 4vh,
-    "mediano": 5vh,
-    "grande": 6vh,
-    "Xgrande": 7vh);
+/*Heigths*/
+$inputHeigtSizes : ("Xpequeno": 4vh,"pequeno": 4vh, "mediano": 5vh, "grande": 6vh, "Xgrande": 7vh);
 
-    /*fuentes*/
-$inputWithSizes : ("pequeno": 8vh,
-"mediano": 15vh,
-"grande": 25vh,
-"Xgrande": 55vh);
+/*Width*/
+$inputWithSizes : ("Xpequeno": 10%,"pequeno": 15%, "mediano": 20%, "grande": 50%, "Xgrande": 90%);
 
 
 /*tamanos de paddings*/
@@ -55,6 +46,4 @@ $large: 20px;
 $estandar : 12px;
 
 /*forms bg*/
-$GrayRdBg: radial-gradient(at left top, #373737,#4f4f4f, #5a5a5a,#636363,#929292);
-
-
+$GrayRdBg: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);

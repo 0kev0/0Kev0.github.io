@@ -1,9 +1,13 @@
 @import 'Variables';
 @import 'FontsStyles';
 
+@mixin txarea_max_min_height {
+    height: 13vh;
+    max-height: 20vh;
+    min-height: 10vh;
+}
 
 .TituloForm {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-family: map-get($map: $FontPack1, $key: Titulo);
 }
 
@@ -14,6 +18,11 @@
 
     &::first-letter {
         font-size: map-get($map: $FontSize, $key: "mediano");
+    }
+
+    &:focus {
+        outline: none;
+        outline-color: red;
     }
 }
 
@@ -32,25 +41,64 @@
 
     ;
 
+    &:focus {
+        outline: none;
+        outline-color: red;
+    }
+
+}
+
+.input_Xsm {
+    @extend .input_Xsm;
+    width: map-get($map: $inputWithSizes, $key: "Xpequeno");
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    font-family: map-get($map: $FontPack2, $key: Titulo);
+    align-self: center;
+
+    &:focus {
+        outline: none;
+        outline-color: red;
+    }
 }
 
 .input_sm {
     @extend .input_Xsm;
 
-    width: map-get($map: $inputWithSizes, $key: "grande");
+    width: map-get($map: $inputWithSizes, $key: "pequeno");
     height: map-get($map: $inputHeigtSizes, $key: "pequeno");
     font-family: map-get($map: $FontPack2, $key: Titulo);
+    align-self: flex-start;
+    margin-left: 5%;
 
-
+    &:focus {
+        outline: none;
+        outline-color: red;
+    }
 }
 
 .input_md {
-    @extend .input_sm;
+    @extend .input_Xsm;
+    width: map-get($map: $inputWithSizes, $key: "mediano");
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    align-self: flex-start;
+    margin-left: 10px
+}
 
+.input_Gr {
+    @extend .input_Xsm;
+    width: map-get($map: $inputWithSizes, $key: "grande");
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    margin-left: 5%;
+    align-self: flex-start;
+
+}
+
+
+.input_XGr {
+    @extend .input_Xsm;
     width: map-get($map: $inputWithSizes, $key: "Xgrande");
     height: map-get($map: $inputHeigtSizes, $key: "pequeno");
-
-
+    align-self: center;
 }
 
 .txtarea {
@@ -59,7 +107,7 @@
     border-radius: 5px;
     background-color: rgb(230, 230, 230);
     margin-bottom: 10px;
-
+    @include txarea_max_min_height;
 
 }
 
@@ -120,18 +168,28 @@
     &:hover {
         @include Hover_shadow-difum_imput;
     }
+
+    &:focus {
+        outline: none;
+        @include Hover_shadow-difum_imput;
+    }
 }
 
 .txtarea2 {
     color: grey;
     width: 90%;
     border: transparent;
-    max-height: 20vh;
-    min-height: 10vh;
+
 
     @include shadow-bottom_imput;
+    @include txarea_max_min_height;
 
     &:hover {
+        @include Hover_shadow-difum_imput;
+    }
+
+    &:focus {
+        outline: none;
         @include Hover_shadow-difum_imput;
     }
 }
@@ -203,14 +261,66 @@
     min-height: 10vh;
 
     @include shadow-bottom_imput;
+    @include txarea_max_min_height;
+
 
     &:hover {
         @include Hover_shadow-difum_imput;
     }
 }
 
+.TituloFormReserva {
+    font-family: map-get($map: $FontPack2, $key: Titulo);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: lighten($color: $colorBg-secundarioC, $amount: 20);
+}
+
+.label_smReserva {
+    font-size: map-get($map: $FontSize, $key: "mediano");
+    font-weight: 500;
+    font-family: map-get($map: $FontPack2, $key: Tema);
+    color: lighten($color: $colorBg-secundarioC, $amount: 20);
+
+    &::first-letter {
+        font-size: map-get($map: $FontSize, $key: "mediano");
+        font-weight: bold;
+    }
+
+    &:focus {
+        outline: none;
+        outline-color: red;
+    }
+}
+
+.input_mdReserva {
+    @extend .input_md2;
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    background-color: white;
+    border: transparent;
+    @include shadow-bottom_imput_color(blue);
+
+    &:hover {
+        @include shadow-bottom_imput_color($colorBg-secundarioC);
+    }
+
+    &:focus {
+        outline: none;
+        @include shadow-bottom_imput_color($colorBg-secundarioC);
+    }
+}
+
+.input_smReserva {
+    @extend .input_mdReserva;
+    width: map-get($map: $inputWithSizes, $key: "pequeno");
+    height: map-get($map: $inputHeigtSizes, $key: "pequeno");
+    align-self: flex-start;
+    margin-left: 10px
+}
+
+
 .self-start {
-    margin-left: 10px;
+    margin-left: 5%;
     align-self: flex-start;
 }
 

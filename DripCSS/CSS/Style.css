@@ -4,8 +4,8 @@
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -49,8 +49,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -130,7 +130,7 @@ header a {
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 10px;
   border: 2px solid #FAFAFA;
   background: rgb(112, 11, 151);
@@ -176,8 +176,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -187,8 +187,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -228,8 +228,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -254,8 +254,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -265,8 +265,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -404,8 +404,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -419,8 +419,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -562,8 +562,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -582,8 +582,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -615,8 +615,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -653,8 +653,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -664,8 +664,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -802,7 +802,6 @@ header a {
 }
 
 .TituloForm {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-family: Roboto;
 }
 
@@ -814,35 +813,78 @@ header a {
 .label_sm::first-letter {
   font-size: 20px;
 }
+.label_sm:focus {
+  outline: none;
+  outline-color: red;
+}
 
-.input_Xsm, .input_sm, .input_md {
-  width: 8vh;
+.input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
+  width: 15%;
   height: 4vh;
   border-radius: 2px;
   border: 1px white solid;
   background-color: rgb(225, 225, 225);
 }
-.input_Xsm:hover, .input_sm:hover, .input_md:hover {
-  box-shadow: 0px -3px 10px 2px rgb(149, 1, 1);
+.input_Xsm:hover, .input_XGr:hover, .input_Gr:hover, .input_md:hover, .input_sm:hover {
+  box-shadow: 0px 3px 1px 0px rgb(149, 1, 1);
+}
+.input_Xsm:focus, .input_XGr:focus, .input_Gr:focus, .input_md:focus, .input_sm:focus {
+  outline: none;
+  outline-color: red;
 }
 
-.input_sm, .input_md {
-  width: 25vh;
+.input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
+  width: 10%;
   height: 4vh;
   font-family: Lato;
+  align-self: center;
+}
+.input_Xsm:focus, .input_XGr:focus, .input_Gr:focus, .input_md:focus, .input_sm:focus {
+  outline: none;
+  outline-color: red;
+}
+
+.input_sm {
+  width: 15%;
+  height: 4vh;
+  font-family: Lato;
+  align-self: flex-start;
+  margin-left: 5%;
+}
+.input_sm:focus {
+  outline: none;
+  outline-color: red;
 }
 
 .input_md {
-  width: 55vh;
+  width: 20%;
   height: 4vh;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.input_Gr {
+  width: 50%;
+  height: 4vh;
+  margin-left: 5%;
+  align-self: flex-start;
+}
+
+.input_XGr {
+  width: 90%;
+  height: 4vh;
+  align-self: center;
 }
 
 .txtarea {
-  width: 55vh;
+  width: 90%;
   border: 2px gray solid;
   border-radius: 5px;
   background-color: rgb(230, 230, 230);
   margin-bottom: 10px;
+  height: 13vh;
+  max-height: 20vh;
+  min-height: 10vh;
 }
 
 .TituloForm2 {
@@ -858,7 +900,7 @@ header a {
 }
 
 .input_Xsm2 {
-  width: 8vh;
+  width: 15%;
   height: 4vh;
   border-radius: 5px;
   border: 3px white solid;
@@ -866,11 +908,11 @@ header a {
   box-shadow: 0px 2px 0px 0px #ff8080;
 }
 .input_Xsm2:hover {
-  box-shadow: 0px -3px 10px 2px rgb(142, 5, 194);
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
 }
 
 .input_sm2 {
-  width: 25vh;
+  width: 50%;
   height: 4vh;
   border: 3px white solid;
   border-radius: 5px;
@@ -878,16 +920,20 @@ header a {
   box-shadow: 0px 2px 0px 0px #ff8080;
 }
 .input_sm2:hover {
-  box-shadow: 0px -3px 10px 2px rgb(142, 5, 194);
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
 }
 
-.input_md2 {
+.input_md2, .input_mdReserva, .input_smReserva {
   width: 90%;
   height: 4vh;
   border: transparent;
   box-shadow: 0px 2px 0px 0px #ff8080;
 }
-.input_md2:hover {
+.input_md2:hover, .input_mdReserva:hover, .input_smReserva:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+.input_md2:focus, .input_mdReserva:focus, .input_smReserva:focus {
+  outline: none;
   box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
 }
 
@@ -895,11 +941,16 @@ header a {
   color: grey;
   width: 90%;
   border: transparent;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+  height: 13vh;
   max-height: 20vh;
   min-height: 10vh;
-  box-shadow: 0px 2px 0px 0px #ff8080;
 }
 .txtarea2:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+.txtarea2:focus {
+  outline: none;
   box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
 }
 
@@ -915,7 +966,7 @@ header a {
 }
 
 .input_Xsm3 {
-  width: 8vh;
+  width: 15%;
   height: 4vh;
   border-radius: 5px;
   border: 3px white solid;
@@ -923,11 +974,11 @@ header a {
   box-shadow: 0px 2px 0px 0px #ff8080;
 }
 .input_Xsm3:hover {
-  box-shadow: 0px -3px 10px 2px rgb(142, 5, 194);
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
 }
 
 .input_sm3 {
-  width: 25vh;
+  width: 50%;
   height: 4vh;
   border: 3px white solid;
   border-radius: 5px;
@@ -935,7 +986,7 @@ header a {
   box-shadow: 0px 2px 0px 0px #ff8080;
 }
 .input_sm3:hover {
-  box-shadow: 0px -3px 10px 2px rgb(142, 5, 194);
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
 }
 
 .input_md3 {
@@ -955,13 +1006,59 @@ header a {
   max-height: 20vh;
   min-height: 10vh;
   box-shadow: 0px 2px 0px 0px #ff8080;
+  height: 13vh;
+  max-height: 20vh;
+  min-height: 10vh;
 }
 .txtarea3:hover {
   box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
 }
 
-.self-start {
+.TituloFormReserva {
+  font-family: Lato;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #3432a3;
+}
+
+.label_smReserva {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Raleway;
+  color: #3432a3;
+}
+.label_smReserva::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+}
+.label_smReserva:focus {
+  outline: none;
+  outline-color: red;
+}
+
+.input_mdReserva, .input_smReserva {
+  height: 4vh;
+  background-color: white;
+  border: transparent;
+  box-shadow: 0px 2px 0px 0px #8080ff;
+}
+.input_mdReserva:hover, .input_smReserva:hover {
+  box-shadow: 0px 2px 0px 0px #3a38b7;
+}
+.input_mdReserva:focus, .input_smReserva:focus {
+  outline: none;
+  box-shadow: 0px 2px 0px 0px #3a38b7;
+}
+
+.input_smReserva {
+  width: 15%;
+  height: 4vh;
+  align-self: flex-start;
   margin-left: 10px;
+}
+
+.self-start {
+  margin-left: 5%;
   align-self: flex-start;
 }
 
@@ -976,8 +1073,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -987,8 +1084,8 @@ header a {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
@@ -1038,18 +1135,18 @@ header a {
 
 .form1 {
   margin-top: 20px;
-  box-sizing: border-box;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: start;
   height: auto;
   width: 70vh;
-  border-radius: 15px;
-  padding-bottom: 0px;
-  box-shadow: 0px -3px 10px 2px rgb(142, 5, 194);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 5px 1px white;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
   color: white;
   gap: 8px;
@@ -1057,18 +1154,18 @@ header a {
 
 .form1Test {
   margin-top: 20px;
-  box-sizing: border-box;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: start;
   height: auto;
   width: 70vh;
-  border-radius: 15px;
-  padding-bottom: 0px;
-  box-shadow: 0px -3px 10px 2px rgb(142, 5, 194);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 5px 1px white;
   background: rgba(68, 68, 68, 0.5);
   -webkit-backdrop-filter: blur(39px);
   backdrop-filter: blur(39px);
@@ -1078,25 +1175,25 @@ header a {
 }
 
 .form2 {
-  box-shadow: 0px -3px 10px 2px rgb(142, 5, 194);
+  box-shadow: 0px 0px 5px 1px white;
   margin-top: 20px;
-  box-sizing: border-box;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: start;
   height: auto;
   width: 70vh;
-  border-radius: 15px;
-  padding-bottom: 0px;
+  border-radius: 5px;
+  padding-bottom: 10px;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
-  width: 130vh;
+  width: 110vh;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 3fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
   grid-template-areas: "title title " "info card" "end end";
   gap: 8px;
   margin-top: 5%;
@@ -1109,7 +1206,7 @@ header a {
   grid-area: title;
 }
 
-.info {
+.informacion {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1117,6 +1214,8 @@ header a {
   align-items: start;
   width: 60vh;
   gap: 8px;
+  width: 100%;
+  padding: 0;
   grid-area: info;
 }
 
@@ -1129,6 +1228,7 @@ header a {
   width: 60vh;
   grid-area: card;
   gap: 8px;
+  width: 100%;
 }
 
 .end {
@@ -1140,17 +1240,17 @@ header a {
 
 .form3, .form4 {
   margin-top: 20px;
-  box-sizing: border-box;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: start;
   height: auto;
   width: 70vh;
-  border-radius: 15px;
-  padding-bottom: 0px;
+  border-radius: 5px;
+  padding-bottom: 10px;
   border-radius: 5px;
   height: auto;
   width: 80vh;
@@ -1163,19 +1263,19 @@ header a {
 
 .form4 {
   margin-top: 20px;
-  box-sizing: border-box;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: start;
   height: auto;
   width: 70vh;
-  border-radius: 15px;
-  padding-bottom: 0px;
+  border-radius: 5px;
+  padding-bottom: 10px;
   box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
-  width: 130vh;
+  width: 120vh;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1212,11 +1312,44 @@ header a {
   height: 100%;
   background-size: cover;
   padding: 0;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .end {
   grid-area: end;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.img_FormBehind {
+  height: 80vh;
+  background-image: url("/DripCSS/IMG/pexels-joaojesusdesign-925706.jpg");
+  background-size: 100%;
+  background-size: contain;
+  padding: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.formReserva {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  gap: 20px;
 }/*# sourceMappingURL=Style.css.map */

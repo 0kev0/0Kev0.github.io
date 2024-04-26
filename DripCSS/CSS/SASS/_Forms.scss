@@ -21,22 +21,22 @@
 
 @mixin boxmodelStandar {
     margin-top: 20px;
-    box-sizing: border-box;
-    padding: 15px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: start;
     height: auto;
     width: 70vh;
-    border-radius: 15px;
-    padding-bottom: 0px;
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
 .form1 {
     @include boxmodelStandar;
-    @include shadow-difum_imputs($color-primario);
+    @include shadow-difum_Forms(white);
     background: $GrayRdBg;
     color: white;
     gap: 8px;
@@ -44,7 +44,7 @@
 
 .form1Test {
     @include boxmodelStandar;
-    @include shadow-difum_imputs($color-primario);
+    @include shadow-difum_Forms(white);
     background: rgba(68, 68, 68, 0.5);
     -webkit-backdrop-filter: blur(39px);
     backdrop-filter: blur(39px);
@@ -56,14 +56,14 @@
 }
 
 .form2 {
-    @include shadow-difum_imputs($color-primario);
+    @include shadow-difum_Forms(white);
     @include boxmodelStandar;
     background: $GrayRdBg;
-    width: 130vh;
+    width: 110vh;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 3fr .5fr;
+    grid-template-rows: .5fr 2fr .5fr;
     grid-template-areas:
         "title title "
         "info card"
@@ -71,7 +71,7 @@
     gap: 8px;
     margin-top: 5%;
     margin-bottom: 5%;
-        padding: 10px;
+    padding: 10px;
     color: white;
 }
 
@@ -80,9 +80,11 @@
 
 }
 
-.info {
+.informacion {
     @include Display-flex;
     gap: 8px;
+    width: 100%;
+    padding: 0;
     grid-area: info;
 
 }
@@ -91,6 +93,8 @@
     @include Display-flex;
     grid-area: card;
     gap: 8px;
+    width: 100%;
+
 
 }
 
@@ -102,6 +106,7 @@
     align-items: center;
     justify-content: end;
 
+
 }
 
 .form3 {
@@ -110,7 +115,7 @@
     height: auto;
     width: 80vh;
     padding: 20px;
-    
+
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -121,7 +126,7 @@
     @include boxmodelStandar;
     @include shadow-difum_color($color-primarioB);
     @extend .form3;
-    width: 130vh;
+    width: 120vh;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,8 +164,7 @@
     height: 100%;
     background-size: cover;
     padding: 0;
-    border-radius: 0 15px 15px 0;
-
+    border-radius: 0 4px 4px 0;
 }
 
 
@@ -169,4 +173,25 @@
     grid-area: end;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.img_FormBehind {
+    height: 80vh;
+    background-image: url('/DripCSS/IMG/pexels-joaojesusdesign-925706.jpg');
+    background-size: 100%;
+    background-size: contain;
+    padding: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.formReserva {
+    @include boxmodelStandar;
+    @include shadow-BoxBlur;
+    margin-top: 10px;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    gap: 20px;
+
 }
