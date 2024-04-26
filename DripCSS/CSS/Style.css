@@ -530,6 +530,8 @@ button:active {
   justify-content: center;
   align-items: center;
   background-color: rgb(142, 5, 194);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
   overflow: hidden;
 }
 .nav ul, .nav2 ul {
@@ -669,7 +671,7 @@ button:active {
 .nav3 .container label {
   position: absolute;
   left: 3%;
-  top: 1.5%;
+  top: 1%;
   font-size: 24px;
   z-index: 1;
   cursor: pointer;

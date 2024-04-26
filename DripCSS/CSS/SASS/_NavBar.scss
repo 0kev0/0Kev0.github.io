@@ -13,6 +13,8 @@ $color-secundario : rgb(112, 11, 151);
 .nav {
   @include center;
   background-color: $color-primario;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
   overflow: hidden;
 
   ul {
@@ -179,7 +181,7 @@ $color-secundario : rgb(112, 11, 151);
   .container label{
       position: absolute;
       left: 3%;
-      top: 1.5%;
+      top: 1.0%;
       font-size: 24px;
       z-index: 1;
       cursor: pointer;
