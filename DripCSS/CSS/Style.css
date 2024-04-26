@@ -578,7 +578,7 @@ button:active {
 .nav3 {
   justify-self: flex-start;
   background: rgb(142, 5, 194);
-  height: 100vh;
+  height: 200vh;
   width: 260px;
 }
 .nav3 label .close-btn {
