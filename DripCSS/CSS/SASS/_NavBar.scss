@@ -45,11 +45,11 @@ $color-secundario : rgb(112, 11, 151);
 {
   @extend .nav;
   justify-content: space-between;
-  padding: $color-primario;
   display: flex;
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
+background-color: $colorBg-secundarioC;  
 
   .logo{
     @extend .titulo;
@@ -69,159 +69,91 @@ $color-secundario : rgb(112, 11, 151);
 }
 
 .nav3{
-  justify-self: flex-start;
-  background: $color-primario;
-  height: 200vh;
-  width: 260px;
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
-  label .close-btn{
-      display: none;
+  a,button{
+    cursor: pointer;
   }
 
-  .container .logo h2{
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s ease;
+  nav{
+      position: absolute;
+      top: 100px;
+      right: 50px;
+      width: 250px;
+  }
+
+  .navigation{
+      position: fixed;
+      right: -500px;
+      width: 350px;
+      height: 100%;
+      background-color: #000;
+      transition: .5s;
+  }
+
+  .navigation ul li{
+      color: #fff;
+      text-align: right;
+      text-transform: uppercase;
+      list-style-type: none;
+      font-size: 1.5em;
+      padding: 20px 30px;
+      border-bottom: 1pt solid #252525;
+  }
+
+  .hamburger, .bar{
+        position: fixed;
+  }
+
+  .hamburger{
+      display: block;
+      top: 5%;
+      left: 95%;
+      width: 30px;
+      height: 30px;
+      transform: translateY(-50%);
+      border: 0;
+      background: 0 0;
+  }
+
+  .bar{
+      top: 3px;
+      background: #000;
+      width: 100%;
+      height: 4px;
+      transition: all .3s ease-in;
+  }
+
+  #bar2{
+      top: 11px;
+  }
+
+  #bar3{
+      top: 19px;
+  }
+
+  .navigation.active{
+      right: 0;
+  }
+
+  .hamburger.open #bar1{
+      background-color: #fff;
+      transform: rotate(45deg) translate(6px, 5px);
+  }
+
+  .hamburger.open #bar2{
+      background-color: transparent;
+  }
+
+  .hamburger.open #bar3{
+      background-color: #fff;
+      transform: rotate(-45deg) translate(6px, -5px);
   }
   
-  .logo{
-    @extend .titulo;
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-
-    &::first-letter {
-      color: $color-primarioC;
-      margin-right: 10px;
-      text-shadow: 3px 4px white;
-      font-size: 40px;
-   }
-
-  }
-
-  .sidenav .search_bar{
-      margin-top: 32px;
-      position: relative;
-  }
-
-  .sidenav .search_bar i{
-      position: absolute;
-      color: black;
-      font-size: 24px;
-      left: 38px;
-      top: 50%;
-      transform: translate(-50%, -50%);
-  }
-
-  .sidenav .search_bar input{
-      width: 50%;
-      padding: 11px;
-      padding-left: 40px;
-      border-radius: 5px;
-      border: none;
-      outline: none;
-      margin-left: 15px;
-  }
-
-  .sidenav .menu_text{
-      margin-top: 4px;
-  }
-
-  .sidenav .menu_text p{
-      font-size: 17px;
-      font-weight: 500;
-      text-transform: uppercase;
-      padding-left: 10px;
-  }
-
-  .sidenav .icon_items ul{
-      list-style: none;
-      margin-top: 32px;
-      padding: 0 10px;
-  }
-
-  .sidenav .icon_items ul li{
-      cursor: pointer;
-      margin: 4px;
-      padding: 12px 0;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      transition: 1.0s ease;
-  }
-
-  .icon_items .active,
-  .sidenav .icon_items ul li:hover{
-      background: white;
-  }
-
-  .sidenav .icon_items ul li i{
-      font-size: 26px;
-      padding: 0 12px;
-  }
-
-  .sidenav .icon_items ul li a{
-      text-decoration: none;
-      color: black;
-      font-size: 17px;
-      padding-left: 18px;
-      opacity: 0;
-      pointer-events: none;
-      transition: 0.3s ease;
-  }
-
-  #click{
-      display: none;
-  }
-
-  .container label{
-      position: absolute;
-      left: 3%;
-      top: 1.0%;
-      font-size: 24px;
-      z-index: 1;
-      cursor: pointer;
-  }
-
-  #click:checked ~ .sidenav{
-      width: 260px;
-  }
-
-  #click:checked ~ .sidenav .icon_items ul li a{
-      opacity: 1;
-      pointer-events: auto;
-  }
-
-  #click:checked ~ .sidenav .logo h2{
-      opacity: 1;
-      pointer-events: auto;
-  }
-
-  #click:checked ~ .sidenav .search_bar input{
-      width: 100%;
-      margin-left: 0;
-  }
-
-  #click:checked ~ .sidenav .search_bar i{
-      left: 20px;
-  }
-
-  #click:checked ~ label{
-      left: 1%;
-  }
-
-  #click:checked ~ label .close-btn{
-      display: block;
-  }
-
-  #click:checked ~ label .menu-btn{
-      display: none;
-  }
 }
 
 
