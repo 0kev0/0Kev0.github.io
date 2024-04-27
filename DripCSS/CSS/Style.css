@@ -22,6 +22,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 .alert, .alert-info, .alert-warning, .alert-error, .alert-success {
   padding: 10px 15px;
   border-radius: 4px;
@@ -110,6 +122,30 @@
   margin-top: 0;
   margin-left: 10%;
   align-items: center;
+}
+
+.badge1 {
+  background-color: blue;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
+}
+
+.badge2 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
+}
+
+.badge3 {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
 }
 
 /*Paleta de colores A*/
@@ -454,14 +490,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .bentoXx1, .tema {
+.titulo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -608,14 +644,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .bentoXx1, .tema {
+.titulo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -1476,6 +1512,271 @@ header a {
 .div_hover_Scale_Up_Down:after, .bentoAx3:after, .bentoBx2:after, .bentoCx3:after, .bentoDx3:after {
   transition: 0.45s all ease-out;
   transform: scale(1);
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(255, 255, 255);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .nav2 .logo, .tema, .bentoXx1 {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.nav, .nav2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(142, 5, 194);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  overflow: hidden;
+}
+.nav ul, .nav2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li, .nav2 ul li {
+  float: left;
+}
+.nav ul li a, .nav2 ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.nav ul li a:hover, .nav2 ul li a:hover {
+  background-color: rgb(112, 11, 151);
+  color: black;
+}
+
+.nav2 {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background-color: rgb(27, 26, 85);
+}
+.nav2 .logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav2 .logo::first-letter {
+  color: rgb(146, 144, 195);
+  margin-right: 10px;
+  text-shadow: 3px 4px white;
+  font-size: 40px;
+}
+
+.nav3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nav3 a, .nav3 button {
+  cursor: pointer;
+}
+.nav3 nav {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+}
+.nav3 .navigation {
+  position: fixed;
+  right: -500px;
+  width: 350px;
+  height: 100%;
+  background-color: #000;
+  transition: 0.5s;
+}
+.nav3 .navigation ul li {
+  color: #fff;
+  text-align: right;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: 1.5em;
+  padding: 20px 30px;
+  border-bottom: 1pt solid #252525;
+}
+.nav3 .hamburger, .nav3 .bar {
+  position: fixed;
+}
+.nav3 .hamburger {
+  display: block;
+  top: 5%;
+  left: 95%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  border: 0;
+  background: 0 0;
+}
+.nav3 .bar {
+  top: 3px;
+  background: #000;
+  width: 100%;
+  height: 4px;
+  transition: all 0.3s ease-in;
+}
+.nav3 #bar2 {
+  top: 11px;
+}
+.nav3 #bar3 {
+  top: 19px;
+}
+.nav3 .navigation.active {
+  right: 0;
+}
+.nav3 .hamburger.open #bar1 {
+  background-color: #fff;
+  transform: rotate(45deg) translate(6px, 5px);
+}
+.nav3 .hamburger.open #bar2 {
+  background-color: transparent;
+}
+.nav3 .hamburger.open #bar3 {
+  background-color: #fff;
+  transform: rotate(-45deg) translate(6px, -5px);
 }
 
 /*Paleta de colores A*/
