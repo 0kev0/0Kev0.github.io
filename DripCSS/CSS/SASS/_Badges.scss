@@ -1,0 +1,41 @@
+/*Template for Badgets*/
+.badge {
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+    padding: 4px 12px;
+    &::before {
+        content: attr(data-badge);
+        font-size: 14px;
+        position: absolute;
+        left: 93%;
+        bottom: 70%;
+        background: #ffffff;
+        padding: 4px 5px;
+        border-radius: 50%;
+    }
+}
+
+.badge1 {
+    @extend .badge;
+    color: rgb(117, 107, 91);
+    background: burlywood;
+    border-radius: 5px;
+    box-shadow: 3px -20x 24px -10px rgba(0,0,0,.75);
+}
+
+.badge2 {
+    @extend .badge;
+    color: rgb(1, 191, 255);
+    background: rgb(67, 0, 67);
+    border: 3px solid;
+    box-shadow: 0 0 20px rgba(5, 93, 147, 0.747);
+}
+
+.badge3 {
+    @extend .badge;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #48d42b, #d3f803);
+    border: 3px solid;
+    box-shadow: 0 0 20px rgba(0, 78, 33, 0.747);
+}
