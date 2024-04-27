@@ -156,7 +156,7 @@ header a {
   background: #e60000;
   box-shadow: 0px 2px 0px 0px #ff8080;
   cursor: pointer;
-  margin: 30px 0px 5px;
+  margin: 30px 5px;
 }
 .button_Squear:hover {
   transition: 0.45s all ease-out;
@@ -192,7 +192,7 @@ header a {
 /*tamanos de paddings*/
 /*Border radius*/
 /*forms bg*/
-.Display-flex, .-left, .-center {
+.Display-flex, .-left, .-center, .-col {
   display: flex;
 }
 
@@ -1057,6 +1057,50 @@ header a {
   margin-left: 10px;
 }
 
+input[type=range] {
+  border-radius: 5px;
+  height: 8px;
+  width: 80%;
+  cursor: grab;
+  accent-color: rgb(255, 0, 0);
+}
+
+legend {
+  color: rgb(255, 0, 0);
+}
+
+input[type=radio] {
+  width: 25px;
+  height: 25px;
+}
+
+input[type=radio]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 0.01mm;
+  position: relative;
+  background-color: #3a3a3a;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type=radio]:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  left: 0.6mm;
+  bottom: -0.2mm;
+  position: relative;
+  background-color: rgb(255, 0, 0);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
 .self-start {
   margin-left: 5%;
   align-self: flex-start;
@@ -1323,7 +1367,7 @@ header a {
 }
 
 .img_FormBehind {
-  height: 80vh;
+  height: auto;
   background-image: url("/DripCSS/IMG/pexels-joaojesusdesign-925706.jpg");
   background-size: 100%;
   background-size: contain;
@@ -1348,7 +1392,7 @@ header a {
   z-index: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
-  height: 70vh;
+  height: auto;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   gap: 20px;

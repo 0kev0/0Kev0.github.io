@@ -179,8 +179,6 @@
     color: grey;
     width: 90%;
     border: transparent;
-
-
     @include shadow-bottom_imput;
     @include txarea_max_min_height;
 
@@ -194,12 +192,10 @@
     }
 }
 
-
 .TituloForm3 {
     font-family: map-get($map: $FontPack2, $key: "Oswald");
     text-decoration: underline;
 }
-
 
 .lable_sm3 {
     font-family: map-get($map: $FontPack2, $key: "Oswald");
@@ -208,7 +204,6 @@
     align-self: self-start;
     margin-left: 10px;
 }
-
 
 .input_Xsm3 {
     width: map-get($map: $inputWithSizes, $key: "pequeno");
@@ -235,7 +230,6 @@
     border-radius: 5px;
     background-color: white;
     @include shadow-bottom_imput;
-
 
     &:hover {
         @include shadow-difum_imputs($color-primario);
@@ -317,6 +311,55 @@
     align-self: flex-start;
     margin-left: 10px
 }
+
+input[type="range"] {
+    border-radius: 5px;
+    height: 8px;
+    width: 80%;
+    cursor: grab;
+    accent-color: $color-primarioB;
+
+}
+
+
+legend
+{
+    color: $color-primarioB;
+}
+input[type='radio'] {
+    width: 25px;
+    height: 25px;
+}
+
+input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: .01mm;
+    position: relative;
+    background-color: #3a3a3a;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 20px;
+    height:20px;
+    border-radius: 20px;
+    left: .6mm;
+    bottom: -.2mm;
+    position: relative;
+    background-color: $color-primarioB;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+
+
 
 
 .self-start {

@@ -94,10 +94,6 @@ $FontPack2: ('Titulo': Lato, 'Tema': Raleway, 'Texto': Source Sans Pro);
 $FontPack3: ('Titulo': Poppins, 'Tema': Nunito, 'Texto':Quicksand);
 $FontPack4: ('Titulo': Playfair Display, 'Tema': Merriweather, 'Texto': Oswald);
 
-
-
-
-
 .Font-base {
     color: $FontColorBase;
 }
@@ -107,7 +103,6 @@ $FontPack4: ('Titulo': Playfair Display, 'Tema': Merriweather, 'Texto': Oswald);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .titulo {
     text-shadow: 3px 3px $color-secundario;

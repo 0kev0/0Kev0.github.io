@@ -177,19 +177,20 @@
 }
 
 .img_FormBehind {
-    height: 80vh;
+    height: auto;
     background-image: url('/DripCSS/IMG/pexels-joaojesusdesign-925706.jpg');
     background-size: 100%;
     background-size: contain;
     padding: 0;
     border-radius: 0 4px 4px 0;
+
 }
 
 .formReserva {
     @include boxmodelStandar;
     @include shadow-BoxBlur;
     margin-top: 10px;
-    height: 70vh;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     gap: 20px;
