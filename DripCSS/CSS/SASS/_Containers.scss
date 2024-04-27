@@ -1,0 +1,54 @@
+
+@import 'Variables';
+
+.container-regular{
+    height: 60vh;
+}
+.container-fluid{
+    height: 80vh;
+}
+.container-full-width {
+    padding: 2%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.container-regular {
+    background-color: $colorbg-primario;
+    border: 1px solid $colorBg-secundario;
+    box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+    background-color: $colorbg-primarioB;
+    border: 1px solid $colorBg-secundarioB;
+}
+
+.container-full-width {
+    background-color: $colorbg-primarioC;
+    border: 1px solid $colorBg-secundarioC;
+}
+
+.container-regular:hover,
+.container-fluid:hover,
+.container-full-width:hover {
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.2);
+}
+
+.container-regular h2,
+.container-fluid h2,
+.container-full-width h2 {
+    margin-top: 0;
+    font-size: 2.4vw;
+    color: $color-primario;
+}
+
+.container-regular p,
+.container-fluid p,
+.container-full-width p {
+    font-size: 1.6vw;
+    color: $color-secundario;
+    line-height: 1.5;
+}
