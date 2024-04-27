@@ -4,6 +4,7 @@
     font-weight: 500;
     position: relative;
     padding: 4px 12px;
+    width: 200px;
     &::before {
         content: attr(data-badge);
         font-size: 14px;
