@@ -1,19 +1,6 @@
-/*Template target 1*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: rgb(52, 52, 52);
-}
-
+@import 'Variables';
+//************************************** Tarejetas **************************************//
+//*Tarjeta 1*//
 .tarjeta {
     position: relative;
     width: 300px;
@@ -21,6 +8,7 @@ body {
     margin: 20px;
 
     .front {
+        background-color: rgb(67, 0, 67);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -28,7 +16,7 @@ body {
         border-radius: 10px;
         overflow: hidden;
         transition: 0.5s;
-        transform: perspective(600px) rotateY(0deg);
+        transform: perspective(6010px) rotateY(0deg);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 
         img {
@@ -104,29 +92,14 @@ body {
         transition: .45s;
     }
 }
-/*Template cards 2*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: rgb(255, 255, 255);
-}
-
+//*Tarjeta 2*//
 .card{
     position: relative;
     width: 250px;
     height: 380px;
     border-radius: 10px;
     box-shadow: 2px 3px 5px rgba(73,69,52,0.4);
-    .content{
+    .contenido{
         position: relative;
         z-index: 90;
         width: 100%;
@@ -210,8 +183,7 @@ body {
     }
 }
 
-/*Template card-3*/
-
+//*Tarjeta 3*//
 @mixin gradiente{
     background: linear-gradient(135deg, #2980b9, #2c3e50);
 }
@@ -231,7 +203,7 @@ body {
     justify-content: start;
 }
 
-.card{
+.carta{
     width: 80px;
     border-radius: 75rem;
     background-size: cover;
