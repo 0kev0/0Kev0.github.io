@@ -1,3 +1,4 @@
+@import 'Shadow';
 .my-button-rojo {
   background-color: #ff0000;
   color: #ffffff;
@@ -21,29 +22,60 @@
   border: 2px white solid;
   border-radius: 5px;
 
-  
-&:hover  {
-  background-color: bisque;
-}
+
+  &:hover {
+    background-color: bisque;
+  }
 
 }
 
 
-button {
+.button_st1 {
   font-family: monospace;
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 10px;
   border: 2px solid #FAFAFA;
   background: $color-secundario;
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
-  margin: 35px 0;
+
+  &:hover {
+    transition: .45s all ease-out;
+    background: lighten($color: $color-secundario, $amount: 5);
+    transform: translate(1px, 1px);
+  }
+
+  &:active {
+    transition: .05s all ease-in;
+    box-shadow: none;
+    transform: translate(3px, 3px);
+    font-weight: bold;
+  }
 }
 
-button:active {
-  box-shadow: none;
-  transform: translate(3px, 3px);
+.button_Squear {
+  @extend .button_st1;
+  border-radius: 0px;
+  border: 0px;
+  font-family: 'Quicksand';
+  background: darken($color: $color-primarioB, $amount: 5);
+  @include shadow-bottom_imput;
+  cursor: pointer;
+  margin: 30px 5px;
+
+  &:hover {
+    transition: .45s all ease-out;
+    background: lighten($color: $color-primarioB, $amount: 5);
+    transform: translate(1px, 1px);
+  }
+
+  &:active {
+    transition: .05s all ease-in;
+    box-shadow: none;
+    transform: translate(3px, 3px);
+    font-weight: bold;
+  }
 }

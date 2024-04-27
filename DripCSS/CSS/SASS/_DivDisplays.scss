@@ -5,6 +5,7 @@
 }
 
 .-col {
+    @extend .Display-flex;
     flex-direction: column;
 }
 

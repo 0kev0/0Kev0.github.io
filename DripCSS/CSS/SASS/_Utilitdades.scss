@@ -11,13 +11,23 @@
     height: 80vh;
     margin-top: 5%;
     padding-top: 2px;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Recorte en diagonal sin afectar el texto */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); 
     background-image: url('/DripCSS/IMG/metro\ .jpg');
     background-size: cover;
     object-fit: cover;
 
   }
   
+
+  .self-start {
+    margin-left: 10px;
+    align-self: flex-start;
+}
+
+.self-right {
+    margin-right: 10px;
+    align-self: flex-end;
+}
 
   
 

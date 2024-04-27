@@ -43,3 +43,41 @@
 .shadow-right {
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
+
+@mixin shadow-difum_imputs($color)
+{
+    box-shadow: 0px 3px 1px 0px $color;
+}
+
+@mixin shadow-difum_Forms($color)
+{
+    box-shadow: 0px 0px 5px 1px $color;
+}
+
+@mixin shadow-difum_color ($color)
+{
+    box-shadow: 0px 0px 10px 2px $color;
+}
+
+@mixin shadow-BoxBlur 
+{
+    position: relative;
+    z-index: 1; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+
+}
+
+@mixin Hover_shadow-difum_imput
+{
+    box-shadow: 0px 2px 0px 0px  $color-primarioB ;
+}
+
+@mixin shadow-bottom_imput
+{
+    box-shadow: 0px 2px 0px 0px  lighten($color: $color-primarioB, $amount: 25);
+}
+
+@mixin shadow-bottom_imput_color ($color)
+{
+    box-shadow: 0px 2px 0px 0px  lighten($color: $color, $amount: 25);
+}

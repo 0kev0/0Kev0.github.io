@@ -4,9 +4,35 @@
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 header {
   height: 10vh;
   background-color: rgb(142, 5, 194);
@@ -15,6 +41,61 @@ header a {
   font-size: 30px;
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .my-button-rojo {
@@ -44,23 +125,49 @@ header a {
   background-color: bisque;
 }
 
-button {
+.button_st1, .button_Squear {
   font-family: monospace;
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 10px;
   border: 2px solid #FAFAFA;
   background: rgb(112, 11, 151);
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
-  margin: 35px 0;
 }
-
-button:active {
+.button_st1:hover, .button_Squear:hover {
+  transition: 0.45s all ease-out;
+  background: #820daf;
+  transform: translate(1px, 1px);
+}
+.button_st1:active, .button_Squear:active {
+  transition: 0.05s all ease-in;
   box-shadow: none;
   transform: translate(3px, 3px);
+  font-weight: bold;
+}
+
+.button_Squear {
+  border-radius: 0px;
+  border: 0px;
+  font-family: "Quicksand";
+  background: #e60000;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+  cursor: pointer;
+  margin: 30px 5px;
+}
+.button_Squear:hover {
+  transition: 0.45s all ease-out;
+  background: #ff1a1a;
+  transform: translate(1px, 1px);
+}
+.button_Squear:active {
+  transition: 0.05s all ease-in;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  font-weight: bold;
 }
 
 /*Paleta de colores A*/
@@ -69,19 +176,23 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
-.Display-flex, .-left, .-center {
+/*forms bg*/
+.Display-flex, .-left, .-center, .-col {
   display: flex;
 }
 
@@ -117,9 +228,11 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 .Pd-lf-rg-small {
   padding-left: 10px;
   padding-right: 10px;
@@ -141,18 +254,22 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -287,9 +404,11 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 .Bg-Base {
   background-color: rgb(52, 52, 52);
 }
@@ -300,9 +419,63 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
 .Font-base {
   color: rgb(255, 255, 255);
 }
@@ -339,6 +512,17 @@ button:active {
   font-size: 50px;
 }
 
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
 .contenido {
   font-size: 30px;
   font-weight: 200;
@@ -351,7 +535,7 @@ button:active {
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -367,7 +551,7 @@ button:active {
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
   text-wrap: wrap;
   margin-left: 3%;
 }
@@ -378,9 +562,11 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 .welcome {
   border: rgb(133, 133, 133) solid 1px;
   margin-left: 15%;
@@ -396,9 +582,11 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 .Letter_hover:hover {
   transition: 0.45s all ease-in-out;
   font-size: 40px;
@@ -427,9 +615,11 @@ button:active {
 /*Paleta de colores D*/
 /*Colores para texto */
 /*tamanos de fuentes*/
-/*fuentes*/
+/*Heigths*/
+/*Width*/
 /*tamanos de paddings*/
 /*Border radius*/
+/*forms bg*/
 .hidden {
   display: none;
 }
@@ -440,9 +630,770 @@ button:active {
   margin-top: 5%;
   padding-top: 2px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Recorte en diagonal sin afectar el texto */
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   background-image: url("/DripCSS/IMG/metro .jpg");
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.self-start {
+  margin-left: 10px;
+  align-self: flex-start;
+}
+
+.self-right {
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(255, 255, 255);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.TituloForm {
+  font-family: Roboto;
+}
+
+.label_sm {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Poppins;
+}
+.label_sm::first-letter {
+  font-size: 20px;
+}
+.label_sm:focus {
+  outline: none;
+  outline-color: red;
+}
+
+.input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
+  width: 15%;
+  height: 4vh;
+  border-radius: 2px;
+  border: 1px white solid;
+  background-color: rgb(225, 225, 225);
+}
+.input_Xsm:hover, .input_XGr:hover, .input_Gr:hover, .input_md:hover, .input_sm:hover {
+  box-shadow: 0px 3px 1px 0px rgb(149, 1, 1);
+}
+.input_Xsm:focus, .input_XGr:focus, .input_Gr:focus, .input_md:focus, .input_sm:focus {
+  outline: none;
+  outline-color: red;
+}
+
+.input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
+  width: 10%;
+  height: 4vh;
+  font-family: Lato;
+  align-self: center;
+}
+.input_Xsm:focus, .input_XGr:focus, .input_Gr:focus, .input_md:focus, .input_sm:focus {
+  outline: none;
+  outline-color: red;
+}
+
+.input_sm {
+  width: 15%;
+  height: 4vh;
+  font-family: Lato;
+  align-self: flex-start;
+  margin-left: 5%;
+}
+.input_sm:focus {
+  outline: none;
+  outline-color: red;
+}
+
+.input_md {
+  width: 20%;
+  height: 4vh;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.input_Gr {
+  width: 50%;
+  height: 4vh;
+  margin-left: 5%;
+  align-self: flex-start;
+}
+
+.input_XGr {
+  width: 90%;
+  height: 4vh;
+  align-self: center;
+}
+
+.txtarea {
+  width: 90%;
+  border: 2px gray solid;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 10px;
+  height: 13vh;
+  max-height: 20vh;
+  min-height: 10vh;
+}
+
+.TituloForm2 {
+  font-family: Lato;
+  text-decoration: underline;
+}
+
+.lable_sm2 {
+  font-size: larger;
+  color: rgb(255, 0, 0);
+  align-self: self-start;
+  margin-left: 10px;
+}
+
+.input_Xsm2 {
+  width: 15%;
+  height: 4vh;
+  border-radius: 5px;
+  border: 3px white solid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_Xsm2:hover {
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
+}
+
+.input_sm2 {
+  width: 50%;
+  height: 4vh;
+  border: 3px white solid;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_sm2:hover {
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
+}
+
+.input_md2, .input_mdReserva, .input_smReserva {
+  width: 90%;
+  height: 4vh;
+  border: transparent;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_md2:hover, .input_mdReserva:hover, .input_smReserva:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+.input_md2:focus, .input_mdReserva:focus, .input_smReserva:focus {
+  outline: none;
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+
+.txtarea2 {
+  color: grey;
+  width: 90%;
+  border: transparent;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+  height: 13vh;
+  max-height: 20vh;
+  min-height: 10vh;
+}
+.txtarea2:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+.txtarea2:focus {
+  outline: none;
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+
+.TituloForm3 {
+  text-decoration: underline;
+}
+
+.lable_sm3 {
+  font-size: larger;
+  color: rgb(255, 0, 0);
+  align-self: self-start;
+  margin-left: 10px;
+}
+
+.input_Xsm3 {
+  width: 15%;
+  height: 4vh;
+  border-radius: 5px;
+  border: 3px white solid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_Xsm3:hover {
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
+}
+
+.input_sm3 {
+  width: 50%;
+  height: 4vh;
+  border: 3px white solid;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_sm3:hover {
+  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
+}
+
+.input_md3 {
+  width: 90%;
+  height: 4vh;
+  border: transparent;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.input_md3:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+
+.txtarea3 {
+  color: grey;
+  width: 90%;
+  border: transparent;
+  max-height: 20vh;
+  min-height: 10vh;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+  height: 13vh;
+  max-height: 20vh;
+  min-height: 10vh;
+}
+.txtarea3:hover {
+  box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+
+.TituloFormReserva {
+  font-family: Lato;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #3432a3;
+}
+
+.label_smReserva {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Raleway;
+  color: #3432a3;
+}
+.label_smReserva::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+}
+.label_smReserva:focus {
+  outline: none;
+  outline-color: red;
+}
+
+.input_mdReserva, .input_smReserva {
+  height: 4vh;
+  background-color: white;
+  border: transparent;
+  box-shadow: 0px 2px 0px 0px #8080ff;
+}
+.input_mdReserva:hover, .input_smReserva:hover {
+  box-shadow: 0px 2px 0px 0px #3a38b7;
+}
+.input_mdReserva:focus, .input_smReserva:focus {
+  outline: none;
+  box-shadow: 0px 2px 0px 0px #3a38b7;
+}
+
+.input_smReserva {
+  width: 15%;
+  height: 4vh;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+input[type=range] {
+  border-radius: 5px;
+  height: 8px;
+  width: 80%;
+  cursor: grab;
+  accent-color: rgb(255, 0, 0);
+}
+
+legend {
+  color: rgb(255, 0, 0);
+}
+
+input[type=radio] {
+  width: 25px;
+  height: 25px;
+}
+
+input[type=radio]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 0.01mm;
+  position: relative;
+  background-color: #3a3a3a;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type=radio]:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  left: 0.6mm;
+  bottom: -0.2mm;
+  position: relative;
+  background-color: rgb(255, 0, 0);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+.self-start {
+  margin-left: 5%;
+  align-self: flex-start;
+}
+
+.self-right {
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*Border radius*/
+/*forms bg*/
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.form1 {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 5px 1px white;
+  background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
+  color: white;
+  gap: 8px;
+}
+
+.form1Test {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 5px 1px white;
+  background: rgba(68, 68, 68, 0.5);
+  -webkit-backdrop-filter: blur(39px);
+  backdrop-filter: blur(39px);
+  border: 1px solid rgba(68, 68, 68, 0.25);
+  color: white;
+  gap: 8px;
+}
+
+.form2 {
+  box-shadow: 0px 0px 5px 1px white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
+  width: 110vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas: "title title " "info card" "end end";
+  gap: 8px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px;
+  color: white;
+}
+
+.title {
+  grid-area: title;
+}
+
+.informacion {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 60vh;
+  gap: 8px;
+  width: 100%;
+  padding: 0;
+  grid-area: info;
+}
+
+.cardinfo {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 60vh;
+  grid-area: card;
+  gap: 8px;
+  width: 100%;
+}
+
+.end {
+  grid-area: end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.form3, .form4 {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  height: auto;
+  width: 80vh;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: white;
+}
+
+.form4 {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+  width: 120vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+  grid-template-areas: "title img " "info img" "end img";
+  gap: 8px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: white;
+  padding: 0px;
+}
+
+.title4 {
+  padding: 5%;
+  grid-area: title;
+  color: grey;
+}
+
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 60vh;
+  gap: 8px;
+  grid-area: info;
+  padding: 5%;
+}
+
+.img {
+  grid-area: img;
+  background-image: url("/DripCSS/IMG/stock_red.jpg");
+  height: 100%;
+  background-size: cover;
+  padding: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.end {
+  grid-area: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_FormBehind {
+  height: auto;
+  background-image: url("/DripCSS/IMG/pexels-joaojesusdesign-925706.jpg");
+  background-size: 100%;
+  background-size: contain;
+  padding: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.formReserva {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  width: 70vh;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  gap: 20px;
 }/*# sourceMappingURL=Style.css.map */
