@@ -1,3 +1,164 @@
+
+$color-primario : rgb(142, 5, 194);
+$color-secundario : rgb(112, 11, 151);
+@import 'FontsStyles';
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav {
+  @include center;
+  background-color: $color-primario;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    float: left;
+
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $color-secundario;
+        color: black;
+      }
+    }
+  }
+}
+
+.nav2
+{
+  @extend .nav;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+background-color: $colorBg-secundarioC;  
+
+  .logo{
+    @extend .titulo;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+
+    &::first-letter {
+      color: $color-primarioC;
+      margin-right: 10px;
+      text-shadow: 3px 4px white;
+      font-size: 40px;
+   }
+
+  }
+}
+
+.nav3{
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+  a,button{
+    cursor: pointer;
+  }
+
+  nav{
+      position: absolute;
+      top: 100px;
+      right: 50px;
+      width: 250px;
+  }
+
+  .navigation{
+      position: fixed;
+      right: -500px;
+      width: 350px;
+      height: 100%;
+      background-color: #000;
+      transition: .5s;
+  }
+
+  .navigation ul li{
+      color: #fff;
+      text-align: right;
+      text-transform: uppercase;
+      list-style-type: none;
+      font-size: 1.5em;
+      padding: 20px 30px;
+      border-bottom: 1pt solid #252525;
+  }
+
+  .hamburger, .bar{
+        position: fixed;
+  }
+
+  .hamburger{
+      display: block;
+      top: 5%;
+      left: 95%;
+      width: 30px;
+      height: 30px;
+      transform: translateY(-50%);
+      border: 0;
+      background: 0 0;
+  }
+
+  .bar{
+      top: 3px;
+      background: #000;
+      width: 100%;
+      height: 4px;
+      transition: all .3s ease-in;
+  }
+
+  #bar2{
+      top: 11px;
+  }
+
+  #bar3{
+      top: 19px;
+  }
+
+  .navigation.active{
+      right: 0;
+  }
+
+  .hamburger.open #bar1{
+      background-color: #fff;
+      transform: rotate(45deg) translate(6px, 5px);
+  }
+
+  .hamburger.open #bar2{
+      background-color: transparent;
+  }
+
+  .hamburger.open #bar3{
+      background-color: #fff;
+      transform: rotate(-45deg) translate(6px, -5px);
+  }
+  
+}
+
+
+
+
 /*navbar*/
 
-/*navbar laterales*/ 
+/*navbar l
