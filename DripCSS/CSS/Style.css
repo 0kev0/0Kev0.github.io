@@ -273,34 +273,8 @@
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.my-button-rojo {
-  background-color: #ff0000;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: 2px white solid;
-  border-radius: 5px;
-}
-
-.my-button-azul {
-  background-color: #0051ff;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: 2px white solid;
-  border-radius: 5px;
-}
-
-.my-button-amarillo {
-  background-color: #ffea00;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: 2px white solid;
-  border-radius: 5px;
-}
-.my-button-amarillo:hover {
-  background-color: bisque;
-}
-
-button {
+.buttontest, .button_Squear_Th, .button_Squear_Th4, .button_Squear_Th3, .button_Squear_Th2, .buttontest_Th4, .buttontest_Th3, .buttontest_Th2 {
+  margin: 2%;
   font-family: monospace;
   font-size: 1.5rem;
   color: #FAFAFA;
@@ -312,37 +286,245 @@ button {
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
 }
-button:hover {
+.buttontest:hover, .button_Squear_Th:hover, .button_Squear_Th4:hover, .button_Squear_Th3:hover, .button_Squear_Th2:hover, .buttontest_Th4:hover, .buttontest_Th3:hover, .buttontest_Th2:hover {
   transition: 0.45s all ease-out;
   background: #820daf;
   transform: translate(1px, 1px);
 }
-button:active {
+.buttontest:active, .button_Squear_Th:active, .button_Squear_Th4:active, .button_Squear_Th3:active, .button_Squear_Th2:active, .buttontest_Th4:active, .buttontest_Th3:active, .buttontest_Th2:active {
   transition: 0.05s all ease-in;
   box-shadow: none;
   transform: translate(3px, 3px);
   font-weight: bold;
 }
 
-.button_Squear {
-  border-radius: 0px;
-  border: 0px;
-  font-family: "Quicksand";
-  background: #e60000;
-  box-shadow: 0px 2px 0px 0px #ff8080;
-  cursor: pointer;
-  margin: 30px 5px;
+.buttontest_Th2 {
+  background: rgb(149, 1, 1);
 }
-.button_Squear:hover {
+.buttontest_Th2:hover {
+  background: #ae0101;
+}
+
+.buttontest_Th3 {
+  background: rgb(83, 92, 145);
+}
+.buttontest_Th3:hover {
+  background: #5c66a1;
+}
+
+.buttontest_Th4 {
+  background: rgb(145, 10, 103);
+}
+.buttontest_Th4:hover {
+  background: #a90c78;
+}
+
+/*Buttons rounded*/
+.butontest_round, .butontest_round_Th4, .butontest_round_Th3, .butontest_round_Th2 {
+  margin: 2%;
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 25px 25px 25px 25px;
+  width: 15vh;
+  border: 2px solid #FAFAFA;
+  background: rgb(112, 11, 151);
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+}
+.butontest_round:hover, .butontest_round_Th4:hover, .butontest_round_Th3:hover, .butontest_round_Th2:hover {
   transition: 0.45s all ease-out;
-  background: #ff1a1a;
+  background: #820daf;
   transform: translate(1px, 1px);
 }
-.button_Squear:active {
+.butontest_round:active, .butontest_round_Th4:active, .butontest_round_Th3:active, .butontest_round_Th2:active {
   transition: 0.05s all ease-in;
   box-shadow: none;
   transform: translate(3px, 3px);
   font-weight: bold;
+}
+
+.butontest_round_Th2 {
+  background: rgb(149, 1, 1);
+}
+.butontest_round_Th2:hover {
+  background: #ff1a1a;
+}
+
+.butontest_round_Th3 {
+  background: rgb(83, 92, 145);
+}
+.butontest_round_Th3:hover {
+  background: #a2a1cc;
+}
+
+.butontest_round_Th4 {
+  background: rgb(145, 10, 103);
+}
+.butontest_round_Th4:hover {
+  background: #8b0567;
+}
+
+/*butontest_boxshadow_Th*/
+.butontest_boxshadow_Th, .butontest_boxshadow_Th4, .butontest_boxshadow_Th3, .butontest_boxshadow_Th2 {
+  margin: 5px;
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  width: 15vh;
+  border: 2px solid #FAFAFA;
+  background: rgb(112, 11, 151);
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+}
+.butontest_boxshadow_Th:hover, .butontest_boxshadow_Th4:hover, .butontest_boxshadow_Th3:hover, .butontest_boxshadow_Th2:hover {
+  transition: 0.45s all ease-out;
+  background: #820daf;
+  transform: translate(1px, 1px);
+}
+.butontest_boxshadow_Th:active, .butontest_boxshadow_Th4:active, .butontest_boxshadow_Th3:active, .butontest_boxshadow_Th2:active {
+  transition: 0.05s all ease-in;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  font-weight: bold;
+}
+
+.butontest_boxshadow_Th2 {
+  background: rgb(149, 1, 1);
+}
+.butontest_boxshadow_Th2:hover {
+  background: #ff1a1a;
+}
+
+.butontest_boxshadow_Th3 {
+  background: rgb(83, 92, 145);
+}
+.butontest_boxshadow_Th3:hover {
+  background: #a2a1cc;
+}
+
+.butontest_boxshadow_Th4 {
+  background: rgb(145, 10, 103);
+}
+.butontest_boxshadow_Th4:hover {
+  background: #8b0567;
+}
+
+/*button_animated*/
+.button_animated_Th, .button_animated_Th4, .button_animated_Th3, .button_animated_Th2 {
+  margin: 2%;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid rgb(7, 15, 43);
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: rgb(52, 52, 52);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+.button_animated_Th:before, .button_animated_Th4:before, .button_animated_Th3:before, .button_animated_Th2:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: rgb(142, 5, 194);
+  z-index: -1;
+}
+.button_animated_Th:hover, .button_animated_Th4:hover, .button_animated_Th3:hover, .button_animated_Th2:hover, .button_animated_Th:focus, .button_animated_Th4:focus, .button_animated_Th3:focus, .button_animated_Th2:focus {
+  color: white;
+}
+.button_animated_Th:hover:before, .button_animated_Th4:hover:before, .button_animated_Th3:hover:before, .button_animated_Th2:hover:before, .button_animated_Th:focus:before, .button_animated_Th4:focus:before, .button_animated_Th3:focus:before, .button_animated_Th2:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.button_animated_Th:active, .button_animated_Th4:active, .button_animated_Th3:active, .button_animated_Th2:active {
+  transform: scale(0.9);
+}
+
+.button_animated_Th2 {
+  color: rgb(0, 0, 0);
+}
+.button_animated_Th2:before {
+  background-color: rgb(255, 0, 0);
+}
+
+.button_animated_Th3 {
+  color: rgb(7, 15, 43);
+}
+.button_animated_Th3:before {
+  background-color: rgb(146, 144, 195);
+}
+
+.button_animated_Th4 {
+  color: rgb(3, 6, 55);
+}
+.button_animated_Th4:before {
+  background-color: rgb(114, 4, 85);
+}
+
+/*button_Squear*/
+.button_Squear_Th, .button_Squear_Th4, .button_Squear_Th3, .button_Squear_Th2 {
+  border-radius: 0px;
+  border: 0px;
+  font-family: "Quicksand";
+  background: #7c04a9;
+  box-shadow: 0px 2px 0px 0px #ca4cfa;
+  cursor: pointer;
+  margin: 30px 5px;
+  font-weight: 200;
+}
+.button_Squear_Th:hover, .button_Squear_Th4:hover, .button_Squear_Th3:hover, .button_Squear_Th2:hover {
+  transition: 0.45s all ease-out;
+  background: #a006db;
+  transform: translate(1px, 1px);
+  font-weight: 400;
+}
+.button_Squear_Th:active, .button_Squear_Th4:active, .button_Squear_Th3:active, .button_Squear_Th2:active {
+  transition: 0.05s all ease-in;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  font-weight: bold;
+}
+
+.button_Squear_Th2 {
+  background: #e60000;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.button_Squear_Th2:hover {
+  background: #ff1a1a;
+}
+
+.button_Squear_Th3 {
+  background: #827fba;
+  box-shadow: 0px 2px 0px 0px #e3e3f0;
+}
+.button_Squear_Th3:hover {
+  background: #a2a1cc;
+}
+
+.button_Squear_Th4 {
+  background: #590343;
+  box-shadow: 0px 2px 0px 0px #ed08b1;
+}
+.button_Squear_Th4:hover {
+  background: #8b0567;
 }
 
 /*otras opciones de botones*/
@@ -359,22 +541,80 @@ button:active {
   background-color: #217dbb;
 }
 
-.boton-primario {
+/*Tap Button*/
+.Tap_Button, .Tap_Button_Th4, .Tap_Button_Th3, .Tap_Button_Th2 {
+  /* Variables */
+  --button_radius: 0.75em;
+  height: 7vh;
+  width: 8VH;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: rgb(142, 5, 194);
+  box-shadow: 0px 2px 0px 0px white;
+}
+.Tap_Button .button_top, .Tap_Button_Th4 .button_top, .Tap_Button_Th3 .button_top, .Tap_Button_Th2 .button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: rgb(142, 5, 194);
+  color: rgb(112, 11, 151);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+.Tap_Button:hover, .Tap_Button_Th4:hover, .Tap_Button_Th3:hover, .Tap_Button_Th2:hover {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+.Tap_Button:active, .Tap_Button_Th4:active, .Tap_Button_Th3:active, .Tap_Button_Th2:active {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+.Tap_Button_Th2 {
+  background: rgb(255, 0, 0);
+}
+.Tap_Button_Th2 .Tap_Button_Th2 {
+  background: rgb(255, 0, 0);
+  color: rgb(149, 1, 1);
+}
+
+.Tap_Button_Th3 {
+  background: rgb(146, 144, 195);
+}
+.Tap_Button_Th3 .Tap_Button_Th2 {
+  background: rgb(146, 144, 195);
+  color: rgb(83, 92, 145);
+}
+
+.Tap_Button_Th4 {
+  background: rgb(114, 4, 85);
+}
+.Tap_Button_Th4 .Tap_Button_Th2 {
+  background: rgb(114, 4, 85);
+  color: rgb(145, 10, 103);
+}
+
+/*before * editado sobre limo buttons*/
+.boton-primario_Th, .boton-primario_Th4, .boton-primario_Th3, .boton-primario_Th2 {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: white;
+  background-color: rgb(142, 5, 194);
   color: #fff;
-  width: 50%;
-  height: 20px;
-  border: 2px solid black;
+  min-width: 20vh;
+  height: auto;
+  border: 2px solid #c333fa;
 }
-.boton-primario:hover {
-  background-color: #e6e6e6;
+.boton-primario_Th:hover, .boton-primario_Th4:hover, .boton-primario_Th3:hover, .boton-primario_Th2:hover {
+  background-color: #6a0490;
 }
-.boton-primario:hover {
+.boton-primario_Th:hover, .boton-primario_Th4:hover, .boton-primario_Th3:hover, .boton-primario_Th2:hover {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 10px;
@@ -383,39 +623,158 @@ button:active {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: rgb(92, 5, 185);
+  background-color: rgb(112, 11, 151);
   color: #fff;
   transition: 0.45s all ease-in;
 }
-.boton-primario:hover:hover {
-  background-color: #430487;
+.boton-primario_Th:hover:hover, .boton-primario_Th4:hover:hover, .boton-primario_Th3:hover:hover, .boton-primario_Th2:hover:hover {
+  background-color: #4d0867;
 }
-.boton-primario:after {
+.boton-primario_Th:after, .boton-primario_Th4:after, .boton-primario_Th3:after, .boton-primario_Th2:after {
   transition: 0.45s all ease-out;
 }
 
-.boton-secundario {
+.boton-primario_Th2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  border: 2px solid #ff6666;
+}
+.boton-primario_Th2:hover {
+  background-color: #cc0000;
+}
+.boton-primario_Th2:Hover {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(149, 1, 1);
+  color: #fff;
+}
+.boton-primario_Th2:Hover:hover {
+  background-color: #620101;
+}
+
+.boton-primario_Th3 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(146, 144, 195);
+  color: #fff;
+  border: 2px solid #d3d2e7;
+}
+.boton-primario_Th3:hover {
+  background-color: #716fb1;
+}
+.boton-primario_Th3:Hover {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(83, 92, 145);
+  color: #fff;
+}
+.boton-primario_Th3:Hover:hover {
+  background-color: #404771;
+}
+
+.boton-primario_Th4 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(114, 4, 85);
+  color: #fff;
+  border: 2px solid #d5079e;
+}
+.boton-primario_Th4:hover {
+  background-color: #410230;
+}
+.boton-primario_Th4:Hover {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(145, 10, 103);
+  color: #fff;
+}
+.boton-primario_Th4:Hover:hover {
+  background-color: #610745;
+}
+
+/*.boton-secundario * editado sobre limo*/
+.boton-secundario_Th, .boton-secundario_Th4, .boton-secundario_Th3, .boton-secundario_Th2 {
+  margin: 2%;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: #e74c3c;
+  background-color: rgb(142, 5, 194);
   color: #fff;
-  width: 50%;
-  height: 20px;
+  height: auto;
   border: none;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
 }
-.boton-secundario:hover {
-  background-color: #d62c1a;
+.boton-secundario_Th:hover, .boton-secundario_Th4:hover, .boton-secundario_Th3:hover, .boton-secundario_Th2:hover {
+  background-color: #6a0490;
+}
+
+.boton-secundario_Th2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+.boton-secundario_Th2:hover {
+  background-color: #cc0000;
+}
+
+.boton-secundario_Th3 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(146, 144, 195);
+  color: #fff;
+}
+.boton-secundario_Th3:hover {
+  background-color: #716fb1;
+}
+
+.boton-secundario_Th4 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(114, 4, 85);
+  color: #fff;
+}
+.boton-secundario_Th4:hover {
+  background-color: #410230;
 }
 
 /*button 3*/
-.button-3 {
+.button-3, .button-3_Th4, .button-3_Th3, .button-3_Th2, .button-3_Th {
   --b: 3px;
   --s: .45em;
-  --color: #373B44;
+  --color: White;
+  margin: 2%;
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
@@ -432,14 +791,59 @@ button:active {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.button-3:hover, .button-3:focus-visible {
+.button-3:hover, .button-3_Th4:hover, .button-3_Th3:hover, .button-3_Th2:hover, .button-3_Th:hover, .button-3:focus-visible, .button-3_Th4:focus-visible, .button-3_Th3:focus-visible, .button-3_Th2:focus-visible, .button-3_Th:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: 0.05em;
 }
-.button-3:active {
+.button-3:active, .button-3_Th4:active, .button-3_Th3:active, .button-3_Th2:active, .button-3_Th:active {
   background: var(--color);
-  color: #fff;
+  color: black;
+  font-weight: bolder;
+}
+
+.button-3_Th:hover, .button-3_Th:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(142, 5, 194);
+  outline-offset: 0.05em;
+}
+.button-3_Th:active {
+  background: rgb(142, 5, 194);
+  color: white;
+  font-weight: bolder;
+}
+
+.button-3_Th2:hover, .button-3_Th2:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(255, 0, 0);
+  outline-offset: 0.05em;
+}
+.button-3_Th2:active {
+  background: rgb(255, 0, 0);
+  color: white;
+  font-weight: bolder;
+}
+
+.button-3_Th3:hover, .button-3_Th3:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(146, 144, 195);
+  outline-offset: 0.05em;
+}
+.button-3_Th3:active {
+  background: rgb(146, 144, 195);
+  color: white;
+  font-weight: bolder;
+}
+
+.button-3_Th4:hover, .button-3_Th4:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(114, 4, 85);
+  outline-offset: 0.05em;
+}
+.button-3_Th4:active {
+  background: rgb(114, 4, 85);
+  color: white;
+  font-weight: bolder;
 }
 
 /*Paleta de colores A*/
