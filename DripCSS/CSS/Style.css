@@ -2556,6 +2556,158 @@ header a {
   align-self: flex-end;
 }
 
+/*//TIPOs DE TEXTO*/
+.my-text-1 {
+  font-size: 18px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-2 {
+  font-size: 18px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-3 {
+  font-size: 18px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-4 {
+  font-size: 18px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-5 {
+  font-size: 20px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-6 {
+  font-size: 20px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-7 {
+  font-size: 20px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-8 {
+  font-size: 20px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-9 {
+  font-size: 30px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-10 {
+  font-size: 30px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-11 {
+  font-size: 30px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-12 {
+  font-size: 30px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-13 {
+  font-size: 50px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-14 {
+  font-size: 50px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-15 {
+  font-size: 50px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-16 {
+  font-size: 50px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.sombra-basica {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-interior {
+  box-shadow: 0 0 5px 0 white;
+  box-shadow: inset 0 0 5px white;
+}
+
+.sombra-redondeada {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-contorno {
+  box-shadow: 0 0 0 2px white;
+}
+
+.sombra-sobreponer {
+  transition: box-shadow 0.3s ease;
+}
+.sombra-sobreponer:hover {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-enfocar {
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.sombra-enfocar:focus {
+  box-shadow: 0 0 5px 0 white;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
