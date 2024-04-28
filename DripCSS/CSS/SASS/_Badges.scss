@@ -39,26 +39,11 @@
     background: linear-gradient(45deg, #48d42b, #d3f803);
     border: 3px solid;
     box-shadow: 0 0 20px rgba(0, 78, 33, 0.747);
-}.badge1 {
-    background-color: blue;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-family: 'Cursive', sans-serif;
 }
-
-.badge2{
-    background-color: #3498db;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-family: 'Cursive', sans-serif;
-}
-.badge3{
-    
-    background-color: #e74c3c;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-family: 'Cursive', sans-serif;
+.badgeCorinto{
+    @extend .badge;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #d46c2b, #f8bb03);
+    border: 3px solid;
+    box-shadow: 0 0 20px rgba(0, 78, 33, 0.747);
 }
