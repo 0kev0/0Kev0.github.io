@@ -1,4 +1,5 @@
 @import 'Variables';
+
 //************************************** Tarejetas **************************************//
 //*Tarjeta 1*//
 .tarjeta {
@@ -25,6 +26,7 @@
             height: 100%;
             object-fit: cover;
         }
+
         h3 {
             position: absolute;
             bottom: 0;
@@ -35,6 +37,7 @@
             background: rgba(0, 0, 0, 0.4);
             text-align: center;
         }
+
         &:hover {
             transform: perspective(600px) rotateY(180deg);
             transition: .45s;
@@ -53,13 +56,14 @@
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
-        padding: 20px; 
+        padding: 20px;
         box-shadow: 0 5px 10px black;
 
         .link {
-            border-top: solid 1px white; 
+            border-top: solid 1px white;
             height: 50px;
             line-height: 50px;
+
             a {
                 color: white;
             }
@@ -79,9 +83,9 @@
             transform: perspective(600px) rotateY(0deg);
             transition: .45s;
         }
-       
+
     }
-    
+
     &:hover .front {
         transform: perspective(600px) rotateY(180deg);
         transition: .45s;
@@ -92,14 +96,16 @@
         transition: .45s;
     }
 }
+
 //*Tarjeta 2*//
-.card{
+.card {
     position: relative;
     width: 250px;
     height: 380px;
     border-radius: 10px;
-    box-shadow: 2px 3px 5px rgba(73,69,52,0.4);
-    .contenido{
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+
+    .contenido {
         position: relative;
         z-index: 90;
         width: 100%;
@@ -111,23 +117,23 @@
         padding: 20px;
         border-radius: 10px;
 
-        .img{
+        .img {
             height: 50%;
             margin-bottom: 20px;
             justify-content: center;
             align-items: center;
 
-            img{
+            img {
                 position: relative;
                 width: 150px;
                 height: 150px;
                 border-radius: 50%;
                 object-fit: cover;
-                box-shadow: 0 0 10px rgba(0,0,0,0.8);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
             }
         }
 
-        span{
+        span {
             position: absolute;
             width: 350px;
             height: 200px;
@@ -137,29 +143,33 @@
             left: -100px;
         }
 
-        h4{
+        h4 {
             font-size: 18px;
             color: black;
             margin-bottom: 5px;
         }
-        h6{
+
+        h6 {
             font-size: 13px;
             color: #5e2066;
-        
+
         }
-        p{
+
+        p {
             font-size: 13px;
             color: black;
             margin-top: 10px;
         }
-        p{
+
+        p {
             font-size: 13px;
             color: black;
             margin-top: 10px;
         }
-        
+
     }
-    .links{
+
+    .links {
         position: absolute;
         z-index: 100;
         width: 50px;
@@ -167,7 +177,7 @@
         flex-direction: column;
         gap: 20px;
         background: rgba(255, 255, 255, 0.5);
-        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
         padding: 20px;
         align-items: center;
         right: calc(100% + 20px);
@@ -176,7 +186,8 @@
         border-radius: 10px;
         opacity: 0;
     }
-    &:hover .links{
+
+    &:hover .links {
         right: calc(100% - 50px);
         opacity: 1;
         border-radius: 0 10px 10px 0;
@@ -184,11 +195,11 @@
 }
 
 //*Tarjeta 3*//
-@mixin gradiente{
+@mixin gradiente {
     background: linear-gradient(135deg, #2980b9, #2c3e50);
 }
 
-.wrapper{
+.wrapper {
     width: 100px;
     height: 100vh;
     display: flex;
@@ -196,14 +207,14 @@
     justify-content: center;
 }
 
-.container{
+.container {
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
 }
 
-.carta{
+.carta {
     width: 80px;
     border-radius: 75rem;
     background-size: cover;
@@ -213,15 +224,17 @@
     margin: 0 10px;
     display: flex;
     align-items: flex-end;
-    transition: 0.6s cubic-bezier(.20, -0.83,0,0.99);
-    box-shadow: 0px, 10px, 30px, -5px rgba(0,0,0,0.83);
+    transition: 0.6s cubic-bezier(.20, -0.83, 0, 0.99);
+    box-shadow: 0px, 10px, 30px, -5px rgba(0, 0, 0, 0.83);
     background: rgb(169, 92, 213);
+
     .row {
         color: white;
         display: flex;
         flex-wrap: nowrap;
     }
-    .icon{
+
+    .icon {
         background: #223;
         color: white;
         border-radius: 50%;
@@ -231,7 +244,8 @@
         align-items: center;
         margin: 15px;
     }
-    .descripcion{
+
+    .descripcion {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -242,27 +256,35 @@
         transform: translateY(30px);
         transition: all .3s ease;
 
-        p{
+        p {
             color: #b0b0b0;
             padding-top: 1px;
-        
+
         }
     }
 }
-.descripcion h4{
+
+.descripcion h4 {
     text-transform: uppercase;
 }
-input{
+
+.slider {
     display: none;
-}
-input:checked + label {
-    width: 600px;
-}
-input:checked + label .descripcion {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+
+    input:checked+label {
+        width: 600px;
+    }
+
+    input:checked+label .descripcion {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
 }
 
-.card[for="c1"], .card[for="c2"],.card[for="c3"], .card[for="c4"]{
+.card[for="c1"],
+.card[for="c2"],
+.card[for="c3"],
+.card[for="c4"] {
     @include gradiente;
 }
