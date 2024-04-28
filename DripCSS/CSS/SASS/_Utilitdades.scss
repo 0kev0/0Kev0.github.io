@@ -32,4 +32,182 @@
   
 
   
-  
+/*//TIPOs DE TEXTO*///
+
+
+
+
+// Definir las fuentes
+$fonts: (
+  Roboto: 'Roboto, sans-serif',
+  Montserrat: 'Montserrat, sans-serif',
+  OpenSans: 'Open Sans, sans-serif',
+  Lato: 'Lato, sans-serif'
+);
+
+// Utilidad para cambiar el tamaño del texto
+@mixin text-size($size, $font) {
+  font-size: map-get($FontSize, $size);
+  font-family: map-get($fonts, $font);
+}
+
+// Utilidad para cambiar el color del texto
+@mixin text-color($color) {
+  color: $color;
+}
+
+// Utilidad para cambiar el grosor del texto
+@mixin text-weight($weight) {
+  font-weight: $weight;
+}
+
+
+
+// Tamaños de fuente pequeño
+.my-text-1 {
+  @include text-size(pequeno, Roboto);
+  @include text-color(black); // Cambia el color del texto a negro
+  @include text-weight(normal); // Cambia el grosor del texto a normal
+}
+
+.my-text-2 {
+  @include text-size(pequeno, Montserrat);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-3 {
+  @include text-size(pequeno, OpenSans);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-4 {
+  @include text-size(pequeno, Lato);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+// Tamaños de fuente mediano
+.my-text-5 {
+  @include text-size(mediano, Roboto);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-6 {
+  @include text-size(mediano, Montserrat);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-7 {
+  @include text-size(mediano, OpenSans);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-8 {
+  @include text-size(mediano, Lato);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+// Tamaños de fuente grande
+.my-text-9 {
+  @include text-size(grande, Roboto);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-10 {
+  @include text-size(grande, Montserrat);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-11 {
+  @include text-size(grande, OpenSans);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-12 {
+  @include text-size(grande, Lato);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+// Tamaños de fuente extra grande
+.my-text-13 {
+  @include text-size(Xgrande, Roboto);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-14 {
+  @include text-size(Xgrande, Montserrat);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-15 {
+  @include text-size(Xgrande, OpenSans);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+.my-text-16 {
+  @include text-size(Xgrande, Lato);
+  @include text-color(black); 
+  @include text-weight(normal); 
+}
+
+// Utilidad para aplicar sombra a un elemento
+@mixin sombra($color, $desplazamiento-x, $desplazamiento-y, $desenfoque, $expansion) {
+  box-shadow: $desplazamiento-x $desplazamiento-y $desenfoque $expansion $color;
+}
+
+// Estilos de sombra predefinidos
+.sombra-basica {
+  @include sombra(white, 2px, 2px, 5px, 0);
+}
+
+.sombra-interior {
+  @include sombra(white, 0, 0, 5px, 0);
+  box-shadow: inset 0 0 5px white; 
+}
+
+.sombra-redondeada {
+  @include sombra(white, 2px, 2px, 5px, 0);
+}
+
+
+.sombra-contorno {
+  @include sombra(white, 0, 0, 0, 2px);
+}
+
+.sombra-sobreponer {
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    @include sombra(white, 2px, 2px, 5px, 0);
+  }
+}
+
+.sombra-enfocar {
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  &:focus {
+    @include sombra(white, 0, 0, 5px, 0);
+  }
+}
+
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+
