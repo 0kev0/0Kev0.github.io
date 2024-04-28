@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -685,7 +686,7 @@ button:active {
   text-transform: uppercase;
 }
 
-.slider {
+.slider input {
   display: none;
 }
 .slider input:checked + label {
@@ -2554,6 +2555,111 @@ header a {
 .self-right {
   margin-right: 10px;
   align-self: flex-end;
+}
+
+/*Redondear elementos*/
+.rounded-none {
+  border-radius: none;
+}
+
+.rounded-xms {
+  border-radius: 5px;
+}
+
+.rounded-sm {
+  border-radius: 10px;
+}
+
+.rounded-md {
+  border-radius: 30px;
+}
+
+.rounded-top-left {
+  border-top-left-radius: 20px;
+}
+
+.rounded-top-right {
+  border-top-right-radius: 20px;
+}
+
+.rounded-buttom-left {
+  border-bottom-left-radius: 20px;
+}
+
+.rounded-buttom-right {
+  border-bottom-right-radius: 20px;
+}
+
+.rounded-left {
+  border-left: 20px;
+}
+
+.rounded-rigth {
+  border-right: 20px;
+}
+
+.rounded-top {
+  border-top: 20px;
+}
+
+.rounded-buttom {
+  border-bottom: 20px;
+}
+
+.rounded-ovalo {
+  border-radius: 40px;
+  width: 200px;
+  height: 100px;
+}
+
+.rounded-circulo-pequeño {
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+.rounded-circulo-grande {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+/*ocultar elementos*/
+.ocultar {
+  display: none;
+}
+
+/*Canbiar color de fondo de los elementos*/
+.plta-uno-backgraund-A {
+  background: rgb(52, 52, 52);
+}
+
+.plta-uno-backgraund-B {
+  background: rgb(62, 6, 95);
+}
+
+.plta-dos-backgraund-A {
+  background: rgb(0, 0, 0);
+}
+
+.plta-dos-backgraund-B {
+  background: rgb(61, 0, 0);
+}
+
+.plta-tres-backgraund-A {
+  background-color: rgb(146, 144, 195);
+}
+
+.plta-tres-backgraund-B {
+  background: rgb(27, 26, 85);
+}
+
+.plta-cuatro-backgraund-A {
+  background: rgb(52, 52, 52);
+}
+
+.plta-cuatro-backgraund-B {
+  background: rgb(62, 6, 95);
 }
 
 /*Paleta de colores A*/

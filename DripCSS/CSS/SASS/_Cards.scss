@@ -1,5 +1,5 @@
-@import 'Variables';
 
+@import 'Variables';
 //************************************** Tarejetas **************************************//
 //*Tarjeta 1*//
 .tarjeta {
@@ -269,7 +269,10 @@
 }
 
 .slider {
-    display: none;
+    input{ 
+        display: none;
+    }
+   
 
     input:checked+label {
         width: 600px;
