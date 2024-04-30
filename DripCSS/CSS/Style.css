@@ -2302,6 +2302,8 @@ header a {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   overflow: hidden;
+  border: px solid black;
+  margin: 1%;
 }
 .nav ul, .nav2 ul {
   list-style-type: none;
@@ -2350,6 +2352,9 @@ header a {
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
+  display: flex;
+  justify-content: right;
+  margin: 1%;
 }
 .nav3 body {
   background-color: #fff59d;
@@ -2425,10 +2430,14 @@ header a {
   padding: 0;
   margin: 0;
   font-family: "Poppins", monospace;
+  display: flex;
+  justify-content: left;
+  margin: 1%;
 }
 .nav4 ul {
   list-style: none;
   background: #8c52ff;
+  margin: auto;
 }
 .nav4 ul li {
   display: inline-block;
