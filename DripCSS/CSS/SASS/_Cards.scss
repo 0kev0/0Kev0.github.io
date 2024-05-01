@@ -228,7 +228,6 @@
     transition: 0.6s cubic-bezier(.20, -0.83, 0, 0.99);
     box-shadow: 0px, 10px, 30px, -5px rgba(0, 0, 0, 0.83);
     background: rgb(169, 92, 213);
-
     .row {
         color: white;
         display: flex;
@@ -274,7 +273,6 @@
         display: none;
     }
    
-
     input:checked+label {
         width: 600px;
     }
