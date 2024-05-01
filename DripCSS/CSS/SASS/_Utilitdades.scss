@@ -499,31 +499,40 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   background-color: #f0f0f0;
   margin-bottom: 20px;
 }
-
-
-
+.text_Tema{
+  h1 {
+    margin-top: 10px;
+    font-family: map-get($map: $FontPack1, $key: Titulo);
+    text-shadow: -4px 0px $color-secundario;
+    display: inline-block;
+    height: auto;
+    color: $FontColorBase;
+    font-size: map-get($map: $FontSize, $key: Xgrande);
+    font-weight: bold;
+  }
+}
+.color-text{
+  color: red;
+}
 .centerTXT {
   text-align: center;
 }
-
-.pa {
-  padding: 20px;
+.pa{
+    padding: 20px;
 }
 
 .pa1 {
   padding-left: 10px;
 }
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-
-.GRID-col-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5%;
+.GRID-col-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
 }
 
 .GRID-col-2 {
