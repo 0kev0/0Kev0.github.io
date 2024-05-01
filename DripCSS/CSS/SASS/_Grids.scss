@@ -3,113 +3,116 @@
 @import 'Hovers';
 
 .grid1x3 {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "a b c d";
-    gap: $small;
-    align-items: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "a b c d";
+  gap: $small;
+  align-items: center;
 }
 
 .area-1x1 {
-    grid-area: a;
+  grid-area: a;
 }
 
 .area-1x2 {
-    grid-area: b;
+  grid-area: b;
 }
 
 .area-1x3 {
-    grid-area: c;
+  grid-area: c;
 }
 
 .area-1x4 {
-    grid-area: d;
+  grid-area: d;
 }
 
 .Bento_grid {
-    padding: $small;
-    margin: 5%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-        "A A A B B"
-        "A A A B B"
-        "C C X B B "
-        "C C D D D"
-        "C C D D D";
+  padding: $small;
+  margin: 5%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "A A A B B"
+    "A A A B B"
+    "C C X B B "
+    "C C D D D"
+    "C C D D D";
 
-    background: linear-gradient($color-secundario, $colorBg-secundario);
-    gap: 10px;
-    border-radius: 0px 12px 0px 12px;
+  background: linear-gradient($color-secundario, $colorBg-secundario);
+  gap: 10px;
+  border-radius: 0px 12px 0px 12px;
 }
 
 .bentoAx3 {
-    @extend .shadow-top;
-    @extend .div_hover_Scale_Up_Down;
-    margin: 10px;
-    border-radius: $estandar;
-    grid-area: A;
-    color: white;
-    background-color: RGB(0, 128, 255);
+  @extend .shadow-top;
+  @extend .div_hover_Scale_Up_Down;
+  margin: 10px;
+  border-radius: $estandar;
+  grid-area: A;
+  color: white;
+  background-color: RGB(0, 128, 255);
 }
 
 .bentoBx2 {
-    @extend .div_hover_Scale_Up_Down;
-    @extend .shadow-right;
-    
-    margin: 10px;
-    border-radius: $estandar;
-    grid-area: B;
-    color: white;
-    background-color: RGB(255, 0, 128);
+  @extend .div_hover_Scale_Up_Down;
+  @extend .shadow-right;
+
+  margin: 10px;
+  border-radius: $estandar;
+  grid-area: B;
+  color: white;
+  background-color: RGB(255, 0, 128);
 }
 
 .bentoCx3 {
-    @extend .div_hover_Scale_Up_Down;
-    @extend .shadow-left;
-    margin: 10px;
-    border-radius: $estandar;
-    grid-area: C;
-    color: white;
-    background-color: RGB(255, 128, 0);
+  @extend .div_hover_Scale_Up_Down;
+  @extend .shadow-left;
+  margin: 10px;
+  border-radius: $estandar;
+  grid-area: C;
+  color: white;
+  background-color: RGB(255, 128, 0);
 }
 
 .bentoDx3 {
-    @extend .div_hover_Scale_Up_Down;
-    @extend .shadow-bottom;
-    margin: 10px;
-    border-radius: $estandar;
-    grid-area: D;
-    color: white;
-    background-color: RGB(0, 168, 107);
+  @extend .div_hover_Scale_Up_Down;
+  @extend .shadow-bottom;
+  margin: 10px;
+  border-radius: $estandar;
+  grid-area: D;
+  color: white;
+  background-color: RGB(0, 168, 107);
 }
 
 .bentoXx1 {
-    grid-area: X;
-    color: white;
-    @extend.titulo;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1 {
-        font-size: larger;
-    }
+  grid-area: X;
+  color: white;
+  @extend.titulo;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: larger;
+  }
 }
 
 @mixin box-styling {
   border-radius: 10px;
-  border:2px solid rebeccapurple ;
+  border: 2px solid rebeccapurple;
+
   &:hover {
-      box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
   }
 
 }
+
 .container-padre {
   display: grid;
   border: 2px solid black;
@@ -124,7 +127,8 @@
   background: rgb(52, 52, 52);
   border-radius: 10px;
 
-  .box1, .box2 {
+  .box1,
+  .box2 {
     @include box-styling;
     grid-row: span 2;
   }
@@ -132,6 +136,7 @@
   .box1 {
     display: flex;
     grid-column: span 2;
+
     .box1_info {
       padding: 20px;
       align-items: center;
@@ -171,9 +176,10 @@
   gap: 10px;
   background: rgb(52, 52, 52);
   border-radius: 10px;
-  .box{
-      @include box-styling();
-      grid-column: span 1;
+
+  .box {
+    @include box-styling();
+    grid-column: span 1;
   }
 }
 
@@ -196,21 +202,25 @@
     grid-column: span 2;
     grid-row: 1 / span 3;
   }
+
   .boxs2 {
-      @include box-styling;
-      grid-row: 1/ span 2;
-      grid-column: span 2;
+    @include box-styling;
+    grid-row: 1/ span 2;
+    grid-column: span 2;
   }
+
   .boxs3 {
-      @include box-styling;
-      grid-row: span 1;
-      grid-column: span 2;
+    @include box-styling;
+    grid-row: span 1;
+    grid-column: span 2;
   }
-  .boxs4{
-      @include box-styling();
-      grid-column: span 6;
+
+  .boxs4 {
+    @include box-styling();
+    grid-column: span 6;
   }
 }
+
 /*
 //*Template 2 grid Conteiner*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Sedan:ital@0;1&display=swap');
@@ -219,9 +229,9 @@ $color2: rgb(112, 11, 151);
 $color1: rgb(83, 92, 145);
 
 .degradado {
-//background: linear-gradient(to right, $color1, $color2);
-width: 100%;
-height: 600;
+  //background: linear-gradient(to right, $color1, $color2);
+  width: 100%;
+  height: 600;
 }
 
 .layout {
@@ -229,7 +239,7 @@ height: 600;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
-  background-color:  #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .header {
@@ -257,15 +267,105 @@ height: 600;
 }
 
 .footer {
-  grid-column: 1 / -1; 
-  background-color:rgb(27, 26, 85);
-  color: rgb(146, 144, 195);;
+  grid-column: 1 / -1;
+  background-color: rgb(27, 26, 85);
+  color: rgb(146, 144, 195);
+  ;
   padding: 20px;
 }
 
 .layout {
-  .header { @extend .header; }
-  .sidebar { @extend .sidebar; }
-  .content { @extend .content; }
-  .footer { @extend .footer; }
+  .header {
+    @extend .header;
+  }
+
+  .sidebar {
+    @extend .sidebar;
+  }
+
+  .content {
+    @extend .content;
+  }
+
+  .footer {
+    @extend .footer;
+  }
+}
+
+.doc {
+  background-color: $GrayRdBg;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: .75fr 4fr 1fr;
+  grid-template-areas:
+    "Sidebar  Content Content";
+  margin: 0;
+}
+
+.Sidebar {
+  @extend .shadow-left;
+  padding-top: $small;
+  grid-area: Sidebar;
+  color: white;
+  background-color: lighten($color: $colorbg-primario, $amount: 20);
+  position: relative;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    list-style-type: none;
+
+    &:hover {
+      @extend .list_Letter_hover;
+      transition: .20s all ease-in;
+      border-radius: 4px;
+      background-color: darken($color: $color-primario, $amount: 20);
+      width: auto+10px;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  overflow-y: auto; 
+  scrollbar-width: thin;
+  scrollbar-color: lighten($color: $colorbg-primario, $amount: 20) transparent;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: lighten($color: $colorbg-primario, $amount: 20);
+    border-radius: 4px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: lighten($color: $colorbg-primario, $amount: 30);
+  }
+}
+
+.Content {
+  @extend .shadow-right;
+  border-radius: $estandar;
+  grid-area: Content;
+  color: white;
+  overflow-y: auto; /* Cambia "scroll" a "auto" */
+  scrollbar-width: none;
+}
+
+
+
+.ItemList {
+  @extend .shadow-right;
+  background-color: lighten($color: $colorbg-primario, $amount: 20);
+  grid-area: ItemList;
+  color: white;
 }

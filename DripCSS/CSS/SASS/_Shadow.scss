@@ -85,3 +85,7 @@
 {
     box-shadow: 0px 2px 0px 0px  lighten($color: $color, $amount: 25);
 }
+
+@mixin shadow-linael-bottom_imput_color ($color) {
+    box-shadow: 0px 1px 0px 0px  $color;
+  }

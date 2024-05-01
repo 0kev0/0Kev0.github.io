@@ -3,3 +3,25 @@
     margin-left: 10%;
     align-items: center;
 }
+
+.article-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.article-3-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.article-subrayado {
+    background-color: yellow;
+}
+
+.article-bordered {
+    border: 1px solid black;
+}
+
