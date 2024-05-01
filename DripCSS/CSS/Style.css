@@ -1548,7 +1548,7 @@
   text-transform: uppercase;
 }
 
-.slider {
+.slider input {
   display: none;
 }
 .slider input:checked + label {
@@ -3842,50 +3842,6 @@ header a {
 .self-right {
   margin-right: 10px;
   align-self: flex-end;
-}
-
-.GRID-row-1, .GRID-row-5, .GRID-row-4, .GRID-row-3, .GRID-row-2 {
-  display: grid;
-  gap: 5%;
-  grid-template-rows: 1fr;
-}
-
-.GRID-row-2 {
-  grid-template-rows: 1fr 1fr;
-}
-
-.GRID-row-3 {
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.GRID-row-4 {
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.GRID-row-5 {
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.GRID-col-1, .GRID-col-5, .GRID-col-4, .GRID-col-3, .GRID-col-2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5%;
-}
-
-.GRID-col-2 {
-  grid-template-columns: 1fr 1fr;
-}
-
-.GRID-col-3 {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.GRID-col-4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.GRID-col-5 {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*Paleta de colores A*/

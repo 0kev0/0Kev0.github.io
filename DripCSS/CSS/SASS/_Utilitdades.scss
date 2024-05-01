@@ -88,3 +88,84 @@
     @extend .GRID-col-1;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+/*Redondear elementos*/
+.rounded-none{
+    border-radius: none;
+}
+.rounded-xms{
+    border-radius: 5px;
+}
+.rounded-sm{
+    border-radius: 10px;
+}
+.rounded-md{
+    border-radius: 30px;
+}
+.rounded-top-left{
+    border-top-left-radius:20px
+}
+.rounded-top-right{
+    border-top-right-radius:20px
+}
+.rounded-buttom-left{
+    border-bottom-left-radius:20px
+}
+.rounded-buttom-right{
+    border-bottom-right-radius:20px
+}
+.rounded-left{
+    border-left: 20px;
+}
+.rounded-rigth{
+    border-right: 20px;
+}
+.rounded-top{
+    border-top: 20px;
+}
+.rounded-buttom{
+    border-bottom: 20px;
+}
+.rounded-ovalo{
+    border-radius: 40px;
+    width: 200px;
+    height: 100px;
+}
+.rounded-circulo-pequeño{
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+}
+.rounded-circulo-grande{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+}
+/*ocultar elementos*/
+.ocultar{
+    display: none;
+}
+/*Canbiar color de fondo de los elementos*/
+.plta-uno-backgraund-A{
+    background: $colorbg-primario;
+}
+.plta-uno-backgraund-B{
+    background: $colorBg-secundario;
+}
+.plta-dos-backgraund-A{
+    background: $colorbg-primarioB;
+}
+.plta-dos-backgraund-B{
+    background: $colorBg-secundarioB;
+}
+.plta-tres-backgraund-A{
+    background-color: $color-primarioC;
+}
+.plta-tres-backgraund-B{
+    background: $colorBg-secundarioC;
+}
+.plta-cuatro-backgraund-A{
+    background: $colorbg-primario;
+}
+.plta-cuatro-backgraund-B{
+    background: $colorBg-secundario;
+}
