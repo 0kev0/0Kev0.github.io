@@ -49,7 +49,7 @@ $color-secundario : rgb(112, 11, 151);
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
-background-color: $colorBg-secundarioC;  
+  background-color: $colorBg-secundarioC;  
 
   .logo{
     @extend .titulo;
@@ -70,89 +70,156 @@ background-color: $colorBg-secundarioC;
 
 .nav3{
   
-  margin: 0;
-  padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+  body{
+    background-color: #fff59d;
+  }
 
+  .header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+  }
 
-  a,button{
+  .header .logo{
     cursor: pointer;
+    order: 3;
+    margin-left: auto;
+    @extend .titulo;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+
+    &::first-letter {
+      color: $color-primarioC;
+      margin-right: 10px;
+      text-shadow: 3px 4px white;
+      font-size: 40px;
+   }
   }
 
-  nav{
-      position: absolute;
-      top: 100px;
-      right: 50px;
-      width: 250px;
+  .header nav{
+    order: 1;
   }
 
-  .navigation{
-      position: fixed;
-      right: -500px;
-      width: 350px;
-      height: 100%;
-      background-color: #000;
-      transition: .5s;
+  .header .nav-links{
+    list-style: none;
   }
 
-  .navigation ul li{
-      color: #fff;
-      text-align: right;
-      text-transform: uppercase;
-      list-style-type: none;
-      font-size: 1.5em;
-      padding: 20px 30px;
-      border-bottom: 1pt solid #252525;
+  .header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
   }
 
-  .hamburger, .bar{
-        position: fixed;
+  .header .nav-links li:nth-child(1){
+    padding: 0 20px 0 0;
   }
 
-  .hamburger{
-      display: block;
-      top: 5%;
-      left: 95%;
-      width: 30px;
-      height: 30px;
-      transform: translateY(-50%);
-      border: 0;
-      background: 0 0;
+  .header .nav-links li:hover{
+    transform: scale(1.1);
   }
 
-  .bar{
-      top: 3px;
-      background: #000;
-      width: 100%;
-      height: 4px;
-      transition: all .3s ease-in;
+  .header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
   }
 
-  #bar2{
-      top: 11px;
+  .header .nav-links li a:hover{
+    color: #ffbc0e;
   }
 
-  #bar3{
-      top: 19px;
+  .header .btn{
+    order: 2;
   }
 
-  .navigation.active{
-      right: 0;
+  .header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
   }
 
-  .hamburger.open #bar1{
-      background-color: #fff;
-      transform: rotate(45deg) translate(6px, 5px);
-  }
-
-  .hamburger.open #bar2{
-      background-color: transparent;
-  }
-
-  .hamburger.open #bar3{
-      background-color: #fff;
-      transform: rotate(-45deg) translate(6px, -5px);
+  .header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
   }
   
+}
+
+.nav4{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', monospace;
+
+  ul {
+    list-style: none;
+    background: #8c52ff;
+    margin:auto;
+  }
+
+  ul li {
+    display: inline-block;
+    position: relative;
+  }
+  .header .logo{
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+    @extend .titulo;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    &::first-letter {
+      color: $color-primarioC;
+      margin-right: 10px;
+      text-shadow: 3px 4px white;
+      font-size: 40px;
+   }
+  }
+
+  ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  ul li ul.drip li {
+    display: block;
+  }
+
+  ul li ul.drip {
+    width: 100%;
+    background: #8c52ff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+
+  ul li a:hover {
+    background: #6d30e9;
+  }
+
+  ul li:hover ul.drip {
+    display: block;
+  }
 }
 

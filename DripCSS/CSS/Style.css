@@ -23,6 +23,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Sedan:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -128,6 +164,26 @@
   align-items: center;
 }
 
+.article-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.article-3-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.article-subrayado {
+  background-color: yellow;
+}
+
+.article-bordered {
+  border: 1px solid black;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -137,16 +193,17 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
-.badge, .badge3, .badge2, .badge1 {
+.badge, .badgeCorinto, .badge3, .badge2, .badge1 {
   font-size: 1.4rem;
   font-weight: 500;
   position: relative;
   padding: 4px 12px;
   width: 200px;
 }
-.badge::before, .badge3::before, .badge2::before, .badge1::before {
+.badge::before, .badgeCorinto::before, .badge3::before, .badge2::before, .badge1::before {
   content: attr(data-badge);
   font-size: 14px;
   position: absolute;
@@ -202,6 +259,13 @@
   font-family: "Cursive", sans-serif;
 }
 
+.badgeCorinto {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(45deg, #d46c2b, #f8bb03);
+  border: 3px solid;
+  box-shadow: 0 0 20px rgba(0, 78, 33, 0.747);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -211,6 +275,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Bg-Base {
@@ -226,6 +291,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -236,7 +302,7 @@
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -244,7 +310,7 @@
   box-shadow: 0px -10px 0px 0px white;
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 10px 0px 0px 0px white;
 }
 
@@ -268,42 +334,391 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.my-button-rojo {
-  background-color: #ff0000;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: 2px white solid;
-  border-radius: 5px;
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(142, 5, 194);
 }
 
-.my-button-azul {
-  background-color: #0051ff;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: 2px white solid;
-  border-radius: 5px;
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.my-button-amarillo {
-  background-color: #ffea00;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: 2px white solid;
-  border-radius: 5px;
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.my-button-amarillo:hover {
-  background-color: bisque;
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
 }
 
-button {
+.tema {
+  font-size: 30px;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(142, 5, 194);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
+.buttontest, .button_Squear_Th, .button_Squear_Th4, .button_Squear_Th3, .button_Squear_Th2, .buttontest_Th4, .buttontest_Th3, .buttontest_Th2 {
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+  margin: 2%;
   font-family: monospace;
   font-size: 1.5rem;
   color: #FAFAFA;
@@ -315,37 +730,255 @@ button {
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
 }
-button:hover {
+.buttontest:hover, .button_Squear_Th:hover, .button_Squear_Th4:hover, .button_Squear_Th3:hover, .button_Squear_Th2:hover, .buttontest_Th4:hover, .buttontest_Th3:hover, .buttontest_Th2:hover {
   transition: 0.45s all ease-out;
   background: #820daf;
   transform: translate(1px, 1px);
 }
-button:active {
+.buttontest:active, .button_Squear_Th:active, .button_Squear_Th4:active, .button_Squear_Th3:active, .button_Squear_Th2:active, .buttontest_Th4:active, .buttontest_Th3:active, .buttontest_Th2:active {
   transition: 0.05s all ease-in;
   box-shadow: none;
   transform: translate(3px, 3px);
   font-weight: bold;
 }
 
-.button_Squear {
-  border-radius: 0px;
-  border: 0px;
-  font-family: "Quicksand";
-  background: #e60000;
-  box-shadow: 0px 2px 0px 0px #ff8080;
-  cursor: pointer;
-  margin: 30px 5px;
+.buttontest_Th2 {
+  background: rgb(149, 1, 1);
 }
-.button_Squear:hover {
+.buttontest_Th2:hover {
+  background: #ae0101;
+}
+
+.buttontest_Th3 {
+  background: rgb(83, 92, 145);
+}
+.buttontest_Th3:hover {
+  background: #5c66a1;
+}
+
+.buttontest_Th4 {
+  background: rgb(145, 10, 103);
+}
+.buttontest_Th4:hover {
+  background: #a90c78;
+}
+
+/*Buttons rounded*/
+.butontest_round, .butontest_round_Th4, .butontest_round_Th3, .butontest_round_Th2 {
+  margin: 2%;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+  font-family: Raleway;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: 2px solid #FAFAFA;
+  background: rgb(112, 11, 151);
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+}
+.butontest_round:hover, .butontest_round_Th4:hover, .butontest_round_Th3:hover, .butontest_round_Th2:hover {
   transition: 0.45s all ease-out;
-  background: #ff1a1a;
+  background: #820daf;
   transform: translate(1px, 1px);
 }
-.button_Squear:active {
+.butontest_round:active, .butontest_round_Th4:active, .butontest_round_Th3:active, .butontest_round_Th2:active {
   transition: 0.05s all ease-in;
   box-shadow: none;
   transform: translate(3px, 3px);
   font-weight: bold;
+}
+
+.butontest_round_Th2 {
+  display: inline-block;
+  background: rgb(149, 1, 1);
+}
+.butontest_round_Th2:hover {
+  background: #ff1a1a;
+}
+
+.butontest_round_Th3 {
+  background: rgb(83, 92, 145);
+}
+.butontest_round_Th3:hover {
+  background: #a2a1cc;
+}
+
+.butontest_round_Th4 {
+  background: rgb(145, 10, 103);
+}
+.butontest_round_Th4:hover {
+  background: #8b0567;
+}
+
+/*butontest_boxshadow_Th*/
+.butontest_boxshadow_Th, .butontest_boxshadow_Th4, .butontest_boxshadow_Th3, .butontest_boxshadow_Th2 {
+  margin: 5px;
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  height: 5vh;
+  width: auto;
+  padding: 5px 10px;
+  border: 2px solid #FAFAFA;
+  background: rgb(112, 11, 151);
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+}
+.butontest_boxshadow_Th:hover, .butontest_boxshadow_Th4:hover, .butontest_boxshadow_Th3:hover, .butontest_boxshadow_Th2:hover {
+  transition: 0.45s all ease-out;
+  background: #820daf;
+  transform: translate(1px, 1px);
+}
+.butontest_boxshadow_Th:active, .butontest_boxshadow_Th4:active, .butontest_boxshadow_Th3:active, .butontest_boxshadow_Th2:active {
+  transition: 0.05s all ease-in;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  font-weight: bold;
+}
+
+.butontest_boxshadow_Th2 {
+  background: rgb(149, 1, 1);
+}
+.butontest_boxshadow_Th2:hover {
+  background: #ff1a1a;
+}
+
+.butontest_boxshadow_Th3 {
+  background: rgb(83, 92, 145);
+}
+.butontest_boxshadow_Th3:hover {
+  background: #a2a1cc;
+}
+
+.butontest_boxshadow_Th4 {
+  background: rgb(145, 10, 103);
+}
+.butontest_boxshadow_Th4:hover {
+  background: #8b0567;
+}
+
+/*button_animated*/
+.button_animated_Th, .button_animated_Th4, .button_animated_Th3, .button_animated_Th2 {
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+  margin: 2%;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid rgb(7, 15, 43);
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: rgb(52, 52, 52);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+.button_animated_Th:before, .button_animated_Th4:before, .button_animated_Th3:before, .button_animated_Th2:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: rgb(142, 5, 194);
+  z-index: -1;
+}
+.button_animated_Th:hover, .button_animated_Th4:hover, .button_animated_Th3:hover, .button_animated_Th2:hover, .button_animated_Th:focus, .button_animated_Th4:focus, .button_animated_Th3:focus, .button_animated_Th2:focus {
+  color: white;
+}
+.button_animated_Th:hover:before, .button_animated_Th4:hover:before, .button_animated_Th3:hover:before, .button_animated_Th2:hover:before, .button_animated_Th:focus:before, .button_animated_Th4:focus:before, .button_animated_Th3:focus:before, .button_animated_Th2:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.button_animated_Th:active, .button_animated_Th4:active, .button_animated_Th3:active, .button_animated_Th2:active {
+  transform: scale(0.9);
+}
+
+.button_animated_Th2 {
+  color: rgb(0, 0, 0);
+}
+.button_animated_Th2:before {
+  background-color: rgb(255, 0, 0);
+}
+
+.button_animated_Th3 {
+  color: rgb(7, 15, 43);
+}
+.button_animated_Th3:before {
+  background-color: rgb(146, 144, 195);
+}
+
+.button_animated_Th4 {
+  color: rgb(3, 6, 55);
+}
+.button_animated_Th4:before {
+  background-color: rgb(114, 4, 85);
+}
+
+/*button_Squear*/
+.button_Squear_Th, .button_Squear_Th4, .button_Squear_Th3, .button_Squear_Th2 {
+  border-radius: 0px;
+  border: 0px;
+  font-family: "Quicksand";
+  background: #7c04a9;
+  box-shadow: 0px 2px 0px 0px #ca4cfa;
+  cursor: pointer;
+  margin: 30px 5px;
+  font-weight: 200;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+}
+.button_Squear_Th:hover, .button_Squear_Th4:hover, .button_Squear_Th3:hover, .button_Squear_Th2:hover {
+  transition: 0.45s all ease-out;
+  background: #a006db;
+  transform: translate(1px, 1px);
+  font-weight: 400;
+}
+.button_Squear_Th:active, .button_Squear_Th4:active, .button_Squear_Th3:active, .button_Squear_Th2:active {
+  transition: 0.05s all ease-in;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  font-weight: bold;
+}
+
+.button_Squear_Th2 {
+  background: #e60000;
+  box-shadow: 0px 2px 0px 0px #ff8080;
+}
+.button_Squear_Th2:hover {
+  background: #ff1a1a;
+}
+
+.button_Squear_Th3 {
+  background: #827fba;
+  box-shadow: 0px 2px 0px 0px #e3e3f0;
+}
+.button_Squear_Th3:hover {
+  background: #a2a1cc;
+}
+
+.button_Squear_Th4 {
+  background: #590343;
+  box-shadow: 0px 2px 0px 0px #ed08b1;
+}
+.button_Squear_Th4:hover {
+  background: #8b0567;
 }
 
 /*otras opciones de botones*/
@@ -362,22 +995,77 @@ button:active {
   background-color: #217dbb;
 }
 
-.boton-primario {
+/*Tap Button*/
+.Tap_Button, .Tap_Button_Th4, .Tap_Button_Th3, .Tap_Button_Th2 {
+  --button_radius: 0.75em;
+  height: 6vh;
+  width: 12vh;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: rgb(142, 5, 194);
+  box-shadow: 0px 2px 0px 0px white;
+}
+.Tap_Button .button_top, .Tap_Button_Th4 .button_top, .Tap_Button_Th3 .button_top, .Tap_Button_Th2 .button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: rgb(142, 5, 194);
+  color: rgb(112, 11, 151);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+.Tap_Button:hover, .Tap_Button_Th4:hover, .Tap_Button_Th3:hover, .Tap_Button_Th2:hover {
+  transform: translateY(-0.33em);
+}
+.Tap_Button:active, .Tap_Button_Th4:active, .Tap_Button_Th3:active, .Tap_Button_Th2:active {
+  transform: translateY(0);
+}
+
+.Tap_Button_Th2 {
+  background: rgb(255, 0, 0);
+}
+.Tap_Button_Th2 .Tap_Button_Th2 {
+  background: rgb(255, 0, 0);
+  color: rgb(149, 1, 1);
+}
+
+.Tap_Button_Th3 {
+  background: rgb(146, 144, 195);
+}
+.Tap_Button_Th3 .Tap_Button_Th2 {
+  background: rgb(146, 144, 195);
+  color: rgb(83, 92, 145);
+}
+
+.Tap_Button_Th4 {
+  background: rgb(114, 4, 85);
+}
+.Tap_Button_Th4 .Tap_Button_Th2 {
+  background: rgb(114, 4, 85);
+  color: rgb(145, 10, 103);
+}
+
+/*before * editado sobre limo buttons*/
+.boton-primario_Th, .boton-primario_Th4, .boton-primario_Th3, .boton-primario_Th2 {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: white;
+  background-color: rgb(142, 5, 194);
   color: #fff;
-  width: 50%;
-  height: 20px;
-  border: 2px solid black;
+  height: 6vh;
+  width: 12vh;
+  border: 2px solid #c333fa;
 }
-.boton-primario:hover {
-  background-color: #e6e6e6;
+.boton-primario_Th:hover, .boton-primario_Th4:hover, .boton-primario_Th3:hover, .boton-primario_Th2:hover {
+  background-color: #6a0490;
 }
-.boton-primario:hover {
+.boton-primario_Th:hover, .boton-primario_Th4:hover, .boton-primario_Th3:hover, .boton-primario_Th2:hover {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 10px;
@@ -386,39 +1074,159 @@ button:active {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: rgb(92, 5, 185);
+  background-color: rgb(112, 11, 151);
   color: #fff;
   transition: 0.45s all ease-in;
 }
-.boton-primario:hover:hover {
-  background-color: #430487;
+.boton-primario_Th:hover:hover, .boton-primario_Th4:hover:hover, .boton-primario_Th3:hover:hover, .boton-primario_Th2:hover:hover {
+  background-color: #4d0867;
 }
-.boton-primario:after {
+.boton-primario_Th:after, .boton-primario_Th4:after, .boton-primario_Th3:after, .boton-primario_Th2:after {
   transition: 0.45s all ease-out;
 }
 
-.boton-secundario {
+.boton-primario_Th2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  border: 2px solid #ff6666;
+}
+.boton-primario_Th2:hover {
+  background-color: #cc0000;
+}
+.boton-primario_Th2:Hover {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(149, 1, 1);
+  color: #fff;
+}
+.boton-primario_Th2:Hover:hover {
+  background-color: #620101;
+}
+
+.boton-primario_Th3 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(146, 144, 195);
+  color: #fff;
+  border: 2px solid #d3d2e7;
+}
+.boton-primario_Th3:hover {
+  background-color: #716fb1;
+}
+.boton-primario_Th3:Hover {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(83, 92, 145);
+  color: #fff;
+}
+.boton-primario_Th3:Hover:hover {
+  background-color: #404771;
+}
+
+.boton-primario_Th4 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(114, 4, 85);
+  color: #fff;
+  border: 2px solid #d5079e;
+}
+.boton-primario_Th4:hover {
+  background-color: #410230;
+}
+.boton-primario_Th4:Hover {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(145, 10, 103);
+  color: #fff;
+}
+.boton-primario_Th4:Hover:hover {
+  background-color: #610745;
+}
+
+/*.boton-secundario * editado sobre limo*/
+.boton-secundario_Th, .boton-secundario_Th4, .boton-secundario_Th3, .boton-secundario_Th2 {
+  margin: 2%;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: #e74c3c;
+  background-color: rgb(142, 5, 194);
   color: #fff;
-  width: 50%;
-  height: 20px;
+  height: 6vh;
+  width: 12vh;
   border: none;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
 }
-.boton-secundario:hover {
-  background-color: #d62c1a;
+.boton-secundario_Th:hover, .boton-secundario_Th4:hover, .boton-secundario_Th3:hover, .boton-secundario_Th2:hover {
+  background-color: #6a0490;
+}
+
+.boton-secundario_Th2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+.boton-secundario_Th2:hover {
+  background-color: #cc0000;
+}
+
+.boton-secundario_Th3 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(146, 144, 195);
+  color: #fff;
+}
+.boton-secundario_Th3:hover {
+  background-color: #716fb1;
+}
+
+.boton-secundario_Th4 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgb(114, 4, 85);
+  color: #fff;
+}
+.boton-secundario_Th4:hover {
+  background-color: #410230;
 }
 
 /*button 3*/
-.button-3 {
+.button-3, .button-3_Th4, .button-3_Th3, .button-3_Th2, .button-3_Th {
   --b: 3px;
   --s: .45em;
-  --color: #373B44;
+  --color: White;
+  margin: 2%;
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
@@ -435,14 +1243,74 @@ button:active {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.button-3:hover, .button-3:focus-visible {
+.button-3:hover, .button-3_Th4:hover, .button-3_Th3:hover, .button-3_Th2:hover, .button-3_Th:hover, .button-3:focus-visible, .button-3_Th4:focus-visible, .button-3_Th3:focus-visible, .button-3_Th2:focus-visible, .button-3_Th:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: 0.05em;
 }
-.button-3:active {
+.button-3:active, .button-3_Th4:active, .button-3_Th3:active, .button-3_Th2:active, .button-3_Th:active {
   background: var(--color);
-  color: #fff;
+  color: black;
+  font-weight: bolder;
+}
+
+.button-3_Th:hover, .button-3_Th:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(142, 5, 194);
+  outline-offset: 0.05em;
+}
+.button-3_Th:active {
+  background: rgb(142, 5, 194);
+  color: white;
+  font-weight: bolder;
+}
+
+.button-3_Th2:hover, .button-3_Th2:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(255, 0, 0);
+  outline-offset: 0.05em;
+}
+.button-3_Th2:active {
+  background: rgb(255, 0, 0);
+  color: white;
+  font-weight: bolder;
+}
+
+.button-3_Th3:hover, .button-3_Th3:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(146, 144, 195);
+  outline-offset: 0.05em;
+}
+.button-3_Th3:active {
+  background: rgb(146, 144, 195);
+  color: white;
+  font-weight: bolder;
+}
+
+.button-3_Th4:hover, .button-3_Th4:focus-visible {
+  --_p: 0px;
+  outline-color: rgb(114, 4, 85);
+  outline-offset: 0.05em;
+}
+.button-3_Th4:active {
+  background: rgb(114, 4, 85);
+  color: white;
+  font-weight: bolder;
+}
+
+.set_btnpequeno {
+  height: 6vh;
+  width: 12vh;
+}
+
+.set_btn_mediano {
+  height: 8vh;
+  width: 14vh;
+}
+
+.set_btn_grande {
+  height: 8vh;
+  width: 18vh;
 }
 
 /*Paleta de colores A*/
@@ -454,6 +1322,7 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .tarjeta {
@@ -717,8 +1586,183 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(142, 5, 194);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
 .container-regular {
   height: 60vh;
 }
@@ -782,6 +1826,7 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .info-container {
@@ -806,6 +1851,52 @@ button:active {
   color: rgb(112, 11, 151);
 }
 
+/*prefabs para la documentacion*/
+.Documentacion-seccion {
+  box-shadow: 0px 1px 0px 0px white;
+  margin-bottom: 4px;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.Documentacion-seccion h1 {
+  margin-top: 10px;
+  font-family: Roboto;
+  text-shadow: -4px 0px rgb(112, 11, 151);
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Documentacion-container {
+  background-color: rgb(52, 52, 52);
+  padding: 20px;
+}
+.Documentacion-container h2 {
+  font-family: Montserrat;
+  font-size: 35px;
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.Documentacion-info-container-content {
+  width: 90%;
+  background-color: #4e4e4e;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+.Documentacion-info-container-content h3 {
+  font-family: Roboto;
+  color: rgb(255, 255, 255);
+}
+.Documentacion-info-container-content p {
+  font-family: Open Sans;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -815,11 +1906,13 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Display-flex, .-left, .-center, .-col {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .-col {
@@ -857,6 +1950,7 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .welcome {
@@ -877,6 +1971,7 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 @font-face {
@@ -942,14 +2037,14 @@ button:active {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -958,8 +2053,6 @@ button:active {
 
 .tema {
   font-size: 30px;
-  margin-top: 10%;
-  margin-left: 10%;
 }
 .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -1011,6 +2104,38 @@ button:active {
   margin-left: 3%;
 }
 
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -1020,6 +2145,7 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /*Paleta de colores A*/
@@ -1031,6 +2157,7 @@ button:active {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 @font-face {
@@ -1096,14 +2223,14 @@ button:active {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -1112,8 +2239,6 @@ button:active {
 
 .tema {
   font-size: 30px;
-  margin-top: 10%;
-  margin-left: 10%;
 }
 .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -1163,6 +2288,38 @@ button:active {
   font-family: Roboto;
   text-wrap: wrap;
   margin-left: 3%;
+}
+
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
 }
 
 .TituloForm {
@@ -1484,6 +2641,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /*Paleta de colores A*/
@@ -1495,6 +2653,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -1505,7 +2664,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -1513,7 +2672,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px -10px 0px 0px white;
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 10px 0px 0px 0px white;
 }
 
@@ -1537,11 +2696,11 @@ input[type=radio]:checked:after {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -1775,6 +2934,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /*Paleta de colores A*/
@@ -1786,6 +2946,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -1796,7 +2957,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -1804,7 +2965,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px -10px 0px 0px white;
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 10px 0px 0px 0px white;
 }
 
@@ -1828,11 +2989,11 @@ input[type=radio]:checked:after {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -1845,6 +3006,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
@@ -1856,6 +3018,18 @@ input[type=radio]:checked:after {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.list_Letter_hover:hover, .Sidebar a:hover {
+  transition: 0.5s all ease-in-out;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0px 2px 10px rgb(142, 5, 194);
+}
+.list_Letter_hover:active, .Sidebar a:active:hover, .list_Letter_hover:after, .Sidebar a:hover:after {
+  transition: 0.3s all ease-out;
+  font-size: 16px;
+  color: whitesmoke;
 }
 
 .div_hover_Scale_Up_Down, .bentoDx3, .bentoCx3, .bentoBx2, .bentoAx3 {
@@ -1903,7 +3077,7 @@ input[type=radio]:checked:after {
 .Bento_grid {
   padding: 10px;
   margin: 5%;
-  height: auto;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -1972,12 +3146,14 @@ input[type=radio]:checked:after {
   background: rgb(52, 52, 52);
   border-radius: 10px;
 }
-.container-padre .box1, .container-padre .box2 {
+.container-padre .box1,
+.container-padre .box2 {
   border-radius: 10px;
   border: 2px solid rebeccapurple;
   grid-row: span 2;
 }
-.container-padre .box1:hover, .container-padre .box2:hover {
+.container-padre .box1:hover,
+.container-padre .box2:hover {
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
 }
 .container-padre .box1 {
@@ -2124,6 +3300,69 @@ input[type=radio]:checked:after {
   padding: 20px;
 }
 
+.doc {
+  background-color: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.75fr 4fr 1fr;
+  grid-template-areas: "Sidebar  Content Content";
+  margin: 0;
+}
+
+.Sidebar {
+  padding-top: 10px;
+  grid-area: Sidebar;
+  color: white;
+  background-color: #676767;
+  position: relative;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #676767 transparent;
+}
+.Sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  list-style-type: none;
+}
+.Sidebar a:hover {
+  transition: 0.2s all ease-in;
+  border-radius: 4px;
+  background-color: #45025f;
+  width: auto10px;
+}
+.Sidebar li {
+  list-style-type: none;
+}
+.Sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+.Sidebar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.Sidebar::-webkit-scrollbar-thumb {
+  background-color: #676767;
+  border-radius: 4px;
+}
+.Sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #818181;
+}
+
+.Content {
+  border-radius: 12px;
+  grid-area: Content;
+  color: white;
+  overflow-y: auto; /* Cambia "scroll" a "auto" */
+  scrollbar-width: none;
+}
+
+.ItemList {
+  background-color: #676767;
+  grid-area: ItemList;
+  color: white;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -2133,6 +3372,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 header {
@@ -2154,6 +3394,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
@@ -2165,6 +3406,18 @@ header a {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.list_Letter_hover:hover, .Sidebar a:hover {
+  transition: 0.5s all ease-in-out;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0px 2px 10px rgb(142, 5, 194);
+}
+.list_Letter_hover:active, .Sidebar a:active:hover, .list_Letter_hover:after, .Sidebar a:hover:after {
+  transition: 0.3s all ease-out;
+  font-size: 16px;
+  color: whitesmoke;
 }
 
 .div_hover_Scale_Up_Down, .bentoAx3, .bentoBx2, .bentoCx3, .bentoDx3 {
@@ -2192,6 +3445,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 @font-face {
@@ -2257,14 +3511,14 @@ header a {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .tema, .bentoXx1 {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -2273,8 +3527,6 @@ header a {
 
 .tema {
   font-size: 30px;
-  margin-top: 10%;
-  margin-left: 10%;
 }
 .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -2324,6 +3576,38 @@ header a {
   font-family: Roboto;
   text-wrap: wrap;
   margin-left: 3%;
+}
+
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
 }
 
 .nav, .nav2 {
@@ -2377,75 +3661,134 @@ header a {
 }
 
 .nav3 {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
 }
-.nav3 a, .nav3 button {
+.nav3 body {
+  background-color: #fff59d;
+}
+.nav3 .header {
+  background-color: #1b3039;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+.nav3 .header .logo {
   cursor: pointer;
+  order: 3;
+  margin-left: auto;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
 }
-.nav3 nav {
-  position: absolute;
-  top: 100px;
-  right: 50px;
-  width: 250px;
+.nav3 .header .logo::first-letter {
+  color: rgb(146, 144, 195);
+  margin-right: 10px;
+  text-shadow: 3px 4px white;
+  font-size: 40px;
 }
-.nav3 .navigation {
-  position: fixed;
-  right: -500px;
-  width: 350px;
-  height: 100%;
-  background-color: #000;
-  transition: 0.5s;
+.nav3 .header nav, .nav3 .layout .header nav, .layout .nav3 .header nav {
+  order: 1;
 }
-.nav3 .navigation ul li {
-  color: #fff;
-  text-align: right;
-  text-transform: uppercase;
-  list-style-type: none;
-  font-size: 1.5em;
-  padding: 20px 30px;
-  border-bottom: 1pt solid #252525;
+.nav3 .header .nav-links {
+  list-style: none;
 }
-.nav3 .hamburger, .nav3 .bar {
-  position: fixed;
+.nav3 .header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
 }
-.nav3 .hamburger {
+.nav3 .header .nav-links li:nth-child(1) {
+  padding: 0 20px 0 0;
+}
+.nav3 .header .nav-links li:hover {
+  transform: scale(1.1);
+}
+.nav3 .header .nav-links a {
+  font-size: 700;
+  color: #eceff1;
+  text-decoration: none;
+}
+.nav3 .header .nav-links li a:hover {
+  color: #ffbc0e;
+}
+.nav3 .header .btn {
+  order: 2;
+}
+.nav3 .header .btn button {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.nav3 .header .btn button:hover {
+  background-color: #e2f1f8;
+  color: #ffbc0e;
+  transform: scale(1.1);
+}
+
+.nav4 {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", monospace;
+}
+.nav4 ul {
+  list-style: none;
+  background: #8c52ff;
+  margin: auto;
+}
+.nav4 ul li {
+  display: inline-block;
+  position: relative;
+}
+.nav4 .header .logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav4 .header .logo::first-letter {
+  color: rgb(146, 144, 195);
+  margin-right: 10px;
+  text-shadow: 3px 4px white;
+  font-size: 40px;
+}
+.nav4 ul li a {
   display: block;
-  top: 5%;
-  left: 95%;
-  width: 30px;
-  height: 30px;
-  transform: translateY(-50%);
-  border: 0;
-  background: 0 0;
+  padding: 20px 25px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
 }
-.nav3 .bar {
-  top: 3px;
-  background: #000;
+.nav4 ul li ul.drip li {
+  display: block;
+}
+.nav4 ul li ul.drip {
   width: 100%;
-  height: 4px;
-  transition: all 0.3s ease-in;
+  background: #8c52ff;
+  position: absolute;
+  z-index: 999;
+  display: none;
 }
-.nav3 #bar2 {
-  top: 11px;
+.nav4 ul li a:hover {
+  background: #6d30e9;
 }
-.nav3 #bar3 {
-  top: 19px;
-}
-.nav3 .navigation.active {
-  right: 0;
-}
-.nav3 .hamburger.open #bar1 {
-  background-color: #fff;
-  transform: rotate(45deg) translate(6px, 5px);
-}
-.nav3 .hamburger.open #bar2 {
-  background-color: transparent;
-}
-.nav3 .hamburger.open #bar3 {
-  background-color: #fff;
-  transform: rotate(-45deg) translate(6px, -5px);
+.nav4 ul li:hover ul.drip {
+  display: block;
 }
 
 /*Paleta de colores A*/
@@ -2457,6 +3800,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Pd-lf-rg-small {
@@ -2483,6 +3827,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -2493,7 +3838,7 @@ header a {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .bentoCx3, .Sidebar {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -2501,7 +3846,7 @@ header a {
   box-shadow: 0px -10px 0px 0px white;
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .bentoBx2, .Content, .ItemList {
   box-shadow: 10px 0px 0px 0px white;
 }
 
@@ -2525,11 +3870,11 @@ header a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .bentoCx3 {
+.shadow-left, .bentoCx3, .Sidebar {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-right, .bentoBx2 {
+.shadow-right, .bentoBx2, .Content, .ItemList {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -2542,6 +3887,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .hidden {
@@ -2550,6 +3896,7 @@ header a {
 
 /* CSS */
 .img-set {
+  height: 80vh;
   margin-top: 5%;
   padding-top: 2px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -2560,6 +3907,13 @@ header a {
      object-fit: cover;
 }
 
+.codes {
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  scale: 0.8;
+}
+
 .self-start {
   margin-left: 10px;
   align-self: flex-start;
@@ -2568,6 +3922,88 @@ header a {
 .self-right {
   margin-right: 10px;
   align-self: flex-end;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenido {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenido {
+  transform: translate(10px, 10px);
+}
+
+.contenido {
+  border: 2px solid #000;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenido {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenido {
+  transform: translate(10px, 10px);
+}
+
+.contenido {
+  border: 2px solid #000;
+}
+
+.GRID-row-1, .GRID-row-5, .GRID-row-4, .GRID-row-3, .GRID-row-2 {
+  display: grid;
+  gap: 5%;
+  grid-template-rows: 1fr;
+}
+
+.GRID-row-2 {
+  grid-template-rows: 1fr 1fr;
+}
+
+.GRID-row-3 {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.GRID-row-4 {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.GRID-row-5 {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.GRID-col-1, .GRID-col-5, .GRID-col-4, .GRID-col-3, .GRID-col-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+}
+
+.GRID-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.GRID-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.GRID-col-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.GRID-col-5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*Redondear elementos*/
@@ -2675,60 +4111,6 @@ header a {
   background: rgb(62, 6, 95);
 }
 
-.centerTXT {
-  text-align: center;
-}
-
-.pa {
-  padding: 20px;
-}
-
-.pa1 {
-  padding-left: 10px;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.GRID-col-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5%;
-}
-
-.GRID-col-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-col-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-col-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-col-5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-row-1 {
-  display: grid;
-  gap: 5%;
-  grid-template-rows: 1fr;
-}
-
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -2738,6 +4120,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /* Pie de Página */
