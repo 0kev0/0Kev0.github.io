@@ -1,3 +1,28 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -137,6 +162,26 @@
   align-items: center;
 }
 
+.article-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.article-3-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.article-subrayado {
+  background-color: yellow;
+}
+
+.article-bordered {
+  border: 1px solid black;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -146,6 +191,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .badge, .badge3, .badge2, .badge1 {
@@ -220,6 +266,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Bg-Base {
@@ -235,6 +282,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -285,7 +333,382 @@
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(255, 255, 255);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+@font-face {
+  font-family: "Open Sans";
+  src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
+}
+.Font-base {
+  color: rgb(255, 255, 255);
+}
+
+.letter-Gradient {
+  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+  color: rgb(142, 5, 194);
+  margin-right: 10px;
+  text-shadow: 3px 6px white;
+  font-size: 125px;
+}
+
+.tema {
+  font-size: 30px;
+}
+.tema::first-letter {
+  color: rgb(142, 5, 194);
+  text-shadow: 2px 3px white;
+  font-size: 50px;
+}
+
+.temasm {
+  text-shadow: 1px 3px black;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Poppins;
+}
+.temasm::first-letter {
+  font-size: 18px;
+}
+
+.contenido {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido-article {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.contenido-article::first-letter {
+  font-weight: bolder;
+  color: rgb(112, 11, 151);
+  font-size: 40px;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.li-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Roboto;
+  text-wrap: wrap;
+  margin-left: 3%;
+}
+
+.Font_Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: inline-block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
 .buttontest, .button_Squear_Th, .button_Squear_Th4, .button_Squear_Th3, .button_Squear_Th2, .buttontest_Th4, .buttontest_Th3, .buttontest_Th2 {
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
   margin: 2%;
   font-family: monospace;
   font-size: 1.5rem;
@@ -334,13 +757,15 @@
 /*Buttons rounded*/
 .butontest_round, .butontest_round_Th4, .butontest_round_Th3, .butontest_round_Th2 {
   margin: 2%;
-  font-family: monospace;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+  font-family: Raleway;
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
   padding: 5px 10px;
-  border-radius: 25px 25px 25px 25px;
-  width: 15vh;
+  border-radius: 25px;
   border: 2px solid #FAFAFA;
   background: rgb(112, 11, 151);
   box-shadow: 3px 3px #fafafa;
@@ -359,6 +784,7 @@
 }
 
 .butontest_round_Th2 {
+  display: inline-block;
   background: rgb(149, 1, 1);
 }
 .butontest_round_Th2:hover {
@@ -386,8 +812,9 @@
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
+  height: 5vh;
+  width: auto;
   padding: 5px 10px;
-  width: 15vh;
   border: 2px solid #FAFAFA;
   background: rgb(112, 11, 151);
   box-shadow: 3px 3px #fafafa;
@@ -428,6 +855,9 @@
 
 /*button_animated*/
 .button_animated_Th, .button_animated_Th4, .button_animated_Th3, .button_animated_Th2 {
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
   margin: 2%;
   font-size: 18px;
   letter-spacing: 2px;
@@ -501,6 +931,9 @@
   cursor: pointer;
   margin: 30px 5px;
   font-weight: 200;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: 6vh;
+  width: auto; /* El ancho se ajustará automáticamente al texto */
 }
 .button_Squear_Th:hover, .button_Squear_Th4:hover, .button_Squear_Th3:hover, .button_Squear_Th2:hover {
   transition: 0.45s all ease-out;
@@ -555,10 +988,9 @@
 
 /*Tap Button*/
 .Tap_Button, .Tap_Button_Th4, .Tap_Button_Th3, .Tap_Button_Th2 {
-  /* Variables */
   --button_radius: 0.75em;
-  height: 7vh;
-  width: 8VH;
+  height: 6vh;
+  width: 12vh;
   font-size: 17px;
   font-weight: bold;
   border: none;
@@ -578,11 +1010,9 @@
   transition: transform 0.1s ease;
 }
 .Tap_Button:hover, .Tap_Button_Th4:hover, .Tap_Button_Th3:hover, .Tap_Button_Th2:hover {
-  /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
 }
 .Tap_Button:active, .Tap_Button_Th4:active, .Tap_Button_Th3:active, .Tap_Button_Th2:active {
-  /* Push the button downwards when pressed */
   transform: translateY(0);
 }
 
@@ -619,8 +1049,8 @@
   transition: background-color 0.3s ease;
   background-color: rgb(142, 5, 194);
   color: #fff;
-  min-width: 20vh;
-  height: auto;
+  height: 6vh;
+  width: 12vh;
   border: 2px solid #c333fa;
 }
 .boton-primario_Th:hover, .boton-primario_Th4:hover, .boton-primario_Th3:hover, .boton-primario_Th2:hover {
@@ -734,7 +1164,8 @@
   transition: background-color 0.3s ease;
   background-color: rgb(142, 5, 194);
   color: #fff;
-  height: auto;
+  height: 6vh;
+  width: 12vh;
   border: none;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
 }
@@ -858,6 +1289,21 @@
   font-weight: bolder;
 }
 
+.set_btnpequeno {
+  height: 6vh;
+  width: 12vh;
+}
+
+.set_btn_mediano {
+  height: 8vh;
+  width: 14vh;
+}
+
+.set_btn_grande {
+  height: 8vh;
+  width: 18vh;
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -867,6 +1313,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .tarjeta {
@@ -1128,6 +1575,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /*Paleta de colores A*/
@@ -1139,6 +1587,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 @font-face {
@@ -1288,6 +1737,19 @@
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
 }
 
 .container-regular {
@@ -1353,6 +1815,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .info-container {
@@ -1382,7 +1845,6 @@
   box-shadow: 0px 1px 0px 0px white;
   margin-bottom: 4px;
   padding-left: 5%;
-  padding-right: 5%;
   padding-top: 2%;
 }
 .Documentacion-seccion h1 {
@@ -1410,6 +1872,7 @@
 }
 
 .Documentacion-info-container-content {
+  width: 90%;
   background-color: #4e4e4e;
   padding: 10px;
   border: 2px solid #ffffff;
@@ -1432,11 +1895,13 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Display-flex, .-left, .-center, .-col {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .-col {
@@ -1474,6 +1939,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .welcome {
@@ -1494,6 +1960,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 @font-face {
@@ -1645,6 +2112,19 @@
   padding-top: 2px;
 }
 
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -1654,6 +2134,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /*Paleta de colores A*/
@@ -1665,6 +2146,7 @@
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 @font-face {
@@ -1814,6 +2296,19 @@
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
+}
+
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
 }
 
 .TituloForm {
@@ -2135,6 +2630,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /*Paleta de colores A*/
@@ -2146,6 +2642,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -2426,6 +2923,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 /*Paleta de colores A*/
@@ -2437,6 +2935,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -2496,6 +2995,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
@@ -2856,6 +3356,7 @@ input[type=radio]:checked:after {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 header {
@@ -2877,6 +3378,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
@@ -2922,6 +3424,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 @font-face {
@@ -3073,6 +3576,19 @@ header a {
   padding-top: 2px;
 }
 
+.coment {
+  display: inline;
+}
+
+.coment_green {
+  display: inline;
+  color: rgb(0, 179, 0);
+}
+
+.code {
+  color: rgb(0, 179, 0);
+}
+
 .nav, .nav2 {
   display: flex;
   justify-content: center;
@@ -3204,6 +3720,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .Pd-lf-rg-small {
@@ -3230,6 +3747,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .shadow-bottom, .bentoDx3 {
@@ -3289,6 +3807,7 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
 .hidden {
@@ -3306,6 +3825,13 @@ header a {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.codes {
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  scale: 0.8;
 }
 
 .self-start {
@@ -3371,5 +3897,6 @@ header a {
 /*Heigths*/
 /*Width*/
 /*tamanos de paddings*/
+/*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*//*# sourceMappingURL=Style.css.map */

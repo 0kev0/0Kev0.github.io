@@ -7,7 +7,6 @@
 
 /* CSS */
 .img-set {
-
     height: 80vh;
     margin-top: 5%;
     padding-top: 2px;
@@ -15,9 +14,14 @@
     background-image: url('/DripCSS/IMG/metro\ .jpg');
     background-size: cover;
     object-fit: cover;
-
 }
 
+.codes
+{
+    height: 50%;
+    object-fit: contain;
+    scale: .8;
+}
 
 .self-start {
     margin-left: 10px;

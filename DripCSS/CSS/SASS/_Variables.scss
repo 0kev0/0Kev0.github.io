@@ -42,6 +42,10 @@ $inputWithSizes : ("Xpequeno": 10%, "pequeno": 15%, "mediano": 20%, "grande": 50
 /*tamanos de paddings*/
 $PaddingSizes : ("Xpequeno": 2%, "pequeno": 5%, "mediano": 8%, "grande": 10%, "Xgrande": 15%);
 
+/*tamanos de Buttons*/
+$BtHeight : ("pequeno": 6vh, "mediano": 8vh, "grande": 10vh, "Xgrande": 12vh);
+$BtWidth : ( "pequeno": 10vh, "mediano": 12vh, "grande": 14vh, "Xgrande": 18vh);
+
 $small: 10px;
 $meduium: 15px;
 $large: 20px;

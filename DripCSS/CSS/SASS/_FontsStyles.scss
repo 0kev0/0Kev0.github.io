@@ -122,6 +122,7 @@ $FontPack4: ('Titulo': Playfair Display, 'Tema': Merriweather, 'Texto': Oswald);
 .tema {
     @extend .titulo;
     font-size: map-get($map: $FontSize, $key: "grande");
+
     &::first-letter {
         color: $color-primario;
         text-shadow: 2px 3px white;
@@ -176,23 +177,36 @@ $FontPack4: ('Titulo': Playfair Display, 'Tema': Merriweather, 'Texto': Oswald);
     margin-left: 3%;
 }
 
-.Font_Tema
-{
+.Font_Tema {
     display: inline-block;
     height: auto;
     color: $FontColorBase;
-    font-size: map-get($map: $FontSize, $key: Xgrande );
+    font-size: map-get($map: $FontSize, $key: Xgrande);
     font-weight: bold;
     padding-top: 10px;
 }
 
-.Sub-Tema
-{
+.Sub-Tema {
     display: inline-block;
     height: auto;
     color: $FontColorBase;
-    font-size: map-get($map: $FontSize, $key: Xgrande );
+    font-size: map-get($map: $FontSize, $key: Xgrande);
     font-weight: bold;
     padding-left: 2px;
     padding-top: 2px;
+}
+
+.coment {
+    display: inline;
+}
+
+.coment_green {
+    display: inline;
+    color: rgb(0, 179, 0);
+}
+
+.code
+{
+
+        color: rgb(0, 179, 0);
 }

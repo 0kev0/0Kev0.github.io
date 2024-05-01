@@ -1,6 +1,19 @@
 @import 'Shadow';
+@import 'Variables';
+@import 'FontsStyles';
+
+@import 'Variables';
+@import 'FontsStyles';
+
+
+
+
+
 
 .buttontest {
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: map-get($map: $BtHeight, $key: pequeno);
+  width: auto; /* El ancho se ajustará automáticamente al texto */
   margin: 2%;
   font-family: monospace;
   font-size: 1.5rem;
@@ -26,6 +39,7 @@
     font-weight: bold;
   }
 }
+
 
 .buttontest_Th2 {
   @extend .buttontest;
@@ -57,26 +71,26 @@
 /*Buttons rounded*/
 
 .butontest_round {
-  margin: 2%;
 
-  font-family: monospace;
+  margin: 2%;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: map-get($map: $BtHeight, $key: pequeno);
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+  font-family: map-get($map: $FontPack2, $key: Tema );
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
   padding: 5px 10px;
-  border-radius: 25px 25px 25px 25px;
-  width: 15vh;
+  border-radius: 25px;
   border: 2px solid #FAFAFA;
   background: $color-secundario;
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
-
   &:hover {
     transition: .45s all ease-out;
     background: lighten($color: $color-secundario, $amount: 5);
     transform: translate(1px, 1px);
   }
-
   &:active {
     transition: .05s all ease-in;
     box-shadow: none;
@@ -87,6 +101,8 @@
 
 .butontest_round_Th2 {
   @extend .butontest_round;
+  display: inline-block;
+
   background: $color-secundarioB;
 
   &:hover {
@@ -121,8 +137,9 @@
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
+  height: 5vh;
+  width: auto;
   padding: 5px 10px;
-  width: 15vh;
   border: 2px solid #FAFAFA;
   background: $color-secundario;
   box-shadow: 3px 3px #fafafa;
@@ -171,7 +188,10 @@
 
 /*button_animated*/
 .button_animated_Th {
-  margin: 2%;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: map-get($map: $BtHeight, $key: pequeno);
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+    margin: 2%;
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -224,6 +244,7 @@
 .button_animated_Th2 {
   @extend .button_animated_Th;
   color: $colorbg-primarioB;
+  
 
   &:before {
     background-color: $color-primarioB;
@@ -259,6 +280,9 @@
   cursor: pointer;
   margin: 30px 5px;
   font-weight: 200;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  height: map-get($map: $BtHeight, $key: pequeno);
+  width: auto; /* El ancho se ajustará automáticamente al texto */
 
   &:hover {
     transition: .45s all ease-out;
@@ -286,6 +310,8 @@
 
   }
 }
+
+
 
 .button_Squear_Th3 {
   @extend .button_Squear_Th;
@@ -336,11 +362,10 @@ $color-boton-defecto: #3498db;
 /*Tap Button*/
 
 .Tap_Button {
-  /* Variables */
   --button_radius: 0.75em;
 
-  height: 7vh;
-  width: 8VH;
+  height:map-get($map: $BtHeight, $key:pequeno );
+  width: map-get($map: $BtWidth, $key:mediano );
   font-size: 17px;
   font-weight: bold;
   border: none;
@@ -361,12 +386,10 @@ $color-boton-defecto: #3498db;
   }
 
   &:hover {
-    /* Pull the button upwards when hovered */
     transform: translateY(-0.33em);
   }
 
   &:active {
-    /* Push the button downwards when pressed */
     transform: translateY(0);
   }
 }
@@ -407,8 +430,8 @@ $color-boton-defecto: #3498db;
 /*before * editado sobre limo buttons*/
 .boton-primario_Th {
   @include boton-estilos($color-primario, 10px);
-  min-width: 20vh;
-  height: auto;
+  height:map-get($map: $BtHeight, $key:pequeno );
+  width: map-get($map: $BtWidth, $key:mediano );
   border: 2px solid lighten($color: $color-primario, $amount: 20);
 
   &:hover {
@@ -459,8 +482,8 @@ $color-boton-defecto: #3498db;
 .boton-secundario_Th {
   margin: 2%;
   @include boton-estilos($color-primario, 20px);
-  //width: 50%;
-  height: auto;
+  height:map-get($map: $BtHeight, $key:pequeno );
+  width: map-get($map: $BtWidth, $key:mediano );
   border: none;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
 }
@@ -588,4 +611,21 @@ $color-boton-defecto: #3498db;
     color: white;
     font-weight: bolder;
   }
+}
+
+
+
+.set_btnpequeno {
+  height: map-get($map: $BtHeight, $key: pequeno);
+  width: map-get($map: $BtWidth, $key: mediano);
+}
+
+.set_btn_mediano {
+  height: map-get($map: $BtHeight, $key: mediano);
+  width: map-get($map: $BtWidth, $key: grande);
+}
+
+.set_btn_grande {
+  height: map-get($map: $BtHeight, $key: mediano);
+  width: map-get($map: $BtWidth, $key: Xgrande);
 }
