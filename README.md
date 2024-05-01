@@ -12,7 +12,7 @@ Drip_CSS es una biblioteca de estilos y componentes CSS diseñada para facilitar
 - Angel Osmin Ramirez Berrios (RB21025)
 - Diego José Morataya Chávez (MC21119)
 - Kevin Israel Rodriguez Rivera (RR19118)
-- Rafael Humberto Lino Lovo (22017)
+- Rafael Humberto Lino Lovo (LL22017)
 
 ## Versión
 
