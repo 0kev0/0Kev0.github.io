@@ -1768,8 +1768,12 @@
   transition: 0.6s cubic-bezier(0.2, -0.83, 0, 0.99);
   box-shadow: 0px, 10px, 30px, -5px rgba(0, 0, 0, 0.83);
   background: rgb(169, 92, 213);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+}
+.carta img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carta .row {
   margin-top: 0;
@@ -2253,6 +2257,8 @@
 }
 
 .Documentacion-info-container-content {
+  margin-bottom: 2%;
+  margin-top: 2%;
   width: 90%;
   background-color: #4e4e4e;
   padding: 10px;
@@ -3824,7 +3830,7 @@ input[type=radio]:checked:after {
 .container-padre {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -3897,7 +3903,7 @@ input[type=radio]:checked:after {
 .container-padre2 {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -5188,6 +5194,10 @@ header a {
   height: 100px;
   background-color: #f0f0f0;
   margin-bottom: 20px;
+}
+
+.color-whigt {
+  color: white;
 }
 
 .centerTXT {
