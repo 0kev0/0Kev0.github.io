@@ -302,10 +302,8 @@ $color1: rgb(83, 92, 145);
     "Sidebar  Content Content";
   margin: 0;
 }
-
-.Sidebar {
+.Sidebar_content {
   @extend .shadow-left;
-  padding-top: $small;
   grid-area: Sidebar;
   color: white;
   background-color: lighten($color: $colorbg-primario, $amount: 20);
@@ -326,8 +324,13 @@ $color1: rgb(83, 92, 145);
     }
   }
 
+  ul {
+    padding-left: 0px;
+  }
+
   li {
     list-style-type: none;
+    padding-left: 20px;
   }
 
   overflow-y: auto; 
@@ -351,6 +354,7 @@ $color1: rgb(83, 92, 145);
     background-color: lighten($color: $colorbg-primario, $amount: 30);
   }
 }
+
 
 .Content {
   @extend .shadow-right;

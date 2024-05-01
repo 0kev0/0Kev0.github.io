@@ -302,7 +302,7 @@
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -334,7 +334,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -418,6 +418,42 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Titulo1 {
+  font-family: Lato;
+}
+
+.Tema1 {
+  font-family: Raleway;
+}
+
+.contenido1 {
+  font-family: Source Sans Pro;
+}
+
+.Titulo2 {
+  font-family: Playfair Display;
+}
+
+.Tema2 {
+  font-family: Merriweather;
+}
+
+.contenido2 {
+  font-family: Oswald;
+}
+
+.Titulo3 {
+  font-family: Poppins;
+}
+
+.Tema3 {
+  font-family: Nunito;
+}
+
+.contenido3 {
+  font-family: Quicksand;
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
@@ -429,9 +465,17 @@
   -webkit-text-fill-color: transparent;
 }
 
+.texto-sombra {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -439,8 +483,8 @@
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -475,7 +519,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -491,13 +535,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -505,11 +549,19 @@
   padding-top: 10px;
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -604,6 +656,42 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Titulo1 {
+  font-family: Lato;
+}
+
+.Tema1 {
+  font-family: Raleway;
+}
+
+.contenido1 {
+  font-family: Source Sans Pro;
+}
+
+.Titulo2 {
+  font-family: Playfair Display;
+}
+
+.Tema2 {
+  font-family: Merriweather;
+}
+
+.contenido2 {
+  font-family: Oswald;
+}
+
+.Titulo3 {
+  font-family: Poppins;
+}
+
+.Tema3 {
+  font-family: Nunito;
+}
+
+.contenido3 {
+  font-family: Quicksand;
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
@@ -615,9 +703,17 @@
   -webkit-text-fill-color: transparent;
 }
 
+.texto-sombra {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -625,8 +721,8 @@
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -661,7 +757,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -677,13 +773,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -691,11 +787,19 @@
   padding-top: 10px;
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -769,7 +873,7 @@
   display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
   height: 6vh;
   width: auto; /* El ancho se ajustará automáticamente al texto */
-  font-family: Raleway;
+  font-family: Merriweather;
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
@@ -1653,6 +1757,42 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Titulo1 {
+  font-family: Lato;
+}
+
+.Tema1 {
+  font-family: Raleway;
+}
+
+.contenido1 {
+  font-family: Source Sans Pro;
+}
+
+.Titulo2 {
+  font-family: Playfair Display;
+}
+
+.Tema2 {
+  font-family: Merriweather;
+}
+
+.contenido2 {
+  font-family: Oswald;
+}
+
+.Titulo3 {
+  font-family: Poppins;
+}
+
+.Tema3 {
+  font-family: Nunito;
+}
+
+.contenido3 {
+  font-family: Quicksand;
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
@@ -1664,9 +1804,17 @@
   -webkit-text-fill-color: transparent;
 }
 
+.texto-sombra {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -1674,8 +1822,8 @@
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -1710,7 +1858,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -1726,13 +1874,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -1740,11 +1888,19 @@
   padding-top: 10px;
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -1858,15 +2014,19 @@
   padding-left: 5%;
   padding-top: 2%;
 }
-.Documentacion-seccion h1 {
+
+.Titulo_special {
   margin-top: 10px;
-  font-family: Roboto;
+  font-family: Lato;
   text-shadow: -4px 0px rgb(112, 11, 151);
-  display: inline-block;
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
+}
+.Titulo_special::first-letter {
+  font-size: 50px;
 }
 
 .Documentacion-container {
@@ -1874,9 +2034,9 @@
   padding: 20px;
 }
 .Documentacion-container h2 {
-  font-family: Montserrat;
+  font-family: Raleway;
   font-size: 35px;
-  display: inline-block;
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -1890,11 +2050,11 @@
   border-radius: 4px;
 }
 .Documentacion-info-container-content h3 {
-  font-family: Roboto;
+  font-family: Lato;
   color: rgb(255, 255, 255);
 }
 .Documentacion-info-container-content p {
-  font-family: Open Sans;
+  font-family: Source Sans Pro;
 }
 
 /*Paleta de colores A*/
@@ -2026,6 +2186,42 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Titulo1 {
+  font-family: Lato;
+}
+
+.Tema1 {
+  font-family: Raleway;
+}
+
+.contenido1 {
+  font-family: Source Sans Pro;
+}
+
+.Titulo2 {
+  font-family: Playfair Display;
+}
+
+.Tema2 {
+  font-family: Merriweather;
+}
+
+.contenido2 {
+  font-family: Oswald;
+}
+
+.Titulo3 {
+  font-family: Poppins;
+}
+
+.Tema3 {
+  font-family: Nunito;
+}
+
+.contenido3 {
+  font-family: Quicksand;
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
@@ -2037,9 +2233,17 @@
   -webkit-text-fill-color: transparent;
 }
 
+.texto-sombra {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -2047,8 +2251,8 @@
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -2083,7 +2287,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -2099,13 +2303,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -2113,11 +2317,19 @@
   padding-top: 10px;
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -2212,6 +2424,42 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Titulo1 {
+  font-family: Lato;
+}
+
+.Tema1 {
+  font-family: Raleway;
+}
+
+.contenido1 {
+  font-family: Source Sans Pro;
+}
+
+.Titulo2 {
+  font-family: Playfair Display;
+}
+
+.Tema2 {
+  font-family: Merriweather;
+}
+
+.contenido2 {
+  font-family: Oswald;
+}
+
+.Titulo3 {
+  font-family: Poppins;
+}
+
+.Tema3 {
+  font-family: Nunito;
+}
+
+.contenido3 {
+  font-family: Quicksand;
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
@@ -2223,9 +2471,17 @@
   -webkit-text-fill-color: transparent;
 }
 
+.texto-sombra {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -2233,8 +2489,8 @@
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -2269,7 +2525,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -2285,13 +2541,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -2299,11 +2555,19 @@
   padding-top: 10px;
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -2323,7 +2587,7 @@
 }
 
 .TituloForm {
-  font-family: Roboto;
+  font-family: Lato;
 }
 
 .label_sm {
@@ -2357,7 +2621,7 @@
 .input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
   width: 10%;
   height: 4vh;
-  font-family: Lato;
+  font-family: Playfair Display;
   align-self: center;
 }
 .input_Xsm:focus, .input_XGr:focus, .input_Gr:focus, .input_md:focus, .input_sm:focus {
@@ -2368,7 +2632,7 @@
 .input_sm {
   width: 15%;
   height: 4vh;
-  font-family: Lato;
+  font-family: Playfair Display;
   align-self: flex-start;
   margin-left: 5%;
 }
@@ -2409,7 +2673,7 @@
 }
 
 .TituloForm2 {
-  font-family: Lato;
+  font-family: Playfair Display;
   text-decoration: underline;
 }
 
@@ -2536,7 +2800,7 @@
 }
 
 .TituloFormReserva {
-  font-family: Lato;
+  font-family: Playfair Display;
   text-transform: uppercase;
   font-weight: 500;
   color: #3432a3;
@@ -2545,7 +2809,7 @@
 .label_smReserva {
   font-size: 20px;
   font-weight: 500;
-  font-family: Raleway;
+  font-family: Merriweather;
   color: #3432a3;
 }
 .label_smReserva::first-letter {
@@ -2664,7 +2928,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -2696,7 +2960,7 @@ input[type=radio]:checked:after {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -2957,7 +3221,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -2989,7 +3253,7 @@ input[type=radio]:checked:after {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -3020,13 +3284,13 @@ input[type=radio]:checked:after {
   -webkit-text-fill-color: transparent;
 }
 
-.list_Letter_hover:hover, .Sidebar a:hover {
+.list_Letter_hover:hover, .Sidebar_content a:hover {
   transition: 0.5s all ease-in-out;
   font-size: 15px;
   font-weight: bold;
   text-shadow: 0px 2px 10px rgb(142, 5, 194);
 }
-.list_Letter_hover:active, .Sidebar a:active:hover, .list_Letter_hover:after, .Sidebar a:hover:after {
+.list_Letter_hover:active, .Sidebar_content a:active:hover, .list_Letter_hover:after, .Sidebar_content a:hover:after {
   transition: 0.3s all ease-out;
   font-size: 16px;
   color: whitesmoke;
@@ -3310,8 +3574,7 @@ input[type=radio]:checked:after {
   margin: 0;
 }
 
-.Sidebar {
-  padding-top: 10px;
+.Sidebar_content {
   grid-area: Sidebar;
   color: white;
   background-color: #676767;
@@ -3320,32 +3583,36 @@ input[type=radio]:checked:after {
   scrollbar-width: thin;
   scrollbar-color: #676767 transparent;
 }
-.Sidebar a {
+.Sidebar_content a {
   color: white;
   text-decoration: none;
   font-weight: 600;
   list-style-type: none;
 }
-.Sidebar a:hover {
+.Sidebar_content a:hover {
   transition: 0.2s all ease-in;
   border-radius: 4px;
   background-color: #45025f;
   width: auto10px;
 }
-.Sidebar li {
-  list-style-type: none;
+.Sidebar_content ul {
+  padding-left: 0px;
 }
-.Sidebar::-webkit-scrollbar {
+.Sidebar_content li {
+  list-style-type: none;
+  padding-left: 20px;
+}
+.Sidebar_content::-webkit-scrollbar {
   width: 8px;
 }
-.Sidebar::-webkit-scrollbar-track {
+.Sidebar_content::-webkit-scrollbar-track {
   background-color: transparent;
 }
-.Sidebar::-webkit-scrollbar-thumb {
+.Sidebar_content::-webkit-scrollbar-thumb {
   background-color: #676767;
   border-radius: 4px;
 }
-.Sidebar::-webkit-scrollbar-thumb:hover {
+.Sidebar_content::-webkit-scrollbar-thumb:hover {
   background-color: #818181;
 }
 
@@ -3408,13 +3675,13 @@ header a {
   -webkit-text-fill-color: transparent;
 }
 
-.list_Letter_hover:hover, .Sidebar a:hover {
+.list_Letter_hover:hover, .Sidebar_content a:hover {
   transition: 0.5s all ease-in-out;
   font-size: 15px;
   font-weight: bold;
   text-shadow: 0px 2px 10px rgb(142, 5, 194);
 }
-.list_Letter_hover:active, .Sidebar a:active:hover, .list_Letter_hover:after, .Sidebar a:hover:after {
+.list_Letter_hover:active, .Sidebar_content a:active:hover, .list_Letter_hover:after, .Sidebar_content a:hover:after {
   transition: 0.3s all ease-out;
   font-size: 16px;
   color: whitesmoke;
@@ -3500,6 +3767,42 @@ header a {
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Titulo1 {
+  font-family: Lato;
+}
+
+.Tema1 {
+  font-family: Raleway;
+}
+
+.contenido1 {
+  font-family: Source Sans Pro;
+}
+
+.Titulo2 {
+  font-family: Playfair Display;
+}
+
+.Tema2 {
+  font-family: Merriweather;
+}
+
+.contenido2 {
+  font-family: Oswald;
+}
+
+.Titulo3 {
+  font-family: Poppins;
+}
+
+.Tema3 {
+  font-family: Nunito;
+}
+
+.contenido3 {
+  font-family: Quicksand;
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
@@ -3511,9 +3814,17 @@ header a {
   -webkit-text-fill-color: transparent;
 }
 
+.texto-sombra {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -3521,8 +3832,8 @@ header a {
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -3557,7 +3868,7 @@ header a {
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -3573,13 +3884,13 @@ header a {
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: Lato;
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -3587,11 +3898,19 @@ header a {
   padding-top: 10px;
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -3838,7 +4157,7 @@ header a {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .bentoCx3, .Sidebar {
+.shadow-left, .bentoCx3, .Sidebar_content {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -3870,7 +4189,7 @@ header a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .bentoCx3, .Sidebar {
+.shadow-left, .bentoCx3, .Sidebar_content {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -3890,6 +4209,59 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: 40%;
+}
+
+.overlay img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.inner_carousel {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel img {
+  height: 90vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
 .hidden {
   display: none;
 }
@@ -4109,6 +4481,212 @@ header a {
 
 .plta-cuatro-backgraund-B {
   background: rgb(62, 6, 95);
+}
+
+/*//TIPOs DE TEXTO*/
+.my-text-1 {
+  font-size: 18px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-2 {
+  font-size: 18px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-3 {
+  font-size: 18px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-4 {
+  font-size: 18px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-5 {
+  font-size: 20px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-6 {
+  font-size: 20px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-7 {
+  font-size: 20px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-8 {
+  font-size: 20px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-9 {
+  font-size: 30px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-10 {
+  font-size: 30px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-11 {
+  font-size: 30px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-12 {
+  font-size: 30px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-13 {
+  font-size: 50px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-14 {
+  font-size: 50px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-15 {
+  font-size: 50px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-16 {
+  font-size: 50px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.sombra-basica {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-interior {
+  box-shadow: 0 0 5px 0 white;
+  box-shadow: inset 0 0 5px white;
+}
+
+.sombra-redondeada {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-contorno {
+  box-shadow: 0 0 0 2px white;
+}
+
+.sombra-sobreponer {
+  transition: box-shadow 0.3s ease;
+}
+.sombra-sobreponer:hover {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-enfocar {
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.sombra-enfocar:focus {
+  box-shadow: 0 0 5px 0 white;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.centerTXT {
+  text-align: center;
+}
+
+.pa {
+  padding: 20px;
+}
+
+.pa1 {
+  padding-left: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.GRID-col-1, .GRID-col-2, .GRID-col-3, .GRID-col-4, .GRID-col-5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+}
+
+.GRID-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+.GRID-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.GRID-col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.GRID-col-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.GRID-row-1, .GRID-row-2, .GRID-row-3, .GRID-row-4, .GRID-row-5 {
+  display: grid;
+  gap: 5%;
+  grid-template-rows: 1fr;
 }
 
 /*Paleta de colores A*/
