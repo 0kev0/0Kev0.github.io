@@ -233,6 +233,30 @@
   box-shadow: 0 0 20px rgba(0, 78, 33, 0.747);
 }
 
+.badge1 {
+  background-color: blue;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
+}
+
+.badge2 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
+}
+
+.badge3 {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Cursive", sans-serif;
+}
+
 .badgeCorinto {
   color: rgb(0, 0, 0);
   background: linear-gradient(45deg, #d46c2b, #f8bb03);
@@ -403,14 +427,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -589,14 +613,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -1636,14 +1660,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -2009,14 +2033,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -2195,14 +2219,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -3473,14 +3497,14 @@ header a {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .tema, .bentoXx1 {
+.titulo, .nav4 .header .logo, .nav3 .header .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -3572,54 +3596,141 @@ header a {
   color: rgb(0, 179, 0);
 }
 
-.nav, .nav2 {
+.nav1 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+.nav1 body {
+  height: 100vh;
+  background-color: #a9aaac;
+  color: #fff;
+}
+.nav1 nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-left: 2vw;
+}
+.nav1 .cont-ul {
+  display: flex;
+  align-items: center;
+}
+.nav1 li {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.5vw;
+  transition: all 0.3s ease 0s;
+}
+.nav1 li:hover {
+  background-color: #008849;
+}
+.nav1 .develop {
+  position: relative;
+}
+.nav1 .ul-second {
+  display: none;
+  position: absolute;
+  margin-top: 1.5vw;
+}
+.nav1 .ul-second > li {
+  width: 190px;
+  transform: translateX(-20px);
+  border-bottom: solid 1px #fff;
+  text-align: center;
+  background-color: #24252a;
+}
+.nav1 .ul-second > li:hover {
+  background-color: #008849;
+}
+.nav1 .develop:hover > .ul-second {
+  display: block;
+}
+.nav1 .ul-third {
+  position: absolute;
+  transform: translateX(100%);
+  right: 0;
+  top: 40%;
+  display: none;
+  background-color: #24252a;
+}
+.nav1 .ul-third > li {
+  padding: 1.5vw;
+  border-bottom: solid 1px #fff;
+}
+.nav1 .front:hover > .ul-third {
+  display: block;
+}
+.nav1 .logo-drip {
+  display: none;
+}
+
+.nav2 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.nav2 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(142, 5, 194);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  overflow: hidden;
+  min-height: 100vh;
+  background: black;
 }
-.nav ul, .nav2 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.nav ul li, .nav2 ul li {
-  float: left;
-}
-.nav ul li a, .nav2 ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-.nav ul li a:hover, .nav2 ul li a:hover {
-  background-color: rgb(112, 11, 151);
-  color: black;
-}
-
-.nav2 {
-  justify-content: space-between;
+.nav2 nav {
+  position: relative;
+  width: 524px;
+  height: 50px;
+  background: black;
+  border-radius: 8px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  background-color: rgb(27, 26, 85);
 }
-.nav2 .logo {
-  font-size: 32px;
+.nav2 nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
   color: white;
   text-decoration: none;
-  margin-left: 15px;
+  padding: 0 23px;
+  z-index: 1;
 }
-.nav2 .logo::first-letter {
-  color: rgb(146, 144, 195);
-  margin-right: 10px;
-  text-shadow: 3px 4px white;
-  font-size: 40px;
+.nav2 nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 100%;
+  background: linear-gradient(45deg, #4f1919, red);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.nav2 nav a:nth-child(1):hover ~ span {
+  left: 0%;
+}
+.nav2 nav a:nth-child(2):hover ~ span {
+  left: 95px;
+}
+.nav2 nav a:nth-child(3):hover ~ span {
+  left: 189px;
+  width: 110px;
+}
+.nav2 nav a:nth-child(4):hover ~ span {
+  left: 289px;
+  width: 115px;
+}
+.nav2 nav a:nth-child(5):hover ~ span {
+  left: 413px;
+  width: 115px;
 }
 
 .nav3 {
@@ -3884,6 +3995,345 @@ header a {
 .self-right {
   margin-right: 10px;
   align-self: flex-end;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenido {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenido {
+  transform: translate(10px, 10px);
+}
+
+.contenido {
+  border: 2px solid #000;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenido {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenido {
+  transform: translate(10px, 10px);
+}
+
+.contenido {
+  border: 2px solid #000;
+}
+
+.GRID-row-1, .GRID-row-5, .GRID-row-4, .GRID-row-3, .GRID-row-2 {
+  display: grid;
+  gap: 5%;
+  grid-template-rows: 1fr;
+}
+
+.GRID-row-2 {
+  grid-template-rows: 1fr 1fr;
+}
+
+.GRID-row-3 {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.GRID-row-4 {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.GRID-row-5 {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.GRID-col-1, .GRID-col-5, .GRID-col-4, .GRID-col-3, .GRID-col-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+}
+
+.GRID-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.GRID-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.GRID-col-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.GRID-col-5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*Redondear elementos*/
+.rounded-none {
+  border-radius: none;
+}
+
+.rounded-xms {
+  border-radius: 5px;
+}
+
+.rounded-sm {
+  border-radius: 10px;
+}
+
+.rounded-md {
+  border-radius: 30px;
+}
+
+.rounded-top-left {
+  border-top-left-radius: 20px;
+}
+
+.rounded-top-right {
+  border-top-right-radius: 20px;
+}
+
+.rounded-buttom-left {
+  border-bottom-left-radius: 20px;
+}
+
+.rounded-buttom-right {
+  border-bottom-right-radius: 20px;
+}
+
+.rounded-left {
+  border-left: 20px;
+}
+
+.rounded-rigth {
+  border-right: 20px;
+}
+
+.rounded-top {
+  border-top: 20px;
+}
+
+.rounded-buttom {
+  border-bottom: 20px;
+}
+
+.rounded-ovalo {
+  border-radius: 40px;
+  width: 200px;
+  height: 100px;
+}
+
+.rounded-circulo-pequeño {
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+.rounded-circulo-grande {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+/*ocultar elementos*/
+.ocultar {
+  display: none;
+}
+
+/*Canbiar color de fondo de los elementos*/
+.plta-uno-backgraund-A {
+  background: rgb(52, 52, 52);
+}
+
+.plta-uno-backgraund-B {
+  background: rgb(62, 6, 95);
+}
+
+.plta-dos-backgraund-A {
+  background: rgb(0, 0, 0);
+}
+
+.plta-dos-backgraund-B {
+  background: rgb(61, 0, 0);
+}
+
+.plta-tres-backgraund-A {
+  background-color: rgb(146, 144, 195);
+}
+
+.plta-tres-backgraund-B {
+  background: rgb(27, 26, 85);
+}
+
+.plta-cuatro-backgraund-A {
+  background: rgb(52, 52, 52);
+}
+
+.plta-cuatro-backgraund-B {
+  background: rgb(62, 6, 95);
+}
+
+/*//TIPOs DE TEXTO*/
+.my-text-1 {
+  font-size: 18px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-2 {
+  font-size: 18px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-3 {
+  font-size: 18px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-4 {
+  font-size: 18px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-5 {
+  font-size: 20px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-6 {
+  font-size: 20px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-7 {
+  font-size: 20px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-8 {
+  font-size: 20px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-9 {
+  font-size: 30px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-10 {
+  font-size: 30px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-11 {
+  font-size: 30px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-12 {
+  font-size: 30px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-13 {
+  font-size: 50px;
+  font-family: "Roboto, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-14 {
+  font-size: 50px;
+  font-family: "Montserrat, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-15 {
+  font-size: 50px;
+  font-family: "Open Sans, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.my-text-16 {
+  font-size: 50px;
+  font-family: "Lato, sans-serif";
+  color: black;
+  font-weight: normal;
+}
+
+.sombra-basica {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-interior {
+  box-shadow: 0 0 5px 0 white;
+  box-shadow: inset 0 0 5px white;
+}
+
+.sombra-redondeada {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-contorno {
+  box-shadow: 0 0 0 2px white;
+}
+
+.sombra-sobreponer {
+  transition: box-shadow 0.3s ease;
+}
+.sombra-sobreponer:hover {
+  box-shadow: 2px 2px 5px 0 white;
+}
+
+.sombra-enfocar {
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.sombra-enfocar:focus {
+  box-shadow: 0 0 5px 0 white;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
 }
 
 /*Paleta de colores A*/
