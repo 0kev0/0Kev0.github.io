@@ -24,6 +24,7 @@
     background: burlywood;
     border-radius: 5px;
     box-shadow: 3px -20x 24px -10px rgba(0,0,0,.75);
+ 
 }
 
 .badge2 {
@@ -32,6 +33,7 @@
     background: rgb(67, 0, 67);
     border: 3px solid;
     box-shadow: 0 0 20px rgba(5, 93, 147, 0.747);
+    
 }
 
 .badge3 {
@@ -63,4 +65,11 @@
     padding: 5px 10px;
     border-radius: 10px;
     font-family: 'Cursive', sans-serif;
+}
+.badgeCorinto{
+    @extend .badge;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #d46c2b, #f8bb03);
+    border: 3px solid;
+    box-shadow: 0 0 20px rgba(0, 78, 33, 0.747);
 }
