@@ -11,15 +11,15 @@
     height: 80vh;
     margin-top: 5%;
     padding-top: 2px;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-image: url('/DripCSS/IMG/metro\ .jpg');
     background-size: cover;
     object-fit: cover;
 
-  }
-  
+}
 
-  .self-start {
+
+.self-start {
     margin-left: 10px;
     align-self: flex-start;
 }
@@ -29,7 +29,58 @@
     align-self: flex-end;
 }
 
-  
 
-  
-  
+.GRID-row-1 {
+    display: grid;
+    gap: 5%;
+    grid-template-rows: 1fr;
+}
+
+.GRID-row-2 {
+    @extend .GRID-row-1;
+    grid-template-rows: 1fr 1fr;
+}
+
+.GRID-row-3 {
+    @extend .GRID-row-1;
+
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.GRID-row-4 {
+    @extend .GRID-row-1;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.GRID-row-5 {
+    @extend .GRID-row-1;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.GRID-col-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+}
+
+.GRID-col-2 {
+    @extend .GRID-col-1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.GRID-col-3 {
+    @extend .GRID-col-1;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.GRID-col-4 {
+    @extend .GRID-col-1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.GRID-col-5 {
+    @extend .GRID-col-1;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}

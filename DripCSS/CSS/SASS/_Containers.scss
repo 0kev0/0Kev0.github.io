@@ -1,12 +1,14 @@
-
 @import 'Variables';
+@import 'FontsStyles';
 
-.container-regular{
+.container-regular {
     height: 60vh;
 }
-.container-fluid{
+
+.container-fluid {
     height: 80vh;
 }
+
 .container-full-width {
     padding: 2%;
     margin-bottom: 2%;
@@ -52,26 +54,83 @@
     color: $color-secundario;
     line-height: 1.5;
 }
+
 @import 'Variables';
 
 .info-container {
-    border: 1px solid $color-secundario ;
+    border: 1px solid $color-secundario;
     background-color: $colorBg-secundario;
     padding: 20px;
     border-radius: 5px;
-  }
-  
-  .info-container h2 {
+}
+
+.info-container h2 {
     color: $color-secundario;
-  }
-  
-  .info-container-content {
+}
+
+.info-container-content {
     margin-top: 20px;
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+
     h3 {
-      color: $color-secundario;
+        color: $color-secundario;
+    }
+}
+
+
+/*prefabs para la documentacion*/
+.Documentacion-seccion {
+    @include shadow-linael-bottom_imput_color (white);
+    margin-bottom: 4px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    h1 {
+        margin-top: 10px;
+        font-family: map-get($map: $FontPack1, $key: Titulo);
+        text-shadow: -4px 0px $color-secundario;
+        display: inline-block;
+        height: auto;
+        color: $FontColorBase;
+        font-size: map-get($map: $FontSize, $key: Xgrande);
+        font-weight: bold;
+    }
+
+}
+
+.Documentacion-container {
+    background-color: $colorbg-primario;
+    padding: 20px;
+
+
+
+    h2 {
+        font-family: map-get($map: $FontPack1, $key: Tema);
+        font-size: map-get($map: $FontSize, $key: grande)+5px;
+        display: inline-block;
+        height: auto;
+        color: $FontColorBase;
+        font-weight: bold;
+    }
+}
+
+.Documentacion-info-container-content {
+
+    background-color: lighten($color: $colorbg-primario, $amount: 10);
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+
+    h3 {
+        font-family: map-get($map: $FontPack1, $key: Titulo);
+        color: $FontColorBase;
+
+    }
+
+    p {
+        font-family: map-get($map: $FontPack1, $key: Texto);
     }
 }
