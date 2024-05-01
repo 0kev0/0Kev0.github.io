@@ -4,8 +4,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
-
+.justfy_center
+{
+    justify-content: center
+}
 .-col {
     @extend .Display-flex;
     flex-direction: column;

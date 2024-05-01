@@ -314,6 +314,7 @@ $color1: rgb(83, 92, 145);
     text-decoration: none;
     font-weight: 600;
     list-style-type: none;
+    font-family: map-get($map: $FontPack4, $key: Tema);
 
     &:hover {
       @extend .list_Letter_hover;

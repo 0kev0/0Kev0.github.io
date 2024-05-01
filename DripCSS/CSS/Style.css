@@ -294,6 +294,10 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -342,6 +346,11 @@
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -366,6 +375,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -419,39 +497,39 @@
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
 .Titulo1 {
-  font-family: Lato;
+  font-family: "Lato";
 }
 
 .Tema1 {
-  font-family: Raleway;
+  font-family: "Raleway";
 }
 
 .contenido1 {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
 }
 
 .Titulo2 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
 }
 
 .Tema2 {
-  font-family: Merriweather;
+  font-family: "Merriweather";
 }
 
 .contenido2 {
-  font-family: Oswald;
+  font-family: "Oswald";
 }
 
 .Titulo3 {
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 
 .Tema3 {
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 
 .contenido3 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 
 .Font-base {
@@ -459,14 +537,10 @@
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.texto-sombra {
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .texto-shadow-box {
@@ -478,7 +552,7 @@
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -501,7 +575,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -519,7 +594,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -535,7 +610,7 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
@@ -604,6 +679,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -657,39 +801,39 @@
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
 .Titulo1 {
-  font-family: Lato;
+  font-family: "Lato";
 }
 
 .Tema1 {
-  font-family: Raleway;
+  font-family: "Raleway";
 }
 
 .contenido1 {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
 }
 
 .Titulo2 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
 }
 
 .Tema2 {
-  font-family: Merriweather;
+  font-family: "Merriweather";
 }
 
 .contenido2 {
-  font-family: Oswald;
+  font-family: "Oswald";
 }
 
 .Titulo3 {
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 
 .Tema3 {
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 
 .contenido3 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 
 .Font-base {
@@ -697,14 +841,10 @@
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.texto-sombra {
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .texto-shadow-box {
@@ -716,7 +856,7 @@
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -739,7 +879,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -757,7 +898,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -773,7 +914,7 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
@@ -873,7 +1014,7 @@
   display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
   height: 6vh;
   width: auto; /* El ancho se ajustará automáticamente al texto */
-  font-family: Merriweather;
+  font-family: "Merriweather";
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
@@ -1608,7 +1749,7 @@
 }
 
 .container {
-  height: 400px;
+  height: 350px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
@@ -1627,8 +1768,11 @@
   transition: 0.6s cubic-bezier(0.2, -0.83, 0, 0.99);
   box-shadow: 0px, 10px, 30px, -5px rgba(0, 0, 0, 0.83);
   background: rgb(169, 92, 213);
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .carta .row {
+  margin-top: 0;
   color: white;
   display: flex;
   flex-wrap: nowrap;
@@ -1705,6 +1849,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -1758,39 +1971,39 @@
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
 .Titulo1 {
-  font-family: Lato;
+  font-family: "Lato";
 }
 
 .Tema1 {
-  font-family: Raleway;
+  font-family: "Raleway";
 }
 
 .contenido1 {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
 }
 
 .Titulo2 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
 }
 
 .Tema2 {
-  font-family: Merriweather;
+  font-family: "Merriweather";
 }
 
 .contenido2 {
-  font-family: Oswald;
+  font-family: "Oswald";
 }
 
 .Titulo3 {
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 
 .Tema3 {
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 
 .contenido3 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 
 .Font-base {
@@ -1798,14 +2011,10 @@
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.texto-sombra {
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .texto-shadow-box {
@@ -1817,7 +2026,7 @@
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -1840,7 +2049,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -1858,7 +2068,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -1874,7 +2084,7 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
@@ -2017,7 +2227,7 @@
 
 .Titulo_special {
   margin-top: 10px;
-  font-family: Lato;
+  font-family: "Lato";
   text-shadow: -4px 0px rgb(112, 11, 151);
   display: block;
   height: auto;
@@ -2034,7 +2244,7 @@
   padding: 20px;
 }
 .Documentacion-container h2 {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 35px;
   display: block;
   height: auto;
@@ -2050,11 +2260,11 @@
   border-radius: 4px;
 }
 .Documentacion-info-container-content h3 {
-  font-family: Lato;
+  font-family: "Lato";
   color: rgb(255, 255, 255);
 }
 .Documentacion-info-container-content p {
-  font-family: Source Sans Pro;
+  font-family: "Oswald";
 }
 
 /*Paleta de colores A*/
@@ -2073,6 +2283,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
+}
+
+.justfy_center {
+  justify-content: center;
 }
 
 .-col {
@@ -2134,6 +2349,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -2187,39 +2471,39 @@
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
 .Titulo1 {
-  font-family: Lato;
+  font-family: "Lato";
 }
 
 .Tema1 {
-  font-family: Raleway;
+  font-family: "Raleway";
 }
 
 .contenido1 {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
 }
 
 .Titulo2 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
 }
 
 .Tema2 {
-  font-family: Merriweather;
+  font-family: "Merriweather";
 }
 
 .contenido2 {
-  font-family: Oswald;
+  font-family: "Oswald";
 }
 
 .Titulo3 {
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 
 .Tema3 {
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 
 .contenido3 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 
 .Font-base {
@@ -2227,14 +2511,10 @@
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.texto-sombra {
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .texto-shadow-box {
@@ -2246,7 +2526,7 @@
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -2269,7 +2549,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -2287,7 +2568,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -2303,7 +2584,7 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
@@ -2372,6 +2653,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -2425,39 +2775,39 @@
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
 .Titulo1 {
-  font-family: Lato;
+  font-family: "Lato";
 }
 
 .Tema1 {
-  font-family: Raleway;
+  font-family: "Raleway";
 }
 
 .contenido1 {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
 }
 
 .Titulo2 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
 }
 
 .Tema2 {
-  font-family: Merriweather;
+  font-family: "Merriweather";
 }
 
 .contenido2 {
-  font-family: Oswald;
+  font-family: "Oswald";
 }
 
 .Titulo3 {
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 
 .Tema3 {
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 
 .contenido3 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 
 .Font-base {
@@ -2465,14 +2815,10 @@
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.texto-sombra {
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .texto-shadow-box {
@@ -2484,7 +2830,7 @@
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
@@ -2507,7 +2853,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -2525,7 +2872,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -2541,7 +2888,7 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
@@ -2587,13 +2934,13 @@
 }
 
 .TituloForm {
-  font-family: Lato;
+  font-family: "Lato";
 }
 
 .label_sm {
   font-size: 18px;
   font-weight: 100;
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 .label_sm::first-letter {
   font-size: 20px;
@@ -2606,6 +2953,7 @@
 .input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
   width: 15%;
   height: 4vh;
+  align-self: self-start;
   border-radius: 2px;
   border: 1px white solid;
   background-color: rgb(225, 225, 225);
@@ -2617,11 +2965,15 @@
   outline: none;
   outline-color: red;
 }
+.input_Xsm option:checked, .input_XGr option:checked, .input_Gr option:checked, .input_md option:checked, .input_sm option:checked {
+  color: green;
+}
 
 .input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
+  border-radius: none;
   width: 10%;
   height: 4vh;
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   align-self: center;
 }
 .input_Xsm:focus, .input_XGr:focus, .input_Gr:focus, .input_md:focus, .input_sm:focus {
@@ -2632,7 +2984,7 @@
 .input_sm {
   width: 15%;
   height: 4vh;
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   align-self: flex-start;
   margin-left: 5%;
 }
@@ -2673,7 +3025,8 @@
 }
 
 .TituloForm2 {
-  font-family: Playfair Display;
+  color: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
+  font-family: "Playfair Display";
   text-decoration: underline;
 }
 
@@ -2700,12 +3053,14 @@
   width: 50%;
   height: 4vh;
   border: 3px white solid;
-  border-radius: 5px;
+  border-radius: 1px;
   background-color: white;
+  align-self: flex-start;
+  margin-left: 5%;
   box-shadow: 0px 2px 0px 0px #ff8080;
 }
 .input_sm2:hover {
-  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
+  box-shadow: 0px 3px 1px 0px #ff8080;
 }
 
 .input_md2, .input_mdReserva, .input_smReserva {
@@ -2800,7 +3155,7 @@
 }
 
 .TituloFormReserva {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   text-transform: uppercase;
   font-weight: 500;
   color: #3432a3;
@@ -2809,8 +3164,9 @@
 .label_smReserva {
   font-size: 20px;
   font-weight: 500;
-  font-family: Merriweather;
+  font-family: "Merriweather";
   color: #3432a3;
+  align-self: self-start;
 }
 .label_smReserva::first-letter {
   font-size: 20px;
@@ -2842,12 +3198,26 @@
   margin-left: 10px;
 }
 
-input[type=range] {
+.rangeimput, .rangeimput_Sm, .rangeimput_Md, .rangeimput_Gr {
   border-radius: 5px;
+  width: 25%;
   height: 8px;
-  width: 80%;
   cursor: grab;
-  accent-color: rgb(255, 0, 0);
+}
+
+.rangeimput_Gr {
+  width: 50%;
+  accent-color: rgb(142, 5, 194);
+}
+
+.rangeimput_Md {
+  width: 25%;
+  accent-color: rgb(61, 0, 0);
+}
+
+.rangeimput_Sm {
+  width: 15%;
+  accent-color: rgb(114, 4, 85);
 }
 
 legend {
@@ -2891,6 +3261,11 @@ input[type=radio]:checked:after {
   align-self: flex-start;
 }
 
+.self-center {
+  margin-left: 5%;
+  align-self: center;
+}
+
 .self-right {
   margin-right: 10px;
   align-self: flex-end;
@@ -2920,6 +3295,10 @@ input[type=radio]:checked:after {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -2966,6 +3345,11 @@ input[type=radio]:checked:after {
 
 .shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
 }
 
 .form1 {
@@ -3119,14 +3503,14 @@ input[type=radio]:checked:after {
   gap: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
-  color: white;
   padding: 0px;
+  color: black;
 }
 
 .title4 {
   padding: 5%;
   grid-area: title;
-  color: grey;
+  color: gray;
 }
 
 .info {
@@ -3213,6 +3597,10 @@ input[type=radio]:checked:after {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -3261,6 +3649,11 @@ input[type=radio]:checked:after {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -3274,10 +3667,8 @@ input[type=radio]:checked:after {
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
-  transition: 0.45s all ease-in-out;
-  font-size: 40px;
+  transition: 0.15s all ease-in;
   font-weight: bold;
-  box-shadow: 3px 3px rgb(142, 5, 194);
   background-image: linear-gradient(to right, rgb(153, 148, 252), white);
   -webkit-background-clip: text;
           background-clip: text;
@@ -3300,11 +3691,45 @@ input[type=radio]:checked:after {
   transition: 0.45s all ease-in;
 }
 .div_hover_Scale_Up_Down:hover, .bentoDx3:hover, .bentoCx3:hover, .bentoBx2:hover, .bentoAx3:hover {
-  transform: scale(1.05);
+  transform: scaleX(1.05);
 }
 .div_hover_Scale_Up_Down:after, .bentoDx3:after, .bentoCx3:after, .bentoBx2:after, .bentoAx3:after {
   transition: 0.35s all ease-out;
-  transform: scale(1);
+  transform: scaleX(1);
+}
+
+.Letter_hover_Scale_Up_Down {
+  transition: 0.45s all ease-in;
+}
+.Letter_hover_Scale_Up_Down:hover {
+  transform: scaleX(1.05);
+}
+.Letter_hover_Scale_Up_Down:after {
+  transition: 0.35s all ease-out;
+  transform: scaleX(1);
+}
+
+.letter-hover-border, .letter-hover-top-color, .letter-hover-bottom-color, .letter-hover-right-color, .letter-hover-left-color {
+  transition: border 0.3s all ease-in-out;
+}
+.letter-hover-border:hover, .letter-hover-top-color:hover, .letter-hover-bottom-color:hover, .letter-hover-right-color:hover, .letter-hover-left-color:hover {
+  text-shadow: 5px 0px 15px whitesmoke;
+}
+
+.letter-hover-left-color:hover {
+  text-shadow: -5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-right-color:hover {
+  text-shadow: 5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-bottom-color:hover {
+  text-shadow: 0px 5px rgb(112, 11, 151);
+}
+
+.letter-hover-top-color:hover {
+  text-shadow: 0px -5px rgb(112, 11, 151);
 }
 
 .div_simple_hover:hover {
@@ -3588,6 +4013,7 @@ input[type=radio]:checked:after {
   text-decoration: none;
   font-weight: 600;
   list-style-type: none;
+  font-family: "Montserrat";
 }
 .Sidebar_content a:hover {
   transition: 0.2s all ease-in;
@@ -3665,10 +4091,8 @@ header a {
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
-  transition: 0.45s all ease-in-out;
-  font-size: 40px;
+  transition: 0.15s all ease-in;
   font-weight: bold;
-  box-shadow: 3px 3px rgb(142, 5, 194);
   background-image: linear-gradient(to right, rgb(153, 148, 252), white);
   -webkit-background-clip: text;
           background-clip: text;
@@ -3691,11 +4115,45 @@ header a {
   transition: 0.45s all ease-in;
 }
 .div_hover_Scale_Up_Down:hover, .bentoAx3:hover, .bentoBx2:hover, .bentoCx3:hover, .bentoDx3:hover {
-  transform: scale(1.05);
+  transform: scaleX(1.05);
 }
 .div_hover_Scale_Up_Down:after, .bentoAx3:after, .bentoBx2:after, .bentoCx3:after, .bentoDx3:after {
   transition: 0.35s all ease-out;
-  transform: scale(1);
+  transform: scaleX(1);
+}
+
+.Letter_hover_Scale_Up_Down {
+  transition: 0.45s all ease-in;
+}
+.Letter_hover_Scale_Up_Down:hover {
+  transform: scaleX(1.05);
+}
+.Letter_hover_Scale_Up_Down:after {
+  transition: 0.35s all ease-out;
+  transform: scaleX(1);
+}
+
+.letter-hover-border, .letter-hover-left-color, .letter-hover-right-color, .letter-hover-bottom-color, .letter-hover-top-color {
+  transition: border 0.3s all ease-in-out;
+}
+.letter-hover-border:hover, .letter-hover-left-color:hover, .letter-hover-right-color:hover, .letter-hover-bottom-color:hover, .letter-hover-top-color:hover {
+  text-shadow: 5px 0px 15px whitesmoke;
+}
+
+.letter-hover-left-color:hover {
+  text-shadow: -5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-right-color:hover {
+  text-shadow: 5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-bottom-color:hover {
+  text-shadow: 0px 5px rgb(112, 11, 151);
+}
+
+.letter-hover-top-color:hover {
+  text-shadow: 0px -5px rgb(112, 11, 151);
 }
 
 .div_simple_hover:hover {
@@ -3715,6 +4173,75 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -3768,39 +4295,39 @@ header a {
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
 .Titulo1 {
-  font-family: Lato;
+  font-family: "Lato";
 }
 
 .Tema1 {
-  font-family: Raleway;
+  font-family: "Raleway";
 }
 
 .contenido1 {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
 }
 
 .Titulo2 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
 }
 
 .Tema2 {
-  font-family: Merriweather;
+  font-family: "Merriweather";
 }
 
 .contenido2 {
-  font-family: Oswald;
+  font-family: "Oswald";
 }
 
 .Titulo3 {
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 
 .Tema3 {
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 
 .contenido3 {
-  font-family: Quicksand;
+  font-family: "Quicksand";
 }
 
 .Font-base {
@@ -3808,14 +4335,10 @@ header a {
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.texto-sombra {
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .texto-shadow-box {
@@ -3827,7 +4350,7 @@ header a {
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
 .titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
@@ -3850,7 +4373,8 @@ header a {
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -3868,7 +4392,7 @@ header a {
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -3884,7 +4408,7 @@ header a {
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Lato;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
@@ -3996,6 +4520,9 @@ header a {
   align-items: center;
   height: 85px;
   padding: 5px 10%;
+}
+.nav3 .header a {
+  font-family: "Raleway";
 }
 .nav3 .header .logo {
   cursor: pointer;
@@ -4149,6 +4676,10 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -4197,6 +4728,11 @@ header a {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -4209,6 +4745,15 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.Img_code {
+  border-radius: 3px;
+  margin: 2%;
+  height: auto;
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .overlay {
   position: absolute;
   top: 20%;
@@ -4481,6 +5026,16 @@ header a {
 
 .plta-cuatro-backgraund-B {
   background: rgb(62, 6, 95);
+}
+
+.plta-backgraund-white {
+  background: white;
+  width: 80%;
+}
+
+.plta-backgraund-black {
+  background: black;
+  width: 80%;
 }
 
 /*//TIPOs DE TEXTO*/

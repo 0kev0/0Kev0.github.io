@@ -108,6 +108,7 @@
     background-color: $colorbg-primario;
     padding: 20px;
 
+
     h2 {
         font-family: map-get($map: $FontPack1, $key: Tema);
         font-size: map-get($map: $FontSize, $key: grande)+5px;
@@ -128,10 +129,9 @@
     h3 {
         font-family: map-get($map: $FontPack1, $key: Titulo);
         color: $FontColorBase;
-
     }
 
     p {
-        font-family: map-get($map: $FontPack1, $key: Texto);
+        font-family: map-get($map: $FontPack2, $key: Texto);
     }
 }

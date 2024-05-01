@@ -86,6 +86,9 @@ $color-secundario : rgb(112, 11, 151);
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    a{
+        font-family: map-get($map: $FontPack1, $key: Tema);  
+    }
   }
 
   .header .logo{
