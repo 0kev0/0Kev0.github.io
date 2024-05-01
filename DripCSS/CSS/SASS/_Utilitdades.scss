@@ -8,14 +8,13 @@
 /* CSS */
 .img-set {
 
-    height: 80vh;
+    //height: 80vh;
     margin-top: 5%;
     padding-top: 2px;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); 
     background-image: url('/DripCSS/IMG/metro\ .jpg');
     background-size: cover;
     object-fit: cover;
-
   }
   
 
@@ -109,4 +108,53 @@
 }
 .plta-cuatro-backgraund-B{
     background: $colorBg-secundario;
+}
+.centerTXT{
+    text-align: center;
+}
+.pa{
+    padding: 20px;
+}
+.pa1{
+    padding-left: 10px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.GRID-col-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+}
+
+.GRID-col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.GRID-col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.GRID-col-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.GRID-col-5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.GRID-row-1{
+    display: grid;
+    gap: 5%;
+    grid-template-rows: 1fr;
 }

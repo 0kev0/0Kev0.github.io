@@ -23,3 +23,10 @@
         transform: scale(1);
     }
 }
+
+.div_simple_hover{
+    &:hover {
+        background-color: #6a696952;
+        border-radius: 0px;
+      }
+}

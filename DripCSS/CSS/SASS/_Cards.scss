@@ -104,8 +104,8 @@
     height: 380px;
     border-radius: 10px;
     box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
-
-    .contenido {
+    border: none;
+    .contenido-card{
         position: relative;
         z-index: 90;
         width: 100%;
@@ -117,7 +117,7 @@
         padding: 20px;
         border-radius: 10px;
 
-        .img {
+        .img-perfil {
             height: 50%;
             margin-bottom: 20px;
             justify-content: center;
@@ -139,8 +139,9 @@
             height: 200px;
             background: linear-gradient(to right, #5e2066, #b332c7);
             transform: rotate(-35deg);
-            top: -80px;
-            left: -100px;
+            top: -90px;
+            left: -150px;
+            border: none;
         }
 
         h4 {
