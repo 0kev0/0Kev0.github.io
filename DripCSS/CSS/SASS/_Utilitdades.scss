@@ -3,7 +3,7 @@
 
 
 
-
+//Estilo para imagenes de codigos
 .Img_code {
   border-radius: 3px;
   margin: 2%;
@@ -12,6 +12,11 @@
   object-fit: contain;
 }
 
+.codes {
+  height: 50%;
+  object-fit: contain;
+  scale: .8;
+}
 .overlay {
   position: absolute;
   top: 20%;
@@ -82,11 +87,7 @@
   object-fit: cover;
 }
 
-.codes {
-  height: 50%;
-  object-fit: contain;
-  scale: .8;
-}
+
 
 .self-start {
   margin-left: 10px;
@@ -148,7 +149,7 @@
 
 
 
-
+//utilidades para construir row grids
 .GRID-row-1 {
   display: grid;
   gap: 5%;
@@ -177,6 +178,8 @@
 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+
+//utilidades para construir col grids
 
 .GRID-col-1 {
   display: grid;
@@ -210,47 +213,53 @@
 }
 
 .rounded-xms {
-  border-radius: 5px;
+  border-radius:map-get($map: $borders, $key: Xpequeno);
 }
 
 .rounded-sm {
-  border-radius: 10px;
+  border-radius:map-get($map: $borders, $key: pequeno);
 }
 
 .rounded-md {
-  border-radius: 30px;
+  border-radius:map-get($map: $borders, $key: mediano);
+}
+.rounded-gr {
+  border-radius:map-get($map: $borders, $key: grande);
+}
+.rounded-Xgr {
+  border-radius:map-get($map: $borders, $key: Xgrande);
 }
 
 .rounded-top-left {
-  border-top-left-radius: 20px
+  border-top-left-radius:map-get($map: $borders, $key: Xgrande);
 }
 
 .rounded-top-right {
-  border-top-right-radius: 20px
+  border-top-right-radius: map-get($map: $borders, $key: Xgrande);
 }
 
 .rounded-buttom-left {
-  border-bottom-left-radius: 20px
+  border-bottom-left-radius: map-get($map: $borders, $key: Xgrande);
 }
 
 .rounded-buttom-right {
-  border-bottom-right-radius: 20px
+  border-bottom-right-radius: map-get($map: $borders, $key: Xgrande);
 }
 
 .rounded-left {
-  border-left: 20px;
+  border-left: map-get($map: $borders, $key: Xgrande);;
 }
 
 .rounded-rigth {
-  border-right: 20px;
+  border-right: map-get($map: $borders, $key: Xgrande);;
 }
 
 .rounded-top {
-  border-top: 20px;
+  border-top: map-get($map: $borders, $key: Xgrande);;
 }
 
 .rounded-buttom {
-  border-bottom: 20px;
+  border-bottom: map-get($map: $borders, $key: Xgrande);;
 }
 
 .rounded-ovalo {
@@ -502,7 +511,7 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 
 
-.color-whigt {
+.color-white {
   color: white;
 }
 
