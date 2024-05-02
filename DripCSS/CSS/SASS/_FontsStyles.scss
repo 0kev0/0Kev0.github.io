@@ -105,7 +105,7 @@ $FontPack4: ('Titulo': Playfair Display, 'Tema': Merriweather, 'Texto': Oswald);
 }
 
 .titulo {
-    text-shadow: 3px 3px $color-secundario;
+    text-shadow: 3px 3px $color-primarioC ;
     font-size: map-get($map: $FontSize, $key: "Xgrande");
     font-weight: bolder;
     font-style: italic;
@@ -184,6 +184,12 @@ $FontPack4: ('Titulo': Playfair Display, 'Tema': Merriweather, 'Texto': Oswald);
     font-size: map-get($map: $FontSize, $key: Xgrande);
     font-weight: bold;
     padding-top: 10px;
+
+    @media screen and (max-width: 480px) {
+    h3 {
+      font-size: 15px
+    }
+  }
 }
 
 .Sub-Tema {

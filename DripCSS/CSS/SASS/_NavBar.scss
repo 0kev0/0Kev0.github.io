@@ -64,9 +64,32 @@ $color-secundario : rgb(112, 11, 151);
       text-shadow: 3px 4px white;
       font-size: 40px;
    }
-
   }
+  
 }
+.nav {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav ul {
+  flex-direction: row;
+}
+.nav ul li {
+  width: auto;
+}
+.nav ul li a {
+  padding: 14px 20px;
+}
+.nav2 {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav2.logo {
+  font-size: 28px;
+  margin-left: 15px;
+}
+
+
 
 .nav3{
   

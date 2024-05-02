@@ -70,6 +70,14 @@
     margin-left: 10px;
     
 }
+.text-justify{
+  text-align: justify;
+}
+.text-color{
+  p{
+    color: #f0f0f0;
+  }
+}
 
 .contenido{
     transform: translate(10px, 10px);
@@ -79,11 +87,6 @@
     border: 2px solid #000; 
   }
   
-  
-  
-  
-
-
 .GRID-row-1 {
     display: grid;
     gap: 5%;
@@ -138,6 +141,7 @@
     @extend .GRID-col-1;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
 /*Redondear elementos*/
 .rounded-none{
     border-radius: none;
@@ -274,7 +278,7 @@ $fonts: (
 
 .my-text-4 {
   @include text-size(pequeno, Lato);
-  @include text-color(black); 
+  @include text-color(rgb(253, 253, 253)); 
   @include text-weight(normal); 
 }
 
@@ -412,14 +416,19 @@ $fonts: (
   }
 }
 .color-text{
-  color: red;
+  color: rgb(81, 174, 14);
 }
 .centerTXT{
     text-align: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    text-color: #f0f0f0;
 }
-.centerItems{
-  align-items: center;
-  justify-content: center;
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .pa{
     padding: 20px;
@@ -427,7 +436,9 @@ $fonts: (
 .pa1{
     padding-left: 10px;
 }
-
+.colors{
+  color: $color-primarioC;
+}
 .GRID-col-1{
     display: grid;
     grid-template-columns: 1fr;
@@ -462,4 +473,14 @@ $fonts: (
     display: grid;
     gap: 5%;
     grid-template-rows: 1fr;
+}
+
+.copy-btn {
+    background-color: $colorbg-primario;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
 }

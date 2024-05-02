@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="DripCSS/CSS/Style.css" />
-
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Documentacion</title>
 </head>
 
@@ -23,16 +23,16 @@
 
 <!------------------------------------------------------------------------------------------------->
 
-<body class="Bg-Base">
+<body class="Bg-Base pa">
+    <a onclick="nav()"><i class="fa-solid fa-house plta-uno-backgraund-A" style="color: #b197fc"></i></a>
     <div class="doc">
         <!--------------------------------------SIDEBAR----------------------------------------------------------->
-
-        <div class="Sidebar">
+        <div id="sidebar" class="Sidebar pa">
             <ul>
                 <li>
+                    <a id="x" onclick="ocultar()" style="color: red;">--X--</a>
                     <a href="#welcome">
-                        <i class="fa-solid fa-house" style="color: #b197fc"> </i>
-                        Bienvenido</a>
+                        <a href="">Bienvenidos</a>
                     <ul>
                         <li><a href="#Introduccion">Introduccion</a></li>
                         <li><a href="#Contenidos">Contenidos</a></li>
@@ -54,7 +54,7 @@
 
                 <li>
                     <a href="#Cards">
-                        <i class="fa-regular fa-address-card" style="color: #7bff00"> </i>Cards</a>
+                        <i id="home" class="fa-regular fa-address-card" style="color: #7bff00"> </i>Cards</a>
                     <ul>
                         <li><a href="#Card styles">Card styles</a></li>
                         <li><a href="#subtema7">Font</a></li>
@@ -79,7 +79,7 @@
                 </li>
 
                 <li>
-                    <a href="#Forms">
+                    <a href="#Form">
                         <i class="fa-regular fa-rectangle-list" style="color: #97fce9"></i>Forms</a>
                     <ul>
                         <li><a href="#Forms">Forms</a></li>
@@ -95,7 +95,7 @@
                 <li>
                     <a href="#Buttons">
                         <i class="fa-solid fa-bars-progress" style="color: #fcd597"> </i>
-                        Buttos</a>
+                        Buttons</a>
                     <ul>
                         <li><a href="#ButtonTypes">Button types</a></li>
                         <li><a href="#ButtonUtilities">Button Utilities</a></li>
@@ -135,15 +135,17 @@
                 <div class="Documentacion-container">
                     <h2 id="Introduccion" class="Font_Tema">Introduccion</h2>
 
-                    <div class="Documentacion-info-container-content">
+                    <div class="Documentacion-info-container-content text-justify">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
+                            ¿Estás cansado de pasar horas ajustando hojas de estilo CSS para lograr el aspecto 
+                            perfecto en tus proyectos web? ¡Saluda a Drip.css, tu compañero definitivo de estilización! 
+                            Drip.css es una biblioteca SCSS ligera y versátil diseñada para agilizar tu proceso de estilización, 
+                            permitiéndote crear diseños web impresionantes y receptivos con facilidad.
+                            <br><br> Con Drip.css, tendrás acceso a una colección completa de componentes pre-diseñados, 
+                            utilidades y mixins que abarcan desde tipografía y diseño hasta botones y formularios. 
+                            Ya seas un desarrollador experimentado o estés comenzando, Drip.css ofrece una solución 
+                            simple pero poderosa para elevar tu habilidad en diseño web. <br />
 
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
                         </p>
                     </div>
                 </div>
@@ -151,16 +153,17 @@
                 <div class="Documentacion-container">
                     <h2 id="Contenidos" class="Font_Tema">Contenidos</h2>
 
-                    <div class="Documentacion-info-container-content">
-                        <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
-                        </p>
+                    <div class="Documentacion-info-container-content pa">
+                        <div class="GRID-col-2 centerTXT">
+                            <p>Alertas</p>
+                            <p>Badges</p>
+                            <p>Botones</p>
+                            <p>Tarjetas</p>
+                            <p>Contenedores</p>
+                            <p>Grids</p>
+                            <p>Headers</p>
+                            <p>Navbar</p>
+                        </div>
                     </div>
                 </div>
 
@@ -409,8 +412,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="Documentacion-info-container-content color-text text-justify pa">
+                    <h3 class="my-text-4">Codigo Fuente</h3><br>
+                    <p class="t3"><code>&lt;div class="container-padre2"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs2"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs3"  &gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs4"  &gt;</code></p>
+                    <br><button class="copy-btn " onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
+                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                        ¡Éxito! Se ha copiado Corectamente.
+                        <span class="close" onclick="closeAlert()">×</span><br>
+                    </div>
+                </div>
                 <div class="Documentacion-container">
-                    <h2 class="my-text-4 ">Grids Utylities</h2>
+                    <h2 class="my-text-4 " >Grids Utylities</h2>
                     <div class="Documentacion-info-container-content">
                         <p>
                             Esta plantilla proporciona una manera efectiva y elegante de presentar información sobre Java en una página web, mejorando la experiencia del usuario y facilitando la comprensión de los conceptos clave relacionados con este lenguaje de programación.
@@ -452,7 +469,7 @@
             </div>
 
             <div class="Documentacion-seccion">
-                <h1 id="Forms">Forms</h1>
+                <h1 id="Form">Forms</h1>
 
                 <div class="Documentacion-container">
                     <h2 id="Forms" class="Font_Tema">Forms</h2>
@@ -711,7 +728,7 @@
         </div>
         <!------------------------------------------------------------------------------------------------->
 </body>
-<footer></footer>
+<footer ></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
