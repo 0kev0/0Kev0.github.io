@@ -1752,7 +1752,7 @@
   height: 350px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .carta {
@@ -1768,8 +1768,12 @@
   transition: 0.6s cubic-bezier(0.2, -0.83, 0, 0.99);
   box-shadow: 0px, 10px, 30px, -5px rgba(0, 0, 0, 0.83);
   background: rgb(169, 92, 213);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+}
+.carta img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carta .row {
   margin-top: 0;
@@ -2253,6 +2257,8 @@
 }
 
 .Documentacion-info-container-content {
+  margin-bottom: 2%;
+  margin-top: 2%;
   width: 90%;
   background-color: #4e4e4e;
   padding: 10px;
@@ -3053,7 +3059,7 @@
   width: 50%;
   height: 4vh;
   border: 3px white solid;
-  border-radius: 1px;
+  border-radius: 2px;
   background-color: white;
   align-self: flex-start;
   margin-left: 5%;
@@ -3199,7 +3205,7 @@
 }
 
 .rangeimput, .rangeimput_Sm, .rangeimput_Md, .rangeimput_Gr {
-  border-radius: 5px;
+  border-radius: 8px;
   width: 25%;
   height: 8px;
   cursor: grab;
@@ -3360,7 +3366,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -3379,7 +3385,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -3402,7 +3408,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -3413,7 +3419,7 @@ input[type=radio]:checked:after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
-  grid-template-areas: "title title " "info card" "end end";
+  grid-template-areas: "title title " "info card" "final final";
   gap: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -3430,7 +3436,7 @@ input[type=radio]:checked:after {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 60vh;
   gap: 8px;
   width: 100%;
@@ -3443,7 +3449,7 @@ input[type=radio]:checked:after {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 60vh;
   grid-area: card;
   gap: 8px;
@@ -3451,10 +3457,10 @@ input[type=radio]:checked:after {
 }
 
 .end {
-  grid-area: end;
+  grid-area: final;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .form3, .form4 {
@@ -3465,7 +3471,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -3488,7 +3494,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -3499,7 +3505,7 @@ input[type=radio]:checked:after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 3fr 0.5fr;
-  grid-template-areas: "title img " "info img" "end img";
+  grid-template-areas: "title img " "info img" "final img";
   gap: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -3518,7 +3524,7 @@ input[type=radio]:checked:after {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 60vh;
   gap: 8px;
   grid-area: info;
@@ -3535,7 +3541,7 @@ input[type=radio]:checked:after {
 }
 
 .end {
-  grid-area: end;
+  grid-area: final;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3558,7 +3564,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -3824,7 +3830,7 @@ input[type=radio]:checked:after {
 .container-padre {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -3897,7 +3903,7 @@ input[type=radio]:checked:after {
 .container-padre2 {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -3953,6 +3959,7 @@ input[type=radio]:checked:after {
 
 .layout {
   display: grid;
+  height: 60;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
@@ -4004,9 +4011,15 @@ input[type=radio]:checked:after {
   color: white;
   background-color: #676767;
   position: relative;
+  padding-left: 0;
+  padding-top: 5px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #676767 transparent;
+}
+.Sidebar_content i {
+  margin-left: 0;
+  margin-right: 8px;
 }
 .Sidebar_content a {
   color: white;
@@ -4026,7 +4039,7 @@ input[type=radio]:checked:after {
 }
 .Sidebar_content li {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 .Sidebar_content::-webkit-scrollbar {
   width: 8px;
@@ -4754,6 +4767,13 @@ header a {
      object-fit: contain;
 }
 
+.codes {
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  scale: 0.8;
+}
+
 .overlay {
   position: absolute;
   top: 20%;
@@ -4822,13 +4842,6 @@ header a {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.codes {
-  height: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  scale: 0.8;
 }
 
 .self-start {
@@ -4929,47 +4942,55 @@ header a {
 }
 
 .rounded-xms {
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 .rounded-sm {
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .rounded-md {
-  border-radius: 30px;
+  border-radius: 5px;
+}
+
+.rounded-gr {
+  border-radius: 8px;
+}
+
+.rounded-Xgr {
+  border-radius: 12px;
 }
 
 .rounded-top-left {
-  border-top-left-radius: 20px;
+  border-top-left-radius: 12px;
 }
 
 .rounded-top-right {
-  border-top-right-radius: 20px;
+  border-top-right-radius: 12px;
 }
 
 .rounded-buttom-left {
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 12px;
 }
 
 .rounded-buttom-right {
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 12px;
 }
 
 .rounded-left {
-  border-left: 20px;
+  border-left: 12px;
 }
 
 .rounded-rigth {
-  border-right: 20px;
+  border-right: 12px;
 }
 
 .rounded-top {
-  border-top: 20px;
+  border-top: 12px;
 }
 
 .rounded-buttom {
-  border-bottom: 20px;
+  border-bottom: 12px;
 }
 
 .rounded-ovalo {
@@ -5188,6 +5209,10 @@ header a {
   height: 100px;
   background-color: #f0f0f0;
   margin-bottom: 20px;
+}
+
+.color-white {
+  color: white;
 }
 
 .centerTXT {
