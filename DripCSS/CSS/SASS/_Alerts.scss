@@ -52,7 +52,7 @@ $alert-info-text: #0c5460;
 }
 
 // Estilos para la alerta de éxito
-.alert-success {
+.alert-success  {
   @extend .alert;
   background-color: $alert-success-bg;
   border: 1px solid $alert-success-border;

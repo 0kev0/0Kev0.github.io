@@ -547,14 +547,14 @@
   box-shadow: -4px 0 0 rgb(112, 11, 151);
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 2px 4px white;
@@ -851,14 +851,14 @@
   box-shadow: -4px 0 0 rgb(112, 11, 151);
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 2px 4px white;
@@ -2025,14 +2025,14 @@
   box-shadow: -4px 0 0 rgb(112, 11, 151);
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 2px 4px white;
@@ -2527,14 +2527,14 @@
   box-shadow: -4px 0 0 rgb(112, 11, 151);
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 2px 4px white;
@@ -2831,14 +2831,14 @@
   box-shadow: -4px 0 0 rgb(112, 11, 151);
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 2px 4px white;
@@ -4358,14 +4358,14 @@ header a {
   box-shadow: -4px 0 0 rgb(112, 11, 151);
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .tema, .bentoXx1 {
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 30px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 2px 4px white;
@@ -4466,6 +4466,75 @@ header a {
   color: rgb(0, 179, 0);
 }
 
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 .nav, .nav2 {
   display: flex;
   justify-content: center;
@@ -4496,82 +4565,122 @@ header a {
 }
 
 .nav2 {
-  justify-content: space-between;
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  background-color: rgb(27, 26, 85);
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-size: 30px;
+  background-color: rgb(149, 1, 1);
+}
+.nav2 .header {
+  background-color: rgb(255, 0, 0);
+  justify-content: space-between;
+}
+.nav2 ul li {
+  display: inline-block;
+  position: relative;
+}
+.nav2 ul {
+  background: rgb(149, 1, 1);
+}
+.nav2 ul li a {
+  font-family: "Oswald";
+}
+.nav2 ul li a:hover {
+  transition: 0.2s all ease-in;
+  font-weight: 500;
+  background-color: #fa0202;
+}
+.nav2 ul li ul.drip {
+  width: 100%;
+  background: rgb(149, 1, 1);
+  position: absolute;
+  z-index: 999;
+  display: none;
 }
 .nav2 .logo {
+  font-family: "Oswald";
   font-size: 32px;
   color: white;
+  text-shadow: 3px 4px rgb(255, 0, 0);
   text-decoration: none;
   margin-left: 15px;
 }
 .nav2 .logo::first-letter {
-  color: rgb(146, 144, 195);
+  color: white;
   margin-right: 10px;
-  text-shadow: 3px 4px white;
+  text-shadow: 3px 4px rgb(255, 0, 0);
   font-size: 40px;
+}
+.nav2 ul li a:hover {
+  transition: 0.2s all ease-in;
+  text-decoration: underline;
 }
 
 .nav3 {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-}
-.nav3 body {
-  background-color: #fff59d;
+  justify-content: flex-end;
+  font-family: "Poppins";
+  font-size: 30px;
+  background-color: rgb(83, 92, 145);
 }
 .nav3 .header {
-  background-color: #1b3039;
-  display: flex;
+  background-color: rgb(83, 92, 145);
   justify-content: flex-end;
-  align-items: center;
-  height: 85px;
-  padding: 5px 10%;
 }
-.nav3 .header a {
-  font-family: "Raleway";
+.nav3 ul li {
+  display: inline-block;
+  position: relative;
 }
-.nav3 .header .logo {
-  cursor: pointer;
-  order: 3;
-  margin-left: auto;
+.nav3 ul {
+  background: rgb(83, 92, 145);
+}
+.nav3 ul li a {
+  font-family: "Open Sans";
+}
+.nav3 ul li a:hover {
+  transition: 0.2s all ease-in;
+  font-weight: 500;
+  background-color: rgb(83, 92, 145);
+}
+.nav3 ul li ul.drip {
+  width: 100%;
+  background: rgb(83, 92, 145);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.nav3 .logo {
+  font-family: "Oswald";
   font-size: 32px;
   color: white;
+  text-shadow: 3px 4px rgb(146, 144, 195);
   text-decoration: none;
   margin-left: 15px;
 }
-.nav3 .header .logo::first-letter {
-  color: rgb(146, 144, 195);
+.nav3 .logo::first-letter {
+  color: white;
   margin-right: 10px;
-  text-shadow: 3px 4px white;
+  text-shadow: 3px 4px rgb(146, 144, 195);
   font-size: 40px;
 }
-.nav3 .header nav, .nav3 .layout .header nav, .layout .nav3 .header nav {
-  order: 1;
+.nav3 .header {
+  height: 85px;
+  padding: 5px 10%;
 }
-.nav3 .header .nav-links {
-  list-style: none;
+.nav3 .header Button {
+  font-family: "Raleway";
+}
+.nav3 .header .logo {
+  order: 3;
+  margin-left: 15px;
 }
 .nav3 .header .nav-links li {
-  display: inline-block;
   padding: 0 20px;
 }
-.nav3 .header .nav-links li:nth-child(1) {
-  padding: 0 20px 0 0;
-}
 .nav3 .header .nav-links li:hover {
+  transition: 0.2S all ease-in;
   transform: scale(1.1);
-}
-.nav3 .header .nav-links a {
-  font-size: 700;
-  color: #eceff1;
-  text-decoration: none;
 }
 .nav3 .header .nav-links li a:hover {
   color: #ffbc0e;
@@ -4591,63 +4700,70 @@ header a {
   transition: all 0.3s ease 0s;
 }
 .nav3 .header .btn button:hover {
-  background-color: #e2f1f8;
   color: #ffbc0e;
   transform: scale(1.1);
 }
 
 .nav4 {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", monospace;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 30px;
+  background-color: rgb(145, 10, 103);
 }
-.nav4 ul {
-  list-style: none;
-  background: #8c52ff;
-  margin: auto;
+.nav4 .header {
+  background-color: rgb(3, 6, 55);
+  justify-content: center;
 }
 .nav4 ul li {
   display: inline-block;
   position: relative;
 }
-.nav4 .header .logo {
-  cursor: pointer;
-  order: 3;
-  margin-left: auto;
-  font-size: 32px;
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-}
-.nav4 .header .logo::first-letter {
-  color: rgb(146, 144, 195);
-  margin-right: 10px;
-  text-shadow: 3px 4px white;
-  font-size: 40px;
+.nav4 ul {
+  background: rgb(145, 10, 103);
 }
 .nav4 ul li a {
-  display: block;
-  padding: 20px 25px;
-  color: #FFF;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
+  font-family: "Quicksand";
 }
-.nav4 ul li ul.drip li {
-  display: block;
+.nav4 ul li a:hover {
+  transition: 0.2s all ease-in;
+  font-weight: 500;
+  background-color: #ef12aa;
 }
 .nav4 ul li ul.drip {
   width: 100%;
-  background: #8c52ff;
+  background: rgb(145, 10, 103);
   position: absolute;
   z-index: 999;
   display: none;
 }
-.nav4 ul li a:hover {
-  background: #6d30e9;
+.nav4 .logo {
+  font-family: "Nunito";
+  font-size: 32px;
+  color: white;
+  text-shadow: 3px 4px rgb(114, 4, 85);
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav4 .logo::first-letter {
+  color: white;
+  margin-right: 10px;
+  text-shadow: 3px 4px rgb(145, 10, 103);
+  font-size: 40px;
+}
+.nav4 .header .logo {
+  order: 3;
+}
+.nav4 ul li a {
+  display: block;
+  padding: 20px 25px;
+  font-size: 20px;
 }
 .nav4 ul li:hover ul.drip {
   display: block;
+}
+.nav4 ul li a:hover {
+  transition: 0.2s all ease-in;
+  box-shadow: inset 0 -4px #ccc;
 }
 
 /*Paleta de colores A*/

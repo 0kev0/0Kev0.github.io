@@ -91,26 +91,10 @@
     src: url('https://fonts.googleapis.com/css2?family=Oswald&display=swap') format('woff2');
 }
 
-$FontPack3: (
-    'Titulo': 'Poppins',
-    'Tema': 'Nunito',
-    'Texto': 'Quicksand'
-);
-
-$FontPack1: (
-    'Titulo': 'Lato',
-    'Tema': 'Raleway',
-    'Texto': 'Source Sans Pro'
-);
-$FontPack2: (
-    'Titulo': 'Playfair Display',
-    'Tema': 'Merriweather',
-    'Texto': 'Oswald'
-);
-$FontPack4: ('Titulo': 'Roboto',
-    'Tema': 'Montserrat',
-    'Texto': 'Open Sans'
-);
+$FontPack3: ('Titulo': 'Poppins','Tema': 'Nunito','Texto': 'Quicksand');
+$FontPack1: ('Titulo': 'Lato', 'Tema': 'Raleway','Texto': 'Source Sans Pro');
+$FontPack2: ('Titulo': 'Playfair Display','Tema': 'Merriweather',   'Texto': 'Oswald');
+$FontPack4: ('Titulo': 'Roboto','Tema': 'Montserrat','Texto': 'Open Sans');
 
 .Titulo1 {
     font-family: map-get($map: $FontPack1, $key: 'Titulo');
