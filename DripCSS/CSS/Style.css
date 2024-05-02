@@ -3959,6 +3959,7 @@ input[type=radio]:checked:after {
 
 .layout {
   display: grid;
+  height: 60;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
@@ -4010,9 +4011,15 @@ input[type=radio]:checked:after {
   color: white;
   background-color: #676767;
   position: relative;
+  padding-left: 0;
+  padding-top: 5px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #676767 transparent;
+}
+.Sidebar_content i {
+  margin-left: 0;
+  margin-right: 8px;
 }
 .Sidebar_content a {
   color: white;
@@ -4032,7 +4039,7 @@ input[type=radio]:checked:after {
 }
 .Sidebar_content li {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 .Sidebar_content::-webkit-scrollbar {
   width: 8px;

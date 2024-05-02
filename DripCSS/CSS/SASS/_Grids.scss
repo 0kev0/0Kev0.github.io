@@ -207,6 +207,7 @@
     @include box-styling;
     grid-row: 1/ span 2;
     grid-column: span 2;
+    
   }
 
   .boxs3 {
@@ -236,6 +237,7 @@ $color1: rgb(83, 92, 145);
 
 .layout {
   display: grid;
+  height: 60;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
@@ -308,7 +310,12 @@ $color1: rgb(83, 92, 145);
   color: white;
   background-color: lighten($color: $colorbg-primario, $amount: 20);
   position: relative;
-
+  padding-left: 0;
+  padding-top: 5px;
+i{
+  margin-left: 0;
+  margin-right: 8px;
+}
   a {
     color: white;
     text-decoration: none;
@@ -331,7 +338,7 @@ $color1: rgb(83, 92, 145);
 
   li {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left:15px;
   }
 
   overflow-y: auto; 
