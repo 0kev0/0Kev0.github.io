@@ -548,7 +548,6 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 .flex{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 .pa{
     padding: 20px;
@@ -603,3 +602,4 @@ $fonts: (Roboto: 'Roboto, sans-serif',
     border-radius: 5px;
     width: auto;
 }
+

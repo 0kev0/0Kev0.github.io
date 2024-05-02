@@ -34,10 +34,13 @@ document.addEventListener('mousemove', (event) => {
     gradienteMouse_bentoA.style.boxShadow = ` 1px 1px radial-gradient(circle at ${percentX}% ${percentY}%,rgb(62, 6, 95), rgb(112, 11, 151), rgb(142, 5, 194)`;
 });
 
-function nav(){
+function nav() {
     var side = document.getElementById('sidebar');
-    var h = document.getElementById('home');
-    side.style.display='block';
+    if (side.style.display === 'none' || side.style.display === '') {
+        side.style.display = 'block';
+    } else {
+        side.style.display = 'none';
+    }
 }
 
 function copyCodeToClipboard() {
@@ -64,4 +67,15 @@ function copyCodeToClipboard() {
 function ocultar(){
     var x = document.getElementById('sidebar');
     x.style.display="none"
+}
+
+function menu() {
+    var items = document.querySelectorAll("a.item");
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].style.display === "none") {
+            items[i].style.display = "block"; // o el estilo que corresponda
+        } else {
+            items[i].style.display = "none";
+        }
+    }
 }

@@ -14,25 +14,24 @@
     <title>Documentacion</title>
 </head>
 
-<header class="Display-flex -left Pd-lf-rg-meduium Gap-sm">
-    <a class="Letter_hover" href="">Document</a>
-    <a class="Letter_hover" href="">Ejemplos</a>
-    <a class="Letter_hover" href="">Temas</a>
-    <a class="Letter_hover" href="">Conocenos</a>
+<header class="Display-flex -left Pd-lf-rg-meduium Gap-sm header-responsive">
+    <i id="bars" onclick="menu()" class="fa-solid fa-bars color-white"></i>
+    <a class="item Letter_hover" href="">Document</a>
+    <a class="item Letter_hover" href="">Ejemplos</a>
+    <a class="item Letter_hover" href="">Temas</a>
+    <a class="item Letter_hover" href="">Conocenos</a>
 </header>
 
 <!------------------------------------------------------------------------------------------------->
 
 <body class="Bg-Base pa">
-    <a onclick="nav()"><i class="fa-solid fa-house plta-uno-backgraund-A" style="color: #b197fc"></i></a>
+    <i class="fa-solid fa-house" onclick="nav()" style="color: #b197fc"></i>
     <div class="doc">
         <!--------------------------------------SIDEBAR----------------------------------------------------------->
         <div id="sidebar" class="Sidebar_content pa_content">
             <ul>
                 <li>
-                    <a id="x" onclick="ocultar()" style="color: red;">--X--</a>
                     <a href="#welcome">
-                        <i class="fa-solid fa-house" style="color: #b197fc"> </i>Bienvenido</a>
                     <ul>
                         <li><a href="#Introduccion">Introduccion</a></li>
                         <li><a href="#Contenidos">Contenidos</a></li>

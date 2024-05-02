@@ -58,6 +58,7 @@
         text-align: center;
         padding: 20px;
         box-shadow: 0 5px 10px black;
+        overflow: scroll;
 
         .link {
             border-top: solid 1px white;
@@ -95,6 +96,13 @@
         transform: perspective(600px) rotateY(360deg);
         transition: .45s;
     }
+}
+.back::-webkit-scrollbar {
+    width: 5px;
+}
+
+.back::-webkit-scrollbar-thumb {
+    background-color: #525252;
 }
 
 //*Tarjeta 2*//
