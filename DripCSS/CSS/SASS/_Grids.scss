@@ -161,7 +161,18 @@
   .box2 {
     grid-column: span 1;
   }
+
+ 
+  @media screen and (max-width: 1080px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    .box1, .box2 {
+      grid-column: span 1;
+    }
+  }
 }
+
 
 .container2 {
   display: grid;
@@ -225,7 +236,15 @@
     @include box-styling();
     grid-column: span 6;
   }
-
+  @media screen and (max-width: 1080px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    .boxs1, .boxs2 , .boxs3, .boxs4{
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
 }
 
 /*

@@ -52,3 +52,25 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(autoAdvance, 3000);
   });
   
+  function copyCodeToClipboard() {
+    var codeElement = document.getElementById("code");
+    var code = codeElement.textContent;
+
+    var tempInput = document.createElement("textarea");
+    tempInput.value = code;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    var successAlert = document.getElementById("success-alert");
+    successAlert.style.display = "block";
+    setTimeout(function() {
+      successAlert.style.display = "none";
+  }, 2000); 
+}
+
+function toggleNav() {
+  var nav = document.querySelector('.nav');
+  nav.classList.toggle('active');
+}

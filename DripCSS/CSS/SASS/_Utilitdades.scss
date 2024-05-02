@@ -136,6 +136,14 @@
   margin-left: 10px;
 
 }
+.text-justify{
+  text-align: justify;
+}
+.text-color{
+  p{
+    color: #f0f0f0;
+  }
+}
 
 .contenido {
   transform: translate(10px, 10px);
@@ -381,8 +389,8 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 .my-text-4 {
   @include text-size(pequeno, Lato);
-  @include text-color(black);
-  @include text-weight(normal);
+  @include text-color(rgb(253, 253, 253)); 
+  @include text-weight(normal); 
 }
 
 // Tamaños de fuente mediano
@@ -528,13 +536,19 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   }
 }
 .color-text{
-  color: red;
+  color: rgb(81, 174, 14);
 }
-.color-whigt{
-  color: white;
+.centerTXT{
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    text-color: #f0f0f0;
 }
-.centerTXT {
-  text-align: center;
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .pa{
     padding: 20px;
@@ -543,11 +557,7 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 .pa1 {
   padding-left: 10px;
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 .GRID-col-1{
     display: grid;
     grid-template-columns: 1fr;
@@ -582,4 +592,14 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   display: grid;
   gap: 5%;
   grid-template-rows: 1fr;
+}
+
+.copy-btn {
+    background-color: $colorbg-primario;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
 }

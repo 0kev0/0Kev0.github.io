@@ -5,11 +5,3 @@
     background-color: $colorbg-primario;
 }
 
-.Bg-gra {
-    background-image: 
-        linear-gradient(180deg, rgba(#{$bs-body-bg-rgb}, 0.01), rgba(#{$bs-body-bg-rgb}, 1) 85%),
-        radial-gradient(ellipse at top left, rgba(#{$bs-primary-rgb}, 0.5), transparent 50%),
-        radial-gradient(ellipse at top right, rgba(#{$bd-accent-rgb}, 0.5), transparent 50%),
-        radial-gradient(ellipse at center right, rgba(#{$bd-violet-rgb}, 0.5), transparent 50%),
-        radial-gradient(ellipse at center left, rgba(#{$bd-pink-rgb}, 0.5), transparent 50%);
-}

@@ -308,6 +308,12 @@
 
 .shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
+  @media (max-width: 1000px) {
+    font-size: 12px;
+  }
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 .shadow-top, .bentoAx3 {
@@ -549,7 +555,7 @@
 
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
@@ -621,14 +627,6 @@
   color: rgb(255, 255, 255);
   font-size: 50px;
   font-weight: bold;
-  padding-top: 10px;
-}
-
-.Font_Tema {
-  display: block;
-  height: auto;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
   padding-top: 10px;
 }
 
@@ -853,7 +851,7 @@
 
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
@@ -925,14 +923,6 @@
   color: rgb(255, 255, 255);
   font-size: 50px;
   font-weight: bold;
-  padding-top: 10px;
-}
-
-.Font_Tema {
-  display: block;
-  height: auto;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
   padding-top: 10px;
 }
 
@@ -2027,7 +2017,7 @@
 
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
@@ -2102,14 +2092,6 @@
   padding-top: 10px;
 }
 
-.Font_Tema {
-  display: block;
-  height: auto;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  padding-top: 10px;
-}
-
 .Sub-Tema {
   display: block;
   height: auto;
@@ -2153,6 +2135,12 @@
   background-color: rgb(52, 52, 52);
   border: 1px solid rgb(62, 6, 95);
   box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
+}
+.container-regular p {
+  color: rgb(209, 208, 208);
+}
+.container-regular p:hover {
+  text-decoration: underline;
 }
 
 .container-fluid {
@@ -2221,6 +2209,11 @@
   color: rgb(112, 11, 151);
 }
 
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 15px;
+  }
+}
 /*prefabs para la documentacion*/
 .Documentacion-seccion {
   box-shadow: 0px 1px 0px 0px white;
@@ -2271,6 +2264,9 @@
 }
 .Documentacion-info-container-content p {
   font-family: "Oswald";
+}
+.Documentacion-info-container-content p:hover {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
 /*Paleta de colores A*/
@@ -2529,7 +2525,7 @@
 
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
@@ -2601,14 +2597,6 @@
   color: rgb(255, 255, 255);
   font-size: 50px;
   font-weight: bold;
-  padding-top: 10px;
-}
-
-.Font_Tema {
-  display: block;
-  height: auto;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
   padding-top: 10px;
 }
 
@@ -2833,7 +2821,7 @@
 
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
@@ -2905,14 +2893,6 @@
   color: rgb(255, 255, 255);
   font-size: 50px;
   font-weight: bold;
-  padding-top: 10px;
-}
-
-.Font_Tema {
-  display: block;
-  height: auto;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
   padding-top: 10px;
 }
 
@@ -3876,6 +3856,16 @@ input[type=radio]:checked:after {
 .container-padre .box2 {
   grid-column: span 1;
 }
+@media screen and (max-width: 1080px) {
+  .container-padre {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .container-padre .box1, .container-padre .box2 {
+    grid-column: span 1;
+  }
+}
 
 .container2 {
   display: grid;
@@ -3899,6 +3889,10 @@ input[type=radio]:checked:after {
 .container2 .box:hover {
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
 }
+.container2 .box figure {
+  width: 200px;
+  height: 200px;
+}
 
 .container-padre2 {
   display: grid;
@@ -3919,6 +3913,7 @@ input[type=radio]:checked:after {
   border: 2px solid rebeccapurple;
   grid-column: span 2;
   grid-row: 1/span 3;
+  padding: 5px;
 }
 .container-padre2 .boxs1:hover {
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
@@ -3948,6 +3943,17 @@ input[type=radio]:checked:after {
 }
 .container-padre2 .boxs4:hover {
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 1080px) {
+  .container-padre2 {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .container-padre2 .boxs1, .container-padre2 .boxs2, .container-padre2 .boxs3, .container-padre2 .boxs4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
 }
 
 /*
@@ -4360,7 +4366,7 @@ header a {
 
 .titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: "Lato";
@@ -4435,14 +4441,6 @@ header a {
   padding-top: 10px;
 }
 
-.Font_Tema {
-  display: block;
-  height: auto;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  padding-top: 10px;
-}
-
 .Sub-Tema {
   display: block;
   height: auto;
@@ -4514,6 +4512,33 @@ header a {
   margin-right: 10px;
   text-shadow: 3px 4px white;
   font-size: 40px;
+}
+
+.nav, .nav2 {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav ul, .nav2 ul {
+  flex-direction: row;
+}
+
+.nav ul li, .nav2 ul li {
+  width: auto;
+}
+
+.nav ul li a, .nav2 ul li a {
+  padding: 14px 20px;
+}
+
+.nav2 {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav2.logo {
+  font-size: 28px;
+  margin-left: 15px;
 }
 
 .nav3 {
@@ -4884,6 +4909,14 @@ header a {
   margin-left: 10px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.text-color p {
+  color: #f0f0f0;
+}
+
 .contenido {
   transform: translate(10px, 10px);
 }
@@ -5049,226 +5082,6 @@ header a {
   background: rgb(62, 6, 95);
 }
 
-.plta-backgraund-white {
-  background: white;
-  width: 80%;
-}
-
-.plta-backgraund-black {
-  background: black;
-  width: 80%;
-}
-
-/*//TIPOs DE TEXTO*/
-.my-text-1 {
-  font-size: 18px;
-  font-family: "Roboto, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-2 {
-  font-size: 18px;
-  font-family: "Montserrat, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-3 {
-  font-size: 18px;
-  font-family: "Open Sans, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-4 {
-  font-size: 18px;
-  font-family: "Lato, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-5 {
-  font-size: 20px;
-  font-family: "Roboto, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-6 {
-  font-size: 20px;
-  font-family: "Montserrat, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-7 {
-  font-size: 20px;
-  font-family: "Open Sans, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-8 {
-  font-size: 20px;
-  font-family: "Lato, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-9 {
-  font-size: 30px;
-  font-family: "Roboto, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-10 {
-  font-size: 30px;
-  font-family: "Montserrat, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-11 {
-  font-size: 30px;
-  font-family: "Open Sans, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-12 {
-  font-size: 30px;
-  font-family: "Lato, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-13 {
-  font-size: 50px;
-  font-family: "Roboto, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-14 {
-  font-size: 50px;
-  font-family: "Montserrat, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-15 {
-  font-size: 50px;
-  font-family: "Open Sans, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.my-text-16 {
-  font-size: 50px;
-  font-family: "Lato, sans-serif";
-  color: black;
-  font-weight: normal;
-}
-
-.sombra-basica {
-  box-shadow: 2px 2px 5px 0 white;
-}
-
-.sombra-interior {
-  box-shadow: 0 0 5px 0 white;
-  box-shadow: inset 0 0 5px white;
-}
-
-.sombra-redondeada {
-  box-shadow: 2px 2px 5px 0 white;
-}
-
-.sombra-contorno {
-  box-shadow: 0 0 0 2px white;
-}
-
-.sombra-sobreponer {
-  transition: box-shadow 0.3s ease;
-}
-.sombra-sobreponer:hover {
-  box-shadow: 2px 2px 5px 0 white;
-}
-
-.sombra-enfocar {
-  outline: none;
-  transition: box-shadow 0.3s ease;
-}
-.sombra-enfocar:focus {
-  box-shadow: 0 0 5px 0 white;
-}
-
-.box {
-  width: 200px;
-  height: 100px;
-  background-color: #f0f0f0;
-  margin-bottom: 20px;
-}
-
-.color-white {
-  color: white;
-}
-
-.centerTXT {
-  text-align: center;
-}
-
-.pa {
-  padding: 20px;
-}
-
-.pa1 {
-  padding-left: 10px;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.GRID-col-1, .GRID-col-2, .GRID-col-3, .GRID-col-4, .GRID-col-5 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5%;
-}
-
-.GRID-col-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-col-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-col-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-col-5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 5%;
-}
-
-.GRID-row-1, .GRID-row-2, .GRID-row-3, .GRID-row-4, .GRID-row-5 {
-  display: grid;
-  gap: 5%;
-  grid-template-rows: 1fr;
-}
-
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -5296,14 +5109,14 @@ header a {
   padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .Fother-box figure {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .pie-pagina .grupo-1 .Fother-box figure img {
-  width: 250px;
+  width: 150px;
 }
 .pie-pagina .grupo-1 .Fother-box h2 {
   color: #fff;

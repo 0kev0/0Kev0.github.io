@@ -21,6 +21,12 @@
     background-color: $colorbg-primario;
     border: 1px solid $colorBg-secundario;
     box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
+    p{
+        color: $colorForm-primario;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
 
 .container-fluid {
@@ -80,7 +86,11 @@
     }
 }
 
-
+@media screen and (max-width: 480px) {
+    h3 {
+      font-size: 15px
+    }
+  }
 /*prefabs para la documentacion*/
 .Documentacion-seccion {
     @include shadow-linael-bottom_imput_color (white);
@@ -135,5 +145,8 @@
 
     p {
         font-family: map-get($map: $FontPack2, $key: Texto);
+        &:hover{
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+          }
     }
 }

@@ -248,6 +248,12 @@ $FontPack4: ('Titulo': 'Roboto',
     font-size: map-get($map: $FontSize, $key: Xgrande);
     font-weight: bold;
     padding-top: 10px;
+
+    @media screen and (max-width: 480px) {
+    h3 {
+      font-size: 15px
+    }
+  }
 }
 
 .Font_Tema {

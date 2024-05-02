@@ -14,21 +14,26 @@
     <title>Documentacion</title>
 </head>
 
-<header class="Display-flex -left Pd-lf-rg-meduium Gap-sm">
-    <a class="Letter_hover" href="">Document</a>
-    <a class="Letter_hover" href="">Ejemplos</a>
-    <a class="Letter_hover" href="">Temas</a>
-    <a class="Letter_hover" href="">Conocenos</a>
+<header>
+    <nav class="nav2">
+        <a href="#" class="logo">Drip_CSS</a>
+        <ul>
+          <li><a href="/inicio.html">Inicio</a></li>
+          <li><a href="/abaut.html">Acerca de</a></li>
+          <li><a href="/Doc.html">Documentacion</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
 </header>
-<body class="Bg-gra">
+<body class="Bg-Base">
     <br>
-    <img class="" src="/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png" alt="">
-    <div class="info-container">
-        <h2 class="Font_Tema color-text" style="color: rgb(191, 125, 253);">Bienvenido a Dripp Library</h2><br><br>
-        <p style="color: aliceblue;" class="color">Es una potente librería de estilos Sass diseñada para darle a tu proyecto web un toque urbano y moderno.</p><br>
-        <p style="color: aliceblue;">Dripp.css ofrece una amplia gama de estilos y componentes que te ayudarán a construir interfaces elegantes y dinámicas</p>
+    
+    <div class="info-container plta-tres-backgraund-B">
+        <img style="height: 250px; margin-left:550px" src="/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png" alt="">
+        <br><h2 class="titulo"  >Bienvenido a Dripp Library</h2><br><br>
+        <p style="color: aliceblue;" class="color">El proyecto Drip_CSS consiste en una biblioteca tipo Bootstrap para interactuar con sitios web. Proporciona una amplia gama de estilos predefinidos, componentes y utilidades CSS que pueden ser fácilmente integrados en proyectos web para mejorar su apariencia y funcionalidad.</p>
         <div class="info-container-content">
-          <h3 class="Font_Tema">Características destacadas</h3>
+          <h3 class="Font_Tema">Características Principales</h3>
           <p>
             Estilos Urbanos
             Dripp.css captura la esencia del estilo urbano con una paleta de colores audaz y contrastante, tipografía nítida y elementos gráficos inspirados en la cultura urbana. <br>
@@ -46,6 +51,37 @@
             Nuestra documentación detallada proporciona instrucciones claras y ejemplos prácticos para ayudarte a integrar y personalizar fácilmente Dripp.css en tu proyecto. <br>
           </p>
           </p>
+          <br><hr><br>
+          <br><h3>Usos</h3>
+          <p>Para utilizar Drip_CSS en tu proyecto web, simplemente enlaza el archivo CSS proporcionado en el encabezado de tu HTML:</p>
+          <br><div id="code" class="plta-uno-backgraund-A text-center"><p><code>&lt;link rel="stylesheet" href="path/to/drip_css.css"&gt;</code></p><button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
+            <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                <span class="close" onclick="closeAlert()">×</span>
+              </div>
+            </div>
+          <br><p>Luego, puedes comenzar a utilizar los estilos y componentes proporcionados por Drip_CSS en tu código HTML.</p>
+          <br><hr><br>
+          <br><h3>Documentacion</h3>
+          <p>Para obtener más detalles sobre cómo usar Drip_CSS y ver ejemplos de su uso, visita nuestra web de documentación en <a href="#">Documentacion</a></p>
+          <br><hr><br>
+          <h3>Conjunto completo de complementos</h3>
+          <p>Bootstrap cuenta con una docena de plugins que puedes incluir en cualquier proyecto. Colócalos todos a la vez o elige solo los que necesites.</p><br>
+          <hr style="border-color: #525252;"><br>
+          <div style="color: aliceblue;" class=" container-regular GRID-col-3  pa centerTXT my-text-16 ">
+            <p class="shadow-down" style="color: aliceblue;">Alerts</p>
+            <p class="shadow-down" style="color: aliceblue;">badges</p>
+            <p class="shadow-down" style="color: aliceblue;">Botones</p>
+            <p class="shadow-down" style="color: aliceblue;">Tarjetas</p>
+            <p class="shadow-down" style="color: aliceblue;">Contenedores</p>
+            <p class="shadow-down" style="color: aliceblue;">Footers</p>
+            <p class="shadow-down" style="color: aliceblue;">Formularios</p>
+            <p class="shadow-down" style="color: aliceblue;">Elementos de Formularios</p>
+            <p class="shadow-down" style="color: aliceblue;">Grids</p>
+            <p class="shadow-down" style="color: aliceblue;">Headers</p>
+            <p class="shadow-down" style="color: aliceblue;">NavBars</p>
+            <p class="shadow-down" style="color: aliceblue;">Hovers</p>
+            <p></p>
+          </div>
         </div>
       </div>
 
@@ -77,5 +113,7 @@
             <small>&copy; 2024 <b>Drip.css</b> - Todos los Derechos Reservados.</small>
         </div>
       </footer>
+
+      <script src="/script.js"></script>
 </body>
 </html>
