@@ -76,3 +76,14 @@ function ocultar(){
     var x = document.getElementById('sidebar');
     x.style.display="none"
 }
+
+function menu() {
+    var items = document.querySelectorAll("a.item");
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].style.display === "none") {
+            items[i].style.display = "block"; // o el estilo que corresponda
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}

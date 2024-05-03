@@ -22,11 +22,11 @@ $color-secundarioC : rgb(83, 92, 145);
 $colorbg-primarioD: rgb(3, 6, 55);
 $colorBg-secundarioD :rgb(60, 7, 83);
 $color-primarioD : rgb(114, 4, 85);
-$color-secundarioD : rgb(145, 10, 103);
+$color-secundarioD : #910a67;
 
 /*Colores para texto */
 $FontColorBase: rgb(255, 255, 255);
-$colorForm-primario: rgb(209, 208, 208);
+$colorForm-primario: rgb(61, 3, 3);
 $colorForm-secundario :rgb(97, 0, 154);
 
 /*tamanos de fuentes*/
@@ -45,6 +45,13 @@ $PaddingSizes : ("Xpequeno": 2%, "pequeno": 5%, "mediano": 8%, "grande": 10%, "X
 /*tamanos de Buttons*/
 $BtHeight : ("pequeno": 6vh, "mediano": 8vh, "grande": 10vh, "Xgrande": 12vh);
 $BtWidth : ( "pequeno": 10vh, "mediano": 12vh, "grande": 14vh, "Xgrande": 18vh);
+
+$borders : ( "Xpequeno":1px, "pequeno": 2px, "mediano": 5px, "grande": 8px, "Xgrande": 12px);
+$RangeSizes : ( "pequeno": 15%, "mediano": 25%, "grande": 50%, "Xgrande": 60%);
+$AlertsSizes : ( "pequeno": 15%, "mediano": 25%, "grande": 50%, "Xgrande": 60%);
+
+
+
 
 $small: 10px;
 $meduium: 15px;

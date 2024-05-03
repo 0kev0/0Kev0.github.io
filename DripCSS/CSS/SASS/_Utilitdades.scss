@@ -1,8 +1,118 @@
 @import 'Variables';
 
+
+
+
+//Estilo para imagenes de codigos
+.Img_code {
+  border-radius: 3px;
+  margin: 2%;
+  height: auto;
+  width: 50%;
+  object-fit: contain;
+}
+
+.codes {
+  height: 50%;
+  object-fit: contain;
+  scale: .8;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: 40%;
+}
+
+.overlay img {
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+//carrucel
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.inner_carousel {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+//carrucel
+.carousel_md {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner_carousel_md {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.carousel_md img {
+  height: 170vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+
+
 // Ocultar
 .hidden {
-    display: none;
+  display: none;
 }
 .bottom-responsive{
   @media (max-width: 900px) {
@@ -20,68 +130,63 @@
 }
 /* CSS */
 .img-set {
-    height: 80vh;
-    margin-top: 5%;
-    padding-top: 2px;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    background-image: url('/DripCSS/IMG/metro\ .jpg');
-    background-size: cover;
-    object-fit: cover;
+  height: 80vh;
+  margin-top: 5%;
+  padding-top: 2px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-image: url('/DripCSS/IMG/metro\ .jpg');
+  background-size: cover;
+  object-fit: cover;
 }
 
-.codes
-{
-    height: 50%;
-    object-fit: contain;
-    scale: .8;
-}
+
 
 .self-start {
-    margin-left: 10px;
-    align-self: flex-start;
+  margin-left: 10px;
+  align-self: flex-start;
 }
 
 .self-right {
-    margin-right: 10px;
-    align-self: flex-end;
+  margin-right: 10px;
+  align-self: flex-end;
 }
 
 .contenido {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
-.contenido{
-    margin-top: 10px;
-    margin-left: 10px;
-    
-}
+.contenido {
+  margin-top: 10px;
+  margin-left: 10px;
 
-.contenido{
-    transform: translate(10px, 10px);
 }
 
 .contenido {
-    border: 2px solid #000; 
-  }
-  
-  
-  
-  
+  transform: translate(10px, 10px);
+}
 
 .contenido {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+  border: 2px solid #000;
 }
 
 
-.contenido{
-    margin-top: 10px;
-    margin-left: 10px;
-    
+
+
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.contenido {
+  margin-top: 10px;
+  margin-left: 10px;
+
 }
 .text-justify{
   text-align: justify;
@@ -92,161 +197,332 @@
   }
 }
 
-.contenido{
-    transform: translate(10px, 10px);
+.contenido {
+  transform: translate(10px, 10px);
 }
 
 .contenido {
-    border: 2px solid #000; 
-  }
-  
-.GRID-row-1 {
-    display: grid;
-    gap: 5%;
-    grid-template-rows: 1fr;
+  border: 2px solid #000;
 }
 
-.GRID-row-2 {
-    @extend .GRID-row-1;
-    grid-template-rows: 1fr 1fr;
+
+
+
+
+//utilidades para construir row grids
+.GRID-row-1 {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr;
 }
 
 .GRID-row-3 {
-    @extend .GRID-row-1;
+  @extend .GRID-row-1;
+  height: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
 
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .GRID-row-4 {
-    @extend .GRID-row-1;
+  @extend .GRID-row-1;
 
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .GRID-row-5 {
-    @extend .GRID-row-1;
+  @extend .GRID-row-1;
 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+
+//utilidades para construir col grids
 
 .GRID-col-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
-.GRID-col-2 {
-    @extend .GRID-col-1;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 .GRID-col-3 {
-    @extend .GRID-col-1;
-    grid-template-columns: 1fr 1fr 1fr;
+  @extend .GRID-col-1;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .GRID-col-4 {
-    @extend .GRID-col-1;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  @extend .GRID-col-1;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .GRID-col-5 {
-    @extend .GRID-col-1;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  @extend .GRID-col-1;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
+//GRIDS CELLS SETS
+.div-celda-1-1 {
+  grid-column: 1 / 1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 / 1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: red;
+
+}
+
+.div-celda-1-2 {
+  grid-column: 2 / 2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 /1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(85, 255, 0);
+
+}
+.div-celda-2-1 {
+  grid-column: 1 / 1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(0, 251, 255);
+
+}
+
+.div-celda-2-2 {
+  grid-column: 2/ 2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(162, 0, 255);
+}
+
+.div-celda-1-3 {
+  grid-column: 3 /3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 /1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 0, 255);
+
+}
+
+
+
+.div-celda-2-3 {
+  grid-column: 3/ 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: auto;
+}
+
+
+.div-celda-3-3 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3 / 3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+.div-celda-3-1 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 / 1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+.div-celda-3-2 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+.div-celda-3-3 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3 / 3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+
+.GRID-col-2 {
+  @extend .GRID-col-1;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+
+}
+
+
+.GRID-row-2 {
+  @extend .GRID-row-1;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 60vh;
+
+}
+
+
 
 /*Redondear elementos*/
-.rounded-none{
-    border-radius: none;
+.rounded-none {
+  border-radius: none;
 }
-.rounded-xms{
-    border-radius: 5px;
-}
-.rounded-sm{
-    border-radius: 10px;
-}
-.rounded-md{
-    border-radius: 30px;
-}
-.rounded-top-left{
-    border-top-left-radius:20px
-}
-.rounded-top-right{
-    border-top-right-radius:20px
-}
-.rounded-buttom-left{
-    border-bottom-left-radius:20px
-}
-.rounded-buttom-right{
-    border-bottom-right-radius:20px
-}
-.rounded-left{
-    border-left: 20px;
-}
-.rounded-rigth{
-    border-right: 20px;
-}
-.rounded-top{
-    border-top: 20px;
-}
-.rounded-buttom{
-    border-bottom: 20px;
-}
-.rounded-ovalo{
-    border-radius: 40px;
-    width: 200px;
-    height: 100px;
-}
-.rounded-circulo-pequeño{
-    border-radius: 50px;
-    width: 150px;
-    height: 150px;
-}
-.rounded-circulo-grande{
-    border-radius: 100px;
-    width: 150px;
-    height: 150px;
-}
-/*ocultar elementos*/
-.ocultar{
-    display: none;
-}
-/*Canbiar color de fondo de los elementos*/
-.plta-uno-backgraund-A{
-    background: $colorbg-primario;
-}
-.plta-uno-backgraund-B{
-    background: $colorBg-secundario;
-}
-.plta-dos-backgraund-A{
-    background: $colorbg-primarioB;
-}
-.plta-dos-backgraund-B{
-    background: $colorBg-secundarioB;
-}
-.plta-tres-backgraund-A{
-    background-color: $color-primarioC;
-}
-.plta-tres-backgraund-B{
-    background: $colorBg-secundarioC;
-}
-.plta-cuatro-backgraund-A{
-    background: $colorbg-primario;
-}
-.plta-cuatro-backgraund-B{
-    background: $colorBg-secundario;
-}
-  
 
-  
-/*//TIPOs DE TEXTO*///
+.rounded-xms {
+  border-radius: map-get($map: $borders, $key: Xpequeno);
+}
+
+.rounded-sm {
+  border-radius: map-get($map: $borders, $key: pequeno);
+}
+
+.rounded-md {
+  border-radius: map-get($map: $borders, $key: mediano);
+}
+
+.rounded-gr {
+  border-radius: map-get($map: $borders, $key: grande);
+}
+
+.rounded-Xgr {
+  border-radius: map-get($map: $borders, $key: Xgrande);
+}
+
+.rounded-top-left {
+  border-top-left-radius: map-get($map: $borders, $key: Xgrande);
+}
+
+.rounded-top-right {
+  border-top-right-radius: map-get($map: $borders, $key: Xgrande);
+}
+
+.rounded-buttom-left {
+  border-bottom-left-radius: map-get($map: $borders, $key: Xgrande);
+}
+
+.rounded-buttom-right {
+  border-bottom-right-radius: map-get($map: $borders, $key: Xgrande);
+}
+
+.rounded-left {
+  border-left: map-get($map: $borders, $key: Xgrande);
+  ;
+}
+
+.rounded-rigth {
+  border-right: map-get($map: $borders, $key: Xgrande);
+  ;
+}
+
+.rounded-top {
+  border-top: map-get($map: $borders, $key: Xgrande);
+  ;
+}
+
+.rounded-buttom {
+  border-bottom: map-get($map: $borders, $key: Xgrande);
+  ;
+}
+
+.rounded-ovalo {
+  border-radius: 40px;
+  width: 200px;
+  height: 100px;
+}
+
+.rounded-circulo-pequeño {
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+.rounded-circulo-grande {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+/*ocultar elementos*/
+.ocultar {
+  display: none;
+}
+
+/*Canbiar color de fondo de los elementos*/
+.plta-uno-backgraund-A {
+  background: $colorbg-primario;
+}
+
+.plta-uno-backgraund-B {
+  background: $colorBg-secundario;
+}
+
+.plta-dos-backgraund-A {
+  background: $colorbg-primarioB;
+}
+
+.plta-dos-backgraund-B {
+  background-color: $colorBg-secundarioB;
+}
+
+.plta-tres-backgraund-A {
+  background-color: $color-primarioC;
+}
+
+.plta-tres-backgraund-B {
+  background: $colorBg-secundarioC;
+}
+
+.plta-cuatro-backgraund-A {
+  background: $colorbg-primario;
+}
+
+.plta-cuatro-backgraund-B {
+  background: $colorBg-secundario;
+}
+
+.plta-backgraund-white {
+  background: white;
+  width: 80%;
+}
+
+.plta-backgraund-black {
+  background: black;
+  width: 80%;
+}
+
+
+/*//TIPOs DE TEXTO*/
+//
 
 
 
 
 // Definir las fuentes
-$fonts: (
-  Roboto: 'Roboto, sans-serif',
+$fonts: (Roboto: 'Roboto, sans-serif',
   Montserrat: 'Montserrat, sans-serif',
   OpenSans: 'Open Sans, sans-serif',
   Lato: 'Lato, sans-serif'
@@ -268,7 +544,22 @@ $fonts: (
   font-weight: $weight;
 }
 
+.txt_dashed
+{
+  text-decoration: underline;
+}
 
+.txt_dashed_lettergrow
+{
+  text-decoration: underline;
+  &::first-letter {
+    font-size: 130%;
+    font-style: italic;
+    font-weight: 500;
+    margin-right: 0px;
+    color: white;
+  }
+}
 
 // Tamaños de fuente pequeño
 .my-text-1 {
@@ -279,14 +570,14 @@ $fonts: (
 
 .my-text-2 {
   @include text-size(pequeno, Montserrat);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-3 {
   @include text-size(pequeno, OpenSans);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-4 {
@@ -298,76 +589,76 @@ $fonts: (
 // Tamaños de fuente mediano
 .my-text-5 {
   @include text-size(mediano, Roboto);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-6 {
   @include text-size(mediano, Montserrat);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-7 {
   @include text-size(mediano, OpenSans);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-8 {
   @include text-size(mediano, Lato);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 // Tamaños de fuente grande
 .my-text-9 {
   @include text-size(grande, Roboto);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-10 {
   @include text-size(grande, Montserrat);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-11 {
   @include text-size(grande, OpenSans);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-12 {
   @include text-size(grande, Lato);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 // Tamaños de fuente extra grande
 .my-text-13 {
   @include text-size(Xgrande, Roboto);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-14 {
   @include text-size(Xgrande, Montserrat);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-15 {
   @include text-size(Xgrande, OpenSans);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 .my-text-16 {
   @include text-size(Xgrande, Lato);
-  @include text-color(black); 
-  @include text-weight(normal); 
+  @include text-color(black);
+  @include text-weight(normal);
 }
 
 // Utilidad para aplicar sombra a un elemento
@@ -382,7 +673,7 @@ $fonts: (
 
 .sombra-interior {
   @include sombra(white, 0, 0, 5px, 0);
-  box-shadow: inset 0 0 5px white; 
+  box-shadow: inset 0 0 5px white;
 }
 
 .sombra-redondeada {
@@ -396,6 +687,7 @@ $fonts: (
 
 .sombra-sobreponer {
   transition: box-shadow 0.3s ease;
+
   &:hover {
     @include sombra(white, 2px, 2px, 5px, 0);
   }
@@ -404,6 +696,7 @@ $fonts: (
 .sombra-enfocar {
   outline: none;
   transition: box-shadow 0.3s ease;
+
   &:focus {
     @include sombra(white, 0, 0, 5px, 0);
   }
@@ -416,6 +709,13 @@ $fonts: (
   background-color: #f0f0f0;
   margin-bottom: 20px;
 }
+
+
+
+.color-white {
+  color: white;
+}
+
 .text_Tema{
   h1 {
     margin-top: 10px;
@@ -441,51 +741,56 @@ $fonts: (
 .flex{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 .pa{
     padding: 20px;
 }
-.pa1{
-    padding-left: 10px;
+
+.pa1 {
+  padding-left: 10px;
 }
-.colors{
-  color: $color-primarioC;
-}
+
 .GRID-col-1{
     display: grid;
     grid-template-columns: 1fr;
     gap: 5%;
 }
 
-.GRID-col-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5%;
+.GRID-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
 }
 
-.GRID-col-3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5%;
+.GRID-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
 }
 
-.GRID-col-4{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5%;
+.GRID-col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5%;
 }
 
-.GRID-col-5{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 5%;
+.GRID-col-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5%;
 }
 
-.GRID-row-1{
-    display: grid;
-    gap: 5%;
-    grid-template-rows: 1fr;
+.GRID-row-1 {
+  display: grid;
+  gap: 5%;
+  grid-template-rows: 1fr;
+}
+
+//MARGINS
+
+.margin_5
+{
+  margin: 5%;
 }
 
 .copy-btn {
@@ -497,3 +802,4 @@ $fonts: (
     border-radius: 5px;
     width: auto;
 }
+

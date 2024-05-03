@@ -14,30 +14,30 @@
     <title>Documentacion</title>
 </head>
 
-<header class="Display-flex -left Pd-lf-rg-meduium Gap-sm">
-    <a class="Letter_hover" href="">Document</a>
-    <a class="Letter_hover" href="">Ejemplos</a>
-    <a class="Letter_hover" href="">Temas</a>
-    <a class="Letter_hover" href="">Conocenos</a>
+<header class="Display-flex -left Pd-lf-rg-meduium Gap-sm header-responsive">
+    <i id="bars" onclick="menu()" class="fa-solid fa-bars color-white"></i>
+    <a class="item Letter_hover" href="">Document</a>
+    <a class="item Letter_hover" href="">Ejemplos</a>
+    <a class="item Letter_hover" href="">Temas</a>
+    <a class="item Letter_hover" href="">Conocenos</a>
 </header>
 
 <!------------------------------------------------------------------------------------------------->
 
-<body class="Bg-Base pa">
-    <a onclick="nav()"><i class="fa-solid fa-house plta-uno-backgraund-A" style="color: #b197fc"></i></a>
+<body class="Bg-Base ">
+    <i class="fa-solid fa-house" onclick="nav()" style="color: #b197fc"></i>
     <div class="doc">
         <!--------------------------------------SIDEBAR----------------------------------------------------------->
         <div id="sidebar" class="Sidebar sidebar-responsive pa">
             <ul>
                 <li>
                     <a href="#welcome">
-                        <a href="">Bienvenidos</a>
-                    <ul>
-                        <li><a href="#Introduccion">Introduccion</a></li>
-                        <li><a href="#Contenidos">Contenidos</a></li>
-                        <li><a href="#Glosario">Glosario</a></li>
-                        <br />
-                    </ul>
+                        <ul>
+                            <li><a href="#Introduccion">Introduccion</a></li>
+                            <li><a href="#Contenidos">Contenidos</a></li>
+                            <li><a href="#Glosario">Glosario</a></li>
+                            <br />
+                        </ul>
                 </li>
 
                 <li>
@@ -55,11 +55,9 @@
                     <a href="#Cards">
                         <i id="home" class="fa-regular fa-address-card" style="color: #7bff00"> </i>Cards</a>
                     <ul>
-                        <li><a href="#Card styles">Card styles</a></li>
-                        <li><a href="#subtema7">Font</a></li>
-                        <li><a href="#subtema7">Alerts Info</a></li>
-                        <li><a href="#subtema7">Alerts error</a></li>
-                        <br />
+                        <li><a href="#CardStyles">Card styles</a></li>
+                        <li><a href="#Pantilla">Plantillas</a></li>
+                        <br>
                     </ul>
                 </li>
 
@@ -129,20 +127,33 @@
         <div class="Content">
 
             <div class="Documentacion-seccion">
-                <h1>Bienvenido</h1>
-
+                <h1 class="Titulo_special">Bienvenido</h1>
                 <div class="Documentacion-container">
                     <h2 id="Introduccion" class="Font_Tema">Introduccion</h2>
 
                     <div class="Documentacion-info-container-content text-justify">
                         <p>
-                            ¿Estás cansado de pasar horas ajustando hojas de estilo CSS para lograr el aspecto 
-                            perfecto en tus proyectos web? ¡Saluda a Drip.css, tu compañero definitivo de estilización! 
-                            Drip.css es una biblioteca SCSS ligera y versátil diseñada para agilizar tu proceso de estilización, 
+
+                            Bienvenido al mundo de Drip CSS, la biblioteca de hojas de estilo que redefine la
+                            simplicidad y eficiencia en el diseño web. <br><br> Inspirada en los principios del
+                            minimalismo, Drip
+                            CSS es una solución elegante para desarrolladores que buscan crear interfaces de usuario con
+                            un estilo limpio y sin complicaciones. Con un enfoque en la funcionalidad sin excesos, esta
+                            biblioteca se destaca por su facilidad de uso y su capacidad para acelerar el proceso de
+                            diseño sin sacrificar la estética.<br><br> Ya sea que estés construyendo un sitio web desde
+                            cero o
+                            mejorando un proyecto existente, Drip CSS te ofrece las herramientas necesarias para llevar
+                            tus ideas a la realidad con claridad y precisión. Sumérgete en la simplicidad con Drip CSS y
+                            descubre cómo el minimalismo y la eficacia pueden transformar tu trabajo en diseño web.
+                            <BR></BR>FUSION,*****REVISAR
+                            ¿Estás cansado de pasar horas ajustando hojas de estilo CSS para lograr el aspecto
+                            perfecto en tus proyectos web? ¡Saluda a Drip.css, tu compañero definitivo de estilización!
+                            Drip.css es una biblioteca SCSS ligera y versátil diseñada para agilizar tu proceso de
+                            estilización,
                             permitiéndote crear diseños web impresionantes y receptivos con facilidad.
-                            <br><br> Con Drip.css, tendrás acceso a una colección completa de componentes pre-diseñados, 
-                            utilidades y mixins que abarcan desde tipografía y diseño hasta botones y formularios. 
-                            Ya seas un desarrollador experimentado o estés comenzando, Drip.css ofrece una solución 
+                            <br><br> Con Drip.css, tendrás acceso a una colección completa de componentes pre-diseñados,
+                            utilidades y mixins que abarcan desde tipografía y diseño hasta botones y formularios.
+                            Ya seas un desarrollador experimentado o estés comenzando, Drip.css ofrece una solución
                             simple pero poderosa para elevar tu habilidad en diseño web. <br />
 
                         </p>
@@ -152,17 +163,16 @@
                 <div class="Documentacion-container">
                     <h2 id="Contenidos" class="Font_Tema">Contenidos</h2>
 
-                    <div class="Documentacion-info-container-content pa">
-                        <div class="GRID-col-2 centerTXT">
-                            <p>Alertas</p>
-                            <p>Badges</p>
-                            <p>Botones</p>
-                            <p>Tarjetas</p>
-                            <p>Contenedores</p>
-                            <p>Grids</p>
-                            <p>Headers</p>
-                            <p>Navbar</p>
-                        </div>
+                    <div class="Documentacion-info-container-content">
+                        <p>
+                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
+                            librería, donde la simplicidad se encuentra con la
+                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
+                            creatividad! <br />
+
+                            Nuestra libreria esta dise&ntildeada con el minimalismo y
+                            armonia en mente
+                        </p>
                     </div>
                 </div>
 
@@ -171,13 +181,7 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            REDACTAR
                         </p>
                     </div>
                 </div>
@@ -185,21 +189,50 @@
             </div>
 
             <div class="Documentacion-seccion">
-                <h1 id="Font">Font Styles</h1>
+                <h1 id="Font" class="Titulo_special">Font Styles</h1>
 
                 <div class="Documentacion-container">
                     <h2 id="Fonts" class="Font_Tema">Fonts</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mentefg
+                            La Biblioteca de Fuentes Minimalistas ofrece una selección exclusiva de tipografías modernas
+                            y de diseño minimalista, ideales para conferir un toque de elegancia y sofisticación a tus
+                            proyectos. <br><br> Cada paquete de fuentes incluido en esta biblioteca ha sido
+                            meticulosamente
+                            escogido para asegurar que las tipografías no solo se complementen entre sí, sino que
+                            también reflejen la esencia del minimalismo. <br><br> A continuación, presentamos algunos
+                            ejemplos de
+                            cómo combinar estos paquetes de fuentes para maximizar su impacto visual y funcionalidad en
+                            diversos proyectos de diseño.
                         </p>
+                        <img class="Img_code" src="DripCSS/IMG/Code/fonts pack.png" alt=""><br>
+                        <p class="coment_green">$FontPack1: ('Titulo': Lato, 'Tema': Raleway, 'Texto': Source
+                            Sans Pro);
+                        </p>
+                        <h4 class="Titulo1">Fuente para titulos pack1</h4>
+                        <h4 class="Tema1">Fuente para temas pack1</h4>
+                        <h4 class="contenido1">Fuente para sub-temas pack1</h4>
+                        <br>
+                        <p class="coment_green">$FontPack2: ('Titulo': Playfair Display, 'Tema': Merriweather,
+                            'Texto':
+                            Oswald);
+                        </p>
+
+                        <h4 class="Titulo2">Fuente para titulos pack1</h4>
+                        <h4 class="Tema2">Fuente para temas pack1</h4>
+                        <h4 class="contenido2">Fuente para sub-temas pack1</h4>
+                        <br>
+                        <p class="coment_green">$FontPack3: ('Titulo': Poppins, 'Tema': Nunito,
+                            'Texto':Quicksand);
+                        </p>
+
+                        <h4 class="Titulo3">Fuente para titulos pack1</h4>
+                        <h4 class="Tema3">Fuente para temas pack1</h4>
+                        <h4 class="contenido3">Fuente para sub-temas pack1</h4>
+                        <br>
+
+                        <p class="contenido">Fuente para contenidos.</p>
                     </div>
                 </div>
 
@@ -208,41 +241,50 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
+                            la libreria cuenta con estilos predisenados para hacer resaltar tu creatividad.
+                        </p><br>
+                        <img class="Img_code" src="DripCSS/IMG/Code/lettergradient..png" alt="codigo fuente">
+                        <h1 class="letter-Gradient Titulo1">letra-Gradient </h1>
 
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mentefg
-                        </p>
+                        <img class="Img_code" src="DripCSS/IMG/Code/Titulo.png" alt="codigo fuente">
+                        <h4 class="titulo">letra-con sombra </h4>
+
+                        <img class="Img_code" src="DripCSS/IMG/Code/texto_sombra.png" alt="codigo fuente">
+                        <h4 class="texto-sombra Titulo3">letra sombra difuminada</h4>
                     </div>
                 </div>
 
             </div>
 
             <div class="Documentacion-seccion">
-                <h1 id="Cards">Cards</h1>
+                <h1 id="Cards" class="Titulo_special">Cards</h1>
 
                 <div class="Documentacion-container">
-                    <h2 id="Card styles" class="Font_Tema">Card</h2>
+                    <h2 id="CardStyles" class="Font_Tema">Card styles</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Una tarjeta es un contenedor de contenido flexible y extensible. 
-                            Incluye opciones para encabezados y pies de página, una amplia variedad 
-                            de contenido, colores de fondo contextuales y potentes opciones de 
-                            visualización.<br />
-
-                            Nuestra libreria esta diseñada con el minimalismo y
-                            armonia en mente
+                            Una tarjeta representa un componente de diseño versátil y adaptable, ideal para encapsular
+                            una variedad de contenidos en una estructura coherente. Ofrece la posibilidad de incorporar
+                            encabezados y pies de página personalizables, así como una amplia gama de contenido, desde
+                            texto e imágenes hasta formularios y botones. <br><br> Además, las tarjetas pueden ser
+                            estilizadas
+                            con colores de fondo que se alinean con el contexto en el que se utilizan, mejorando la
+                            experiencia del usuario mediante la cohesión visual.<br><br> Nuestra biblioteca está
+                            concebida para
+                            enfatizar la simplicidad y la elegancia, asegurando que cada elemento contribuya a una
+                            interfaz de usuario limpia y armoniosa, facilitando la interacción intuitiva y la
+                            accesibilidad.
                         </p>
+                        <img class="Img_code" src="DripCSS/IMG/Code/card 1.png" alt=""><br>
+                        <img class="Img_code" src="DripCSS/IMG/Code/card 2.png" alt=""><br>
+
                     </div>
                 </div>
                 <div class="Documentacion-container">
-                    <h2 id="Card styles" class="Font_Tema">Card styles</h2>
+                    <h2 id="Plantilla" class="Font_Tema">Plantillas</h2>
 
-                    <div class="Documentacion-info-container-content">
+                    <div class="Documentacion-info-container-content ">
                         <h3 class="my-text-4 ">Plantilla #1</h3>
                         <div class="tarjeta ">
                             <div class="front">
@@ -259,14 +301,14 @@
                     <div class="Documentation-container">
                         <div class="Documentacion-info-container-content color-text text-justify ">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
-                            <p class="card1"><code>&lt;div class="tarjeta"&gt;</code></p>
-                            <p class="card1"><code>&lt;div class="front"&gt;</code></p>
-                            <p class="card1"><code>&lt;img&gt;</code></p>
-                            <p class="card1"><code>&lt;div class="back"&gt;</code></p>
-                            <p class="card1"><code>&lt;div class="Main"&gt;</code></p>
-                            <p class="card1"><code>&lt;div class="Footer"  &gt;</code></p>
-                            <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('card1', 'success-alert-card1')"><i class="fa-regular fa-copy"></i></a><br>
-                            <div id="success-alert-card1" class="alert alert-success slide-in-right ocultar">
+                            <p class="t2"><code>&lt;div class="tarjeta"&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="front"&gt;</code></p>
+                            <p class="t2"><code>&lt;img&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="back"&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="Footer"  &gt;</code></p>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
@@ -274,23 +316,44 @@
                     </div><br>
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
-                        <div class="card">
-                            <div class="contenido-card">
-                              <span></span>
-                                <div class="img-perfil">
-                                  <img src="/WhatsApp Image 2024-04-30 at 9.34.35 PM.jpeg" alt="">
-                                  <h4>Drippi</h4>
-                                  <h6>Librerias</h6>
-                                  <p>scss</p>
-                                </div>
-                                <div class="links">
-                                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                  <a href="#"><i class="fa-brands fa-github"></i></a>
-                                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                        <div class="Display-flex justfy_center">
+
+                            <div class="card">
+                                <div class="contenido-card plta-uno-backgraund-A">
+                                    <span></span>
+                                    <div class="img-perfil ">
+                                        <img src="DripCSS/IMG/clear_logo.jpeg" alt="">
+                                        <h4>Drippi</h4>
+                                        <h6>Librerias</h6>
+                                        <p>scss</p>
+                                    </div>
+                                    <div class="links">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
+                            <div class="card">
+                                <div class="contenido-card ">
+                                    <span></span>
+                                    <div class="img-perfil">
+                                        <img src="DripCSS/IMG/logo dark.jpeg" alt="">
+                                        <h4>Drippi</h4>
+                                        <h6>Librerias</h6>
+                                        <p>scss</p>
+                                    </div>
+                                    <div class="links">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div><br>
                     <div class="Documentation-container">
                         <div class="Documentacion-info-container-content  text-justify ">
@@ -303,8 +366,8 @@
                             <p class="card2"><code>&lt;h4&gt;</code></p>
                             <p class="card2"><code>&lt;h6&gt;</code></p>
                             <p class="card2"><code>&lt;p&gt;</code></p>
-                            <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('card2', 'success-alert-card2')"><i class="fa-regular fa-copy"></i></a><br>
-                            <div id="success-alert-card2" class="alert alert-success slide-in-right ocultar">
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('card2')"><i class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
@@ -312,116 +375,191 @@
                     </div><br><br>
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #3</h3>
+
                         <div class="wapper">
                             <div class="container  slider" id="i1">
-                              <input class="slider" type="Radio" name="slide" id="c1">
+                                <input class="slider" type="Radio" name="slide" id="c1">
                                 <label for="c1" class="carta">
-                                  <div class="row">
-                                    <div class="icon">1</div>
-                                    <div class="descripcion">
-                                      <h4></h4>
-                                      <p></p>
+                                    <div class="row">
+                                        <div class="icon">1</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
                                     </div>
-                                  </div>
                                 </label>
-                              <input class="slider" type="Radio" name="slide" id="c2">
+                                <input class="slider" type="Radio" name="slide" id="c2">
                                 <label for="c2" class="carta">
-                                  <div class="row">
-                                    <div class="icon">2</div>
-                                    <div class="descripcion">
-                                        <h4></h4>
-                                        <p></p>
+                                    <div class="row">
+                                        <div class="icon">2</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
                                     </div>
-                                  </div>
                                 </label>
-                              <input type="Radio"class="slider" name="slide" id="c3">
+                                <input type="Radio" class="slider" name="slide" id="c3">
                                 <label for="c3" class="carta">
-                                  <div class="row">
-                                    <div class="icon">3</div>
-                                    <div class="descripcion">
-                                        <h4></h4>
-                                        <p></p>
+                                    <div class="row">
+                                        <div class="icon">3</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
                                     </div>
-                                  </div>
                                 </label>
-                              <input type="Radio" class="slider" name="slide" id="c4">
+                                <input type="Radio" class="slider" name="slide" id="c4">
                                 <label for="c4" class="carta">
-                                  <div class="row">
-                                    <div class="icon">4</div>
-                                    <div class="descripcion">
-                                        <h4></h4>
-                                        <p></p>
+                                    <div class="row">
+                                        <div class="icon">4</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
                                     </div>
-                                  </div>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="Documentacion-container">
-                    <div class="Documentacion-info-container-content text-justify ">
+                    <div class="Documentacion-info-container-content color-text text-justify ">
                         <h3 class="my-text-4">Codigo Fuente</h3><br>
                         <p class="card3"><code>&lt;div class="wapper"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="container  slider"&gt;</code></p>
-                        <p class="card3"><code>&lt;input class="slider" type="Radio" name="slide" id="c1"&gt;</code></p>
+                        <p class="card3"><code>&lt;div class="container slider"&gt;</code></p>
+                        <p class="card3"><code>&lt;input class="slider" type="Radio" name="slide" id="c1"&gt;</code>
+                        </p>
                         <p class="card3"><code>&lt;label for="c4" class="carta"&gt;</code></p>
                         <p class="card3"><code>&lt;div class="row"&gt;</code></p>
                         <p class="card3"><code>&lt;div class="icon"  &gt;</code></p>
                         <p class="card3"><code>&lt;div class="descripcion"  &gt;</code></p>
-                        <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('card3', 'success-alert-card3')"><i class="fa-regular fa-copy"></i></a><br>
-                        <div id="success-alert-card3" class="alert alert-success slide-in-right ocultar">
+                        <br><button class="copy-btn " onclick="copyCodeToClipboard('card3')"><i class="fa-regular fa-copy"></i></button>
+                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                             ¡Éxito! Se ha copiado Corectamente.
                             <span class="close" onclick="closeAlert()">×</span><br>
                         </div>
                     </div>
-                </div><br>
-                <div class="Documentacion-container">
+                    <br>
+
                     <h2 class="my-text-4 ">Card Utylities</h2>
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Las Cartas es una herramienta versátil que facilita la presentación de contenido de manera organizada, atractiva y funcional en una página web.
+                            Las Cartas es una herramienta versátil que facilita la presentación de contenido de
+                            manera
+                            organizada, atractiva y funcional en una página web.
                         </p>
                     </div>
                 </div>
+
             </div>
-            
             <div class="Documentacion-seccion">
-                <h1 id="Layouts">Layouts</h1>
+                <h1 id="Layouts" class="Titulo_special">Layouts</h1>
 
                 <div class="Documentacion-container">
                     <h2 id="Containers" class="Font_Tema">Containers</h2>
 
                     <div class="Documentacion-info-container-content">
-                        <p>
-                            Una tarjeta es un contenedor de contenido flexible y extensible. 
-                            Incluye opciones para encabezados y pies de página, una amplia variedad 
-                            de contenido, colores de fondo contextuales y potentes opciones de 
-                            visualización.<br />
 
-                            Nuestra libreria esta d con el minimalismo y
-                            armonia en mente
-                        </p>
+                        <br>
+                        <h2>Regular Container</h2><br>
+
+                        <p><strong>Descripción:</strong> El contenedor regular, también conocido como contenedor
+                            fijo o
+                            estático, es un elemento de diseño web que tiene un ancho específico definido en píxeles
+                            o
+                            porcentajes. Este tipo de contenedor mantiene un ancho constante independientemente del
+                            tamaño de la ventana del navegador.</p><br>
+
+                        <p><strong>Usos:</strong></p>
+
+                        <p>Controlar el diseño de la página en pantallas de tamaño específico.</p>
+                        <p>Mantener la legibilidad del contenido al limitar el ancho.</p><br>
+
+                        <p><strong>Cómo se usa:</strong></p>
+
+                        <img class="Img_code" src="DripCSS/IMG/Code/contenedor_regular.png" alt=""><br>
+
+                        <p><strong>Ejemplos:</strong></p>
+
+                        <p>Barra lateral de un sitio web que debe tener un ancho fijo.</p>
+                        <p>Contenedor para el cuerpo principal de una página que se desea mantener dentro de ciertos
+                            límites de ancho.</p>
+                        <p>Paneles de navegación o menús que deben mantenerse en un tamaño específico en todas las
+                            páginas.</p>
+
+                        <br>
+                        <h2>Fluid Container</h2><br>
+
+                        <p><strong>Descripción:</strong> El contenedor fluido, también conocido como contenedor
+                            líquido,
+                            es un elemento de diseño web cuyo ancho se ajusta dinámicamente al ancho de la ventana
+                            del
+                            navegador. Su ancho se define generalmente en porcentajes en lugar de píxeles.</p><br>
+
+                        <p><strong>Usos:</strong></p>
+
+                        <p>Crear diseños más adaptables a diferentes tamaños de pantalla.</p>
+                        <p>Mejorar la experiencia del usuario en dispositivos con diferentes resoluciones de
+                            pantalla.
+                        </p><br>
+
+                        <p><strong>Cómo se usa:</strong></p>
+
+                        <img class="Img_code" src="DripCSS/IMG/Code/contenedor_fluid.png" alt=""><br>
+
+                        <p><strong>Ejemplos:</strong></p>
+
+                        <p>Diseño de una página web que se adapta automáticamente al tamaño de la pantalla del
+                            dispositivo.</p>
+                        <p>Contenedor para el contenido principal de un blog que debe ajustarse para ser legible en
+                            dispositivos móviles y de escritorio.</p>
+                        <p>Secciones de una página que deben expandirse o contraerse según el tamaño de la ventana
+                            del
+                            navegador.</p><br>
+
+                        <br>
+                        <h2>Full Width Container</h2><br>
+
+                        <p><strong>Descripción:</strong> El contenedor de ancho completo se extiende a lo ancho de
+                            la
+                            ventana del navegador sin márgenes laterales. Es ideal para elementos visuales
+                            llamativos
+                            que deben abarcar todo el ancho de la pantalla.</p><br>
+
+                        <p><strong>Usos:</strong></p>
+
+                        <p>Crear secciones destacadas o elementos visuales que requieran ocupar todo el ancho de la
+                            pantalla.</p>
+                        <p>Destacar elementos como encabezados, banners o imágenes de fondo.</p><br>
+
+                        <p><strong>Cómo se usa:</strong></p>
+
+                        <img class="Img_code" src="DripCSS/IMG/Code/contenedor_fulldwidth.png" alt=""><br>
+
+                        <p><strong>Ejemplos:</strong></p>
+
+                        <p>Encabezado de una página que contiene el logotipo y el menú de navegación.</p>
+                        <p>Banner publicitario que se muestra en la parte superior de una página web.</p>
+                        <p>Sección de presentación en la página de inicio que incluye una imagen de fondo de ancho
+                            completo.</p><br>
                     </div>
-                </div>
 
-                <div class="Documentacion-container">
                     <h2 id="Grids" class="Font_Tema">Grids</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Nuestra biblioteca ofrece diseños responsivos optimizados utilizando 
-                            las últimas herramientas de Grid. Esto no solo garantiza una experiencia 
-                            de usuario excepcional en dispositivos de todos los tamaños, sino que 
-                            también aporta un aspecto moderno y actualizado a tu sitio web. 
-                            Con nuestra atención meticulosa a los detalles y nuestro enfoque en las 
-                            últimas tendencias de diseño, tu web no solo se verá impresionante, 
-                            sino que también brindará una experiencia visualmente agradable y 
-                            actualizada para tus usuarios
+                            Una grid representa un componente de diseño versátil y adaptable que permite encapsular
+                            contenido de manera eficiente. Este enfoque no solo asegura una experiencia de usuario
+                            sobresaliente en
+                            una amplia gama de dispositivos, sino que también confiere a tu sitio web un estilo
+                            contemporáneo y sofisticado.<br><br> Implementando tendencias de diseño innovadoras, tu
+                            página no solo
+                            capturará la atención por su estética excepcional, sino que también proporcionará una
+                            experiencia de navegación intuitiva, atractiva y al día para tus visitantes.
                         </p>
                     </div>
-                </div>
 
-                <h2 id="Gridarea" class="Font_Tema">Grid Style</h2>
+                    <h2 id="Gridarea" class="Font_Tema">Grid Style</h2>
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #1</h3>
                         <div class="container-padre">
@@ -431,8 +569,9 @@
                             <div class="box2"></div>
                             <div class="box2"></div>
                             <div class="box1"></div>
-                          </div>
+                        </div>
                     </div>
+
                     <br>
 
                 <div class="Documentation-container">
@@ -444,8 +583,8 @@
                         <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
                         <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
                         <p class="t1"><code>&lt;div class="box1"  &gt;</code></p>
-                        <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('t1', 'success-alert-t1')"><i class="fa-regular fa-copy"></i></a><br>
-                        <div id="success-alert-t1" class="alert alert-success slide-in-right ocultar">
+                        <br><button class="copy-btn " onclick="copyCodeToClipboardt1('t1')"><i class="fa-regular fa-copy"></i></button>
+                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                             ¡Éxito! Se ha copiado Corectamente.
                             <span class="close" onclick="closeAlert()">×</span><br>
                         </div>
@@ -472,20 +611,21 @@
                             <p class="t2"><code>&lt;div class="sidebar"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="Footer"  &gt;</code></p>
-                            <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('t2', 'success-alert-t2')"><i class="fa-regular fa-copy"></i></a><br>
-                            <div id="success-alert-t2" class="alert alert-success slide-in-right ocultar">
+                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
                         </div>
                     </div><br>
-                
+
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #3</h3>
                         <div class="container-padre2">
                             <div class="boxs1"></div>
-                            <div class="boxs2"></div>
-                            <div class="boxs1"></div>
+                            <div class="boxs2">
+                            </div>
+                            <div class="boxs1"> </div>
                             <div class="boxs3"></div>
                             <div class="boxs4"></div>
                         </div>
@@ -498,8 +638,8 @@
                     <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
                     <p class="t3"><code>&lt;div class="boxs3"  &gt;</code></p>
                     <p class="t3"><code>&lt;div class="boxs4"  &gt;</code></p>
-                    <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('t3', 'success-alert-t3')"><i class="fa-regular fa-copy"></i></a><br>
-                    <div id="success-alert-t3" class="alert alert-success slide-in-right ocultar">
+                    <br><button class="copy-btn " onclick="copyCodeToClipboard('t3')"><i class="fa-regular fa-copy"></i></button>
+                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                         ¡Éxito! Se ha copiado Corectamente.
                         <span class="close" onclick="closeAlert()">×</span><br>
                     </div>
@@ -508,76 +648,210 @@
                     <h2 class="my-text-4 " >Grids Utylities</h2>
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Esta plantilla proporciona una manera efectiva y elegante de presentar información sobre Java en una página web, mejorando la experiencia del usuario y facilitando la comprensión de los conceptos clave relacionados con este lenguaje de programación.
+                            Esta plantilla proporciona una manera efectiva y elegante de presentar información
+                            sobre
+                            Java en una página web, mejorando la experiencia del usuario y facilitando la
+                            comprensión de
+                            los conceptos clave relacionados con este lenguaje de programación.
                         </p>
                     </div>
+
+                        <h2 id="FlexBox" class="Font_Tema">FlexBox</h2>
+
+                        <div class="Documentacion-info-container-content">
+                            <p>
+                                REDACTAR
+
+                            </p>
+
+                        </div>
+
+                        <h2 id="Uilidades" class="Font_Tema">Uilidades</h2>
+
+                        <div class="Documentacion-info-container-content">
+                            <br>
+                            <h1>Tipos de Texto</h1><br>
+
+                            <h2>Descripción:</h2>
+                            <p>La utilidad de tipos de texto te permite definir fácilmente diferentes tamaños de fuente
+                                para tus elementos HTML, facilitando la creación de diseños responsivos y coherentes.
+                            </p>
+
+                            <br>
+                            <h2>Usos:</h2>
+                            <p>- Ajustar el tamaño del texto para que sea legible en diferentes dispositivos.</p>
+                            <p>- Mantener la consistencia en el diseño del sitio web al adaptar dinámicamente el tamaño
+                                del texto según el espacio disponible.</p>
+
+                            <br>
+                            <h2>Cómo se usa:</h2>
+                            <p>1. Importa la utilidad de tipos de texto en tu archivo HTML.</p>
+                            <p>2. Utiliza las clases de tamaño de texto proporcionadas en combinación con las etiquetas
+                                HTML para aplicar diferentes tamaños de fuente.</p>
+
+                            <br>
+                            <h2>Ejemplos:</h2><br>
+
+                            <img class="Img_code" src="DripCSS/IMG/Code/tipos_textos.png" alt=""><br><br>
+
+                            <img class="Img_code" src="DripCSS/IMG/Code/tipos_texto_ejemplos.jpeg" alt="" width="500"
+                                height="150"><br>
+
+                            <br>
+                            <h1>Sombra para Elementos</h1><br>
+
+                            <h2>Descripción:</h2>
+                            <p>La utilidad de sombra para elementos te permite añadir sombras a tus elementos HTML de
+                                manera sencilla, agregando profundidad y realce visual a tu diseño.</p>
+
+                            <br>
+                            <h2>Usos:</h2>
+                            <p>- Destacar elementos importantes en tu página web.</p>
+                            <p>- Agregar profundidad y realismo a los elementos para mejorar la apariencia general del
+                                diseño.</p>
+
+                            <br>
+                            <h2>Cómo se usa:</h2>
+                            <p>1. Importa la utilidad de sombras en tu archivo HTML.</p>
+                            <p>2. Utiliza las clases de sombra proporcionadas para aplicar diferentes estilos de sombra
+                                a los elementos HTML.</p>
+
+                            <br>
+                            <h2>Ejemplos:</h2><br>
+
+                            <img class="Img_code" src="DripCSS/IMG/Code/tipos_sombras.png" alt=""><br><br>
+
+                            <img class="Img_code" src="DripCSS/IMG/Code/tipos_sombras_ejemplos.jpeg" alt="" width="500"
+                                height="150"><br>
+
+                        </div>
+
                 </div>
-                <div class="Documentacion-container">
-                    <h2 id="FlexBox" class="Font_Tema">FlexBox</h2>
 
-                    <div class="Documentacion-info-container-content">
-                        <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
-                        </p>
-                    </div>
-                </div>
-
-                <div class="Documentacion-container">
-                    <h2 id="Uilidades" class="Font_Tema">Uilidades</h2>
-
-                    <div class="Documentacion-info-container-content">
-                        <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
-                        </p>
-                    </div>
-                </div>
+                
 
             </div>
-
             <div class="Documentacion-seccion">
-                <h1 id="Form">Forms</h1>
+                <h1 id="Forms">Forms</h1>
 
                 <div class="Documentacion-container">
                     <h2 id="Forms" class="Font_Tema">Forms</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            contamos con una seleccion de forms para ser utilizados en la recolecion de datos
+                            personales, y comentarios.
                         </p>
+                        <h2>Ejemplo #1</h2>
+                        <div class="form1 ">
+                            <h2 class="TituloForm">Formulario p</h2>
+
+                            <label class="label_sm " for="nombre">Nombre:</label>
+                            <input class="input_XGr" type="text" id="nombre" name="nombre" required="required"
+                                placeholder="Introduzca su nombre">
+
+                            <label class="label_sm " for="email">Email:</label>
+                            <input class="input_XGr" type="email" id="email" name="email" required="required"
+                                placeholder="Introduzca su email">
+
+                            <label class="label_sm " for="frutas">Ingrese departamento :</label>
+                            <input class="input_Gr  " type="text" id="frutas" list="lista-frutas"
+                                placeholder="Departamento">
+
+                            <datalist id="lista-frutas">
+                                <option value="Manzana">
+                                <option value="Banana">
+                                <option value="Naranja">
+                                <option value="Uva">
+                                <option value="Pera">
+                            </datalist>
+
+                            <label class="label_sm " for="pais">País:</label>
+                            <select class="input_Gr " id="pais" name="pais" required="required"
+                                placeholder="Introduzca su pais de origen">
+                                <option value="">Selecciona un país</option>
+                                <option value="es">España</option>
+                                <option value="mx">México</option>
+                                <option value="ar">Argentina</option>
+                            </select>
+
+                            <label class="label_sm " class=" " for="edad">Edad:</label>
+                            <input class=" input_sm" type="number" id="edad" name="edad" min="18" max="99"
+                                required="required">
+
+                            <label class="label_sm " for="comentarios">Comentarios:</label>
+                            <textarea class="txtarea" id="comentarios" name="comentarios" rows="3"
+                                cols="50">Escribe tus comentarios aquí...</textarea>
+
+                            <button class="self-right buttontest" type="submit">Enviar</button>
+
+                        </div>
+                    </div>
+
+                    <div class="Documentacion-info-container-content">
+                        <h2>Ejemplo #2</h2>
+
+                        <form class="form4">
+                            <div class="title4">
+                                <h1 class="TituloForm2 ">Registro</h1>
+                            </div>
+
+                            <div class="info">
+
+                                <label class="lable_sm2" for="Nombre">Nombre:</label>
+                                <input class="input_md2" type="text" id="nombre contactanos" name="nombre"
+                                    required="required" placeholder="Introduzca su nombre">
+
+                                <label class="lable_sm2" for="Nombre">Email:</label>
+                                <input class="input_md2" type="text" id="Email contactanos" name="nombre"
+                                    required="required" placeholder="Introduzca su nombre">
+
+                                <label class="lable_sm2" for="Nombre">Password:</label>
+                                <input type="password" class="input_md2" id="nombre contactanos" name="nombre"
+                                    required="required" placeholder="Introduzca su nombre">
+
+                                <label class="lable_sm2" for="Nombre">Reapet Password:</label>
+                                <input type="password" class="input_md2" id="nombre contactanos" name="nombre"
+                                    required="required" placeholder="Introduzca su nombre">
+
+                            </div>
+
+                            <div class="img"> </div>
+
+                            <div class="end">
+                                <button class="button_Squear_Th2">registrarte</button>
+                                <input class="button_Squear_Th2" type="reset">
+                            </div>
+
+                        </form>
                     </div>
                 </div>
 
                 <div class="Documentacion-container">
                     <h2 id="TextInputs" class="Font_Tema">Text inputs</h2>
 
-                    <div class="Documentacion-info-container-content">
+                    <div class="Documentacion-info-container-content ">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            contmos con una serie de estilos de imputs destinados para crear formularios
+                            eficaces
                         </p>
+                        <h2>Ejemplos</h2>
+                        <div class="Display-flex -col">
+                            <label class="temasm " class=" " for="edad">Edad:</label>
+                            <input class="input_sm" type="number" id="edad" name="edad" min="18" max="99"
+                                required="required">
+
+                            <label class="lable_sm2" for="Nombre">input de ejemplo ejemplo:</label>
+                            <input class="input_sm2" type="text" id="nombre contactanos" name="nombre"
+                                required="required" placeholder="Introduzca su nombre">
+
+                            <label class="label_smReserva" for="Nombre">Nombre:</label>
+                            <input class="input_mdReserva" type="text" id="nombre contactanos" name="nombre"
+                                required="required" placeholder="Introduzca su nombre">
+
+                            <img class="Img_code" src="DripCSS/IMG/Code/input__sm.png" alt="">
+                        </div>
+
                     </div>
                 </div>
 
@@ -586,14 +860,30 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            REDACTAR
                         </p>
+                        <div class="Display-flex -col">
+                            <select class="input_md" id="pais" name="pais" required="required"
+                                placeholder="Introduzca su pais de origen">
+                                <option value="">Selecciona un país</option>
+                                <option value="es">España</option>
+                                <option value="mx">México</option>
+                                <option value="ar">Argentina</option>
+                            </select>
+
+                            <label class="label_sm self-start" for="frutas">Ingrese departamento :</label>
+                            <input class="input_sm  " type="text" id="frutas" list="lista-frutas"
+                                placeholder="Departamento">
+
+                            <datalist id="lista-frutas">
+                                <option value="Manzana">
+                                <option value="Banana">
+                                <option value="Naranja">
+                                <option value="Uva">
+                                <option value="Pera">
+                            </datalist>
+                        </div>
+
                     </div>
                 </div>
 
@@ -602,14 +892,15 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            REDACTAR
                         </p>
+                        <img class="Img_code" src="DripCSS/IMG/Code/input__sm.png" alt="">
+                        <br>
+
+                        <input class="rangeimput_Sm" type="range" name="" value="50" min="0" max="100" step="1"><br>
+                        <input class="rangeimput_Md" type="range" name="" value="50" min="0" max="100" step="1"><br>
+                        <input class="rangeimput_Gr" type="range" name="" value="50" min="0" max="100" step="1"><br>
+
                     </div>
                 </div>
 
@@ -618,14 +909,26 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            REDACTAR
                         </p>
+                        <div class="self-center plta-backgraund-white rounded-sm">
+                            <fieldset class="lable_sm2  ">
+                                <legend>Selecciona una opción:</legend>
+                                <label for="radioOption1">
+                                    <input type="radio" name="radioGroup" id="radioOption1">
+                                    Opción 1
+                                </label>
+                                <label for="radioOption2">
+                                    <input type="radio" name="radioGroup" id="radioOption2">
+                                    Opción 2
+                                </label>
+                                <label for="radioOption3">
+                                    <input type="radio" name="radioGroup" id="radioOption3">
+                                    Opción 3
+                                </label>
+                            </fieldset>
+                        </div>
+
                     </div>
                 </div>
 
@@ -634,31 +937,33 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            REDACTAR
                         </p>
+                        <div class="self-center plta-backgraund-white rounded-sm ">
+                            <label class="lable_sm2 " for="comentarios">Comentarios:</label>
+                            <textarea class="txtarea3 self-center" id="comentarios" name="comentarios" rows="3"
+                                cols="50">Escribe tus comentarios aquí...</textarea>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
             <div class="Documentacion-seccion">
-                <h1 id="Buttons">Buttons</h1>
+                <h1 id="Buttons" class="Titulo_special">Buttons</h1>
 
                 <div class="Documentacion-container">
                     <h2 id="ButtonTypes" class="Font_Tema">Buttons types</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Contamos con diversos tipos de botones que en una serie de colores pensado para que sean
-                            simples y eficases. <br> la clase button_round es el boton defecto de la libreria, el tiene
-                            sus
-                            diferentes colores deacuerdo a la paleta de colores utilizada.
+                            Nuestra biblioteca ofrece una variedad de botones diseñados en una gama de colores
+                            para
+                            garantizar simplicidad y eficiencia. La clase `button_round` es el botón
+                            predeterminado,
+                            disponible en varios colores que se alinean con nuestra paleta establecida,
+                            asegurando
+                            coherencia y una integración visual atractiva.
                         </p>
 
                         <div class="bottom-responsive">
@@ -669,7 +974,8 @@
                         </div>
 
                         <p class="coment">
-                            por ejemplo, el boton base pertenese a la clase <p class="coment_green"> class="buttontest"
+                            por ejemplo, el boton base pertenese a la clase <p class="coment_green">
+                                class="buttontest"
                             </p> <br>
 
                             <div class="bottom-responsive" style="justify-items: center;">
@@ -692,7 +998,10 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Las utilidades relacionada con los botones comiensan con la palabra <p class="coment_green">set_ </p> por ejemplo para aumentar el tamano de un boton se puede utilizar <p class="coment_green"> set_btn_grande</p>
+                            Las utilidades relacionada con los botones comiensan con la palabra <p
+                                class="coment_green">
+                                set_ </p> por ejemplo para aumentar el tamano de un boton se puede utilizar <p
+                                class="coment_green"> set_btn_grande</p>
 
                         </p>
                         <div class="Display-flex" style="justify-items: center;">
@@ -706,23 +1015,17 @@
             </div>
 
             <div class="Documentacion-seccion">
-                <h1 id="Alerts">Alerts</h1>
+                <h1 id="Alerts" class="Titulo_special">Alerts</h1>
 
                 <div class="Documentacion-container">
                     <h2 id="AlertTypes" class="Font_Tema">Alert Types</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            REDACTAR
                         </p>
                     </div>
-                </div> 
+                </div>
             </div>
 
             <div class="Documentacion-seccion">
@@ -733,10 +1036,14 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Los badges son pequeños elementos gráficos utilizados
-                            para mostrar información adicional o destacar ciertos 
-                            aspectos en una interfaz de usuario, generalmente en forma 
-                            de etiquetas o insignias.<br />
+                            Los badges son elementos gráficos compactos que sirven para presentar información
+                            adicional
+                            o resaltar características específicas en una interfaz de usuario, a menudo como
+                            etiquetas o
+                            distintivos. Por otro lado, la clase `button_round` representa el botón predeterminado
+                            en la
+                            biblioteca, el cual se adapta a una variedad de colores según la paleta establecida,
+                            ofreciendo así una integración visual armoniosa y coherente con el diseño general.<br />
                         </p>
                     </div><br>
                     <h2 id="AlertTypes" class="Font_Tema">Badges Style</h2>
@@ -766,31 +1073,37 @@
                     <div class="Documentacion-info-container-content">
                         <p>
                             Los badges son herramientas versátiles que pueden mejorar la usabilidad,
-                            la organización y la visualización de la información en una interfaz de 
-                            usuario, proporcionando una manera rápida y efectiva de comunicar diversos 
+                            la organización y la visualización de la información en una interfaz de
+                            usuario, proporcionando una manera rápida y efectiva de comunicar diversos
                             tipos de información o acciones a los usuarios.
                             <br>
                         </p>
                     </div>
-                </div> 
+                </div>
             </div>
             <br>
             <div class="Documentacion-seccion">
-                <h1 id="Animations">Animaciones</h1>
+                <h1 id="Animations" class="Titulo_special">Animaciones</h1>
 
                 <div class="Documentacion-container">
                     <h2 id="Hovers" class="Font_Tema">Hovers </h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            contamos con diversos estilos de hovers para hacer la interfaz mas dinamica
                         </p>
+                        <h1 class="Letter_hover">ejemplo hover en texto</h1>
+                        <h1 class="Letter_hover_Scale_Up_Down">ejemplo hover en texto</h1>
+                        <h1 class="letter-hover-border">ejemplo hover en texto</h1>
+                        <h1 class="letter-hover-left-color">ejemplo hover en texto</h1>
+                        <h1 class="letter-hover-right-color">ejemplo hover en texto</h1>
+                        <h1 class="letter-hover-top-color">ejemplo hover en texto</h1>
+                        <h1 class="letter-hover-bottom-color">ejemplo hover en texto</h1>
+                        <div class="Display-flex shadow-difum_Forms plta-backgraund-white rounded-xms">
+                            <h1 class="my-text-6 self-center">ejemplo hover en un div</h1>
+
+                        </div>
+
                     </div>
                 </div>
 
@@ -799,17 +1112,76 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            ¿Listo para sumergirte en el Drip? Bienvenido a nuestra
-                            librería, donde la simplicidad se encuentra con la
-                            sofisticación. ¡Prepárate para un viaje minimalista y lleno de
-                            creatividad! <br />
-
-                            Nuestra libreria esta dise&ntildeada con el minimalismo y
-                            armonia en mente
+                            REDACTAR
                         </p>
+
+                        <div class="wapper">
+                            <div class="container  slider" id="wrp2">
+                                <input class="slider" type="Radio" name="slide" id="c11">
+                                <label for="c11" class="carta">
+
+                                    <div class="row">
+                                        <img src="DripCSS/IMG/Purple_cloack.jpg" alt="">
+                                        <div class="icon">1</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input class="slider" type="Radio" name="slide" id="c22">
+                                <label for="c22" class="carta">
+                                    <div class="row">
+                                        <div class="icon">2</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="Radio" class="slider" name="slide" id="c33">
+                                <label for="c33" class="carta">
+                                    <div class="row">
+                                        <div class="icon">3</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="Radio" class="slider" name="slide" id="c44">
+                                <label for="c44" class="carta">
+                                    <div class="row">
+                                        <div class="icon">4</div>
+                                        <div class="descripcion">
+                                            <h4></h4>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="tarjeta ">
+                            <div class="front">
+                                <img src="DripCSS/IMG/logo.png" alt="">
+                                <h3>Target 1</h3>
+                            </div>
+                            <div class="back">
+                                <h3>Target 1</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente
+                                    cumque
+                                    possimus, ab eum nemo animi
+                                    aspernatur doloremque odio inventore nihil corrupti cum porro est similique
+                                    ad
+                                    blanditiis amet ipsa.</p>
+                                <div class="link"><a href="#">Detalles</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
             <!--------------------------------------iTEMS----------------------------------------------------------->
 
@@ -817,7 +1189,7 @@
         </div>
         <!------------------------------------------------------------------------------------------------->
 </body>
-<footer ></footer>
+<footer></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

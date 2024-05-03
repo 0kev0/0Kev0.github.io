@@ -158,6 +158,18 @@
   animation: slideOutRight 0.5s forwards;
 }
 
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
 .article {
   margin-top: 0;
   margin-left: 10%;
@@ -165,9 +177,17 @@
 }
 
 .article-2-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  -moz-column-count: 2;
+       column-count: 2; /* Divide el contenido en dos columnas */
+  -moz-column-gap: 10px;
+       column-gap: 10px; /* Espacio entre las columnas */
+  margin: 20px 40px;
+}
+
+.article-1-col {
+  -moz-column-count: 1;
+       column-count: 1; /* Divide el contenido en dos columnas */
+  margin: 20px 15%;
 }
 
 .article-3-col {
@@ -176,8 +196,13 @@
   grid-gap: 20px;
 }
 
-.article-subrayado {
-  background-color: yellow;
+.txt-subrayado {
+  background-color: rgb(255, 0, 0);
+}
+
+.txt-subrayado_block {
+  background-color: rgb(255, 0, 0);
+  display: block;
 }
 
 .article-bordered {
@@ -294,6 +319,10 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -302,9 +331,9 @@
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
-  @media screen and (max-width: 800px) {
+  @media (max-width: 1000px) {
     font-size: 12px;
   }
   @media screen and (max-width: 600px) {
@@ -340,7 +369,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -348,6 +377,11 @@
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -372,6 +406,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -424,29 +527,84 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
+.Titulo1 {
+  font-family: "Lato";
+}
+
+.Tema1 {
+  font-family: "Raleway";
+}
+
+.contenido1 {
+  font-family: "Source Sans Pro";
+}
+
+.Titulo2 {
+  font-family: "Playfair Display";
+}
+
+.Tema2 {
+  font-family: "Merriweather";
+}
+
+.contenido2 {
+  font-family: "Oswald";
+}
+
+.Titulo3 {
+  font-family: "Poppins";
+}
+
+.Tema3 {
+  font-family: "Nunito";
+}
+
+.contenido3 {
+  font-family: "Quicksand";
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
-  text-shadow: 3px 3px rgb(146, 144, 195);
-  font-size: 50px;
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -463,7 +621,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -481,7 +640,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -497,13 +656,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -511,16 +670,24 @@
   padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-  .Font_Tema h3 {
+  .Font_Titulo h3 {
     font-size: 15px;
   }
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -563,6 +730,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -615,29 +851,84 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
+.Titulo1 {
+  font-family: "Lato";
+}
+
+.Tema1 {
+  font-family: "Raleway";
+}
+
+.contenido1 {
+  font-family: "Source Sans Pro";
+}
+
+.Titulo2 {
+  font-family: "Playfair Display";
+}
+
+.Tema2 {
+  font-family: "Merriweather";
+}
+
+.contenido2 {
+  font-family: "Oswald";
+}
+
+.Titulo3 {
+  font-family: "Poppins";
+}
+
+.Tema3 {
+  font-family: "Nunito";
+}
+
+.contenido3 {
+  font-family: "Quicksand";
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
-  text-shadow: 3px 3px rgb(146, 144, 195);
-  font-size: 50px;
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -654,7 +945,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -672,7 +964,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -688,13 +980,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -702,16 +994,24 @@
   padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-  .Font_Tema h3 {
+  .Font_Titulo h3 {
     font-size: 15px;
   }
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -773,7 +1073,7 @@
 }
 
 .buttontest_Th4 {
-  background: rgb(145, 10, 103);
+  background: #910a67;
 }
 .buttontest_Th4:hover {
   background: #a90c78;
@@ -785,7 +1085,7 @@
   display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
   height: 6vh;
   width: auto; /* El ancho se ajustará automáticamente al texto */
-  font-family: Raleway;
+  font-family: "Merriweather";
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
@@ -824,7 +1124,7 @@
 }
 
 .butontest_round_Th4 {
-  background: rgb(145, 10, 103);
+  background: #910a67;
 }
 .butontest_round_Th4:hover {
   background: #8b0567;
@@ -872,7 +1172,7 @@
 }
 
 .butontest_boxshadow_Th4 {
-  background: rgb(145, 10, 103);
+  background: #910a67;
 }
 .butontest_boxshadow_Th4:hover {
   background: #8b0567;
@@ -1062,7 +1362,7 @@
 }
 .Tap_Button_Th4 .Tap_Button_Th2 {
   background: rgb(114, 4, 85);
-  color: rgb(145, 10, 103);
+  color: #910a67;
 }
 
 /*before * editado sobre limo buttons*/
@@ -1172,7 +1472,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: rgb(145, 10, 103);
+  background-color: #910a67;
   color: #fff;
 }
 .boton-primario_Th4:Hover:hover {
@@ -1394,6 +1694,7 @@
   text-align: center;
   padding: 20px;
   box-shadow: 0 5px 10px black;
+  overflow: scroll;
 }
 .tarjeta .back .link {
   border-top: solid 1px white;
@@ -1422,6 +1723,15 @@
 .tarjeta:hover .back {
   transform: perspective(600px) rotateY(360deg);
   transition: 0.45s;
+}
+
+.back::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+  /* Estilo del borde de la barra de desplazamiento */
+}
+
+.back::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del botón de desplazamiento */
 }
 
 .card {
@@ -1520,10 +1830,10 @@
 }
 
 .container {
-  height: 400px;
+  height: 350px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .carta {
@@ -1540,7 +1850,14 @@
   box-shadow: 0px, 10px, 30px, -5px rgba(0, 0, 0, 0.83);
   background: rgb(169, 92, 213);
 }
+.carta img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .carta .row {
+  margin-top: 0;
   color: white;
   display: flex;
   flex-wrap: nowrap;
@@ -1617,6 +1934,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -1669,29 +2055,84 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
+.Titulo1 {
+  font-family: "Lato";
+}
+
+.Tema1 {
+  font-family: "Raleway";
+}
+
+.contenido1 {
+  font-family: "Source Sans Pro";
+}
+
+.Titulo2 {
+  font-family: "Playfair Display";
+}
+
+.Tema2 {
+  font-family: "Merriweather";
+}
+
+.contenido2 {
+  font-family: "Oswald";
+}
+
+.Titulo3 {
+  font-family: "Poppins";
+}
+
+.Tema3 {
+  font-family: "Nunito";
+}
+
+.contenido3 {
+  font-family: "Quicksand";
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
-  text-shadow: 3px 3px rgb(146, 144, 195);
-  font-size: 50px;
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -1708,7 +2149,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -1726,7 +2168,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -1742,13 +2184,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -1756,16 +2198,24 @@
   padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-  .Font_Tema h3 {
+  .Font_Titulo h3 {
     font-size: 15px;
   }
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -1806,7 +2256,7 @@
   box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
 }
 .container-regular p {
-  color: rgb(209, 208, 208);
+  color: rgb(61, 3, 3);
 }
 .container-regular p:hover {
   text-decoration: underline;
@@ -1890,15 +2340,19 @@
   padding-left: 5%;
   padding-top: 2%;
 }
-.Documentacion-seccion h1 {
+
+.Titulo_special {
   margin-top: 10px;
-  font-family: Roboto;
+  font-family: "Lato";
   text-shadow: -4px 0px rgb(112, 11, 151);
-  display: inline-block;
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
+}
+.Titulo_special::first-letter {
+  font-size: 50px;
 }
 
 .Documentacion-container {
@@ -1906,15 +2360,17 @@
   padding: 20px;
 }
 .Documentacion-container h2 {
-  font-family: Montserrat;
+  font-family: "Raleway";
   font-size: 35px;
-  display: inline-block;
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
 .Documentacion-info-container-content {
+  margin-bottom: 2%;
+  margin-top: 2%;
   width: 90%;
   background-color: #4e4e4e;
   padding: 10px;
@@ -1922,11 +2378,11 @@
   border-radius: 4px;
 }
 .Documentacion-info-container-content h3 {
-  font-family: Roboto;
+  font-family: "Lato";
   color: rgb(255, 255, 255);
 }
 .Documentacion-info-container-content p {
-  font-family: Open Sans;
+  font-family: "Oswald";
 }
 .Documentacion-info-container-content p:hover {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
@@ -1948,6 +2404,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
+}
+
+.justfy_center {
+  justify-content: center;
+}
+
+.align_center {
+  text-align: center;
 }
 
 .-col {
@@ -2009,6 +2474,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -2061,29 +2595,84 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
+.Titulo1 {
+  font-family: "Lato";
+}
+
+.Tema1 {
+  font-family: "Raleway";
+}
+
+.contenido1 {
+  font-family: "Source Sans Pro";
+}
+
+.Titulo2 {
+  font-family: "Playfair Display";
+}
+
+.Tema2 {
+  font-family: "Merriweather";
+}
+
+.contenido2 {
+  font-family: "Oswald";
+}
+
+.Titulo3 {
+  font-family: "Poppins";
+}
+
+.Tema3 {
+  font-family: "Nunito";
+}
+
+.contenido3 {
+  font-family: "Quicksand";
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
-  text-shadow: 3px 3px rgb(146, 144, 195);
-  font-size: 50px;
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -2100,7 +2689,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -2118,7 +2708,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -2134,13 +2724,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -2148,16 +2738,24 @@
   padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-  .Font_Tema h3 {
+  .Font_Titulo h3 {
     font-size: 15px;
   }
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -2200,6 +2798,75 @@
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .Sidebar_content, .bentoCx3 {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .ItemList, .Content, .bentoBx2 {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -2252,29 +2919,84 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
+.Titulo1 {
+  font-family: "Lato";
+}
+
+.Tema1 {
+  font-family: "Raleway";
+}
+
+.contenido1 {
+  font-family: "Source Sans Pro";
+}
+
+.Titulo2 {
+  font-family: "Playfair Display";
+}
+
+.Tema2 {
+  font-family: "Merriweather";
+}
+
+.contenido2 {
+  font-family: "Oswald";
+}
+
+.Titulo3 {
+  font-family: "Poppins";
+}
+
+.Tema3 {
+  font-family: "Nunito";
+}
+
+.contenido3 {
+  font-family: "Quicksand";
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .bentoXx1, .tema {
-  text-shadow: 3px 3px rgb(146, 144, 195);
-  font-size: 50px;
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .bentoXx1, .tema {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -2291,7 +3013,8 @@
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -2309,7 +3032,7 @@
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -2325,13 +3048,13 @@
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -2339,16 +3062,24 @@
   padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-  .Font_Tema h3 {
+  .Font_Titulo h3 {
     font-size: 15px;
   }
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -2368,13 +3099,13 @@
 }
 
 .TituloForm {
-  font-family: Roboto;
+  font-family: "Lato";
 }
 
 .label_sm {
   font-size: 18px;
   font-weight: 100;
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 .label_sm::first-letter {
   font-size: 20px;
@@ -2387,6 +3118,7 @@
 .input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
   width: 15%;
   height: 4vh;
+  align-self: self-start;
   border-radius: 2px;
   border: 1px white solid;
   background-color: rgb(225, 225, 225);
@@ -2398,11 +3130,15 @@
   outline: none;
   outline-color: red;
 }
+.input_Xsm option:checked, .input_XGr option:checked, .input_Gr option:checked, .input_md option:checked, .input_sm option:checked {
+  color: green;
+}
 
 .input_Xsm, .input_XGr, .input_Gr, .input_md, .input_sm {
+  border-radius: none;
   width: 10%;
   height: 4vh;
-  font-family: Lato;
+  font-family: "Playfair Display";
   align-self: center;
 }
 .input_Xsm:focus, .input_XGr:focus, .input_Gr:focus, .input_md:focus, .input_sm:focus {
@@ -2413,7 +3149,7 @@
 .input_sm {
   width: 15%;
   height: 4vh;
-  font-family: Lato;
+  font-family: "Playfair Display";
   align-self: flex-start;
   margin-left: 5%;
 }
@@ -2454,7 +3190,8 @@
 }
 
 .TituloForm2 {
-  font-family: Lato;
+  color: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
+  font-family: "Playfair Display";
   text-decoration: underline;
 }
 
@@ -2481,12 +3218,14 @@
   width: 50%;
   height: 4vh;
   border: 3px white solid;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: white;
+  align-self: flex-start;
+  margin-left: 5%;
   box-shadow: 0px 2px 0px 0px #ff8080;
 }
 .input_sm2:hover {
-  box-shadow: 0px 3px 1px 0px rgb(142, 5, 194);
+  box-shadow: 0px 3px 1px 0px #ff8080;
 }
 
 .input_md2, .input_mdReserva, .input_smReserva {
@@ -2581,7 +3320,7 @@
 }
 
 .TituloFormReserva {
-  font-family: Lato;
+  font-family: "Playfair Display";
   text-transform: uppercase;
   font-weight: 500;
   color: #3432a3;
@@ -2590,8 +3329,9 @@
 .label_smReserva {
   font-size: 20px;
   font-weight: 500;
-  font-family: Raleway;
+  font-family: "Merriweather";
   color: #3432a3;
+  align-self: self-start;
 }
 .label_smReserva::first-letter {
   font-size: 20px;
@@ -2623,12 +3363,26 @@
   margin-left: 10px;
 }
 
-input[type=range] {
-  border-radius: 5px;
+.rangeimput, .rangeimput_Sm, .rangeimput_Md, .rangeimput_Gr {
+  border-radius: 8px;
+  width: 25%;
   height: 8px;
-  width: 80%;
   cursor: grab;
-  accent-color: rgb(255, 0, 0);
+}
+
+.rangeimput_Gr {
+  width: 50%;
+  accent-color: rgb(142, 5, 194);
+}
+
+.rangeimput_Md {
+  width: 25%;
+  accent-color: rgb(61, 0, 0);
+}
+
+.rangeimput_Sm {
+  width: 15%;
+  accent-color: rgb(114, 4, 85);
 }
 
 legend {
@@ -2672,6 +3426,11 @@ input[type=radio]:checked:after {
   align-self: flex-start;
 }
 
+.self-center {
+  margin-left: 5%;
+  align-self: center;
+}
+
 .self-right {
   margin-right: 10px;
   align-self: flex-end;
@@ -2701,6 +3460,10 @@ input[type=radio]:checked:after {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -2709,7 +3472,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -2741,12 +3504,17 @@ input[type=radio]:checked:after {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
 }
 
 .form1 {
@@ -2757,7 +3525,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -2776,7 +3544,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -2799,7 +3567,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -2810,7 +3578,7 @@ input[type=radio]:checked:after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
-  grid-template-areas: "title title " "info card" "end end";
+  grid-template-areas: "title title " "info card" "final final";
   gap: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -2827,7 +3595,7 @@ input[type=radio]:checked:after {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 60vh;
   gap: 8px;
   width: 100%;
@@ -2840,7 +3608,7 @@ input[type=radio]:checked:after {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 60vh;
   grid-area: card;
   gap: 8px;
@@ -2848,10 +3616,10 @@ input[type=radio]:checked:after {
 }
 
 .end {
-  grid-area: end;
+  grid-area: final;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .form3, .form4 {
@@ -2862,13 +3630,13 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
   padding-bottom: 10px;
   border-radius: 5px;
-  height: auto;
+  height: 70%;
   width: 80vh;
   padding: 20px;
   align-items: center;
@@ -2885,7 +3653,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -2896,18 +3664,18 @@ input[type=radio]:checked:after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 3fr 0.5fr;
-  grid-template-areas: "title img " "info img" "end img";
+  grid-template-areas: "title img " "info img" "final img";
   gap: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
-  color: white;
   padding: 0px;
+  color: black;
 }
 
 .title4 {
   padding: 5%;
   grid-area: title;
-  color: grey;
+  color: gray;
 }
 
 .info {
@@ -2915,7 +3683,7 @@ input[type=radio]:checked:after {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 60vh;
   gap: 8px;
   grid-area: info;
@@ -2932,7 +3700,7 @@ input[type=radio]:checked:after {
 }
 
 .end {
-  grid-area: end;
+  grid-area: final;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2955,7 +3723,7 @@ input[type=radio]:checked:after {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   height: auto;
   width: 70vh;
   border-radius: 5px;
@@ -2994,6 +3762,10 @@ input[type=radio]:checked:after {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -3002,7 +3774,7 @@ input[type=radio]:checked:after {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -3034,12 +3806,17 @@ input[type=radio]:checked:after {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .Sidebar, .bentoCx3 {
+.shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .shadow-right, .ItemList, .Content, .bentoBx2 {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
 }
 
 /*Paleta de colores A*/
@@ -3055,23 +3832,21 @@ input[type=radio]:checked:after {
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
-  transition: 0.45s all ease-in-out;
-  font-size: 40px;
+  transition: 0.15s all ease-in;
   font-weight: bold;
-  box-shadow: 3px 3px rgb(142, 5, 194);
   background-image: linear-gradient(to right, rgb(153, 148, 252), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.list_Letter_hover:hover, .Sidebar a:hover {
+.list_Letter_hover:hover, .Sidebar_content a:hover {
   transition: 0.5s all ease-in-out;
   font-size: 15px;
   font-weight: bold;
   text-shadow: 0px 2px 10px rgb(142, 5, 194);
 }
-.list_Letter_hover:active, .Sidebar a:active:hover, .list_Letter_hover:after, .Sidebar a:hover:after {
+.list_Letter_hover:active, .Sidebar_content a:active:hover, .list_Letter_hover:after, .Sidebar_content a:hover:after {
   transition: 0.3s all ease-out;
   font-size: 16px;
   color: whitesmoke;
@@ -3081,11 +3856,45 @@ input[type=radio]:checked:after {
   transition: 0.45s all ease-in;
 }
 .div_hover_Scale_Up_Down:hover, .bentoDx3:hover, .bentoCx3:hover, .bentoBx2:hover, .bentoAx3:hover {
-  transform: scale(1.05);
+  transform: scaleX(1.05);
 }
 .div_hover_Scale_Up_Down:after, .bentoDx3:after, .bentoCx3:after, .bentoBx2:after, .bentoAx3:after {
   transition: 0.35s all ease-out;
-  transform: scale(1);
+  transform: scaleX(1);
+}
+
+.Letter_hover_Scale_Up_Down {
+  transition: 0.45s all ease-in;
+}
+.Letter_hover_Scale_Up_Down:hover {
+  transform: scaleX(1.05);
+}
+.Letter_hover_Scale_Up_Down:after {
+  transition: 0.35s all ease-out;
+  transform: scaleX(1);
+}
+
+.letter-hover-border, .letter-hover-top-color, .letter-hover-bottom-color, .letter-hover-right-color, .letter-hover-left-color {
+  transition: border 0.3s all ease-in-out;
+}
+.letter-hover-border:hover, .letter-hover-top-color:hover, .letter-hover-bottom-color:hover, .letter-hover-right-color:hover, .letter-hover-left-color:hover {
+  text-shadow: 5px 0px 15px whitesmoke;
+}
+
+.letter-hover-left-color:hover {
+  text-shadow: -5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-right-color:hover {
+  text-shadow: 5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-bottom-color:hover {
+  text-shadow: 0px 5px rgb(112, 11, 151);
+}
+
+.letter-hover-top-color:hover {
+  text-shadow: 0px -5px rgb(112, 11, 151);
 }
 
 .div_simple_hover:hover {
@@ -3180,7 +3989,7 @@ input[type=radio]:checked:after {
 .container-padre {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -3232,7 +4041,8 @@ input[type=radio]:checked:after {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .container-padre .box1, .container-padre .box2 {
+  .container-padre .box1,
+  .container-padre .box2 {
     grid-column: span 1;
   }
 }
@@ -3267,7 +4077,7 @@ input[type=radio]:checked:after {
 .container-padre2 {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -3320,7 +4130,10 @@ input[type=radio]:checked:after {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
-  .container-padre2 .boxs1, .container-padre2 .boxs2, .container-padre2 .boxs3, .container-padre2 .boxs4 {
+  .container-padre2 .boxs1,
+  .container-padre2 .boxs2,
+  .container-padre2 .boxs3,
+  .container-padre2 .boxs4 {
     grid-column: span 1;
     grid-row: span 1;
   }
@@ -3335,6 +4148,7 @@ input[type=radio]:checked:after {
 
 .layout {
   display: grid;
+  height: 60;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
@@ -3381,42 +4195,52 @@ input[type=radio]:checked:after {
   margin: 0;
 }
 
-.Sidebar {
-  padding-top: 10px;
+.Sidebar_content {
   grid-area: Sidebar;
   color: white;
   background-color: #676767;
   position: relative;
+  padding-left: 0;
+  padding-top: 5px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #676767 transparent;
 }
-.Sidebar a {
+.Sidebar_content i {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.Sidebar_content a {
   color: white;
   text-decoration: none;
   font-weight: 600;
   list-style-type: none;
+  font-family: "Montserrat";
 }
-.Sidebar a:hover {
+.Sidebar_content a:hover {
   transition: 0.2s all ease-in;
   border-radius: 4px;
   background-color: #45025f;
   width: auto10px;
 }
-.Sidebar li {
-  list-style-type: none;
+.Sidebar_content ul {
+  padding-left: 0px;
 }
-.Sidebar::-webkit-scrollbar {
+.Sidebar_content li {
+  list-style-type: none;
+  padding-left: 15px;
+}
+.Sidebar_content::-webkit-scrollbar {
   width: 8px;
 }
-.Sidebar::-webkit-scrollbar-track {
+.Sidebar_content::-webkit-scrollbar-track {
   background-color: transparent;
 }
-.Sidebar::-webkit-scrollbar-thumb {
+.Sidebar_content::-webkit-scrollbar-thumb {
   background-color: #676767;
   border-radius: 4px;
 }
-.Sidebar::-webkit-scrollbar-thumb:hover {
+.Sidebar_content::-webkit-scrollbar-thumb:hover {
   background-color: #818181;
 }
 
@@ -3424,7 +4248,8 @@ input[type=radio]:checked:after {
   border-radius: 12px;
   grid-area: Content;
   color: white;
-  overflow-y: auto; /* Cambia "scroll" a "auto" */
+  overflow-y: auto;
+  /* Cambia "scroll" a "auto" */
   scrollbar-width: none;
 }
 
@@ -3432,6 +4257,35 @@ input[type=radio]:checked:after {
   background-color: #676767;
   grid-area: ItemList;
   color: white;
+}
+
+.webtema1 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 1fr 0.75fr 0.25fr;
+  grid-template-areas: "carrucel info info" "carrucel form form" "footer footer  footer";
+}
+
+.cell-carrucel {
+  grid-area: carrucel;
+}
+
+.cell-info {
+  grid-area: info;
+}
+
+.cell-form {
+  grid-area: form;
+  align-content: center;
+  row-gap: 10px;
+}
+
+.cell-footer {
+  grid-area: footer;
+  align-content: center;
+  row-gap: 10px;
+  background-color: rgb(61, 0, 0);
 }
 
 /*Paleta de colores A*/
@@ -3469,23 +4323,21 @@ header a {
 /*Border radius*/
 /*forms bg*/
 .Letter_hover:hover {
-  transition: 0.45s all ease-in-out;
-  font-size: 40px;
+  transition: 0.15s all ease-in;
   font-weight: bold;
-  box-shadow: 3px 3px rgb(142, 5, 194);
   background-image: linear-gradient(to right, rgb(153, 148, 252), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.list_Letter_hover:hover, .Sidebar a:hover {
+.list_Letter_hover:hover, .Sidebar_content a:hover {
   transition: 0.5s all ease-in-out;
   font-size: 15px;
   font-weight: bold;
   text-shadow: 0px 2px 10px rgb(142, 5, 194);
 }
-.list_Letter_hover:active, .Sidebar a:active:hover, .list_Letter_hover:after, .Sidebar a:hover:after {
+.list_Letter_hover:active, .Sidebar_content a:active:hover, .list_Letter_hover:after, .Sidebar_content a:hover:after {
   transition: 0.3s all ease-out;
   font-size: 16px;
   color: whitesmoke;
@@ -3495,11 +4347,45 @@ header a {
   transition: 0.45s all ease-in;
 }
 .div_hover_Scale_Up_Down:hover, .bentoAx3:hover, .bentoBx2:hover, .bentoCx3:hover, .bentoDx3:hover {
-  transform: scale(1.05);
+  transform: scaleX(1.05);
 }
 .div_hover_Scale_Up_Down:after, .bentoAx3:after, .bentoBx2:after, .bentoCx3:after, .bentoDx3:after {
   transition: 0.35s all ease-out;
-  transform: scale(1);
+  transform: scaleX(1);
+}
+
+.Letter_hover_Scale_Up_Down {
+  transition: 0.45s all ease-in;
+}
+.Letter_hover_Scale_Up_Down:hover {
+  transform: scaleX(1.05);
+}
+.Letter_hover_Scale_Up_Down:after {
+  transition: 0.35s all ease-out;
+  transform: scaleX(1);
+}
+
+.letter-hover-border, .letter-hover-left-color, .letter-hover-right-color, .letter-hover-bottom-color, .letter-hover-top-color {
+  transition: border 0.3s all ease-in-out;
+}
+.letter-hover-border:hover, .letter-hover-left-color:hover, .letter-hover-right-color:hover, .letter-hover-bottom-color:hover, .letter-hover-top-color:hover {
+  text-shadow: 5px 0px 15px whitesmoke;
+}
+
+.letter-hover-left-color:hover {
+  text-shadow: -5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-right-color:hover {
+  text-shadow: 5px 0px rgb(112, 11, 151);
+}
+
+.letter-hover-bottom-color:hover {
+  text-shadow: 0px 5px rgb(112, 11, 151);
+}
+
+.letter-hover-top-color:hover {
+  text-shadow: 0px -5px rgb(112, 11, 151);
 }
 
 .div_simple_hover:hover {
@@ -3519,6 +4405,75 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url(path/to/file) format("Example: truetype or opentype depending on the file extension of your font");
@@ -3571,29 +4526,84 @@ header a {
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
+.Titulo1 {
+  font-family: "Lato";
+}
+
+.Tema1 {
+  font-family: "Raleway";
+}
+
+.contenido1 {
+  font-family: "Source Sans Pro";
+}
+
+.Titulo2 {
+  font-family: "Playfair Display";
+}
+
+.Tema2 {
+  font-family: "Merriweather";
+}
+
+.contenido2 {
+  font-family: "Oswald";
+}
+
+.Titulo3 {
+  font-family: "Poppins";
+}
+
+.Tema3 {
+  font-family: "Nunito";
+}
+
+.contenido3 {
+  font-family: "Quicksand";
+}
+
 .Font-base {
   color: rgb(142, 5, 194);
 }
 
 .letter-Gradient {
-  background-image: linear-gradient(to right, rgb(153, 148, 252), white);
+  background-image: linear-gradient(to right, rgb(146, 144, 195), white);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .nav2 .logo, .tema, .bentoXx1 {
-  text-shadow: 3px 3px rgb(146, 144, 195);
-  font-size: 50px;
+.texto-shadow-box {
+  box-shadow: -4px 0 0 rgb(112, 11, 151);
+}
+
+.titulo, .nav4 .logo, .nav3 .logo, .nav2 .logo, .tema, .bentoXx1 {
+  text-shadow: 3px 3px rgb(112, 11, 151);
+  font-size: 30px;
   font-weight: bolder;
   font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato";
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+.titulo::first-letter, .nav4 .logo::first-letter, .nav3 .logo::first-letter, .nav2 .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
-  text-shadow: 3px 6px white;
-  font-size: 125px;
+  text-shadow: 2px 4px white;
+  font-size: 40px;
 }
 
 .tema {
@@ -3610,7 +4620,8 @@ header a {
   font-size: 18px;
   font-weight: bolder;
   font-style: italic;
-  font-family: Poppins;
+  font-family: "Poppins";
+  align-self: self-start;
 }
 .temasm::first-letter {
   font-size: 18px;
@@ -3628,7 +4639,7 @@ header a {
 .contenido-article {
   font-size: 20px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
@@ -3644,13 +4655,13 @@ header a {
 .li-content {
   font-size: 18px;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: "Lato";
   text-wrap: wrap;
   margin-left: 3%;
 }
 
-.Font_Tema {
-  display: inline-block;
+.Font_Titulo {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -3658,16 +4669,24 @@ header a {
   padding-top: 10px;
 }
 @media screen and (max-width: 480px) {
-  .Font_Tema h3 {
+  .Font_Titulo h3 {
     font-size: 15px;
   }
 }
 
-.Sub-Tema {
-  display: inline-block;
+.Font_Tema {
+  display: block;
   height: auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.Sub-Tema {
+  display: block;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: bold;
   padding-left: 2px;
   padding-top: 2px;
@@ -3684,6 +4703,75 @@ header a {
 
 .code {
   color: rgb(0, 179, 0);
+}
+
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
+.shadow-bottom, .bentoDx3 {
+  box-shadow: 0px 10px 0px 0px white;
+}
+
+.shadow-bottom_sm {
+  box-shadow: 0px 2px 10px 0px white;
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -5px 5px 0px 0px white;
+}
+
+.shadow-top, .bentoAx3 {
+  box-shadow: 0px -10px 0px 0px white;
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 10px 0px 0px 0px white;
+}
+
+.shadow-small {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-large {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-up {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-down {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-left, .bentoCx3, .Sidebar_content {
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-right, .bentoBx2, .Content, .ItemList {
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
 }
 
 .nav, .nav2 {
@@ -3716,106 +4804,118 @@ header a {
 }
 
 .nav2 {
-  justify-content: space-between;
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  background-color: rgb(27, 26, 85);
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-size: 30px;
+  background-color: rgb(149, 1, 1);
+}
+.nav2 .header {
+  background-color: rgb(255, 0, 0);
+  justify-content: space-between;
+}
+.nav2 ul li {
+  display: inline-block;
+  position: relative;
+}
+.nav2 ul {
+  background: rgb(149, 1, 1);
+}
+.nav2 ul li a {
+  font-family: "Oswald";
+}
+.nav2 ul li a:hover {
+  transition: 0.2s all ease-in;
+  font-weight: 500;
+  background-color: #fa0202;
+}
+.nav2 ul li ul.drip {
+  width: 100%;
+  background: rgb(149, 1, 1);
+  position: absolute;
+  z-index: 999;
+  display: none;
 }
 .nav2 .logo {
+  font-family: "Oswald";
   font-size: 32px;
   color: white;
+  text-shadow: 3px 4px rgb(255, 0, 0);
   text-decoration: none;
   margin-left: 15px;
 }
 .nav2 .logo::first-letter {
-  color: rgb(146, 144, 195);
+  color: white;
   margin-right: 10px;
-  text-shadow: 3px 4px white;
+  text-shadow: 3px 4px rgb(255, 0, 0);
   font-size: 40px;
-}
-
-.nav, .nav2 {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nav ul, .nav2 ul {
-  flex-direction: row;
-}
-
-.nav ul li, .nav2 ul li {
-  width: auto;
-}
-
-.nav ul li a, .nav2 ul li a {
-  padding: 14px 20px;
-}
-
-.nav2 {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nav2.logo {
-  font-size: 28px;
-  margin-left: 15px;
 }
 
 .nav3 {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-}
-.nav3 body {
-  background-color: #fff59d;
+  justify-content: flex-end;
+  font-family: "Poppins";
+  font-size: 30px;
+  background-color: rgb(83, 92, 145);
 }
 .nav3 .header {
-  background-color: #1b3039;
-  display: flex;
+  background-color: rgb(83, 92, 145);
   justify-content: flex-end;
-  align-items: center;
-  height: 85px;
-  padding: 5px 10%;
 }
-.nav3 .header .logo {
-  cursor: pointer;
-  order: 3;
-  margin-left: auto;
+.nav3 ul li {
+  display: inline-block;
+  position: relative;
+}
+.nav3 ul {
+  background: rgb(83, 92, 145);
+}
+.nav3 ul li a {
+  font-family: "Open Sans";
+}
+.nav3 ul li a:hover {
+  transition: 0.2s all ease-in;
+  font-weight: 500;
+  background-color: rgb(83, 92, 145);
+}
+.nav3 ul li ul.drip {
+  width: 100%;
+  background: rgb(83, 92, 145);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.nav3 .logo {
+  font-family: "Oswald";
   font-size: 32px;
   color: white;
+  text-shadow: 3px 4px rgb(146, 144, 195);
   text-decoration: none;
   margin-left: 15px;
 }
-.nav3 .header .logo::first-letter {
-  color: rgb(146, 144, 195);
+.nav3 .logo::first-letter {
+  color: white;
   margin-right: 10px;
-  text-shadow: 3px 4px white;
+  text-shadow: 3px 4px rgb(146, 144, 195);
   font-size: 40px;
 }
-.nav3 .header nav, .nav3 .layout .header nav, .layout .nav3 .header nav {
-  order: 1;
+.nav3 .header {
+  height: 85px;
+  padding: 5px 10%;
 }
-.nav3 .header .nav-links {
-  list-style: none;
+.nav3 .header Button {
+  font-family: "Raleway";
+}
+.nav3 .header .logo {
+  order: 3;
+  margin-left: 15px;
 }
 .nav3 .header .nav-links li {
-  display: inline-block;
   padding: 0 20px;
 }
-.nav3 .header .nav-links li:nth-child(1) {
-  padding: 0 20px 0 0;
-}
 .nav3 .header .nav-links li:hover {
+  transition: 0.2S all ease-in;
   transform: scale(1.1);
-}
-.nav3 .header .nav-links a {
-  font-size: 700;
-  color: #eceff1;
-  text-decoration: none;
 }
 .nav3 .header .nav-links li a:hover {
   color: #ffbc0e;
@@ -3835,63 +4935,70 @@ header a {
   transition: all 0.3s ease 0s;
 }
 .nav3 .header .btn button:hover {
-  background-color: #e2f1f8;
   color: #ffbc0e;
   transform: scale(1.1);
 }
 
 .nav4 {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", monospace;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 30px;
+  background-color: rgb(145, 10, 103);
 }
-.nav4 ul {
-  list-style: none;
-  background: #8c52ff;
-  margin: auto;
+.nav4 .header {
+  background-color: rgb(3, 6, 55);
+  justify-content: center;
 }
 .nav4 ul li {
   display: inline-block;
   position: relative;
 }
-.nav4 .header .logo {
-  cursor: pointer;
-  order: 3;
-  margin-left: auto;
-  font-size: 32px;
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-}
-.nav4 .header .logo::first-letter {
-  color: rgb(146, 144, 195);
-  margin-right: 10px;
-  text-shadow: 3px 4px white;
-  font-size: 40px;
+.nav4 ul {
+  background: rgb(145, 10, 103);
 }
 .nav4 ul li a {
-  display: block;
-  padding: 20px 25px;
-  color: #FFF;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
+  font-family: "Quicksand";
 }
-.nav4 ul li ul.drip li {
-  display: block;
+.nav4 ul li a:hover {
+  transition: 0.2s all ease-in;
+  font-weight: 500;
+  background-color: #ef12aa;
 }
 .nav4 ul li ul.drip {
   width: 100%;
-  background: #8c52ff;
+  background: rgb(145, 10, 103);
   position: absolute;
   z-index: 999;
   display: none;
 }
-.nav4 ul li a:hover {
-  background: #6d30e9;
+.nav4 .logo {
+  font-family: "Nunito";
+  font-size: 32px;
+  color: white;
+  text-shadow: 3px 4px rgb(114, 4, 85);
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav4 .logo::first-letter {
+  color: white;
+  margin-right: 10px;
+  text-shadow: 3px 4px rgb(145, 10, 103);
+  font-size: 40px;
+}
+.nav4 .header .logo {
+  order: 3;
+}
+.nav4 ul li a {
+  display: block;
+  padding: 20px 25px;
+  font-size: 20px;
 }
 .nav4 ul li:hover ul.drip {
   display: block;
+}
+.nav4 ul li a:hover {
+  transition: 0.2s all ease-in;
+  box-shadow: inset 0 -4px #ccc;
 }
 
 /*Paleta de colores A*/
@@ -3933,6 +5040,10 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.text-shadow-bottom, .texto-sombra {
+  text-shadow: 2px 2px 6px white;
+}
+
 .shadow-bottom, .bentoDx3 {
   box-shadow: 0px 10px 0px 0px white;
 }
@@ -3941,7 +5052,7 @@ header a {
   box-shadow: 0px 2px 10px 0px white;
 }
 
-.shadow-left, .bentoCx3, .Sidebar {
+.shadow-left, .bentoCx3, .Sidebar_content {
   box-shadow: -5px 5px 0px 0px white;
 }
 
@@ -3973,12 +5084,17 @@ header a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.shadow-left, .bentoCx3, .Sidebar {
+.shadow-left, .bentoCx3, .Sidebar_content {
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .shadow-right, .bentoBx2, .Content, .ItemList {
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-difum_Forms:hover {
+  transition: 0.15s all ease-in-out;
+  box-shadow: 0px 0px 5px 1px rgb(142, 5, 194);
 }
 
 /*Paleta de colores A*/
@@ -3993,6 +5109,113 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
+.Img_code {
+  border-radius: 3px;
+  margin: 2%;
+  height: auto;
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.codes {
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  scale: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: 40%;
+}
+
+.overlay img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.inner_carousel {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel img {
+  height: 90vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.carousel_md {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner_carousel_md {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.carousel_md img {
+  height: 170vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
 .hidden {
   display: none;
 }
@@ -4008,13 +5231,6 @@ header a {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.codes {
-  height: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  scale: 0.8;
 }
 
 .self-start {
@@ -4073,17 +5289,14 @@ header a {
   border: 2px solid #000;
 }
 
-.GRID-row-1, .GRID-row-5, .GRID-row-4, .GRID-row-3, .GRID-row-2 {
+.GRID-row-1, .GRID-row-2, .GRID-row-5, .GRID-row-4, .GRID-row-3 {
   display: grid;
-  gap: 5%;
+  gap: 10px;
   grid-template-rows: 1fr;
 }
 
-.GRID-row-2 {
-  grid-template-rows: 1fr 1fr;
-}
-
 .GRID-row-3 {
+  height: 100%;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -4095,14 +5308,10 @@ header a {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.GRID-col-1, .GRID-col-5, .GRID-col-4, .GRID-col-3, .GRID-col-2 {
+.GRID-col-1, .GRID-col-2, .GRID-col-5, .GRID-col-4, .GRID-col-3 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5%;
-}
-
-.GRID-col-2 {
-  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .GRID-col-3 {
@@ -4117,53 +5326,169 @@ header a {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.div-celda-1-1 {
+  grid-column: 1/1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: red;
+}
+
+.div-celda-1-2 {
+  grid-column: 2/2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(85, 255, 0);
+}
+
+.div-celda-2-1 {
+  grid-column: 1/1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(0, 251, 255);
+}
+
+.div-celda-2-2 {
+  grid-column: 2/2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(162, 0, 255);
+}
+
+.div-celda-1-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 0, 255);
+}
+
+.div-celda-2-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: auto;
+}
+
+.div-celda-3-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3/3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.div-celda-3-1 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.div-celda-3-2 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.div-celda-3-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3/3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.GRID-col-2 {
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.GRID-row-2 {
+  box-sizing: border-box;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 60vh;
+}
+
 /*Redondear elementos*/
 .rounded-none {
   border-radius: none;
 }
 
 .rounded-xms {
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 .rounded-sm {
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .rounded-md {
-  border-radius: 30px;
+  border-radius: 5px;
+}
+
+.rounded-gr {
+  border-radius: 8px;
+}
+
+.rounded-Xgr {
+  border-radius: 12px;
 }
 
 .rounded-top-left {
-  border-top-left-radius: 20px;
+  border-top-left-radius: 12px;
 }
 
 .rounded-top-right {
-  border-top-right-radius: 20px;
+  border-top-right-radius: 12px;
 }
 
 .rounded-buttom-left {
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 12px;
 }
 
 .rounded-buttom-right {
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 12px;
 }
 
 .rounded-left {
-  border-left: 20px;
+  border-left: 12px;
 }
 
 .rounded-rigth {
-  border-right: 20px;
+  border-right: 12px;
 }
 
 .rounded-top {
-  border-top: 20px;
+  border-top: 12px;
 }
 
 .rounded-buttom {
-  border-bottom: 20px;
+  border-bottom: 12px;
 }
 
 .rounded-ovalo {
@@ -4203,7 +5528,7 @@ header a {
 }
 
 .plta-dos-backgraund-B {
-  background: rgb(61, 0, 0);
+  background-color: rgb(61, 0, 0);
 }
 
 .plta-tres-backgraund-A {
@@ -4222,7 +5547,32 @@ header a {
   background: rgb(62, 6, 95);
 }
 
+.plta-backgraund-white {
+  background: white;
+  width: 80%;
+}
+
+.plta-backgraund-black {
+  background: black;
+  width: 80%;
+}
+
 /*//TIPOs DE TEXTO*/
+.txt_dashed {
+  text-decoration: underline;
+}
+
+.txt_dashed_lettergrow {
+  text-decoration: underline;
+}
+.txt_dashed_lettergrow::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 0px;
+  color: white;
+}
+
 .my-text-1 {
   font-size: 18px;
   font-family: "Roboto, sans-serif";
@@ -4374,9 +5724,13 @@ header a {
   margin-bottom: 20px;
 }
 
+.color-white {
+  color: white;
+}
+
 .text_Tema h1 {
   margin-top: 10px;
-  font-family: Roboto;
+  font-family: "Lato";
   text-shadow: -4px 0px rgb(112, 11, 151);
   display: inline-block;
   height: auto;
@@ -4411,11 +5765,7 @@ header a {
   padding-left: 10px;
 }
 
-.colors {
-  color: rgb(146, 144, 195);
-}
-
-.GRID-col-1, .GRID-col-2, .GRID-col-3, .GRID-col-4, .GRID-col-5 {
+.GRID-col-1, .GRID-col-3, .GRID-col-4, .GRID-col-5, .GRID-col-2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5%;
@@ -4445,20 +5795,10 @@ header a {
   gap: 5%;
 }
 
-.GRID-row-1, .GRID-row-2, .GRID-row-3, .GRID-row-4, .GRID-row-5 {
+.GRID-row-1, .GRID-row-3, .GRID-row-4, .GRID-row-5, .GRID-row-2 {
   display: grid;
   gap: 5%;
   grid-template-rows: 1fr;
-}
-
-.copy-btn {
-  background-color: rgb(52, 52, 52);
-  color: white;
-  padding: 8px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  width: auto;
 }
 
 /*Paleta de colores A*/

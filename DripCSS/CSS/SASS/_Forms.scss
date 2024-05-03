@@ -6,7 +6,7 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     width: 60vh;
 }
 
@@ -15,7 +15,7 @@
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     height: auto;
 }
 
@@ -27,7 +27,7 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     height: auto;
     width: 70vh;
     border-radius: 5px;
@@ -67,7 +67,7 @@
     grid-template-areas:
         "title title "
         "info card"
-        "end end";
+        "final final";
     gap: 8px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -101,10 +101,10 @@
 
 
 .end {
-    grid-area: end;
+    grid-area: final;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end ;
 
 
 }
@@ -112,10 +112,9 @@
 .form3 {
     @include boxmodelStandar();
     border-radius: 5px;
-    height: auto;
+    height: 70%;
     width: 80vh;
     padding: 20px;
-
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -134,20 +133,20 @@
     grid-template-areas:
         "title img "
         "info img"
-        "end img";
+        "final img";
     gap: 8px;
     margin-top: 5%;
     margin-bottom: 5%;
-    color: white;
     padding: 0px;
+    color: black;
+
 
 }
 
 .title4 {
     padding: 5%;
     grid-area: title;
-    color: grey;
-
+color: gray;
 }
 
 .info {
@@ -170,7 +169,7 @@
 
 
 .end {
-    grid-area: end;
+    grid-area: final ;
     display: flex;
     justify-content: center;
     align-items: center;

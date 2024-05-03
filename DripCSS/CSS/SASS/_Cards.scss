@@ -1,5 +1,5 @@
-
 @import 'Variables';
+
 //************************************** Tarejetas **************************************//
 //*Tarjeta 1*//
 .tarjeta {
@@ -58,6 +58,7 @@
         text-align: center;
         padding: 20px;
         box-shadow: 0 5px 10px black;
+        overflow: scroll;
 
         .link {
             border-top: solid 1px white;
@@ -96,6 +97,13 @@
         transition: .45s;
     }
 }
+.back::-webkit-scrollbar {
+    width: 5px;
+}
+
+.back::-webkit-scrollbar-thumb {
+    background-color: #525252;
+}
 
 //*Tarjeta 2*//
 .card {
@@ -105,7 +113,8 @@
     border-radius: 10px;
     box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
     border: none;
-    .contenido-card{
+
+    .contenido-card {
         position: relative;
         z-index: 90;
         width: 100%;
@@ -207,14 +216,12 @@
     align-items: center;
     justify-content: center;
 }
-
 .container {
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: flex-start;
 }
-
 .carta {
     width: 80px;
     border-radius: 75rem;
@@ -228,7 +235,16 @@
     transition: 0.6s cubic-bezier(.20, -0.83, 0, 0.99);
     box-shadow: 0px, 10px, 30px, -5px rgba(0, 0, 0, 0.83);
     background: rgb(169, 92, 213);
+
+    img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
     .row {
+        margin-top: 0;
         color: white;
         display: flex;
         flex-wrap: nowrap;
@@ -264,15 +280,17 @@
     }
 }
 
+
 .descripcion h4 {
     text-transform: uppercase;
 }
 
 .slider {
-    input{ 
+    input {
         display: none;
     }
-   
+
+
     input:checked+label {
         width: 600px;
     }

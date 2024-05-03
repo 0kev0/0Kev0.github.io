@@ -97,27 +97,32 @@
     margin-bottom: 4px;
     padding-left: 5%;
     padding-top: 2%;
-    h1 {
-        margin-top: 10px;
-        font-family: map-get($map: $FontPack1, $key: Titulo);
-        text-shadow: -4px 0px $color-secundario;
-        display: inline-block;
-        height: auto;
-        color: $FontColorBase;
-        font-size: map-get($map: $FontSize, $key: Xgrande);
-        font-weight: bold;
-    }
+}
 
+.Titulo_special {
+    margin-top: 10px;
+    font-family: map-get($map: $FontPack1, $key: Titulo);
+    text-shadow: -4px 0px $color-secundario;
+    display: block;
+    height: auto;
+    color: $FontColorBase;
+    font-size: map-get($map: $FontSize, $key: grande);
+    font-weight: bold;
+
+    &::first-letter {
+        font-size: map-get($map: $FontSize, $key: Xgrande);
+    }
 }
 
 .Documentacion-container {
     background-color: $colorbg-primario;
     padding: 20px;
-    
+
+
     h2 {
         font-family: map-get($map: $FontPack1, $key: Tema);
         font-size: map-get($map: $FontSize, $key: grande)+5px;
-        display: inline-block;
+        display: block;
         height: auto;
         color: $FontColorBase;
         font-weight: bold;
@@ -125,7 +130,9 @@
 }
 
 .Documentacion-info-container-content {
-width: 90%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 90%;
     background-color: lighten($color: $colorbg-primario, $amount: 10);
     padding: 10px;
     border: 2px solid #ffffff;
@@ -134,11 +141,10 @@ width: 90%;
     h3 {
         font-family: map-get($map: $FontPack1, $key: Titulo);
         color: $FontColorBase;
-
     }
 
     p {
-        font-family: map-get($map: $FontPack1, $key: Texto);
+        font-family: map-get($map: $FontPack2, $key: Texto);
         &:hover{
             box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
           }

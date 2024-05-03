@@ -29,18 +29,18 @@
 }
 
 .Bento_grid {
-    padding: $small;
-    margin: 5%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-        "A A A B B"
-        "A A A B B"
-        "C C X B B "
-        "C C D D D"
-        "C C D D D";
+  padding: $small;
+  margin: 5%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "A A A B B"
+    "A A A B B"
+    "C C X B B "
+    "C C D D D"
+    "C C D D D";
 
   background: linear-gradient($color-secundario, $colorBg-secundario);
   gap: 10px;
@@ -116,7 +116,7 @@
 .container-padre {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -162,12 +162,14 @@
     grid-column: span 1;
   }
 
- 
+
   @media screen and (max-width: 1080px) {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    .box1, .box2 {
+
+    .box1,
+    .box2 {
       grid-column: span 1;
     }
   }
@@ -192,7 +194,8 @@
     @include box-styling();
     grid-column: span 1;
   }
-  .box figure{
+
+  .box figure {
     width: 200px;
     height: 200px;
   }
@@ -201,7 +204,7 @@
 .container-padre2 {
   display: grid;
   border: 2px solid black;
-  width: 960px;
+  width: 90%;
   height: 600px;
   margin: auto;
   margin-top: 15px;
@@ -223,6 +226,7 @@
     @include box-styling;
     grid-row: 1/ span 2;
     grid-column: span 2;
+
   }
 
   .boxs3 {
@@ -235,11 +239,16 @@
     @include box-styling();
     grid-column: span 6;
   }
+
   @media screen and (max-width: 1080px) {
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr);
-    .boxs1, .boxs2 , .boxs3, .boxs4{
+    grid-template-rows: repeat(4, 1fr);
+
+    .boxs1,
+    .boxs2,
+    .boxs3,
+    .boxs4 {
       grid-column: span 1;
       grid-row: span 1;
     }
@@ -261,6 +270,7 @@ $color1: rgb(83, 92, 145);
 
 .layout {
   display: grid;
+  height: 60;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
@@ -328,19 +338,26 @@ $color1: rgb(83, 92, 145);
   margin: 0;
 }
 
-.Sidebar {
+.Sidebar_content {
   @extend .shadow-left;
-  padding-top: $small;
   grid-area: Sidebar;
   color: white;
   background-color: lighten($color: $colorbg-primario, $amount: 20);
   position: relative;
+  padding-left: 0;
+  padding-top: 5px;
+
+  i {
+    margin-left: 0;
+    margin-right: 8px;
+  }
 
   a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     list-style-type: none;
+    font-family: map-get($map: $FontPack4, $key: Tema);
 
     &:hover {
       @extend .list_Letter_hover;
@@ -351,46 +368,84 @@ $color1: rgb(83, 92, 145);
     }
   }
 
-  li {
-    list-style-type: none;
+  ul {
+    padding-left: 0px;
   }
 
-  overflow-y: auto; 
+  li {
+    list-style-type: none;
+    padding-left: 15px;
+  }
+
+  overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: lighten($color: $colorbg-primario, $amount: 20) transparent;
 
   &::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background-color: transparent;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background-color: lighten($color: $colorbg-primario, $amount: 20);
     border-radius: 4px;
   }
-  
+
   &::-webkit-scrollbar-thumb:hover {
     background-color: lighten($color: $colorbg-primario, $amount: 30);
   }
 }
+
 
 .Content {
   @extend .shadow-right;
   border-radius: $estandar;
   grid-area: Content;
   color: white;
-  overflow-y: auto; /* Cambia "scroll" a "auto" */
+  overflow-y: auto;
+  /* Cambia "scroll" a "auto" */
   scrollbar-width: none;
 }
-
-
 
 .ItemList {
   @extend .shadow-right;
   background-color: lighten($color: $colorbg-primario, $amount: 20);
   grid-area: ItemList;
   color: white;
+}
+
+.webtema1 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 1fr .75fr .25fr;
+  grid-template-areas:
+    "carrucel info info"
+    "carrucel form form"
+    "footer footer  footer";
+  ;
+}
+
+.cell-carrucel {
+  grid-area: carrucel;
+}
+
+.cell-info {
+  grid-area: info;
+}
+
+.cell-form {
+  grid-area: form;
+  align-content: center;
+  row-gap: 10px;
+}
+
+.cell-footer {
+  grid-area: footer;
+  align-content: center;
+  row-gap: 10px;
+  background-color: $colorBg-secundarioB;
 }

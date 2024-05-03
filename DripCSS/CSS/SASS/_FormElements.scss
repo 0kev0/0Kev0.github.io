@@ -30,10 +30,11 @@
 .input_Xsm {
     width: map-get($map: $inputWithSizes, $key: "pequeno");
     height: map-get($map: $inputHeigtSizes, $key: "pequeno");
-
+    align-self: self-start;
     border-radius: 2px;
     border: 1px white solid;
     background-color: rgb(225, 225, 225);
+
 
     &:hover {
         @include shadow-difum_imputs($color-secundarioB);
@@ -46,10 +47,17 @@
         outline-color: red;
     }
 
+    option:checked {
+        color: green;
+    }
+
+
 }
 
 .input_Xsm {
     @extend .input_Xsm;
+    border-radius: none;
+
     width: map-get($map: $inputWithSizes, $key: "Xpequeno");
     height: map-get($map: $inputHeigtSizes, $key: "pequeno");
     font-family: map-get($map: $FontPack2, $key: Titulo);
@@ -81,7 +89,10 @@
     width: map-get($map: $inputWithSizes, $key: "mediano");
     height: map-get($map: $inputHeigtSizes, $key: "pequeno");
     align-self: flex-start;
-    margin-left: 10px
+    margin-left: 10px;
+
+
+
 }
 
 .input_Gr {
@@ -113,6 +124,7 @@
 
 
 .TituloForm2 {
+    color: $GrayRdBg;
     font-family: map-get($map: $FontPack2, $key: "Titulo");
     text-decoration: underline;
 }
@@ -149,13 +161,14 @@
     width: map-get($map: $inputWithSizes, $key: "grande");
     height: map-get($map: $inputHeigtSizes, $key: "pequeno");
     border: 3px white solid;
-    border-radius: 5px;
+    border-radius: map-get($map: $borders, $key: pequeno);
     background-color: white;
+    align-self: flex-start;
+    margin-left: 5%;
     @include shadow-bottom_imput;
 
-
     &:hover {
-        @include shadow-difum_imputs($color-primario);
+        @include shadow-difum_imputs(lighten($color: $color-primarioB, $amount: 25));
     }
 }
 
@@ -275,6 +288,7 @@
     font-weight: 500;
     font-family: map-get($map: $FontPack2, $key: Tema);
     color: lighten($color: $colorBg-secundarioC, $amount: 20);
+    align-self: self-start;
 
     &::first-letter {
         font-size: map-get($map: $FontSize, $key: "mediano");
@@ -311,21 +325,37 @@
     align-self: flex-start;
     margin-left: 10px
 }
-
-input[type="range"] {
-    border-radius: 5px;
+//ESTILO BASE
+.rangeimput {
+    border-radius: map-get($map: $borders, $key: grande);
+    width: map-get($map: $RangeSizes, $key: mediano);
     height: 8px;
-    width: 80%;
     cursor: grab;
-    accent-color: $color-primarioB;
+}
 
+.rangeimput_Gr {
+    @extend .rangeimput;
+    width: map-get($map: $RangeSizes, $key:grande );
+    accent-color: $color-primario;
+}
+
+.rangeimput_Md {
+    @extend .rangeimput;
+    width: map-get($map: $RangeSizes, $key: mediano);
+    accent-color: $colorBg-secundarioB;
+}
+
+.rangeimput_Sm {
+    @extend .rangeimput;
+    width: map-get($map: $RangeSizes, $key: pequeno);
+    accent-color: $color-primarioD;
 }
 
 
-legend
-{
+legend {
     color: $color-primarioB;
 }
+
 input[type='radio'] {
     width: 25px;
     height: 25px;
@@ -347,7 +377,7 @@ input[type='radio']:after {
 
 input[type='radio']:checked:after {
     width: 20px;
-    height:20px;
+    height: 20px;
     border-radius: 20px;
     left: .6mm;
     bottom: -.2mm;
@@ -365,6 +395,11 @@ input[type='radio']:checked:after {
 .self-start {
     margin-left: 5%;
     align-self: flex-start;
+}
+
+.self-center {
+    margin-left: 5%;
+    align-self: center;
 }
 
 .self-right {
