@@ -304,12 +304,6 @@
 
 .shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
-  @media (max-width: 1000px) {
-    font-size: 12px;
-  }
-  @media (max-width: 800px) {
-    display: none;
-  }
 }
 
 .shadow-top, .bentoAx3 {
@@ -4630,4 +4624,8 @@ body .container-F .footer .footer-col .social-links a:hover {
   body .footer .footer-col {
     width: 100%;
   }
+}
+
+.emoji-cursor {
+  cursor: url("/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png"), auto;
 }/*# sourceMappingURL=Style.css.map */

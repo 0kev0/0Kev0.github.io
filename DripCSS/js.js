@@ -40,8 +40,8 @@ function nav(){
     side.style.display='block';
 }
 
-function copyCodeToClipboard() {
-    var codeElements = document.querySelectorAll("p.t3");
+function copyCodeToClipboard(type) {
+    var codeElements = document.querySelectorAll("p."+type);
     var code = "";
     codeElements.forEach(function(element) {
         code += element.textContent.trim() + "\n";
@@ -54,11 +54,13 @@ function copyCodeToClipboard() {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-    var successAlert = document.getElementById("success-alert");
-    successAlert.style.display = "block";
-    setTimeout(function() {
-        successAlert.style.display = "none";
-    }, 2000);
+    if (copySuccessful) {
+        var successAlert = document.getElementById("success-alert");
+        successAlert.style.display = "block";
+        setTimeout(function() {
+            successAlert.style.display = "none";
+        }, 2000);
+    }
 }
 
 function ocultar(){
