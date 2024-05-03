@@ -6,6 +6,15 @@ function show(){
 function linkDescarga() {
     window.open("https://www.mediafire.com/file/iwdyb7nw9fgsdgw/_Encuesta+CJNSP.pdf/file")
 }
+function navocult() {
+  var side = document.getElementById('sidebar');
+  if (side.style.display === 'none' || side.style.display === '') {
+      side.style.display = 'block';
+  } else {
+      side.style.display = 'none';
+  }
+}
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const carouselInner = document.querySelector(".inner_carousel");
