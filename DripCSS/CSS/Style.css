@@ -427,14 +427,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
+.titulo, .newnav4 .header .logo, .newnav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .newnav4 .header .logo::first-letter, .newnav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -613,14 +613,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
+.titulo, .newnav4 .header .logo, .newnav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .newnav4 .header .logo::first-letter, .newnav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -1660,14 +1660,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
+.titulo, .newnav4 .header .logo, .newnav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .newnav4 .header .logo::first-letter, .newnav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -2033,14 +2033,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
+.titulo, .newnav4 .header .logo, .newnav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .newnav4 .header .logo::first-letter, .newnav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -2219,14 +2219,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .bentoXx1, .tema {
+.titulo, .newnav4 .header .logo, .newnav3 .header .logo, .bentoXx1, .tema {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
+.titulo::first-letter, .newnav4 .header .logo::first-letter, .newnav3 .header .logo::first-letter, .bentoXx1::first-letter, .tema::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -3497,14 +3497,14 @@ header a {
   -webkit-text-fill-color: transparent;
 }
 
-.titulo, .nav4 .header .logo, .nav3 .header .logo, .tema, .bentoXx1 {
+.titulo, .newnav4 .header .logo, .newnav3 .header .logo, .tema, .bentoXx1 {
   text-shadow: 3px 3px rgb(112, 11, 151);
   font-size: 50px;
   font-weight: bolder;
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.titulo::first-letter, .nav4 .header .logo::first-letter, .nav3 .header .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
+.titulo::first-letter, .newnav4 .header .logo::first-letter, .newnav3 .header .logo::first-letter, .tema::first-letter, .bentoXx1::first-letter {
   color: rgb(142, 5, 194);
   margin-right: 10px;
   text-shadow: 3px 6px white;
@@ -3596,7 +3596,7 @@ header a {
   color: rgb(0, 179, 0);
 }
 
-.nav1 {
+.newnav1 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -3605,12 +3605,12 @@ header a {
   display: flex;
   justify-content: end;
 }
-.nav1 body {
+.newnav1 body {
   height: 100vh;
   background-color: #a9aaac;
   color: #fff;
 }
-.nav1 nav {
+.newnav1 nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -3618,41 +3618,41 @@ header a {
   background-color: white;
   padding-left: 2vw;
 }
-.nav1 .cont-ul {
+.newnav1 .cont-ul {
   display: flex;
   align-items: center;
 }
-.nav1 li {
+.newnav1 li {
   list-style: none;
   cursor: pointer;
   padding: 1.5vw;
   transition: all 0.3s ease 0s;
 }
-.nav1 li:hover {
+.newnav1 li:hover {
   background-color: #008849;
 }
-.nav1 .develop {
+.newnav1 .develop {
   position: relative;
 }
-.nav1 .ul-second {
+.newnav1 .ul-second {
   display: none;
   position: absolute;
   margin-top: 1.5vw;
 }
-.nav1 .ul-second > li {
+.newnav1 .ul-second > li {
   width: 190px;
   transform: translateX(-20px);
   border-bottom: solid 1px #fff;
   text-align: center;
   background-color: #24252a;
 }
-.nav1 .ul-second > li:hover {
+.newnav1 .ul-second > li:hover {
   background-color: #008849;
 }
-.nav1 .develop:hover > .ul-second {
+.newnav1 .develop:hover > .ul-second {
   display: block;
 }
-.nav1 .ul-third {
+.newnav1 .ul-third {
   position: absolute;
   transform: translateX(100%);
   right: 0;
@@ -3660,31 +3660,31 @@ header a {
   display: none;
   background-color: #24252a;
 }
-.nav1 .ul-third > li {
+.newnav1 .ul-third > li {
   padding: 1.5vw;
   border-bottom: solid 1px #fff;
 }
-.nav1 .front:hover > .ul-third {
+.newnav1 .front:hover > .ul-third {
   display: block;
 }
-.nav1 .logo-drip {
+.newnav1 .logo-drip {
   display: none;
 }
 
-.nav2 * {
+.newnav2 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.nav2 body {
+.newnav2 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: black;
 }
-.nav2 nav {
+.newnav2 nav {
   position: relative;
   width: 524px;
   height: 50px;
@@ -3694,7 +3694,7 @@ header a {
   justify-content: center;
   align-items: center;
 }
-.nav2 nav a {
+.newnav2 nav a {
   position: relative;
   display: inline-block;
   font-size: 1em;
@@ -3704,46 +3704,46 @@ header a {
   padding: 0 23px;
   z-index: 1;
 }
-.nav2 nav span {
+.newnav2 nav span {
   position: absolute;
   top: 0;
   left: 0;
   width: 95px;
   height: 100%;
-  background: linear-gradient(45deg, #4f1919, red);
+  background: linear-gradient(45deg, #ffe6e6, red);
   border-radius: 8px;
   transition: 0.5s;
 }
-.nav2 nav a:nth-child(1):hover ~ span {
+.newnav2 nav a:nth-child(1):hover ~ span {
   left: 0%;
 }
-.nav2 nav a:nth-child(2):hover ~ span {
+.newnav2 nav a:nth-child(2):hover ~ span {
   left: 95px;
 }
-.nav2 nav a:nth-child(3):hover ~ span {
+.newnav2 nav a:nth-child(3):hover ~ span {
   left: 189px;
   width: 110px;
 }
-.nav2 nav a:nth-child(4):hover ~ span {
+.newnav2 nav a:nth-child(4):hover ~ span {
   left: 289px;
   width: 115px;
 }
-.nav2 nav a:nth-child(5):hover ~ span {
+.newnav2 nav a:nth-child(5):hover ~ span {
   left: 413px;
   width: 115px;
 }
 
-.nav3 {
+.newnav3 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
 }
-.nav3 body {
+.newnav3 body {
   background-color: #fff59d;
 }
-.nav3 .header {
+.newnav3 .header {
   background-color: #1b3039;
   display: flex;
   justify-content: flex-end;
@@ -3751,7 +3751,7 @@ header a {
   height: 85px;
   padding: 5px 10%;
 }
-.nav3 .header .logo {
+.newnav3 .header .logo {
   cursor: pointer;
   order: 3;
   margin-left: auto;
@@ -3760,40 +3760,40 @@ header a {
   text-decoration: none;
   margin-left: 15px;
 }
-.nav3 .header .logo::first-letter {
+.newnav3 .header .logo::first-letter {
   color: rgb(146, 144, 195);
   margin-right: 10px;
   text-shadow: 3px 4px white;
   font-size: 40px;
 }
-.nav3 .header nav, .nav3 .layout .header nav, .layout .nav3 .header nav {
+.newnav3 .header nav, .newnav3 .layout .header nav, .layout .newnav3 .header nav {
   order: 1;
 }
-.nav3 .header .nav-links {
+.newnav3 .header .nav-links {
   list-style: none;
 }
-.nav3 .header .nav-links li {
+.newnav3 .header .nav-links li {
   display: inline-block;
   padding: 0 20px;
 }
-.nav3 .header .nav-links li:nth-child(1) {
+.newnav3 .header .nav-links li:nth-child(1) {
   padding: 0 20px 0 0;
 }
-.nav3 .header .nav-links li:hover {
+.newnav3 .header .nav-links li:hover {
   transform: scale(1.1);
 }
-.nav3 .header .nav-links a {
+.newnav3 .header .nav-links a {
   font-size: 700;
   color: #eceff1;
   text-decoration: none;
 }
-.nav3 .header .nav-links li a:hover {
+.newnav3 .header .nav-links li a:hover {
   color: #ffbc0e;
 }
-.nav3 .header .btn {
+.newnav3 .header .btn {
   order: 2;
 }
-.nav3 .header .btn button {
+.newnav3 .header .btn button {
   margin-left: 20px;
   font-weight: 700;
   color: #1b3039;
@@ -3804,27 +3804,27 @@ header a {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-.nav3 .header .btn button:hover {
+.newnav3 .header .btn button:hover {
   background-color: #e2f1f8;
   color: #ffbc0e;
   transform: scale(1.1);
 }
 
-.nav4 {
+.newnav4 {
   padding: 0;
   margin: 0;
   font-family: "Poppins", monospace;
 }
-.nav4 ul {
+.newnav4 ul {
   list-style: none;
   background: #8c52ff;
   margin: auto;
 }
-.nav4 ul li {
+.newnav4 ul li {
   display: inline-block;
   position: relative;
 }
-.nav4 .header .logo {
+.newnav4 .header .logo {
   cursor: pointer;
   order: 3;
   margin-left: auto;
@@ -3833,13 +3833,13 @@ header a {
   text-decoration: none;
   margin-left: 15px;
 }
-.nav4 .header .logo::first-letter {
+.newnav4 .header .logo::first-letter {
   color: rgb(146, 144, 195);
   margin-right: 10px;
   text-shadow: 3px 4px white;
   font-size: 40px;
 }
-.nav4 ul li a {
+.newnav4 ul li a {
   display: block;
   padding: 20px 25px;
   color: #FFF;
@@ -3847,20 +3847,20 @@ header a {
   text-align: center;
   font-size: 20px;
 }
-.nav4 ul li ul.drip li {
+.newnav4 ul li ul.drip li {
   display: block;
 }
-.nav4 ul li ul.drip {
+.newnav4 ul li ul.drip {
   width: 100%;
   background: #8c52ff;
   position: absolute;
   z-index: 999;
   display: none;
 }
-.nav4 ul li a:hover {
+.newnav4 ul li a:hover {
   background: #6d30e9;
 }
-.nav4 ul li:hover ul.drip {
+.newnav4 ul li:hover ul.drip {
   display: block;
 }
 
