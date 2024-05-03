@@ -187,7 +187,7 @@
 .article-1-col {
   -moz-column-count: 1;
        column-count: 1; /* Divide el contenido en dos columnas */
-  margin: 20px 15%;
+  margin: 20px 10%;
 }
 
 .article-3-col {
@@ -333,9 +333,6 @@
 
 .shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
-  @media (max-width: 1000px) {
-    font-size: 12px;
-  }
 }
 
 .shadow-top, .bentoAx3 {
@@ -1723,12 +1720,11 @@
 }
 
 .back::-webkit-scrollbar {
-  width: 10px; /* Ancho de la barra de desplazamiento */
-  /* Estilo del borde de la barra de desplazamiento */
+  width: 5px;
 }
 
 .back::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color del botón de desplazamiento */
+  background-color: #525252;
 }
 
 .card {
@@ -4260,7 +4256,7 @@ input[type=radio]:checked:after {
   display: grid;
   height: 100%;
   grid-template-columns: 1.5fr 2fr 1.5fr;
-  grid-template-rows: 1fr 0.75fr 0.25fr;
+  grid-template-rows: auto auto 0.25fr;
   grid-template-areas: "carrucel info info" "carrucel form form" "footer footer  footer";
 }
 
@@ -4276,6 +4272,7 @@ input[type=radio]:checked:after {
   grid-area: form;
   align-content: center;
   row-gap: 10px;
+  height: auto;
 }
 
 .cell-footer {
@@ -4849,6 +4846,10 @@ header a {
   text-shadow: 3px 4px rgb(255, 0, 0);
   font-size: 40px;
 }
+.nav2 ul li a:hover {
+  transition: 0.2s all ease-in;
+  text-decoration: underline;
+}
 
 .nav3 {
   justify-content: flex-end;
@@ -4940,7 +4941,7 @@ header a {
   justify-content: center;
   font-family: "Poppins";
   font-size: 30px;
-  background-color: rgb(145, 10, 103);
+  background-color: #910a67;
 }
 .nav4 .header {
   background-color: rgb(3, 6, 55);
@@ -4951,7 +4952,7 @@ header a {
   position: relative;
 }
 .nav4 ul {
-  background: rgb(145, 10, 103);
+  background: #910a67;
 }
 .nav4 ul li a {
   font-family: "Quicksand";
@@ -4963,7 +4964,7 @@ header a {
 }
 .nav4 ul li ul.drip {
   width: 100%;
-  background: rgb(145, 10, 103);
+  background: #910a67;
   position: absolute;
   z-index: 999;
   display: none;
@@ -4979,7 +4980,7 @@ header a {
 .nav4 .logo::first-letter {
   color: white;
   margin-right: 10px;
-  text-shadow: 3px 4px rgb(145, 10, 103);
+  text-shadow: 3px 4px #910a67;
   font-size: 40px;
 }
 .nav4 .header .logo {
@@ -5751,7 +5752,6 @@ header a {
 .flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .pa {
@@ -5796,6 +5796,20 @@ header a {
   display: grid;
   gap: 5%;
   grid-template-rows: 1fr;
+}
+
+.margin_5 {
+  margin: 5%;
+}
+
+.copy-btn {
+  background-color: rgb(52, 52, 52);
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
 }
 
 /*Paleta de colores A*/

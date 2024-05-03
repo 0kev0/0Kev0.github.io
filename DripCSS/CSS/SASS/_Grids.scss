@@ -421,7 +421,7 @@ $color1: rgb(83, 92, 145);
   display: grid;
   height: 100%;
   grid-template-columns: 1.5fr 2fr 1.5fr;
-  grid-template-rows: 1fr .75fr .25fr;
+  grid-template-rows: auto auto .25fr;
   grid-template-areas:
     "carrucel info info"
     "carrucel form form"
@@ -441,6 +441,7 @@ $color1: rgb(83, 92, 145);
   grid-area: form;
   align-content: center;
   row-gap: 10px;
+  height: auto;
 }
 
 .cell-footer {
