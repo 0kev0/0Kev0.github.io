@@ -304,6 +304,9 @@
 
 .shadow-left, .Sidebar, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+  }
 }
 
 .shadow-top, .bentoAx3 {
