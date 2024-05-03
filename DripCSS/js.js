@@ -43,7 +43,9 @@ function nav() {
     }
 }
 
-function copyCodeToClipboard(type) {
+function copyCodeToClipboard(type, id) {
+    var codeCopied = false;
+
     var codeElements = document.querySelectorAll("p."+type);
     var code = "";
     codeElements.forEach(function(element) {
@@ -56,14 +58,18 @@ function copyCodeToClipboard(type) {
     tempInput.select();
     document.execCommand("copy");
     document.body.removeChild(tempInput);
-
-    if (copySuccessful) {
-        var successAlert = document.getElementById("success-alert");
+    codeCopied = true
+    
+    var successAlert = document.getElementById(id);
+    if (codeCopied == true) {
         successAlert.style.display = "block";
         setTimeout(function() {
             successAlert.style.display = "none";
         }, 2000);
+    } else {
+        alert("No se encontró el elemento con ID 'success-alert'.");
     }
+    
 }
 
 function ocultar(){
