@@ -5,11 +5,6 @@
 @import 'Variables';
 @import 'FontsStyles';
 
-
-
-
-
-
 .buttontest {
   display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
   height: map-get($map: $BtHeight, $key: pequeno);

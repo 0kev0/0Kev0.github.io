@@ -416,3 +416,36 @@ $color1: rgb(83, 92, 145);
   grid-area: ItemList;
   color: white;
 }
+
+.webtema1 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 1fr .75fr .25fr;
+  grid-template-areas:
+    "carrucel info info"
+    "carrucel form form"
+    "footer footer  footer";
+  ;
+}
+
+.cell-carrucel {
+  grid-area: carrucel;
+}
+
+.cell-info {
+  grid-area: info;
+}
+
+.cell-form {
+  grid-area: form;
+  align-content: center;
+  row-gap: 10px;
+}
+
+.cell-footer {
+  grid-area: footer;
+  align-content: center;
+  row-gap: 10px;
+  background-color: $colorBg-secundarioB;
+}
