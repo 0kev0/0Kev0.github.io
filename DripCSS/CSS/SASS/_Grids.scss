@@ -29,18 +29,18 @@
 }
 
 .Bento_grid {
-    padding: $small;
-    margin: 5%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-        "A A A B B"
-        "A A A B B"
-        "C C X B B "
-        "C C D D D"
-        "C C D D D";
+  padding: $small;
+  margin: 5%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "A A A B B"
+    "A A A B B"
+    "C C X B B "
+    "C C D D D"
+    "C C D D D";
 
   background: linear-gradient($color-secundario, $colorBg-secundario);
   gap: 10px;
@@ -207,7 +207,7 @@
     @include box-styling;
     grid-row: 1/ span 2;
     grid-column: span 2;
-    
+
   }
 
   .boxs3 {
@@ -304,6 +304,7 @@ $color1: rgb(83, 92, 145);
     "Sidebar  Content Content";
   margin: 0;
 }
+
 .Sidebar_content {
   @extend .shadow-left;
   grid-area: Sidebar;
@@ -312,10 +313,12 @@ $color1: rgb(83, 92, 145);
   position: relative;
   padding-left: 0;
   padding-top: 5px;
-i{
-  margin-left: 0;
-  margin-right: 8px;
-}
+
+  i {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+
   a {
     color: white;
     text-decoration: none;
@@ -338,26 +341,26 @@ i{
 
   li {
     list-style-type: none;
-    padding-left:15px;
+    padding-left: 15px;
   }
 
-  overflow-y: auto; 
+  overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: lighten($color: $colorbg-primario, $amount: 20) transparent;
 
   &::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background-color: transparent;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background-color: lighten($color: $colorbg-primario, $amount: 20);
     border-radius: 4px;
   }
-  
+
   &::-webkit-scrollbar-thumb:hover {
     background-color: lighten($color: $colorbg-primario, $amount: 30);
   }
@@ -369,7 +372,8 @@ i{
   border-radius: $estandar;
   grid-area: Content;
   color: white;
-  overflow-y: auto; /* Cambia "scroll" a "auto" */
+  overflow-y: auto;
+  /* Cambia "scroll" a "auto" */
   scrollbar-width: none;
 }
 
@@ -380,4 +384,37 @@ i{
   background-color: lighten($color: $colorbg-primario, $amount: 20);
   grid-area: ItemList;
   color: white;
+}
+
+.webtema1 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 1fr .75fr .25fr;
+  grid-template-areas:
+    "carrucel info info"
+    "carrucel form form"
+    "footer footer  footer";
+  ;
+}
+
+.cell-carrucel {
+  grid-area: carrucel;
+}
+
+.cell-info {
+  grid-area: info;
+}
+
+.cell-form {
+  grid-area: form;
+  align-content: center;
+  row-gap: 10px;
+}
+
+.cell-footer {
+  grid-area: footer;
+  align-content: center;
+  row-gap: 10px;
+  background-color: $colorBg-secundarioB;
 }

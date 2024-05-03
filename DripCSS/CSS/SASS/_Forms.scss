@@ -112,10 +112,9 @@
 .form3 {
     @include boxmodelStandar();
     border-radius: 5px;
-    height: auto;
+    height: 70%;
     width: 80vh;
     padding: 20px;
-
     align-items: center;
     justify-content: center;
     gap: 15px;

@@ -17,6 +17,7 @@
   object-fit: contain;
   scale: .8;
 }
+
 .overlay {
   position: absolute;
   top: 20%;
@@ -45,6 +46,44 @@
 
 .carousel img {
   height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+//carrucel
+.carousel_md {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner_carousel_md {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.carousel_md img {
+  height: 170vh;
   width: 100%;
   object-fit: cover;
 }
@@ -152,19 +191,15 @@
 //utilidades para construir row grids
 .GRID-row-1 {
   display: grid;
-  gap: 5%;
+  gap: 10px;
   grid-template-rows: 1fr;
-}
-
-.GRID-row-2 {
-  @extend .GRID-row-1;
-  grid-template-rows: 1fr 1fr;
 }
 
 .GRID-row-3 {
   @extend .GRID-row-1;
-
+  height: 100%;
   grid-template-rows: 1fr 1fr 1fr;
+
 }
 
 .GRID-row-4 {
@@ -184,13 +219,10 @@
 .GRID-col-1 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5%;
+  gap: 10px;
 }
 
-.GRID-col-2 {
-  @extend .GRID-col-1;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .GRID-col-3 {
   @extend .GRID-col-1;
@@ -207,31 +239,160 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+//GRIDS CELLS SETS
+.div-celda-1-1 {
+  grid-column: 1 / 1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 / 1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: red;
+
+}
+
+.div-celda-1-2 {
+  grid-column: 2 / 2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 /1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(85, 255, 0);
+
+}
+.div-celda-2-1 {
+  grid-column: 1 / 1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(0, 251, 255);
+
+}
+
+.div-celda-2-2 {
+  grid-column: 2/ 2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(162, 0, 255);
+}
+
+.div-celda-1-3 {
+  grid-column: 3 /3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 /1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 0, 255);
+
+}
+
+
+
+.div-celda-2-3 {
+  grid-column: 3/ 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: auto;
+}
+
+
+.div-celda-3-3 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3 / 3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+.div-celda-3-1 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1 / 1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+.div-celda-3-2 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2 / 2;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+.div-celda-3-3 {
+  grid-column: 3 / 3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3 / 3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: $alert-info-border;
+
+}
+
+
+.GRID-col-2 {
+  @extend .GRID-col-1;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+
+}
+
+
+.GRID-row-2 {
+  @extend .GRID-row-1;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 60vh;
+
+}
+
+
+
 /*Redondear elementos*/
 .rounded-none {
   border-radius: none;
 }
 
 .rounded-xms {
-  border-radius:map-get($map: $borders, $key: Xpequeno);
+  border-radius: map-get($map: $borders, $key: Xpequeno);
 }
 
 .rounded-sm {
-  border-radius:map-get($map: $borders, $key: pequeno);
+  border-radius: map-get($map: $borders, $key: pequeno);
 }
 
 .rounded-md {
-  border-radius:map-get($map: $borders, $key: mediano);
+  border-radius: map-get($map: $borders, $key: mediano);
 }
+
 .rounded-gr {
-  border-radius:map-get($map: $borders, $key: grande);
+  border-radius: map-get($map: $borders, $key: grande);
 }
+
 .rounded-Xgr {
-  border-radius:map-get($map: $borders, $key: Xgrande);
+  border-radius: map-get($map: $borders, $key: Xgrande);
 }
 
 .rounded-top-left {
-  border-top-left-radius:map-get($map: $borders, $key: Xgrande);
+  border-top-left-radius: map-get($map: $borders, $key: Xgrande);
 }
 
 .rounded-top-right {
@@ -247,19 +408,23 @@
 }
 
 .rounded-left {
-  border-left: map-get($map: $borders, $key: Xgrande);;
+  border-left: map-get($map: $borders, $key: Xgrande);
+  ;
 }
 
 .rounded-rigth {
-  border-right: map-get($map: $borders, $key: Xgrande);;
+  border-right: map-get($map: $borders, $key: Xgrande);
+  ;
 }
 
 .rounded-top {
-  border-top: map-get($map: $borders, $key: Xgrande);;
+  border-top: map-get($map: $borders, $key: Xgrande);
+  ;
 }
 
 .rounded-buttom {
-  border-bottom: map-get($map: $borders, $key: Xgrande);;
+  border-bottom: map-get($map: $borders, $key: Xgrande);
+  ;
 }
 
 .rounded-ovalo {
@@ -299,7 +464,7 @@
 }
 
 .plta-dos-backgraund-B {
-  background: $colorBg-secundarioB;
+  background-color: $colorBg-secundarioB;
 }
 
 .plta-tres-backgraund-A {
@@ -358,7 +523,22 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   font-weight: $weight;
 }
 
+.txt_dashed
+{
+  text-decoration: underline;
+}
 
+.txt_dashed_lettergrow
+{
+  text-decoration: underline;
+  &::first-letter {
+    font-size: 130%;
+    font-style: italic;
+    font-weight: 500;
+    margin-right: 0px;
+    color: white;
+  }
+}
 
 // Tamaños de fuente pequeño
 .my-text-1 {
@@ -567,4 +747,11 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   display: grid;
   gap: 5%;
   grid-template-rows: 1fr;
+}
+
+//MARGINS
+
+.margin_5
+{
+  margin: 5%;
 }

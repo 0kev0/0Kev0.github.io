@@ -1,3 +1,4 @@
+@import 'Variables';
 .article {
     margin-top: 0;
     margin-left: 10%;
@@ -5,10 +6,18 @@
 }
 
 .article-2-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  column-count: 2; /* Divide el contenido en dos columnas */
+  column-gap: 10px; /* Espacio entre las columnas */
+  margin: 20px 40px;
+
 }
+
+.article-1-col {
+    column-count: 1; /* Divide el contenido en dos columnas */
+    margin: 20px 15%;
+
+  
+  }
 
 
 .article-3-col {
@@ -17,8 +26,13 @@
     grid-gap: 20px;
 }
 
-.article-subrayado {
-    background-color: yellow;
+.txt-subrayado {
+    background-color: $color-primarioB;
+}
+
+.txt-subrayado_block {
+    background-color: $color-primarioB;
+    display: block;
 }
 
 .article-bordered {

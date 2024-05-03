@@ -96,6 +96,29 @@ $FontPack1: ('Titulo': 'Lato', 'Tema': 'Raleway','Texto': 'Source Sans Pro');
 $FontPack2: ('Titulo': 'Playfair Display','Tema': 'Merriweather',   'Texto': 'Oswald');
 $FontPack4: ('Titulo': 'Roboto','Tema': 'Montserrat','Texto': 'Open Sans');
 
+.Inicial_Resaltada_h1
+{
+    &::first-letter {
+        font-size: 130%;
+        font-style: italic;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+}
+
+.Inicial_Resaltada_h1_dashed
+{
+    &::first-letter {
+        font-size: 130%;
+        font-style: italic;
+        text-decoration: underline;
+        font-weight: 500;
+        margin-right: 0px;
+      }
+}
+
+
+
 .Titulo1 {
     font-family: map-get($map: $FontPack1, $key: 'Titulo');
 }

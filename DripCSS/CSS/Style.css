@@ -158,6 +158,18 @@
   animation: slideOutRight 0.5s forwards;
 }
 
+/*Paleta de colores A*/
+/*Paleta de colores B*/
+/*Paleta de colores C*/
+/*Paleta de colores D*/
+/*Colores para texto */
+/*tamanos de fuentes*/
+/*Heigths*/
+/*Width*/
+/*tamanos de paddings*/
+/*tamanos de Buttons*/
+/*Border radius*/
+/*forms bg*/
 .article {
   margin-top: 0;
   margin-left: 10%;
@@ -165,9 +177,17 @@
 }
 
 .article-2-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  -moz-column-count: 2;
+       column-count: 2; /* Divide el contenido en dos columnas */
+  -moz-column-gap: 10px;
+       column-gap: 10px; /* Espacio entre las columnas */
+  margin: 20px 40px;
+}
+
+.article-1-col {
+  -moz-column-count: 1;
+       column-count: 1; /* Divide el contenido en dos columnas */
+  margin: 20px 15%;
 }
 
 .article-3-col {
@@ -176,8 +196,13 @@
   grid-gap: 20px;
 }
 
-.article-subrayado {
-  background-color: yellow;
+.txt-subrayado {
+  background-color: rgb(255, 0, 0);
+}
+
+.txt-subrayado_block {
+  background-color: rgb(255, 0, 0);
+  display: block;
 }
 
 .article-bordered {
@@ -496,6 +521,21 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
 .Titulo1 {
   font-family: "Lato";
 }
@@ -800,6 +840,21 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
 .Titulo1 {
   font-family: "Lato";
 }
@@ -1974,6 +2029,21 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
 .Titulo1 {
   font-family: "Lato";
 }
@@ -2296,6 +2366,10 @@
   justify-content: center;
 }
 
+.align_center {
+  text-align: center;
+}
+
 .-col {
   flex-direction: column;
 }
@@ -2476,6 +2550,21 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
 .Titulo1 {
   font-family: "Lato";
 }
@@ -2780,6 +2869,21 @@
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
 .Titulo1 {
   font-family: "Lato";
 }
@@ -3477,7 +3581,7 @@ input[type=radio]:checked:after {
   border-radius: 5px;
   padding-bottom: 10px;
   border-radius: 5px;
-  height: auto;
+  height: 70%;
   width: 80vh;
   padding: 20px;
   align-items: center;
@@ -4059,7 +4163,8 @@ input[type=radio]:checked:after {
   border-radius: 12px;
   grid-area: Content;
   color: white;
-  overflow-y: auto; /* Cambia "scroll" a "auto" */
+  overflow-y: auto;
+  /* Cambia "scroll" a "auto" */
   scrollbar-width: none;
 }
 
@@ -4067,6 +4172,35 @@ input[type=radio]:checked:after {
   background-color: #676767;
   grid-area: ItemList;
   color: white;
+}
+
+.webtema1 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 1fr 0.75fr 0.25fr;
+  grid-template-areas: "carrucel info info" "carrucel form form" "footer footer  footer";
+}
+
+.cell-carrucel {
+  grid-area: carrucel;
+}
+
+.cell-info {
+  grid-area: info;
+}
+
+.cell-form {
+  grid-area: form;
+  align-content: center;
+  row-gap: 10px;
+}
+
+.cell-footer {
+  grid-area: footer;
+  align-content: center;
+  row-gap: 10px;
+  background-color: rgb(61, 0, 0);
 }
 
 /*Paleta de colores A*/
@@ -4307,6 +4441,21 @@ header a {
   font-family: "Oswald";
   src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap") format("woff2");
 }
+.Inicial_Resaltada_h1::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.Inicial_Resaltada_h1_dashed::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
 .Titulo1 {
   font-family: "Lato";
 }
@@ -4943,6 +5092,44 @@ header a {
   right: 10px;
 }
 
+.carousel_md {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner_carousel_md {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.carousel_md img {
+  height: 170vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
 .hidden {
   display: none;
 }
@@ -5008,17 +5195,14 @@ header a {
   border: 2px solid #000;
 }
 
-.GRID-row-1, .GRID-row-5, .GRID-row-4, .GRID-row-3, .GRID-row-2 {
+.GRID-row-1, .GRID-row-2, .GRID-row-5, .GRID-row-4, .GRID-row-3 {
   display: grid;
-  gap: 5%;
+  gap: 10px;
   grid-template-rows: 1fr;
 }
 
-.GRID-row-2 {
-  grid-template-rows: 1fr 1fr;
-}
-
 .GRID-row-3 {
+  height: 100%;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -5030,14 +5214,10 @@ header a {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.GRID-col-1, .GRID-col-5, .GRID-col-4, .GRID-col-3, .GRID-col-2 {
+.GRID-col-1, .GRID-col-2, .GRID-col-5, .GRID-col-4, .GRID-col-3 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5%;
-}
-
-.GRID-col-2 {
-  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .GRID-col-3 {
@@ -5050,6 +5230,114 @@ header a {
 
 .GRID-col-5 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.div-celda-1-1 {
+  grid-column: 1/1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: red;
+}
+
+.div-celda-1-2 {
+  grid-column: 2/2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(85, 255, 0);
+}
+
+.div-celda-2-1 {
+  grid-column: 1/1;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(0, 251, 255);
+}
+
+.div-celda-2-2 {
+  grid-column: 2/2;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: 40vh;
+  width: 100%/2;
+  background-color: rgb(162, 0, 255);
+}
+
+.div-celda-1-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la segunda fila y fin en la tercera fila */
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 0, 255);
+}
+
+.div-celda-2-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la tercera fila y fin en la cuarta fila */
+  height: auto;
+}
+
+.div-celda-3-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3/3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.div-celda-3-1 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 1/1;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.div-celda-3-2 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 2/2;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.div-celda-3-3 {
+  grid-column: 3/3;
+  /* Inicio en la primera columna y fin en la segunda columna */
+  grid-row: 3/3;
+  /* Inicio en la primera fila y fin en la segunda fila */
+  height: auto;
+  background-color: #bee5eb;
+}
+
+.GRID-col-2 {
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.GRID-row-2 {
+  box-sizing: border-box;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 60vh;
 }
 
 /*Redondear elementos*/
@@ -5146,7 +5434,7 @@ header a {
 }
 
 .plta-dos-backgraund-B {
-  background: rgb(61, 0, 0);
+  background-color: rgb(61, 0, 0);
 }
 
 .plta-tres-backgraund-A {
@@ -5176,6 +5464,21 @@ header a {
 }
 
 /*//TIPOs DE TEXTO*/
+.txt_dashed {
+  text-decoration: underline;
+}
+
+.txt_dashed_lettergrow {
+  text-decoration: underline;
+}
+.txt_dashed_lettergrow::first-letter {
+  font-size: 130%;
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 0px;
+  color: white;
+}
+
 .my-text-1 {
   font-size: 18px;
   font-family: "Roboto, sans-serif";
@@ -5349,7 +5652,7 @@ header a {
   justify-content: space-around;
 }
 
-.GRID-col-1, .GRID-col-2, .GRID-col-3, .GRID-col-4, .GRID-col-5 {
+.GRID-col-1, .GRID-col-3, .GRID-col-4, .GRID-col-5, .GRID-col-2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5%;
@@ -5379,10 +5682,14 @@ header a {
   gap: 5%;
 }
 
-.GRID-row-1, .GRID-row-2, .GRID-row-3, .GRID-row-4, .GRID-row-5 {
+.GRID-row-1, .GRID-row-3, .GRID-row-4, .GRID-row-5, .GRID-row-2 {
   display: grid;
   gap: 5%;
   grid-template-rows: 1fr;
+}
+
+.margin_5 {
+  margin: 5%;
 }
 
 /*Paleta de colores A*/
