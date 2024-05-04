@@ -1,6 +1,15 @@
 @import 'Variables';
 
+.fb {
+  a {
+    &:hover {
+      color: red;
+    }
+  }
 
+
+
+}
 
 
 //Estilo para imagenes de codigos
@@ -104,6 +113,7 @@
   width: 100%;
   overflow: hidden;
 }
+
 //inner carucels
 .inner_carousel_btn {
   z-index: 2;
@@ -115,10 +125,10 @@
 }
 
 .inner_carousel_btn button {
-  margin:10px 3%;
-    object-fit: cover;
-    z-index: 2;
-  }
+  margin: 10px 3%;
+  object-fit: cover;
+  z-index: 2;
+}
 
 .inner_carousel_btn_drch2 {
   z-index: 2;
@@ -130,31 +140,32 @@
 }
 
 .inner_carousel_btn_drch2 button {
-  margin:10px 3%;
-    object-fit: cover;
-    z-index: 2;
-  }
+  margin: 10px 3%;
+  object-fit: cover;
+  z-index: 2;
+}
 
 .inner_carousel_btn_izq {
   display: flex;
   flex-direction: row-reverse;
   transition: transform 0.9s ease-in-out;
   align-items: center;
-  
+
 }
 
 .inner_carousel_btn_izq button {
-  margin:10px 3%;
-    object-fit: cover;
-    z-index: 2;
-  }
+  margin: 10px 3%;
+  object-fit: cover;
+  z-index: 2;
+}
 
 
 // Ocultar
 .hidden {
   display: none;
 }
-.bottom-responsive{
+
+.bottom-responsive {
   @media (max-width: 900px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -163,11 +174,12 @@
   }
 }
 
-.sidebar-responsive{
+.sidebar-responsive {
   @media screen and (max-width: 700px) {
     display: none;
+  }
 }
-}
+
 /* CSS */
 .img-set {
   height: 80vh;
@@ -228,11 +240,13 @@
   margin-left: 10px;
 
 }
-.text-justify{
+
+.text-justify {
   text-align: justify;
 }
-.text-color{
-  p{
+
+.text-color {
+  p {
     color: #f0f0f0;
   }
 }
@@ -322,6 +336,7 @@
   background-color: rgb(85, 255, 0);
 
 }
+
 .div-celda-2-1 {
   grid-column: 1 / 1;
   /* Inicio en la primera columna y fin en la segunda columna */
@@ -584,14 +599,13 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   font-weight: $weight;
 }
 
-.txt_dashed
-{
+.txt_dashed {
   text-decoration: underline;
 }
 
-.txt_dashed_lettergrow
-{
+.txt_dashed_lettergrow {
   text-decoration: underline;
+
   &::first-letter {
     font-size: 130%;
     font-style: italic;
@@ -622,8 +636,8 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 .my-text-4 {
   @include text-size(pequeno, Lato);
-  @include text-color(rgb(253, 253, 253)); 
-  @include text-weight(normal); 
+  @include text-color(rgb(253, 253, 253));
+  @include text-weight(normal);
 }
 
 // Tamaños de fuente mediano
@@ -756,7 +770,7 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   color: white;
 }
 
-.text_Tema{
+.text_Tema {
   h1 {
     margin-top: 10px;
     font-family: map-get($map: $FontPack1, $key: Titulo);
@@ -768,31 +782,35 @@ $fonts: (Roboto: 'Roboto, sans-serif',
     font-weight: bold;
   }
 }
-.color-text{
+
+.color-text {
   color: rgb(81, 174, 14);
 }
-.centerTXT{
-    text-align: center;
-    align-self: center;
-    justify-content: center;
-    align-content: center;
+
+.centerTXT {
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
 }
-.flex{
+
+.flex {
   display: flex;
   flex-direction: row;
 }
-.pa{
-    padding: 20px;
+
+.pa {
+  padding: 20px;
 }
 
 .pa1 {
   padding-left: 10px;
 }
 
-.GRID-col-1{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5%;
+.GRID-col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
 }
 
 .GRID-col-2 {
@@ -827,19 +845,18 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 //MARGINS
 
-.margin_5
-{
+.margin_5 {
   margin: 5%;
 }
 
 .copy-btn {
-    background-color: $colorbg-primario;
-    color: white;
-    padding: 8px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: auto;
+  background-color: $colorbg-primario;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
 }
 
 // Flexbox utilities
