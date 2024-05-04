@@ -1,0 +1,62 @@
+ va asi vamos a manejar esta onda:
+	
+		si es atributo                  si es valor
+				[ Display  ] :         [ Flex ]
+
+			ABREVIADO SERIA Display_Flex
+				[ Font-family  ] :         [ comicsans ]
+			ABREVIADO SERIA fnt-famly_comicsans
+
+
+
+		 si la clase es mas especifica por que apunta a mas atributos, o necesita mas contexto
+
+		atributo   	atributo(contexto)	valor
+			[ Flex ] [ Direction ] :     [Col-reverse]
+			
+			ABREVIADO SERIA -> FLEX-DIREC_COL_REVERS
+				
+		EJ.     BORDER-TOP_Xm
+		EJ. 	BORDER-RIGHT-LEFT_Xm
+		EJ.	BORDER_OVALO
+		EJ. 	DISPLAY_NONE
+		EJ.	BG-COLOR_BG_SECND_B
+		EJ.	JUSTIFY-CONTENT_CENTER
+		EJ.	PD_md
+		
+GLOSARIO:
+
+	Font-family = fnt-famly
+	cursor = cursor
+	paddig = pd
+	margin = mg
+	display = disply
+	justify = justf
+	align = alig
+	text-decoration = txt-decor
+	display-direction = disply_direct
+	font-weight = fnt_weight
+	BORDER = brd
+	radius = rad
+	gap = gap
+	z-index = z_indx
+	gradient-lineael = grd-lineal
+	height = height
+	width =width
+	max-width = max - width
+	shadow = shadw
+	box = box 
+ 	flx-wrp = flx-wrp
+	font-style = fnt-styl
+	text-overflow = txt-overflow
+	hover = hovr
+	transition = transit
+ 	text-shadow = txt-shadw
+	self-align = self-align
+	object-fit = obj-fit
+
+agreguen mas si faltan
+	
+	
+	
+

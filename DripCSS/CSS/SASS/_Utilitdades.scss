@@ -70,7 +70,7 @@
   right: 10px;
 }
 
-//carrucel
+//carrucel btn
 .carousel_md {
   width: 100%;
   height: 100%;
@@ -88,26 +88,66 @@
   object-fit: cover;
 }
 
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 10px;
-  cursor: pointer;
-  display: none;
+
+//
+.carousel_btn {
+  width: 100%;
+  overflow: hidden;
 }
 
-.prev-button {
-  left: 10px;
+.carousel_btn2 {
+  width: 100%;
+  overflow: hidden;
 }
 
-.next-button {
-  right: 10px;
+.carousel_btn3 {
+  width: 100%;
+  overflow: hidden;
+}
+//inner carucels
+.inner_carousel_btn {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.7s ease-in-out;
+  align-items: center;
+
 }
 
+.inner_carousel_btn button {
+  margin:10px 3%;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+.inner_carousel_btn_drch2 {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.8s ease-in-out;
+  align-items: center;
+
+}
+
+.inner_carousel_btn_drch2 button {
+  margin:10px 3%;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+.inner_carousel_btn_izq {
+  display: flex;
+  flex-direction: row-reverse;
+  transition: transform 0.9s ease-in-out;
+  align-items: center;
+  
+}
+
+.inner_carousel_btn_izq button {
+  margin:10px 3%;
+    object-fit: cover;
+    z-index: 2;
+  }
 
 
 // Ocultar
@@ -723,7 +763,6 @@ $fonts: (Roboto: 'Roboto, sans-serif',
     align-self: center;
     justify-content: center;
     align-content: center;
-    text-color: #f0f0f0;
 }
 .flex{
   display: flex;
@@ -790,3 +829,106 @@ $fonts: (Roboto: 'Roboto, sans-serif',
     width: auto;
 }
 
+// Flexbox utilities
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+// Grid utilities
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+// Other display utilities
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+// Responsive utilities
+@media (max-width: 767px) {
+  .flex-sm {
+    display: flex;
+  }
+
+  .grid-sm {
+    display: grid;
+  }
+
+  .inline-sm {
+    display: inline;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 574px) {
+  .flex-xs {
+    display: flex;
+  }
+
+  .grid-xs {
+    display: grid;
+  }
+
+  .inline-xs {
+    display: inline;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+}

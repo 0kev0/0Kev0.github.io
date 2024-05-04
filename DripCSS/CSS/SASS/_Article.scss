@@ -14,7 +14,7 @@
 
 .article-1-col {
     column-count: 1; /* Divide el contenido en dos columnas */
-    margin: 20px 15%;
+    margin: 20px 10%;
 
   
   }
@@ -28,6 +28,18 @@
 
 .txt-subrayado {
     background-color: $color-primarioB;
+}
+
+.txt-subrayadoB {
+    background-color: $color-primarioV;
+}
+
+.txt-subrayadoC {
+    background-color: $color-primarioC;
+}
+
+.txt-subrayadoD {
+    background-color: $color-primarioD;
 }
 
 .txt-subrayado_block {

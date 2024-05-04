@@ -74,6 +74,8 @@
   font-family: map-get($map: $FontPack2, $key: Tema );
   font-size: 1.5rem;
   color: #FAFAFA;
+  line-height: 2px;
+
   text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 25px;
@@ -127,14 +129,16 @@
 /*butontest_boxshadow_Th*/
 
 .butontest_boxshadow_Th {
+  line-height: 2px;
   margin: 5px;
   font-family: monospace;
   font-size: 1.5rem;
   color: #FAFAFA;
   text-transform: uppercase;
   height: 5vh;
-  width: auto;
-  padding: 5px 10px;
+  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  width: auto; /* El ancho se ajustará automáticamente al texto */
+    padding: 5px 10px;
   border: 2px solid #FAFAFA;
   background: $color-secundario;
   box-shadow: 3px 3px #fafafa;
@@ -184,14 +188,15 @@
 /*button_animated*/
 .button_animated_Th {
   display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
-  height: map-get($map: $BtHeight, $key: pequeno);
   width: auto; /* El ancho se ajustará automáticamente al texto */
-    margin: 2%;
+  height: map-get($map: $BtHeight, $key: pequeno);
+    margin: 10px;
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
+  line-height: 2px;
   font-weight: bold;
   padding: 0.7em 2em;
   border: 3px solid $colorbg-primarioC;
@@ -275,7 +280,7 @@
   cursor: pointer;
   margin: 30px 5px;
   font-weight: 200;
-  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  display: inline-block; 
   height: map-get($map: $BtHeight, $key: pequeno);
   width: auto; /* El ancho se ajustará automáticamente al texto */
 
@@ -355,25 +360,24 @@ $color-boton-defecto: #3498db;
 }
 
 /*Tap Button*/
-
 .Tap_Button {
   --button_radius: 0.75em;
-
-  height:map-get($map: $BtHeight, $key:pequeno );
-  width: map-get($map: $BtWidth, $key:mediano );
+  padding: 0 10vh;
+  height: map-get($map: $BtHeight, $key: pequeno);
+  width: map-get($map: $BtWidth, $key: grande);
   font-size: 17px;
   font-weight: bold;
   border: none;
   border-radius: var(--button_radius);
   background: $color-primario;
-  @include shadow-bottom_imput_color (white);
+  color: #FAFAFA;
+  @include shadow-bottom_imput_color(white);
 
   .button_top {
-    display: block;
     box-sizing: border-box;
     border: 2px solid var(--button_outline_color);
     border-radius: var(--button_radius);
-    padding: 0.75em 1.5em;
+    padding: 0 10vh;
     background: $color-primario;
     color: $color-secundario;
     transform: translateY(-0.2em);
@@ -387,38 +391,27 @@ $color-boton-defecto: #3498db;
   &:active {
     transform: translateY(0);
   }
+
+  // Centrar el texto
+  display: flex;
+  justify-content: center;
 }
+
 
 .Tap_Button_Th2 {
   @extend .Tap_Button;
   background: $color-primarioB;
-
-  .Tap_Button_Th2 {
-    background: $color-primarioB;
-    color: $color-secundarioB;
-  }
-
+width: 20vh;
 }
 
 .Tap_Button_Th3 {
   @extend .Tap_Button;
-  background: $color-primarioC;
-
-  .Tap_Button_Th2 {
-    background: $color-primarioC;
-    color: $color-secundarioC;
-  }
-
+  background: $color-primarioC
 }
 
 .Tap_Button_Th4 {
   @extend .Tap_Button;
   background: $color-primarioD;
-
-  .Tap_Button_Th2 {
-    background: $color-primarioD;
-    color: $color-secundarioD;
-  }
 
 }
 
@@ -426,7 +419,8 @@ $color-boton-defecto: #3498db;
 .boton-primario_Th {
   @include boton-estilos($color-primario, 10px);
   height:map-get($map: $BtHeight, $key:pequeno );
-  width: map-get($map: $BtWidth, $key:mediano );
+  width: auto+5px;
+  display: inline-block;
   border: 2px solid lighten($color: $color-primario, $amount: 20);
 
   &:hover {
@@ -477,11 +471,16 @@ $color-boton-defecto: #3498db;
 .boton-secundario_Th {
   margin: 2%;
   @include boton-estilos($color-primario, 20px);
-  height:map-get($map: $BtHeight, $key:pequeno );
-  width: map-get($map: $BtWidth, $key:mediano );
+  height: map-get($map: $BtHeight, $key: pequeno);
+  width: map-get($map: $BtWidth, $key: mediano);
   border: none;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+
+  // Centrar el texto
+  display: flex;
+  justify-content: center;
 }
+
 
 .boton-secundario_Th2 {
   @extend .boton-secundario_Th;
@@ -517,7 +516,8 @@ $color-boton-defecto: #3498db;
   outline: var(--b) solid #0000;
   outline-offset: .6em;
   font-size: 16px;
-  width: 80px;
+  width: auto;
+  display: inline-block;
   height: 50px;
 
   border: 0;

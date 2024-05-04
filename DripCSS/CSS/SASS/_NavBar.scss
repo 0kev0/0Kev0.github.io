@@ -102,6 +102,28 @@ $color-secundario : rgb(112, 11, 151);
 
 }
 
+.Drip_logo_TemaC {
+  @extend .titulo;
+
+  h1
+  {
+    font-family: map-get($map: $FontPack1, $key: Tema);
+    font-size: 32px;
+    color: white;
+    text-shadow: 3px 4px $color-primarioC;
+    text-decoration: none;
+    margin-left: 15px;
+  
+    &::first-letter {
+      color: $color-primarioC;
+      margin-right: 10px;
+      text-shadow: 3px 4px black;
+      font-size: 40px;
+    }
+  }
+ 
+}
+
 .nav2 {
   @extend .nav;
   @include center;
