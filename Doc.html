@@ -28,8 +28,7 @@
     <i class="fa-solid fa-house" onclick="nav()" style="color: #b197fc"></i>
     <div class="doc">
         <!--------------------------------------SIDEBAR----------------------------------------------------------->
-
-        <div class="Sidebar_content">
+        <div id="sidebar" class="Sidebar sidebar-responsive pa">
             <ul>
                 <li>
                     <a href="#welcome">
@@ -287,43 +286,34 @@
 
                     <div class="Documentacion-info-container-content ">
                         <h3 class="my-text-4 ">Plantilla #1</h3>
-                        <div class="Display-flex justfy_center">
-                            <div class="tarjeta ">
-                                <div class="front">
-                                    <img src="DripCSS\IMG\logo.png" alt="">
-                                    <h3>Drip</h3>
-                                </div>
-                                <div class="back">
-                                    <h3>Drip.css</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente
-                                        cumque
-                                        possimus, ab eum nemo animi aspernatur doloremque odio inventore nihil
-                                        corrupti cum
-                                        porro est similique ad blanditiis amet ipsa.</p>
-                                    <div class="link"><a href="#">Detalles</a></div>
-                                </div>
+                        <div class="tarjeta ">
+                            <div class="front">
+                              <img src="/WhatsApp Image 2024-04-30 at 9.34.35 PM.jpeg" alt="">
+                               <h3>Drip</h3>
                             </div>
-                            <div class="tarjeta ">
-                                <div class="front">
-                                    <img src="DripCSS/IMG/clear_logo.jpeg" alt="">
-                                    <h3>Drip</h3>
-                                </div>
-                                <div class="back">
-                                    <h3>Drip.css</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente
-                                        cumque
-                                        possimus, ab eum nemo animi aspernatur doloremque odio inventore nihil
-                                        corrupti cum
-                                        porro est similique ad blanditiis amet ipsa.</p>
-                                    <div class="link"><a href="#">Detalles</a></div>
-                                </div>
+                              <div class="back">
+                                <h3>Drip.css</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente cumque possimus, ab eum nemo animi aspernatur doloremque odio inventore nihil corrupti cum porro est similique ad blanditiis amet ipsa.</p>
+                                <div class="link"><a href="#">Detalles</a></div>
+                              </div>
+                          </div>
+                    </div><br>
+                    <div class="Documentation-container">
+                        <div class="Documentacion-info-container-content color-text text-justify ">
+                            <h3 class="my-text-4">Codigo Fuente</h3><br>
+                            <p class="t2"><code>&lt;div class="tarjeta"&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="front"&gt;</code></p>
+                            <p class="t2"><code>&lt;img&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="back"&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
+                            <p class="t2"><code>&lt;div class="Footer"  &gt;</code></p>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
-
                         </div>
-
-                    </div>
-
-                    <br>
+                    </div><br>
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
 
@@ -366,7 +356,7 @@
                         </div>
                     </div><br>
                     <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content color-text text-justify ">
+                        <div class="Documentacion-info-container-content  text-justify ">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
                             <p class="card2"><code>&lt;div class="card"&gt;</code></p>
                             <p class="card2"><code>&lt;div class="contenido-card"&gt;</code></p>
@@ -376,8 +366,7 @@
                             <p class="card2"><code>&lt;h4&gt;</code></p>
                             <p class="card2"><code>&lt;h6&gt;</code></p>
                             <p class="card2"><code>&lt;p&gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboard('card2')"><i
-                                    class="fa-regular fa-copy"></i></button>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('card2')"><i class="fa-regular fa-copy"></i></button>
                             <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
@@ -432,7 +421,8 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="Documentacion-container">
                     <div class="Documentacion-info-container-content color-text text-justify ">
                         <h3 class="my-text-4">Codigo Fuente</h3><br>
                         <p class="card3"><code>&lt;div class="wapper"&gt;</code></p>
@@ -441,10 +431,9 @@
                         </p>
                         <p class="card3"><code>&lt;label for="c4" class="carta"&gt;</code></p>
                         <p class="card3"><code>&lt;div class="row"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="icon" &gt;</code></p>
-                        <p class="card3"><code>&lt;div class="descripcion" &gt;</code></p>
-                        <br><button class="copy-btn " onclick="copyCodeToClipboard('card3')"><i
-                                class="fa-regular fa-copy"></i></button>
+                        <p class="card3"><code>&lt;div class="icon"  &gt;</code></p>
+                        <p class="card3"><code>&lt;div class="descripcion"  &gt;</code></p>
+                        <br><button class="copy-btn " onclick="copyCodeToClipboard('card3')"><i class="fa-regular fa-copy"></i></button>
                         <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                             ¡Éxito! Se ha copiado Corectamente.
                             <span class="close" onclick="closeAlert()">×</span><br>
@@ -628,23 +617,22 @@
 
                     <br>
 
-                    <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content color-text text-justify ">
-                            <h3 class="my-text-4">Codigo Fuente</h3><br>
-                            <p class="t1"><code>&lt;div class="container-padre"&gt;</code></p>
-                            <p class="t1"><code>&lt;div class="box1"&gt;</code></p>
-                            <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
-                            <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
-                            <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
-                            <p class="t1"><code>&lt;div class="box1" &gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboardt1('t1')"><i
-                                    class="fa-regular fa-copy"></i></button>
-                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                                ¡Éxito! Se ha copiado Corectamente.
-                                <span class="close" onclick="closeAlert()">×</span><br>
-                            </div>
+                <div class="Documentation-container">
+                    <div class="Documentacion-info-container-content color-text text-justify ">
+                        <h3 class="my-text-4">Codigo Fuente</h3><br>
+                        <p class="t1"><code>&lt;div class="container-padre"&gt;</code></p>
+                        <p class="t1"><code>&lt;div class="box1"&gt;</code></p>
+                        <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
+                        <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
+                        <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
+                        <p class="t1"><code>&lt;div class="box1"  &gt;</code></p>
+                        <br><button class="copy-btn " onclick="copyCodeToClipboardt1('t1')"><i class="fa-regular fa-copy"></i></button>
+                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                            ¡Éxito! Se ha copiado Corectamente.
+                            <span class="close" onclick="closeAlert()">×</span><br>
                         </div>
-                    </div><br>
+                    </div>
+                </div><br>
 
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
@@ -665,9 +653,8 @@
                             <p class="t2"><code>&lt;div class="header"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="sidebar"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="Footer" &gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i
-                                    class="fa-regular fa-copy"></i></button>
+                            <p class="t2"><code>&lt;div class="Footer"  &gt;</code></p>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i class="fa-regular fa-copy"></i></button>
                             <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
@@ -686,23 +673,22 @@
                             <div class="boxs4"></div>
                         </div>
                     </div><br>
-                    <div class="Documentacion-info-container-content color-text text-justify ">
-                        <h3 class="my-text-4">Codigo Fuente</h3><br>
-                        <p class="t3"><code>&lt;div class="container-padre2"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs2"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs3" &gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs4" &gt;</code></p>
-                        <br><button class="copy-btn " onclick="copyCodeToClipboard('t3')"><i
-                                class="fa-regular fa-copy"></i></button>
-                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                            ¡Éxito! Se ha copiado Corectamente.
-                            <span class="close" onclick="closeAlert()">×</span><br>
-                        </div>
+                <div class="Documentacion-info-container-content color-text text-justify ">
+                    <h3 class="my-text-4">Codigo Fuente</h3><br>
+                    <p class="t3"><code>&lt;div class="container-padre2"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs2"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs3"  &gt;</code></p>
+                    <p class="t3"><code>&lt;div class="boxs4"  &gt;</code></p>
+                    <br><button class="copy-btn " onclick="copyCodeToClipboard('t3')"><i class="fa-regular fa-copy"></i></button>
+                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                        ¡Éxito! Se ha copiado Corectamente.
+                        <span class="close" onclick="closeAlert()">×</span><br>
                     </div>
-
-                    <h2 class="my-text-4 ">Grids Utylities</h2>
+                </div>
+                <div class="Documentacion-container">
+                    <h2 class="my-text-4 " >Grids Utylities</h2>
                     <div class="Documentacion-info-container-content">
                         <p>
                             Esta plantilla proporciona una manera efectiva y elegante de presentar información
@@ -1140,7 +1126,7 @@
                             coherencia y una integración visual atractiva.
                         </p>
 
-                        <div class="Display-flex">
+                        <div class="bottom-responsive">
                             <button class="buttontest">test1</button>
                             <button class="buttontest_Th2">test1</button>
                             <button class="buttontest_Th3">test1</button>
@@ -1152,7 +1138,7 @@
                                 class="buttontest"
                             </p> <br>
 
-                            <div class="Display-flex" style="justify-items: center;">
+                            <div class="bottom-responsive" style="justify-items: center;">
                                 <button class="butontest_boxshadow_Th">test3</button>
                                 <button class="button_animated_Th2">test4</button>
                                 <button class="boton-primario_Th3">test5</button>
@@ -1327,13 +1313,24 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            <span class="badge1">badge1</span>
-                            <span class="badge2">badge2</span>
+                            <span class="badge1">badge1</span><br><br>
+                            <span class="badge2">badge2</span><br><br>
                             <span class="badge3">badge3</span>
                             <br />
                         </p>
                     </div>
                     <br>
+                    <div class="Documentacion-info-container-content color-text text-justify ">
+                        <h3 class="my-text-4">Codigo Fuente</h3><br>
+                        <p class="badges"><code>&lt;span class="badge1"&gt;</code></p>
+                        <p class="badges"><code>&lt;span class="badge"&gt;</code></p>
+                        <p class="badges"><code>&lt;span class="badge3"&gt;</code></p>
+                        <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('badges', 'success-alert-badges')"><i class="fa-regular fa-copy"></i></a><br>
+                        <div id="success-alert-badges" class="alert alert-success slide-in-right ocultar">
+                            ¡Éxito! Se ha copiado Corectamente.
+                            <span class="close" onclick="closeAlert()">×</span><br>
+                        </div>
+                    </div>
                     <h2 id="AlertTypes" class="Font_Tema">Badges Utylities</h2>
 
                     <div class="Documentacion-info-container-content">

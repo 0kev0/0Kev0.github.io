@@ -348,6 +348,9 @@
   @media (max-width: 1000px) {
     font-size: 12px;
   }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .shadow-top, .bentoAx3 {
