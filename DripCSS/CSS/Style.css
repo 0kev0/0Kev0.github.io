@@ -5811,7 +5811,7 @@ header a {
 .my-text-4 {
   font-size: 18px;
   font-family: "Lato, sans-serif";
-  color: rgb(253, 253, 253);
+  color: black;
   font-weight: normal;
 }
 
@@ -6301,4 +6301,23 @@ body .container-F .footer .footer-col .social-links a:hover {
 
 .emoji-cursor {
   cursor: url("/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png"), auto;
-}/*# sourceMappingURL=Style.css.map */
+}
+
+
+/*MARGINS*/
+.margin-pequeno {
+  margin: 5px;
+}
+
+.margin-mediano {
+  margin: 10px;
+}
+
+.margin-grande {
+  margin: 20px;
+}
+
+.margin-doble {
+  margin: 40px;
+}
+/*# sourceMappingURL=Style.css.map */
