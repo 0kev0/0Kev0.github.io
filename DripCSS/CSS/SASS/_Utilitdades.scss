@@ -965,19 +965,18 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 //MARGINS
 
-@mixin margin-pequeno {
-  margin: 5px;
+.margin-pequeno {
+  margin: map-get($MarginSizes, pequeno);
 }
 
-@mixin margin-mediano {
-  margin: 10px;
+.margin-mediano {
+  margin: map-get($MarginSizes, mediano);
 }
 
-@mixin margin-grande {
-  margin: 20px;
+.margin-grande {
+  margin: map-get($MarginSizes, grande);
 }
 
-@mixin margin-doble {
-  margin: 40px;
+.margin-Xgrande{
+  margin: map-get($MarginSizes, Xgrande);
 }
-
