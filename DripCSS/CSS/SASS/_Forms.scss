@@ -29,9 +29,17 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 70vh;
+    max-width: 600px;
+    width: 90%;
     border-radius: 5px;
     padding-bottom: 10px;
+    @media (max-width: 800px) {
+        max-width: 90%; 
+        input{
+            display: none;
+        }
+    }
+    
 }
 
 .form1 {
@@ -59,11 +67,11 @@
     @include shadow-difum_Forms(white);
     @include boxmodelStandar;
     background: $GrayRdBg;
-    width: 110vh;
+    width: 90vh;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "title title "
         "info card"
@@ -73,6 +81,16 @@
     margin-bottom: 5%;
     padding: 10px;
     color: white;
+    @media (min-width: 768px) {
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 2fr .5fr;
+        grid-template-areas:
+            "title title"
+            "info card"
+            "final final";
+    }
 }
 
 .title {
@@ -125,7 +143,8 @@
     @include boxmodelStandar;
     @include shadow-difum_color($color-primarioB);
     @extend .form3;
-    width: 120vh;
+    max-width: 600px;
+    width: 90vh;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -139,14 +158,12 @@
     margin-bottom: 5%;
     padding: 0px;
     color: black;
-
-
 }
 
 .title4 {
     padding: 5%;
     grid-area: title;
-color: gray;
+    color: gray;
 }
 
 .info {

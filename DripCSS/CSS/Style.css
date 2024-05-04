@@ -333,8 +333,8 @@
 
 .shadow-left, .Sidebar_content, .bentoCx3 {
   box-shadow: -5px 5px 0px 0px white;
-  @media (max-width: 1000px) {
-    font-size: 12px;
+  @media (max-width: 808px) {
+    display: none;; 
   }
 }
 
@@ -1723,12 +1723,11 @@
 }
 
 .back::-webkit-scrollbar {
-  width: 10px; /* Ancho de la barra de desplazamiento */
-  /* Estilo del borde de la barra de desplazamiento */
+  width: 5px;
 }
 
 .back::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color del botón de desplazamiento */
+  background-color: #525252;
 }
 
 .card {
@@ -3220,6 +3219,9 @@
   align-self: flex-start;
   margin-left: 5%;
   box-shadow: 0px 2px 0px 0px #ff8080;
+  /* @media (max-width: 600px) {
+       width: 70%;
+   }*/
 }
 .input_sm2:hover {
   box-shadow: 0px 3px 1px 0px #ff8080;
@@ -3230,6 +3232,9 @@
   height: 4vh;
   border: transparent;
   box-shadow: 0px 2px 0px 0px #ff8080;
+  /* @media (max-width: 600px) {
+       width: 70%;
+   }*/
 }
 .input_md2:hover, .input_mdReserva:hover, .input_smReserva:hover {
   box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
@@ -3524,13 +3529,19 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 70vh;
+  max-width: 600px;
+  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 5px 1px white;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
   color: white;
   gap: 8px;
+}
+@media (max-width: 900px) {
+  .form1 {
+    max-width: 90%;
+  }
 }
 
 .form1Test {
@@ -3543,7 +3554,8 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 70vh;
+  max-width: 600px;
+  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 5px 1px white;
@@ -3553,6 +3565,11 @@ input[type=radio]:checked:after {
   border: 1px solid rgba(68, 68, 68, 0.25);
   color: white;
   gap: 8px;
+}
+@media (max-width: 900px) {
+  .form1Test {
+    max-width: 90%;
+  }
 }
 
 .form2 {
@@ -3566,21 +3583,36 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 70vh;
+  max-width: 600px;
+  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
-  width: 110vh;
+  width: 90vh;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "title title " "info card" "final final";
   gap: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 10px;
   color: white;
+}
+@media (max-width: 900px) {
+  .form2 {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .form2 {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas: "title title" "info card" "final final";
+  }
 }
 
 .title {
@@ -3629,7 +3661,8 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 70vh;
+  max-width: 600px;
+  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   border-radius: 5px;
@@ -3640,6 +3673,11 @@ input[type=radio]:checked:after {
   justify-content: center;
   gap: 15px;
   background-color: white;
+}
+@media (max-width: 900px) {
+  .form3, .form4 {
+    max-width: 90%;
+  }
 }
 
 .form4 {
@@ -3652,11 +3690,13 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 70vh;
+  max-width: 600px;
+  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
-  width: 120vh;
+  max-width: 600px;
+  width: 90vh;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3667,6 +3707,29 @@ input[type=radio]:checked:after {
   margin-bottom: 5%;
   padding: 0px;
   color: black;
+}
+@media (max-width: 900px) {
+  .form4 {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .form4 {
+    width: 90vh;
+  }
+}
+@media (max-width: 900px) {
+  .form4 {
+    width: 95vh;
+  }
+}
+@media (max-width: 900px) {
+  .form4 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 
 .title4 {
@@ -3722,7 +3785,8 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 70vh;
+  max-width: 600px;
+  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   position: relative;
@@ -3733,6 +3797,11 @@ input[type=radio]:checked:after {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   gap: 20px;
+}
+@media (max-width: 900px) {
+  .formReserva {
+    max-width: 90%;
+  }
 }
 
 /*Paleta de colores A*/
@@ -4849,6 +4918,10 @@ header a {
   text-shadow: 3px 4px rgb(255, 0, 0);
   font-size: 40px;
 }
+.nav2 ul li a:hover {
+  transition: 0.2s all ease-in;
+  text-decoration: underline;
+}
 
 .nav3 {
   justify-content: flex-end;
@@ -4940,7 +5013,7 @@ header a {
   justify-content: center;
   font-family: "Poppins";
   font-size: 30px;
-  background-color: rgb(145, 10, 103);
+  background-color: #910a67;
 }
 .nav4 .header {
   background-color: rgb(3, 6, 55);
@@ -4951,7 +5024,7 @@ header a {
   position: relative;
 }
 .nav4 ul {
-  background: rgb(145, 10, 103);
+  background: #910a67;
 }
 .nav4 ul li a {
   font-family: "Quicksand";
@@ -4963,7 +5036,7 @@ header a {
 }
 .nav4 ul li ul.drip {
   width: 100%;
-  background: rgb(145, 10, 103);
+  background: #910a67;
   position: absolute;
   z-index: 999;
   display: none;
@@ -4979,7 +5052,7 @@ header a {
 .nav4 .logo::first-letter {
   color: white;
   margin-right: 10px;
-  text-shadow: 3px 4px rgb(145, 10, 103);
+  text-shadow: 3px 4px #910a67;
   font-size: 40px;
 }
 .nav4 .header .logo {
@@ -5751,7 +5824,6 @@ header a {
 .flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .pa {
@@ -5796,6 +5868,20 @@ header a {
   display: grid;
   gap: 5%;
   grid-template-rows: 1fr;
+}
+
+.margin_5 {
+  margin: 5%;
+}
+
+.copy-btn {
+  background-color: rgb(52, 52, 52);
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
 }
 
 /*Paleta de colores A*/
