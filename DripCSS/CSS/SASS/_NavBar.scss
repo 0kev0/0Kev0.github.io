@@ -42,12 +42,11 @@ $color-secundario : rgb(112, 11, 151);
 }
 
 //FALTA AGREGAR EXPLICACION DE USO Y SUGERENCIAS PARA ESTILOS 
-//agregar altura de header agregando una variable mas
 @mixin AplicarTemasNavbar($colorBG, $colorBGItems, $ColorHover_A, $SetSombrasLogo, $SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) {
   .header {
     background-color: $colorBGItems;
     justify-content: $Justify;
-    //agregar altura de header
+    width: auto;
   }
 
   ul li {
@@ -144,8 +143,9 @@ $color-secundario : rgb(112, 11, 151);
   @include AplicarTemasNavbar($color-secundarioC, $color-secundarioC, $color-secundarioC, $color-primarioC, $color-primarioC, $FontPack2, Texto, $FontPack4, Texto, flex-end, grande);
 
   .header {
-    height: 85px; //agregar altura de header
+    height: 85px; 
     padding: 5px 10%;
+    height: auto;
     Button {
       font-family: map-get($map: $FontPack1, $key: Tema);
     }
