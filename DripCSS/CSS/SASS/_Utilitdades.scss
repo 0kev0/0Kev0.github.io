@@ -636,7 +636,7 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 .my-text-4 {
   @include text-size(pequeno, Lato);
-  @include text-color(rgb(253, 253, 253));
+  @include text-color(black);
   @include text-weight(normal);
 }
 
@@ -962,3 +962,22 @@ $fonts: (Roboto: 'Roboto, sans-serif',
     display: none;
   }
 }
+
+//MARGINS
+
+@mixin margin-pequeno {
+  margin: 5px;
+}
+
+@mixin margin-mediano {
+  margin: 10px;
+}
+
+@mixin margin-grande {
+  margin: 20px;
+}
+
+@mixin margin-doble {
+  margin: 40px;
+}
+
