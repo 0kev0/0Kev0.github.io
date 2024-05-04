@@ -417,6 +417,7 @@ $color1: rgb(83, 92, 145);
   color: white;
 }
 
+//grid para la web tema 1
 .webtema1 {
   display: grid;
   height: 100%;
@@ -449,4 +450,63 @@ $color1: rgb(83, 92, 145);
   align-content: center;
   row-gap: 10px;
   background-color: $colorBg-secundarioB;
+}
+
+//grid para la web tema 2
+.webtema2 {
+  display: grid;
+  height: 90vh;
+  width: 187vh;
+  grid-template-columns: 1fr 1fr 1fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr auto;
+
+}
+
+.cell-carrucel2 {
+  grid-area: 2/1/2/5;
+  background-color: $colorBg-secundarioC;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+
+  button {
+    z-index: 2;
+  }
+}
+
+.sideImagen {
+  grid-area: 1/4/4/4;
+  z-index: 0;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+
+
+.cell-info2 {
+  grid-area: 1/1/1/4;
+  background-color: whitesmoke;
+
+}
+
+.cell-infoBottom {
+  align-content: center;
+  row-gap: 10px;
+  height: auto;
+  grid-area: 3/1/5/4; 
+  background-color: whitesmoke;
+}
+
+.cell-footer2 {
+  grid-area: 4/1/4/5;
+  align-content: center;
+  row-gap: 10px;
+  border-radius: rgb(255, 255, 255) solid 4px;
+
 }
