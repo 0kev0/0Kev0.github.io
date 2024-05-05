@@ -3452,6 +3452,87 @@
   margin: 35px;
 }
 
+/* Paleta de colores A */
+.bg-primario-A {
+  background-color: rgb(52, 52, 52);
+}
+
+.bg-secundario-A {
+  background-color: rgb(62, 6, 95);
+}
+
+.text-primario-A {
+  color: rgb(142, 5, 194);
+}
+
+.text-secundario-A {
+  color: rgb(112, 11, 151);
+}
+
+/* Paleta de colores B */
+.bg-primario-B {
+  background-color: rgb(0, 0, 0);
+}
+
+.bg-secundario-B {
+  background-color: rgb(61, 0, 0);
+}
+
+.text-primario-B {
+  color: rgb(255, 0, 0);
+}
+
+.text-secundario-B {
+  color: rgb(149, 1, 1);
+}
+
+/* Paleta de colores C */
+.bg-primario-C {
+  background-color: rgb(7, 15, 43);
+}
+
+.bg-secundario-C {
+  background-color: rgb(27, 26, 85);
+}
+
+.text-primario-C {
+  color: rgb(146, 144, 195);
+}
+
+.text-secundario-C {
+  color: rgb(83, 92, 145);
+}
+
+/* Paleta de colores D */
+.bg-primario-D {
+  background-color: rgb(3, 6, 55);
+}
+
+.bg-secundario-D {
+  background-color: rgb(60, 7, 83);
+}
+
+.text-primario-D {
+  color: rgb(114, 4, 85);
+}
+
+.text-secundario-D {
+  color: #910a67;
+}
+
+/* Colores para texto */
+.font-color-base {
+  color: rgb(255, 255, 255);
+}
+
+.color-form-primario {
+  color: rgb(61, 3, 3);
+}
+
+.color-form-secundario {
+  color: rgb(97, 0, 154);
+}
+
 .container-img_fluid_set {
   height: 80vh;
   width: 100%;
@@ -6615,19 +6696,24 @@ header a {
 /*tamanos de Buttons*/
 /*Border radius*/
 /*forms bg*/
-.Pd-lf-rg-small {
-  padding-left: 10px;
-  padding-right: 10px;
+.padding-Xpequeno {
+  padding: 2%;
 }
 
-.Pd-lf-rg-meduium {
-  padding-left: 15px;
-  padding-right: 15px;
+.padding-pequeno {
+  padding: 5%;
 }
 
-.Pd-lf-rg-large {
-  padding-left: 20px;
-  padding-right: 20px;
+.padding-mediano {
+  padding: 8%;
+}
+
+.padding-grande {
+  padding: 10%;
+}
+
+.padding-Xgrande {
+  padding: 15%;
 }
 
 /*Paleta de colores A*/
@@ -7752,6 +7838,87 @@ header a {
   margin: 35px;
 }
 
+/* Paleta de colores A */
+.bg-primario-A {
+  background-color: rgb(52, 52, 52);
+}
+
+.bg-secundario-A {
+  background-color: rgb(62, 6, 95);
+}
+
+.text-primario-A {
+  color: rgb(142, 5, 194);
+}
+
+.text-secundario-A {
+  color: rgb(112, 11, 151);
+}
+
+/* Paleta de colores B */
+.bg-primario-B {
+  background-color: rgb(0, 0, 0);
+}
+
+.bg-secundario-B {
+  background-color: rgb(61, 0, 0);
+}
+
+.text-primario-B {
+  color: rgb(255, 0, 0);
+}
+
+.text-secundario-B {
+  color: rgb(149, 1, 1);
+}
+
+/* Paleta de colores C */
+.bg-primario-C {
+  background-color: rgb(7, 15, 43);
+}
+
+.bg-secundario-C {
+  background-color: rgb(27, 26, 85);
+}
+
+.text-primario-C {
+  color: rgb(146, 144, 195);
+}
+
+.text-secundario-C {
+  color: rgb(83, 92, 145);
+}
+
+/* Paleta de colores D */
+.bg-primario-D {
+  background-color: rgb(3, 6, 55);
+}
+
+.bg-secundario-D {
+  background-color: rgb(60, 7, 83);
+}
+
+.text-primario-D {
+  color: rgb(114, 4, 85);
+}
+
+.text-secundario-D {
+  color: #910a67;
+}
+
+/* Colores para texto */
+.font-color-base {
+  color: rgb(255, 255, 255);
+}
+
+.color-form-primario {
+  color: rgb(61, 3, 3);
+}
+
+.color-form-secundario {
+  color: rgb(97, 0, 154);
+}
+
 /*Paleta de colores A*/
 /*Paleta de colores B*/
 /*Paleta de colores C*/
@@ -7939,6 +8106,27 @@ body .container-F .footer .footer-col .social-links a:hover {
   body .footer .footer-col {
     width: 100%;
   }
+}
+
+/*TIPOS DE PADDINGS*/
+.padding-Xpequeno {
+  padding: 2%;
+}
+
+.padding-pequeno {
+  padding: 5%;
+}
+
+.padding-mediano {
+  padding: 8%;
+}
+
+.padding-grande {
+  padding: 10%;
+}
+
+.padding-Xgrande {
+  padding: 15%;
 }
 
 .emoji-cursor {
