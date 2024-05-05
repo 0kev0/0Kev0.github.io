@@ -42,6 +42,38 @@ Luego, puedes comenzar a utilizar los estilos y componentes proporcionados por D
 
 Para obtener más detalles sobre cómo usar Drip_CSS y ver ejemplos de su uso, visita nuestra web de documentación en [enlace_a_la_web](https://example.com).
 
+## Glosario
+
+	Font-family = fnt-famly
+	cursor = cursor
+	paddig = pd
+	margin = mg
+	display = disply
+	justify = justf
+	align = alig
+	text-decoration = txt-decor
+	display-direction = disply_direct
+	font-weight = fnt_weight
+	BORDER = brd
+	radius = rad
+	gap = gap
+	z-index = z_indx
+	gradient-lineael = grd-lineal
+	height = height
+	width =width
+	max-width = max - width
+	shadow = shadw
+	box = box 
+ 	flx-wrp = flx-wrp
+	font-style = fnt-styl
+	text-overflow = txt-overflow
+	hover = hovr
+	transition = transit
+ 	text-shadow = txt-shadw
+	self-align = self-align
+	object-fit = obj-fit
+
+
 ## Contribuir
 
 ¡Nos encantaría recibir contribuciones para mejorar Drip_CSS! Si quieres contribuir, por favor sigue estos pasos:
