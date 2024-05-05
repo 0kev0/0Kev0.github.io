@@ -741,7 +741,7 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 .my-text-4 {
   @include text-size(pequeno, Lato);
-  @include text-color(rgb(253, 253, 253));
+  @include text-color(black);
   @include text-weight(normal);
 }
 
@@ -1067,4 +1067,22 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   .hidden-xs {
     display: none;
   }
+}
+
+//MARGINS
+
+.margin-pequeno {
+  margin: map-get($MarginSizes, pequeno);
+}
+
+.margin-mediano {
+  margin: map-get($MarginSizes, mediano);
+}
+
+.margin-grande {
+  margin: map-get($MarginSizes, grande);
+}
+
+.margin-Xgrande{
+  margin: map-get($MarginSizes, Xgrande);
 }
