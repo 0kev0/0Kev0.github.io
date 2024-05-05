@@ -1,11 +1,25 @@
 @import 'Variables';
 @import 'FontsStyles';
+@import 'Utilitdades';
+
+
+.container-img_fluid_set {
+    height: 80vh;
+    width: 100%;
+
+}
+
+.Txt_overImg
+{
+
+}
 
 .container-regular {
     height: 60vh;
 }
 
 .container-fluid {
+    margin-top: 10vh;
     height: 80vh;
 }
 
@@ -18,21 +32,19 @@
 }
 
 .container-regular {
-    background-color: $colorbg-primario;
     border: 1px solid $colorBg-secundario;
     box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
-    p{
+
+    p {
         color: $colorForm-primario;
-        &:hover{
+
+        &:hover {
             text-decoration: underline;
         }
     }
 }
 
-.container-fluid {
-    background-color: $colorbg-primarioB;
-    border: 1px solid $colorBg-secundarioB;
-}
+
 
 .container-full-width {
     background-color: $colorbg-primarioC;
@@ -50,7 +62,6 @@
 .container-full-width h2 {
     margin-top: 0;
     font-size: 2.4vw;
-    color: $color-primario;
 }
 
 .container-regular p,
@@ -88,9 +99,10 @@
 
 @media screen and (max-width: 480px) {
     h3 {
-      font-size: 15px
+        font-size: 15px
     }
-  }
+}
+
 /*prefabs para la documentacion*/
 .Documentacion-seccion {
     @include shadow-linael-bottom_imput_color (white);
@@ -137,6 +149,7 @@
     padding: 10px;
     border: 2px solid #ffffff;
     border-radius: 4px;
+    object-fit: contain;
 
     h3 {
         font-family: map-get($map: $FontPack1, $key: Titulo);
@@ -145,5 +158,7 @@
 
     p {
         font-family: map-get($map: $FontPack2, $key: Texto);
+
+
     }
 }
