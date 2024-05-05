@@ -29,13 +29,24 @@
 
 .overlay {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 40%;
-  height: 40%;
+  width: 40%; 
+  height: 60%;
+
+  @media screen and (max-width: 768px) {
+    width: 90%; 
+    height: 70%;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 95%;
+    height: 80%;
+  }
 }
+
 
 .overlay img {
   object-fit: contain;
@@ -164,6 +175,23 @@
 .hidden {
   display: none;
 }
+//centrarimagenes
+.center-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  max-height: 400px; 
+  width: 90%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+.backgraund-img{
+  background-image: url(/DripCSS/IMG/Purple_cloack.jpg);
+  opacity: .9;
+  //background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .bottom-responsive {
   @media (max-width: 900px) {
@@ -173,7 +201,18 @@
     background: #000;
   }
 }
-
+.navbar-responsive {
+  @media screen and (max-width: 900px) {
+    nav {
+      display: none;
+      font-size: 12px;
+      background-color: #000;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
 .sidebar-responsive {
   @media screen and (max-width: 700px) {
     display: none;
@@ -794,9 +833,31 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   align-content: center;
 }
 
+
 .flex {
+  top: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: center;
+
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+
+.responsive{
+  @media screen  and (max-width: 900px){
+    a{
+      font-size: 12px;
+    }
+    width: auto;
+  }
 }
 
 .pa {

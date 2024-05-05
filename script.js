@@ -295,7 +295,20 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 function toggleNav() {
-  var nav = document.querySelector('.nav');
+  var nav = document.querySelectorAll('.nav');
   nav.classList.toggle('active');
 }
+function toggleNavbar(id) {
+  var navbar = document.getElementById(id);
+  
+  if (navbar.style.display === "none" || navbar.style.display === "") {
+    navbar.style.display = "block";
+  } else {
+    navbar.style.display = "none";
+  }
+  
+  navbar.style.fontSize = "12px";
+}
+
+
 
