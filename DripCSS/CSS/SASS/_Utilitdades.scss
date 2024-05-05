@@ -29,13 +29,24 @@
 
 .overlay {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 40%;
-  height: 40%;
+  width: 40%; 
+  height: 60%;
+
+  @media screen and (max-width: 768px) {
+    width: 90%; 
+    height: 70%;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 95%;
+    height: 80%;
+  }
 }
+
 
 .overlay img {
   object-fit: contain;
@@ -88,7 +99,7 @@
 
 .inner_carousel_md {
   display: flex;
-  transition: transform 0.9s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel_md img {
@@ -134,7 +145,7 @@
   z-index: 2;
   display: flex;
   flex-direction: row;
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in;
   align-items: center;
 
 }
@@ -164,6 +175,23 @@
 .hidden {
   display: none;
 }
+//centrarimagenes
+.center-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  max-height: 400px; 
+  width: 90%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+.backgraund-img{
+  background-image: url(/DripCSS/IMG/Purple_cloack.jpg);
+  opacity: .9;
+  //background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .bottom-responsive {
   @media (max-width: 900px) {
@@ -173,22 +201,131 @@
     background: #000;
   }
 }
-
+.navbar-responsive {
+  @media screen and (max-width: 900px) {
+    nav {
+      display: none;
+      font-size: 12px;
+      background-color: #000;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
 .sidebar-responsive {
   @media screen and (max-width: 700px) {
     display: none;
   }
 }
 
+//
+.Size_sm {
+  height: auto;
+  width: 40vh;
+}
+
+.Size_md {
+  height: auto;
+  width: 80vh;
+}
+
+.Size_gr {
+  height: auto;
+  width: 100vh;
+}
+
 /* CSS */
-.img-set {
+.img-container {
+  position: relative;
   height: 80vh;
-  margin-top: 5%;
-  padding-top: 2px;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background-image: url('/DripCSS/IMG/metro\ .jpg');
+  width: 100%;
+}
+
+.img-container_sm {
+  justify-self: center;
+  height: auto;
+  width: 70%;
+
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.img-container_md {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.img-container_gr {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.img-container_flat {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+.img_V_cut_Full {
+  height: 80vh;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   background-size: cover;
   object-fit: cover;
+  z-index: 0;
+}
+
+.img_diagonal_cut_Full {
+  height: 80vh;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-size: cover;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.img_diagonal_cut_Full_reverse {
+  height: 80vh;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 0 80%, 100% 100%);
+  background-size: cover;
+  object-fit: cover;
+  z-index: 0;
 }
 
 
@@ -238,6 +375,13 @@
 .contenido {
   margin-top: 10px;
   margin-left: 10px;
+
+}
+
+.quote {
+  margin: 0 15%;
+  text-align: center;
+  text-justify: distribute;
 
 }
 
@@ -794,9 +938,31 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   align-content: center;
 }
 
+
 .flex {
+  top: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: center;
+
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+
+.responsive{
+  @media screen  and (max-width: 900px){
+    a{
+      font-size: 12px;
+    }
+    width: auto;
+  }
 }
 
 .pa {
@@ -903,6 +1069,7 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, 1fr);
+  margin: 0 10%;
 }
 
 .grid-cols-4 {

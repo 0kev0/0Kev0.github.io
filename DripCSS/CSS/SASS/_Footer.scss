@@ -6,6 +6,7 @@
     background-color: #0a141d;
 
     .grupo-1 {
+
         width: 100%;
         max-width: 1200px;
         margin: auto;
@@ -73,7 +74,16 @@
 
             #ig {
                 &:hover {
-                    background: linear-gradient(45deg, #405de6, #5851db);                }
+                    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=66ded4&c2=59919b&gt=c&gd=dtl
+*/
+                    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=010101&c2=59919b&gt=r&gd=dcr
+*/
+                    background: radial-gradient(at right top, #bc2a8d,#e95950 ,  #fccc63 );
+                }
             }
         }
 

@@ -97,6 +97,7 @@
         transition: .45s;
     }
 }
+
 .back::-webkit-scrollbar {
     width: 5px;
 }
@@ -108,7 +109,7 @@
 //*Tarjeta 2*//
 .card {
     position: relative;
-    width: 250px;
+    width: 300px;
     height: 380px;
     border-radius: 10px;
     box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
@@ -216,12 +217,14 @@
     align-items: center;
     justify-content: center;
 }
+
 .container {
     height: 350px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
+
 .carta {
     width: 80px;
     border-radius: 75rem;

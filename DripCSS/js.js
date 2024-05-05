@@ -1,3 +1,5 @@
+Prism.highlightAll();
+
 const gradienteMouse = document.getElementById('welcome');
 
 document.addEventListener('mousemove', (event) => {
