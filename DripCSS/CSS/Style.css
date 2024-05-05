@@ -3603,9 +3603,6 @@
 .Documentacion-info-container-content p {
   font-family: "Oswald";
 }
-.Documentacion-info-container-content p:hover {
-  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
-}
 
 /*Paleta de colores A*/
 /*Paleta de colores B*/

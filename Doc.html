@@ -771,7 +771,7 @@
                             <div class="box2"></div>
                             <div class="box1"></div>
                         </div>
-
+                        <br>
                         <div class="plta-uno-backgraund-A">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
                             <p class="t1"><code>&lt;div class="container-padre"&gt;</code></p>
@@ -1129,15 +1129,15 @@
                             <div id="code" class="plta-uno-backgraund-A text-center">
                                 <p>
                                     <code>
-                                        &lt;div class="margin-pequeno"&gt;...&lt;/div&gt;<br>
-                                        &lt;div class="margin-mediano"&gt;...&lt;/div&gt;<br>
-                                        &lt;div class="margin-grande"&gt;...&lt;/div&gt;<br>
-                                        &lt;div class="margin-Xgrande"&gt;...&lt;/div&gt;
+                                        <p class="margin-copy">&lt;div class="margin-pequeno"&gt;...&lt;/div&gt;</p>
+                                        <p class="margin-copy">&lt;div class="margin-mediano"&gt;...&lt;/div&gt;</p>
+                                        <p class="margin-copy">&lt;div class="margin-grande"&gt;...&lt;/div&gt;</p>
+                                        <p class="margin-copy">&lt;div class="margin-Xgrande"&gt;...&lt;/div&gt;</p>
                                     </code>
                                 </p>
-                                <button class="copy-btn" onclick="copyCodeToClipboard()"><i
+                                <button class="copy-btn" onclick="copyCodeToClipboard('margin-copy','success-alert-margin-copy')"><i
                                         class="fa-regular fa-copy"></i></button>
-                                <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                                <div id="success-alert-margin-copy" class="alert alert-success slide-in-right ocultar">
                                     ¡Éxito!
                                     Se ha
                                     copiado Correctamente.
@@ -1148,16 +1148,10 @@
 
                         <div class="section">
                             <h2>Ejemplos</h2><br>
-                            <div class="code">
-                                <pre>
-                                                <code>
-                                                  &lt;div class="margin-pequeno"&gt;Elemento con margen pequeño&lt;/div&gt;
-                                                  &lt;div class="margin-mediano"&gt;Elemento con margen mediano&lt;/div&gt;
-                                                  &lt;div class="margin-grande"&gt;Elemento con margen grande&lt;/div&gt;
-                                                  &lt;div class="margin-Xgrande"&gt;Elemento con margen Xgrande&lt;/div&gt;
-                                                </code>
-                                            </pre>
-                            </div>
+                            <div class="margin-pequeno">Elemento con margen pequeño</div>
+                            <div class="margin-mediano">Elemento con margen mediano</div>
+                            <div class="margin-grande">Elemento con margen grande</div>
+                            <div class="margin-Xgrande">Elemento con margen Xgrande</div>
                         </div>
 
                     </div>
