@@ -39,7 +39,7 @@ $inputHeigtSizes : ("Xpequeno": 4vh, "pequeno": 4vh, "mediano": 5vh, "grande": 6
 $inputWithSizes : ("Xpequeno": 10%, "pequeno": 15%, "mediano": 20%, "grande": 50%, "Xgrande": 90%);
 
 /*tamanos de margin*/
-$MarginSizes : ("pequeno": 10px, "mediano": 15px, "grande": 25px, "Xgrande": 35px);
+$MarginSizes : ("Xpequeno": 2%,"pequeno": 3%, "mediano": 5%, "grande":  7%, "Xgrande":  8%);
 
 /*tamanos de paddings*/
 $PaddingSizes : ("Xpequeno": 2%, "pequeno": 5%, "mediano": 8%, "grande": 10%, "Xgrande": 15%);
@@ -52,9 +52,7 @@ $borders : ( "Xpequeno":1px, "pequeno": 2px, "mediano": 5px, "grande": 8px, "Xgr
 $RangeSizes : ( "pequeno": 15%, "mediano": 25%, "grande": 50%, "Xgrande": 60%);
 $AlertsSizes : ( "pequeno": 15%, "mediano": 25%, "grande": 50%, "Xgrande": 60%);
 
-
-
-
+//tamanos universales
 $small: 10px;
 $meduium: 15px;
 $large: 20px;

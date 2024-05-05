@@ -46,6 +46,8 @@
                     <ul>
                         <li><a href="#Fonts">Fonts</a></li>
                         <li><a href="#FontsStyles">Styles</a></li>
+                        <li><a href="#Highliters">Highliters</a></li>
+
 
                         <br />
                     </ul>
@@ -56,7 +58,7 @@
                         <i id="home" class="fa-regular fa-address-card" style="color: #7bff00"> </i>Cards</a>
                     <ul>
                         <li><a href="#CardStyles">Card styles</a></li>
-                        <li><a href="#Pantilla">Plantillas</a></li>
+                        <li><a href="#PlantillasCard">Plantillas</a></li>
                         <br>
                     </ul>
                 </li>
@@ -66,7 +68,7 @@
                         <i class="fa-solid fa-align-right" style="color: #dfff2d"> </i> Layouts</a>
                     <ul>
                         <li><a href="#Containers">Containers</a></li>
-                        <li><a href="#Grids">Grids</a></li>
+                        <li><a href="#Gridslayouts">Grids</a></li>
                         <li><a href="#Gridarea">Grids area</a></li>
                         <li><a href="#FlexBox">FlexBox</a></li>
                         <li><a href="#Uilidades">Uilidades</a></li>
@@ -348,6 +350,46 @@
                     </div>
                 </div>
 
+                <div class="Documentacion-container">
+                    <h2 id="Highliters" class="Font_Tema">Highliters</h2>
+
+                    <div class="Documentacion-info-container-content">
+                        <p>
+                            La Biblioteca incluye una serie de opciones de resaltador para darle un toque unico a tus
+                            textos en donde haya falta ese extra de estilo.
+                        </p>
+
+                        <p class="coment_green">.txt-underline {text-decoration: underline;};</p>
+                        <h4 class="txt-underline">Highlit</h4> <br>
+
+                        <br>
+
+                        <p class="coment_green">.txt-underline-overline {
+                            text-decoration: underline overline;
+                            }</p>
+                        <br>
+
+                        <h4 class="txt-underline-overline"> Highlit</h4> <br>
+
+                        <p class="coment_green">.txt-overline {text-decoration: overline;};</p>
+                        <br>
+
+                        <h4 class="txt-subrayadoB_block">Highlit</h4> <br>
+                        <p class="coment_green">.txt-subrayadoB_block {
+                            background-color: $color-primarioB;
+                            display: block;
+
+                            }</p>
+                        <br>
+
+                        <h4 class="txt-subrayado_inline_lightblue">Highlit</h4> <br>
+                        <p class="coment_green">.txt-subrayado_inline_lightblue {
+                            background-color: $color-primarioB;
+                            display: inline;</p>
+
+                    </div>
+                </div>
+
             </div>
             <!-- ***************************************Cards******************************************* -->
 
@@ -379,7 +421,7 @@
                 </div>
 
                 <div class="Documentacion-container">
-                    <h2 id="Plantilla" class="Font_Tema">Plantillas</h2>
+                    <h2 id="PlantillasCard" class="Font_Tema">Plantillas</h2>
 
                     <div class="Documentacion-info-container-content Display-flex  ">
                         <h3 class="my-text-4 self-start">Plantilla #1</h3>
@@ -742,7 +784,7 @@
 
                 </div>
                 <div class="Documentacion-container">
-                    <h2 id="Grids" class="Font_Tema">Grids</h2>
+                    <h2 id="Gridslayouts" class="Font_Tema">Grids</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
@@ -1135,7 +1177,8 @@
                                         <p class="margin-copy">&lt;div class="margin-Xgrande"&gt;...&lt;/div&gt;</p>
                                     </code>
                                 </p>
-                                <button class="copy-btn" onclick="copyCodeToClipboard('margin-copy','success-alert-margin-copy')"><i
+                                <button class="copy-btn"
+                                    onclick="copyCodeToClipboard('margin-copy','success-alert-margin-copy')"><i
                                         class="fa-regular fa-copy"></i></button>
                                 <div id="success-alert-margin-copy" class="alert alert-success slide-in-right ocultar">
                                     ¡Éxito!
@@ -1179,21 +1222,50 @@
                             mantenerse en la parte superior de la página, incluso cuando el usuario desplaza el
                             contenido hacia abajo.
                         </p><br>
-                        <strong>Como se usa:</strong><br>
-                        <img class="Img_code" src="DripCSS/IMG/Code/carbonNV2.png" alt="" width="450" height="350"><br>
-                        <nav class="nav2">
-                            <a href="#" class="logo">Drip_CSS</a>
-                            <ul>
-                                <li><a href="#inicio">Inicio</a></li>
-                                <li><a href="#acerca">Acerca de</a></li>
-                                <li><a href="#servicios">Servicios</a></li>
-                                <li><a href="#contacto">Contacto</a></li>
-                            </ul>
-                        </nav><br>
+
                         <Strong>Ejemplos</Strong><br>
                         <p>- Sitios de una sola página</p>
                         <p>- Menu de navegacion de sitio web</p>
                         <br>
+                    </div>
+                    <div class="Documentacion-info-container-content txt">
+
+                        <div class="plta-uno-backgraund-A">
+                            <code>
+                                <nav class="nav2">
+                                    <a href="#" class="logo">Drip_CSS</a>
+                                    <ul>
+                                        <li><a href="#inicio">Inicio</a></li>
+                                        <li><a href="#acerca">Acerca de</a></li>
+                                        <li><a href="#servicios">Servicios</a></li>
+                                        <li><a href="#contacto">Contacto</a></li>
+                                    </ul>
+                                </nav>
+
+                                <p class="btn-copy-navbar1">&gt;nav class="nav2"&gt;test3&lt;/button&gt;</p>
+                                <p class="btn-copy-navbar1">&gt;a href="#""&gt;test4&lt;/button&gt;</p>
+                                <p class="btn-copy-navbar1">&gt;button
+                                    class="butontest_boxshadow_Th3"&gt;test5&lt;/button&gt;</p>
+                                <p class="btn-copy-navbar1">&gt;button
+                                    class="butontest_boxshadow_Th4"&gt;test6&lt;/button&gt;</p>
+                                <p class="btn-copy-navbar1">&gt;button class="button-3"&gt;test7&lt;/button&gt;</p>
+                                <p class="btn-copy-navbar1">&gt;button class="button_Squear_Th2"&gt;test8&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy-navbar1">&gt;button class="Tap_Button_Th3"&gt;test9&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy-navbar1">&gt;button
+                                    class="butontest_round_Th2"&gt;test32&lt;/button&gt;</p>
+
+                            </code>
+                            <button class="copy-btn"
+                                onclick="copyCodeToClipboard('btn-copy-navbar1','success-alert-btn-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-btn-copy" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito!
+                                Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- ------------------------------------------------------------------------------------------------------------------ -->
@@ -1472,7 +1544,7 @@
                 <div class="Documentacion-container">
                     <h2 id="ButtonTypes" class="Font_Tema">Buttons types</h2>
 
-                    <div class="Documentacion-info-container-content">
+                    <div class="Documentacion-info-container-content flex-wrap ">
                         <p>
                             Nuestra biblioteca ofrece una variedad de botones diseñados en una gama de colores
                             para
@@ -1495,21 +1567,21 @@
                                 class="buttontest"
                             </p> <br>
 
-                            <div class="bottom-responsive Display-flex flex-row " style="justify-items: center;">
-                                <button class="butontest_boxshadow_Th">test3</button>
-                                <button class="button_animated_Th2">test4</button>
-                                <button class="boton-primario_Th3">test5</button>
-                                <button class="boton-secundario_Th4">test6 </button>
-                                <button class="button-3">test7</button>
-                                <button class="button_Squear_Th2">test8</button>
-                                <button class="Tap_Button_Th3">test9</button>
-                                <button class="butontest_round_Th2 ">test32</button>
+                            <div class="bottom-responsive Display-flex flex-row  flex-wrap" style="justify-items: center;">
+                                <button class="butontest_boxshadow_Th set_butontest_boxshadow_colorlightGreen">test3</button>
+                                <button class="button_animated_Th2 set_button_animated_Th_color_purple">test4</button>
+                                <button class="boton-primario_Th3 set_boton-primario_Th_color_yellow">test5</button>
+                                <button class="boton-secundario_Th4 set_boton-secundario_th_color_blue">test6 </button><br>
+                                <button class="button-3 set_button-3_color_orange">test7</button>
+                                <button class="button_Squear_Th2 set_button_Squear_color_pink">test8</button>
+                                <button class="Tap_Button_Th3  set_boton-primario_Th_color_yellow">test9</button>
+                                <button class="butontest_round_Th4  ">testing</button>
 
                             </div>
 
                     </div>
 
-                    <h2 id="ButtonTypes" class="Font_Tema">Codigo fuente</h2>
+                    <h2 id="ButtonTypesc" class="Font_Tema">Codigo fuente</h2>
 
                     <div class="Documentacion-info-container-content">
 
@@ -1552,13 +1624,27 @@
                     <div class="Documentacion-info-container-content">
                         <p>
                             Las utilidades relacionada con los botones comiensan con la palabra <p class="coment_green">
-                                set_ </p> por ejemplo para aumentar el tamano de un boton se puede utilizar
-                            <p class="coment_green"> set_btn_grande</p>
+                                set_ </p> por ejemplo para cambiar el color de un boton se puede utilizar
+                            <p class="coment_green"> set_""clase del boton""_color""color""<br>*incluye una selecion de
+                                colores para escojer</p>
+                            <h2>Ejemplos: </h2>
+                            <p class="coment_green"> button_Squear_Th set_button_Squear_color_green</p><br>
+                            <p class="coment_green"> butontest_boxshadow_Th set_butontest_boxshadow_colorblue</p>
 
                         </p>
                         <div class="Display-flex" style="justify-items: center;">
-                            <button class="butontest_round_Th2 ">normal</button>
-                            <button class=" button_Squear_Th2 set_btn_grande ">agrandado</button>
+                            <button class="button_Squear_Th ">normal</button>
+                            <button class=" button_Squear_Th set_button_Squear_color_green">cambiado</button>
+                            <button class=" button_Squear_Th set_button_Squear_color_yellow">cambiado</button>
+                            <button class=" button_Squear_Th set_button_Squear_color_pink">cambiado</button>
+                        </div>
+
+                        <div class="Display-flex" style="justify-items: center;">
+                            <button class=" butontest_boxshadow_Th">normal</button>
+                            <button class=" butontest_boxshadow_Th set_butontest_boxshadow_colorblue">cambiado</button>
+                            <button class=" butontest_boxshadow_Th set_butontest_boxshadow_colorgreen">cambiado</button>
+                            <button
+                                class=" butontest_boxshadow_Th set_butontest_boxshadow_colorlightGreen">cambiado</button>
 
                         </div>
                     </div>
@@ -1884,44 +1970,44 @@
             <!-- <div class="ItemList">ItemList</div>-->
         </div>
         <!------------------------------------------------------------------------------------------------->
-        
-        
+
     </div>
-        <footer>
-            <div class="cell-footer ">
-                <footer class="pie-pagina plta-dos-backgraund-B">
-                  
-                  <div class="grupo-1">
+    <footer>
+        <div class="cell-footer ">
+            <footer class="pie-pagina plta-dos-backgraund-B">
+
+                <div class="grupo-1">
                     <div class="Fother-box">
-                      <figure>
-                        <a href="#">
-                          <img src="/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png" alt="Logo de drip.css">
-                        </a>
-                      </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png"
+                                    alt="Logo de drip.css">
+                            </a>
+                        </figure>
                     </div>
                     <div class="Fother-box">
-                      <h2>Universidad de el Salvador</h2>
-                      <p>Departamento de Ingenieria y Arquitectura</p>
-                      <p>Ingenieria de Sistemas Informaticos</p>
+                        <h2>Universidad de el Salvador</h2>
+                        <p>Departamento de Ingenieria y Arquitectura</p>
+                        <p>Ingenieria de Sistemas Informaticos</p>
                     </div>
                     <div class="Fother-box">
-                      <h2>SIGUENOSnbhvn</h2>
-                      <div class="red-social">
-                        <a id="fb" href="#" class="fa fa-facebook fb"></a>
-                        <a id="ig" href="#" class="fa fa-instagram"></a>
-                        <a id="tw" href="#" class="fa fa-twitter"></a>
-                        <a id="yt" href="https://youtu.be/dQw4w9WgXcQ" class="fa fa-youtube"></a>
-                      </div>
+                        <h2>SIGUENOSnbhvn</h2>
+                        <div class="red-social">
+                            <a id="fb" href="#" class="fa fa-facebook fb"></a>
+                            <a id="ig" href="#" class="fa fa-instagram"></a>
+                            <a id="tw" href="#" class="fa fa-twitter"></a>
+                            <a id="yt" href="https://youtu.be/dQw4w9WgXcQ" class="fa fa-youtube"></a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="grupo-2">
+                </div>
+                <div class="grupo-2">
                     <small>&copy; 2024 <b>Drip.css</b> - Todos los Derechos Reservados.</small>
-                  </div>
-                </footer>
-              </div>
-        
-          </div>
-        </footer>
+                </div>
+            </footer>
+        </div>
+
+        </div>
+    </footer>
 
 </body>
 

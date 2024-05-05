@@ -1,15 +1,5 @@
 @import 'Variables';
-
-.fb {
-  a {
-    &:hover {
-      color: red;
-    }
-  }
-
-
-
-}
+@import 'botones';
 
 
 //Estilo para imagenes de codigos
@@ -33,11 +23,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 40%; 
+  width: 40%;
   height: 60%;
 
   @media screen and (max-width: 768px) {
-    width: 90%; 
+    width: 90%;
     height: 70%;
   }
 
@@ -136,7 +126,7 @@
 }
 
 .inner_carousel_btn button {
-  margin: 10px 3%;
+  margin: 10px 1%;
   object-fit: cover;
   z-index: 2;
 }
@@ -151,7 +141,7 @@
 }
 
 .inner_carousel_btn_drch2 button {
-  margin: 10px 3%;
+  margin: 10px 2%;
   object-fit: cover;
   z-index: 2;
 }
@@ -175,18 +165,20 @@
 .hidden {
   display: none;
 }
+
 //centrarimagenes
-.center-image{
+.center-image {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70vh;
-  max-height: 400px; 
-  width: 90%; 
-  max-width: 600px; 
-  margin: 0 auto; 
+  max-height: 400px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
 }
-.backgraund-img{
+
+.backgraund-img {
   background-image: url(/DripCSS/IMG/Purple_cloack.jpg);
   opacity: .9;
   //background-size: cover;
@@ -201,6 +193,7 @@
     background: #000;
   }
 }
+
 .navbar-responsive {
   @media screen and (max-width: 900px) {
     nav {
@@ -213,6 +206,7 @@
     }
   }
 }
+
 .sidebar-responsive {
   @media screen and (max-width: 700px) {
     display: none;
@@ -291,6 +285,7 @@
   }
 }
 
+//Para habilitar posicionar elementos sobre una imagen que este dentro del div
 .img-overlay {
   position: absolute;
   top: 0;
@@ -300,6 +295,7 @@
   color: white;
   z-index: 1;
 }
+
 
 .img_V_cut_Full {
   height: 80vh;
@@ -949,18 +945,19 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 
   @media screen and (max-width: 1100px) {
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     gap: 25px;
     flex-direction: column;
   }
 }
 
-.responsive{
-  @media screen  and (max-width: 900px){
-    a{
+.responsive {
+  @media screen and (max-width: 900px) {
+    a {
       font-size: 12px;
     }
+
     width: auto;
   }
 }
@@ -1133,17 +1130,752 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 //MARGINS
 
 .margin-pequeno {
-  margin: map-get($MarginSizes, pequeno);
+  margin: map-get($MarginSizes, pequeno) 0;
 }
 
 .margin-mediano {
-  margin: map-get($MarginSizes, mediano);
+  margin: map-get($MarginSizes, mediano) 0;
 }
 
 .margin-grande {
-  margin: map-get($MarginSizes, grande);
+  margin: map-get($MarginSizes, grande) 0;
 }
 
-.margin-Xgrande{
-  margin: map-get($MarginSizes, Xgrande);
+.margin-Xgrande {
+  margin: map-get($MarginSizes, Xgrande) 0;
+}
+
+$lightgreen : rgb(42, 165, 114);
+//utilidades de botones
+//button_Squear_btn
+.set_button_Squear_btn_color_lightgreen {
+  @extend .button_Squear_Th;
+
+
+  background: darken($color: $lightgreen, $amount: 5);
+  @include shadow-bottom_imput_color ($lightgreen);
+
+  &:hover {
+    background: lighten($color: $lightgreen, $amount: 5);
+  }
+}
+
+.set_button_Squear_btn_color_blue {
+  @extend .button_Squear_Th;
+
+
+  background: darken($color: blue, $amount: 5);
+  @include shadow-bottom_imput_color (blue);
+
+  &:hover {
+    background: lighten($color: blue, $amount: 5);
+  }
+}
+
+.set_button_Squear_color_pink {
+  @extend .button_Squear_Th;
+
+
+  background: darken($color: pink, $amount: 5);
+  @include shadow-bottom_imput_color (pink);
+
+  &:hover {
+    background: lighten($color: pink, $amount: 5);
+  }
+}
+
+.set_button_Squear_color_green {
+  @extend .button_Squear_Th;
+
+
+  background: darken($color: green, $amount: 5);
+  @include shadow-bottom_imput_color (green);
+
+  &:hover {
+    background: lighten($color: green, $amount: 5);
+  }
+}
+
+.set_button_Squear_color_yellow {
+  @extend .button_Squear_Th;
+
+  background: darken($color: yellow, $amount: 5);
+  @include shadow-bottom_imput_color (yellow);
+
+  &:hover {
+    background: lighten($color: yellow, $amount: 5);
+  }
+}
+
+//butontest_boxshadow
+
+.set_butontest_boxshadow_colorlightgreen {
+  @extend .butontest_boxshadow_Th;
+  background: $lightgreen;
+
+  &:hover {
+    background: lighten($color: $lightgreen, $amount: 5);
+  }
+}
+
+
+.set_butontest_boxshadow_colorblue {
+  @extend .butontest_boxshadow_Th;
+  background: blue;
+
+  &:hover {
+    background: lighten($color: blue, $amount: 5);
+  }
+}
+
+.set_butontest_boxshadow_colorgreen {
+  @extend .butontest_boxshadow_Th;
+  background: green;
+
+  &:hover {
+    background: lighten($color:green, $amount: 5);
+  }
+}
+
+
+.set_butontest_boxshadow_colorlightGreen {
+  @extend .butontest_boxshadow_Th;
+
+  background: $lightgreen;
+
+  &:hover {
+    background: lighten($color:$lightgreen, $amount: 5);
+  }
+}
+
+//buton round
+
+
+.set_butontest_round_color_lightGreen {
+  @extend .butontest_round;
+
+  background: $lightgreen !important;
+
+  &:hover {
+    background: lighten($lightgreen, $amount: 5) !important;
+  }
+}
+
+.set_butontest_round_color_red {
+  @extend .butontest_round;
+
+  background: red !important;
+
+  &:hover {
+    background: lighten($color:red, $amount: 5) !important;
+  }
+}
+
+.set_butontest_round_color_blue {
+  @extend .butontest_round;
+
+  background: blue !important;
+
+  &:hover {
+    background: lighten($color:blue, $amount: 5) !important;
+  }
+}
+
+.set_butontest_round_color_yellow {
+  @extend .butontest_round;
+
+  background: yellow !important;
+
+  &:hover {
+    background: lighten($color:yellow, $amount: 5) !important;
+  }
+}
+
+.set_butontest_round_color_purple {
+  @extend .butontest_round;
+
+  background: purple !important;
+
+  &:hover {
+    background: lighten($color:purple, $amount: 5) !important;
+  }
+}
+
+.set_butontest_round_color_orange {
+  @extend .butontest_round;
+
+  background: orange !important;
+
+  &:hover {
+    background: lighten($color:orange, $amount: 5) !important;
+  }
+}
+
+//butontest_boxshadow_Th 
+.set_butontest_boxshadow_color_lightgreen {
+  @extend .butontest_boxshadow_Th;
+
+  background: $lightgreen !important;
+
+  &:hover {
+    background: lighten($color: $lightgreen, $amount: 5) !important;
+  }
+}
+
+.set_butontest_boxshadow_color_orange {
+  @extend .butontest_boxshadow_Th;
+
+  background: orange !important;
+
+  &:hover {
+    background: lighten($color:orange, $amount: 5) !important;
+  }
+}
+
+.set_butontest_boxshadow_color_yellow {
+  @extend .butontest_boxshadow_Th;
+
+  background: yellow;
+
+  &:hover {
+    background: lighten($color:yellow, $amount: 5);
+  }
+}
+
+.set_butontest_boxshadow_color_blue {
+  @extend .butontest_boxshadow_Th;
+
+  background: blue;
+
+  &:hover {
+    background: lighten($color:blue, $amount: 5);
+  }
+}
+
+.set_butontest_boxshadow_color_green {
+  @extend .butontest_boxshadow_Th;
+
+  background: green;
+
+  &:hover {
+    background: lighten($color:green, $amount: 5);
+  }
+}
+
+.set_butontest_boxshadow_color_purple {
+  @extend .butontest_boxshadow_Th;
+
+  background: purple;
+
+  &:hover {
+    background: lighten($color:purple, $amount: 5);
+  }
+}
+
+.set_butontest_boxshadow_color_red {
+  @extend .butontest_boxshadow_Th;
+
+  background: red;
+
+  &:hover {
+    background: lighten($color:red, $amount: 5);
+  }
+}
+
+//buton_animated
+
+.set_button_animated_Th_color_lightgreen {
+  @extend .button_animated_Th;
+  color: $lightgreen;
+
+  &:before {
+    background-color: $lightgreen;
+  }
+}
+
+.set_button_animated_Th_color_orange {
+  @extend .button_animated_Th;
+  color: orange;
+
+  &:before {
+    background-color: orange;
+  }
+}
+
+.set_button_animated_Th_color_red {
+  @extend .button_animated_Th;
+  color: red;
+
+  &:before {
+    background-color: red;
+  }
+}
+
+.set_button_animated_Th_color_purple {
+  @extend .button_animated_Th;
+  color: purple;
+
+  &:before {
+    background-color: purple;
+  }
+}
+
+.set_button_animated_Th_color_green {
+  @extend .button_animated_Th;
+  color: green;
+
+  &:before {
+    background-color: green;
+  }
+}
+
+.set_button_animated_Th_color_yellow {
+  @extend .button_animated_Th;
+  color: yellow;
+
+  &:before {
+    background-color: yellow;
+  }
+}
+
+.set_button_animated_Th_color_blue {
+  @extend .button_animated_Th;
+  color: blue;
+
+  &:before {
+    background-color: blue;
+  }
+}
+
+
+
+/*boton-primario_Th*/
+.set_boton-primario_Th_color_lightgreen {
+  @extend .boton-primario_Th;
+  @include boton-estilos($lightgreen, 10px);
+  border: 2px solid lighten($color: $lightgreen, $amount: 20);
+
+
+  border: 2px solid lighten($color: $lightgreen, $amount: 20);
+
+  &:hover {
+    @include boton-estilos($lightgreen);
+  }
+}
+
+.set_boton-primario_Th_color_blue {
+  @extend .boton-primario_Th;
+  @include boton-estilos(blue, 10px);
+  border: 2px solid lighten($color: blue, $amount: 20);
+
+
+  border: 2px solid lighten($color: blue, $amount: 20);
+
+  &:hover {
+    @include boton-estilos(blue);
+  }
+}
+
+.set_boton-primario_Th_color_orange {
+  @extend .boton-primario_Th;
+  @include boton-estilos(orange, 10px);
+  border: 2px solid lighten($color: orange, $amount: 20);
+
+  &:hover {
+    @include boton-estilos(orange);
+  }
+}
+
+.set_boton-primario_Th_color_blue {
+  @extend .boton-primario_Th;
+  @include boton-estilos(blue, 10px);
+  border: 2px solid lighten($color: blue, $amount: 20);
+
+  &:hover {
+    @include boton-estilos(blue);
+  }
+}
+
+.set_boton-primario_Th_color_yellow {
+  @extend .boton-primario_Th;
+  @include boton-estilos(yellow, 10px);
+  border: 2px solid lighten($color: yellow, $amount: 20);
+
+  &:hover {
+    @include boton-estilos(yellow);
+  }
+}
+
+.set_boton-primario_Th_color_green {
+  @extend .boton-primario_Th;
+  @include boton-estilos(green, 10px);
+  border: 2px solid lighten($color: green, $amount: 20);
+
+  &:hover {
+    @include boton-estilos(green);
+  }
+}
+
+
+.set_boton-primario_Th_color_purple {
+  @extend .boton-primario_Th;
+  @include boton-estilos(purple, 10px);
+  border: 2px solid lighten($color: purple, $amount: 20);
+
+  &:hover {
+    @include boton-estilos(purple);
+  }
+}
+
+
+.set_boton-primario_Th_color_red {
+  @extend .boton-primario_Th;
+  @include boton-estilos(red, 10px);
+  border: 2px solid lighten($color: red, $amount: 20);
+
+  &:hover {
+    @include boton-estilos(red);
+  }
+}
+
+/*  boton-secundario_Th  */
+
+.set_boton-secundario_th_color_lightgreen {
+  @extend .boton-secundario_Th;
+  @include boton-estilos($lightgreen, 20px);
+
+}
+
+.set_boton-secundario_th_color_red {
+  @extend .boton-secundario_Th;
+  @include boton-estilos(red, 20px);
+
+}
+
+.set_boton-secundario_th_color_purple {
+  @extend .boton-secundario_Th;
+  @include boton-estilos(purple, 20px);
+}
+
+.set_boton-secundario_th_color_orange {
+  @extend .boton-secundario_Th;
+  @include boton-estilos(orange, 20px);
+}
+
+.set_boton-secundario_th_color_yellow {
+  @extend .boton-secundario_Th;
+  @include boton-estilos(yellow, 20px);
+}
+
+.set_boton-secundario_th_color_green {
+  @extend .boton-secundario_Th;
+  @include boton-estilos(green, 20px);
+}
+
+.set_boton-secundario_th_color_blue {
+  @extend .boton-secundario_Th;
+  @include boton-estilos(blue, 20px);
+}
+
+
+
+/*button 3*/
+.set_button-3_color_lightgreen {
+  @extend .button-3;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    outline-color: $lightgreen;
+    outline-offset: .05em;
+  }
+
+  &:active {
+    background: $lightgreen;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+
+.set_button-3_color_blue {
+  @extend .button-3;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    outline-color: blue;
+    outline-offset: .05em;
+  }
+
+  &:active {
+    background: blue;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+.set_button-3_color_red {
+  @extend .button-3;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    outline-color: red;
+    outline-offset: .05em;
+  }
+
+  &:active {
+    background: red;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+.set_button-3_color_green {
+  @extend .button-3;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    outline-color: green;
+    outline-offset: .05em;
+  }
+
+  &:active {
+    background: green;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+.set_button-3_color_yellow {
+  @extend .button-3;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    outline-color: yellow;
+    outline-offset: .05em;
+  }
+
+  &:active {
+    background: yellow;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+.set_button-3_color_orange {
+  @extend .button-3;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    outline-color: orange;
+    outline-offset: .05em;
+  }
+
+  &:active {
+    background: orange;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+.set_button-3_color_purple {
+  @extend .button-3;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    outline-color: purple;
+    outline-offset: .05em;
+  }
+
+  &:active {
+    background: purple;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+
+
+/*Buttons rounded*/
+
+.set_butontest_round_color_lightgreen{
+  @extend .butontest_round;
+  background: $lightgreen;
+
+  &:hover {
+    background: lighten($color:$lightgreen, $amount: 5);
+  }
+
+}
+
+
+.set_butontest_round_color_purple {
+  @extend .butontest_round;
+  background: purple;
+
+  &:hover {
+    background: lighten($color:purple, $amount: 5);
+  }
+
+}
+
+/***************************UTILIDADES TEXT DECORATION*****************************************/
+.txt-none {
+  text-decoration: none;
+}
+
+.txt-underline {
+  text-decoration: underline;
+}
+
+.txt-underline {
+  text-decoration: underline;
+}
+
+.txt-line-through {
+  text-decoration: line-through;
+}
+
+.txt-underline-overline {
+  text-decoration: underline overline;
+}
+
+.txt-underline-line-through {
+  text-decoration: underline line-through;
+}
+
+
+/********************colores subrayado***********************/
+
+.txt-subrayado_block {
+  background-color: $color-primario;
+  display: block;
+
+}
+
+.txt-subrayado_inline {
+  background-color: $color-primario;
+  display: inline;
+
+}
+
+.txt-subrayadoB_block {
+  background-color: $color-primarioB;
+  display: block;
+
+}
+
+.txt-subrayadoB_inline {
+  background-color: $color-primarioB;
+  display: inline;
+
+}
+
+.txt-subrayadoC {
+  background-color: $color-primarioC;
+
+}
+
+.txt-subrayadoC_block {
+  background-color: $color-primarioC;
+  display: block;
+
+}
+
+.txt-subrayadoC_inline {
+  background-color: $color-primarioC;
+  display: inline;
+
+}
+
+.txt-subrayadoD_block {
+  background-color: $color-primarioD;
+  display: block;
+
+}
+
+.txt-subrayadoD_inline {
+  background-color: $color-primarioD;
+  display: inline;
+
+}
+
+.txt-subrayado_block {
+  background-color: $color-primarioB;
+  display: block;
+}
+
+.txt-subrayado_inlineD {
+  background-color: $colorBg-secundarioD;
+  display: inline;
+}
+
+.txt-subrayado_block_yellow {
+  background-color: yellow;
+  display: block;
+}
+
+.txt-subrayado_inlineD_yellow {
+  background-color: yellow;
+  display: inline;
+}
+
+.txt-subrayado_block_pink {
+  background-color: pink;
+  display: block;
+  text-decoration: underline;
+}
+
+.txt-subrayado_inline_pink {
+  background-color: pink;
+  display: inline;
+  text-decoration: underline;
+}
+
+.txt-subrayado_block_lightblue {
+  background-color: lightblue;
+  display: block;
+  text-decoration: underline;
+}
+
+.txt-subrayado_inline_lightblue {
+  background-color: lightblue;
+  display: inline;
+  text-decoration: underline;
+}
+
+.txt-subrayado_block_lightgreen {
+  background-color: lightgreen;
+  display: block;
+  text-decoration: underline;
+}
+
+.txt-subrayado_inline_lightgreen {
+  background-color: lightgreen;
+  display: inline;
+  text-decoration: underline;
+}
+
+.txt-subrayado_block_lightorange {
+  background-color: lightorange;
+  display: block;
+  text-decoration: underline;
+}
+
+
+.txt-subrayado_inline_lightorange {
+  background-color: lightorange;
+  display: inline;
+  text-decoration: underline;
+}
+
+
+.article-bordered {
+  border: 1px solid black;
 }

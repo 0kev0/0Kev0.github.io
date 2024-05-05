@@ -25,10 +25,10 @@ $alert-info-text: #0c5460;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 
-  &:hover {
+  &:hover {// Levanta la alerta al hacer hover
     opacity: 1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px); // Levanta la alerta al hacer hover
+    transform: translateY(-5px); 
   }
 
   &.closeable {
@@ -51,9 +51,15 @@ $alert-info-text: #0c5460;
   }
 }
 
+@mixin borderSolid($colorbg,$colorBorder,$Size,$txt_color) {
+  background-color: $alert-success-bg;
+  border: Size solid $colorBorder;
+  color: $txt_color;
+}
 // Estilos para la alerta de éxito
 .alert-success  {
   @extend .alert;
+  @include borderSolid($alert-success-bg, $alert-success-border ,  1px,$alert-success-text );
   background-color: $alert-success-bg;
   border: 1px solid $alert-success-border;
   color: $alert-success-text;
