@@ -149,6 +149,7 @@
     padding: 10px;
     border: 2px solid #ffffff;
     border-radius: 4px;
+    object-fit: contain;
 
     h3 {
         font-family: map-get($map: $FontPack1, $key: Titulo);

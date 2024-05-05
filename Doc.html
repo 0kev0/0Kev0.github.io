@@ -125,6 +125,7 @@
         <!--------------------------------------CONTENIDO----------------------------------------------------------->
 
         <div class="Content">
+            <!-- **********************************Bienvenido************************************************ -->
 
             <div class="Documentacion-seccion">
                 <h1 class="Titulo_special">Bienvenido</h1>
@@ -179,14 +180,49 @@
                 <div class="Documentacion-container">
                     <h2 id="Glosario" class="Font_Tema">Glosarios</h2>
 
-                    <div class="Documentacion-info-container-content">
-                        <p>
-                            REDACTAR
-                        </p>
+                    <div class="Documentacion-info-container-content Display-flex flex-row justfy_Between align_center">
+                        <div>
+                            <p>Font-family = fnt-famly</p>
+                            <p>Cursor = cursor</p>
+                            <p>Padding = pd</p>
+                            <p>Margin = mg</p>
+                            <p>Display = disply</p>
+                            <p>Justify = justf</p>
+                            <p>Align = alig</p>
+                        </div>
+                        <div>
+                            <p>Text-decoration = txt-decor</p>
+                            <p>Display-direction = disply_direct</p>
+                            <p>Font-weight = fnt_weight</p>
+                            <p>BORDER = brd</p>
+                            <p>Radius = rad</p>
+                            <p>Gap = gap</p>
+                            <p>Z-index = z_indx</p>
+                        </div>
+                        <div>
+                            <p>Gradient-lineael = grd-lineal</p>
+                            <p>Height = height</p>
+                            <p>Width = width</p>
+                            <p>Max-width = max - width</p>
+                            <p>Shadow = shadw</p>
+                            <p>Box = box</p>
+                            <p>Flx-wrp = flx-wrp</p>
+                        </div>
+                        <div>
+                            <p>Font-style = fnt-styl</p>
+                            <p>Text-overflow = txt-overflow</p>
+                            <p>Hover = hovr</p>
+                            <p>Transition = transit</p>
+                            <p>Text-shadow = txt-shadw</p>
+                            <p>Self-align = self-align</p>
+                            <p>Object-fit = obj-fit</p>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
+
+            <!-- *************************************Font Styles********************************************* -->
 
             <div class="Documentacion-seccion">
                 <h1 id="Font" class="Titulo_special">Font Styles</h1>
@@ -196,17 +232,21 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            La Biblioteca de Fuentes Minimalistas ofrece una selección exclusiva de tipografías modernas
-                            y de diseño minimalista, ideales para conferir un toque de elegancia y sofisticación a tus
+                            La Biblioteca de Fuentes Minimalistas ofrece una selección exclusiva de tipografías
+                            modernas
+                            y de diseño minimalista, ideales para conferir un toque de elegancia y sofisticación a
+                            tus
                             proyectos. <br><br> Cada paquete de fuentes incluido en esta biblioteca ha sido
                             meticulosamente
                             escogido para asegurar que las tipografías no solo se complementen entre sí, sino que
-                            también reflejen la esencia del minimalismo. <br><br> A continuación, presentamos algunos
+                            también reflejen la esencia del minimalismo. <br><br> A continuación, presentamos
+                            algunos
                             ejemplos de
-                            cómo combinar estos paquetes de fuentes para maximizar su impacto visual y funcionalidad en
+                            cómo combinar estos paquetes de fuentes para maximizar su impacto visual y funcionalidad
+                            en
                             diversos proyectos de diseño.
                         </p>
-                        <img class="Img_code" src="DripCSS/IMG/Code/fonts pack.png" alt=""><br>
+
                         <p class="coment_green">$FontPack1: ('Titulo': Lato, 'Tema': Raleway, 'Texto': Source
                             Sans Pro);
                         </p>
@@ -232,7 +272,28 @@
                         <h4 class="contenido3">Fuente para sub-temas pack1</h4>
                         <br>
 
-                        <p class="contenido">Fuente para contenidos.</p>
+                        <div class="plta-uno-backgraund-A">
+                            <p class="FontPack1-copy">
+                                <code>&lt;p class="coment_green"&gt;$FontPack1: ('Titulo': Lato, 'Tema': Raleway,
+                                    'Texto': Source Sans Pro);&lt;/p&gt;</code>
+                            </p>
+                            <p class="FontPack1-copy">
+                                <code>&lt;h4 class="Titulo1"&gt;Fuente para titulos pack1&lt;/h4&gt;</code>
+                            </p>
+                            <p class="FontPack1-copy">
+                                <code>&lt;h4 class="Tema1"&gt;Fuente para temas pack1&lt;/h4&gt;</code>
+                            </p>
+                            <p class="FontPack1-copy">
+                                <code>&lt;h4 class="contenido1"&gt;Fuente para sub-temas pack1&lt;/h4&gt;</code>
+                            </p>
+                            <button class="copy-btn "
+                                onclick="copyCodeToClipboard('FontPack1-copy','success-alert-FontPack1-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-FontPack1-copy" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -243,18 +304,52 @@
                         <p>
                             la libreria cuenta con estilos predisenados para hacer resaltar tu creatividad.
                         </p><br>
-                        <img class="Img_code" src="DripCSS/IMG/Code/lettergradient..png" alt="codigo fuente">
                         <h1 class="letter-Gradient Titulo1">letra-Gradient </h1>
-
-                        <img class="Img_code" src="DripCSS/IMG/Code/Titulo.png" alt="codigo fuente">
+                        <br>
+                        <div class="plta-uno-backgraund-A">
+                            <p class="gradinet-copy">
+                                <code>&lt;h1 class="letter-Gradient Titulo1"&gt;letra-Gradient &lt;/h1&gt;</code>
+                            </p>
+                            <button class="copy-btn "
+                                onclick="copyCodeToClipboard('gradinet-copy','success-alert-gradinet-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-gradinet-copy" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
+                        </div><br>
                         <h4 class="titulo">letra-con sombra </h4>
-
-                        <img class="Img_code" src="DripCSS/IMG/Code/texto_sombra.png" alt="codigo fuente">
+                        <div class="plta-uno-backgraund-A">
+                            <p class="shadowTxt-copy">
+                                <code>&lt;h1 class="titulo "&gt;letra-con sombra &lt;/h1&gt;</code>
+                            </p>
+                            <button class="copy-btn "
+                                onclick="copyCodeToClipboard('shadowTxt-copy','success-alert-shadowTxt-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-shadowTxt-copy" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
+                        </div><br>
                         <h4 class="texto-sombra Titulo3">letra sombra difuminada</h4>
+                        <div class="plta-uno-backgraund-A">
+                            <p class="gradinet-shadow-copy">
+                                <code>&lt;h1 class="texto-sombra Titulo3"&gt;letra sombra difuminada &lt;/h1&gt;</code>
+                            </p>
+                            <button class="copy-btn "
+                                onclick="copyCodeToClipboard('gradinet-shadow-copy','success-alert-gradinet-shadow-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-gradinet-shadow-copy"
+                                class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
+            <!-- ***************************************Cards******************************************* -->
 
             <div class="Documentacion-seccion">
                 <h1 id="Cards" class="Titulo_special">Cards</h1>
@@ -264,9 +359,12 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Una tarjeta representa un componente de diseño versátil y adaptable, ideal para encapsular
-                            una variedad de contenidos en una estructura coherente. Ofrece la posibilidad de incorporar
-                            encabezados y pies de página personalizables, así como una amplia gama de contenido, desde
+                            Una tarjeta representa un componente de diseño versátil y adaptable, ideal para
+                            encapsular
+                            una variedad de contenidos en una estructura coherente. Ofrece la posibilidad de
+                            incorporar
+                            encabezados y pies de página personalizables, así como una amplia gama de contenido,
+                            desde
                             texto e imágenes hasta formularios y botones. <br><br> Además, las tarjetas pueden ser
                             estilizadas
                             con colores de fondo que se alinean con el contexto en el que se utilizan, mejorando la
@@ -276,44 +374,68 @@
                             interfaz de usuario limpia y armoniosa, facilitando la interacción intuitiva y la
                             accesibilidad.
                         </p>
-                        <img class="Img_code" src="DripCSS/IMG/Code/card 1.png" alt=""><br>
-                        <img class="Img_code" src="DripCSS/IMG/Code/card 2.png" alt=""><br>
 
                     </div>
                 </div>
+
                 <div class="Documentacion-container">
                     <h2 id="Plantilla" class="Font_Tema">Plantillas</h2>
 
-                    <div class="Documentacion-info-container-content ">
-                        <h3 class="my-text-4 ">Plantilla #1</h3>
+                    <div class="Documentacion-info-container-content Display-flex  ">
+                        <h3 class="my-text-4 self-start">Plantilla #1</h3>
+
                         <div class="tarjeta ">
                             <div class="front">
-                              <img src="/WhatsApp Image 2024-04-30 at 9.34.35 PM.jpeg" alt="">
-                               <h3>Drip</h3>
+                                <img src="DRIP CSS (1).png" alt="">
+                                <h3>Drip</h3>
                             </div>
-                              <div class="back">
+                            <div class="back">
                                 <h3>Drip.css</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente cumque possimus, ab eum nemo animi aspernatur doloremque odio inventore nihil corrupti cum porro est similique ad blanditiis amet ipsa.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente cumque
+                                    possimus, ab eum nemo animi aspernatur doloremque odio inventore nihil corrupti
+                                    cum
+                                    porro est similique ad blanditiis amet ipsa.</p>
                                 <div class="link"><a href="#">Detalles</a></div>
-                              </div>
-                          </div>
-                    </div><br>
-                    <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content color-text text-justify ">
-                            <h3 class="my-text-4">Codigo Fuente</h3><br>
-                            <p class="t2"><code>&lt;div class="tarjeta"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="front"&gt;</code></p>
-                            <p class="t2"><code>&lt;img&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="back"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="Footer"  &gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i class="fa-regular fa-copy"></i></button>
-                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                                ¡Éxito! Se ha copiado Corectamente.
-                                <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
                         </div>
-                    </div><br>
+
+                        <div class="tarjeta ">
+                            <div class="front">
+                                <img src="DripCSS/IMG/clear_logo.jpeg" alt="">
+                                <h3>Drip</h3>
+                            </div>
+                            <div class="back">
+                                <h3>Drip.css</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente cumque
+                                    possimus, ab eum nemo animi aspernatur doloremque odio inventore nihil corrupti
+                                    cum
+                                    porro est similique ad blanditiis amet ipsa.</p>
+                                <div class="link"><a href="#">Detalles</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="Documentation-container">
+                        <div class="Documentacion-info-container-content color-text text-justify ">
+                            <div class="plta-uno-backgraund-A">
+                                <h3 class="my-text-4">Codigo Fuente</h3><br>
+                                <p class="card1"><code>&lt;div class="tarjeta"&gt;</code></p>
+                                <p class="card1"><code>&lt;div class="front"&gt;</code></p>
+                                <p class="card1"><code>&lt;img&gt;</code></p>
+                                <p class="card1"><code>&lt;div class="back"&gt;</code></p>
+                                <p class="card1"><code>&lt;div class="Main"&gt;</code></p>
+                                <p class="card1"><code>&lt;div class="Footer" &gt;</code></p><br>
+                                <a class="copy-btn " onclick="copyCodeToClipboard('card1','success-alert-card1')"><i
+                                        class="fa-regular fa-copy"></i></a>
+                                <div id="success-alert-card1" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito! Se ha copiado Corectamente.
+                                    <span class="close" onclick="closeAlert()">×</span><br>
+                                </div><br><br>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
 
@@ -354,25 +476,31 @@
                                 </div>
                             </div>
                         </div>
-                    </div><br>
+                    </div>
+
                     <div class="Documentation-container">
                         <div class="Documentacion-info-container-content  text-justify ">
-                            <h3 class="my-text-4">Codigo Fuente</h3><br>
-                            <p class="card2"><code>&lt;div class="card"&gt;</code></p>
-                            <p class="card2"><code>&lt;div class="contenido-card"&gt;</code></p>
-                            <p class="card2"><code>&lt;spam&gt;</code></p>
-                            <p class="card2"><code>&lt;div class="img-perfil"&gt;</code></p>
-                            <p class="card2"><code>&lt;img&gt;</code></p>
-                            <p class="card2"><code>&lt;h4&gt;</code></p>
-                            <p class="card2"><code>&lt;h6&gt;</code></p>
-                            <p class="card2"><code>&lt;p&gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboard('card2')"><i class="fa-regular fa-copy"></i></button>
-                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                                ¡Éxito! Se ha copiado Corectamente.
-                                <span class="close" onclick="closeAlert()">×</span><br>
+                            <div class="plta-uno-backgraund-A">
+                                <h3 class="my-text-4">Codigo Fuente</h3><br>
+                                <p class="card2"><code>&lt;div class="card"&gt;</code></p>
+                                <p class="card2"><code>&lt;div class="contenido-card"&gt;</code></p>
+                                <p class="card2"><code>&lt;spam&gt;</code></p>
+                                <p class="card2"><code>&lt;div class="img-perfil"&gt;</code></p>
+                                <p class="card2"><code>&lt;img&gt;</code></p>
+                                <p class="card2"><code>&lt;h4&gt;</code></p>
+                                <p class="card2"><code>&lt;h6&gt;</code></p>
+                                <p class="card2"><code>&lt;p&gt;</code></p>
+                                <br><button class="copy-btn "
+                                    onclick="copyCodeToClipboard('card2','success-alert-card2')"><i
+                                        class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert-card2" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito! Se ha copiado Corectamente.
+                                    <span class="close" onclick="closeAlert()">×</span><br>
+                                </div>
                             </div>
                         </div>
-                    </div><br><br>
+                    </div>
+
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #3</h3>
 
@@ -422,22 +550,29 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="Documentacion-container">
                     <div class="Documentacion-info-container-content color-text text-justify ">
-                        <h3 class="my-text-4">Codigo Fuente</h3><br>
-                        <p class="card3"><code>&lt;div class="wapper"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="container slider"&gt;</code></p>
-                        <p class="card3"><code>&lt;input class="slider" type="Radio" name="slide" id="c1"&gt;</code>
-                        </p>
-                        <p class="card3"><code>&lt;label for="c4" class="carta"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="row"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="icon"  &gt;</code></p>
-                        <p class="card3"><code>&lt;div class="descripcion"  &gt;</code></p>
-                        <br><button class="copy-btn " onclick="copyCodeToClipboard('card3')"><i class="fa-regular fa-copy"></i></button>
-                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                            ¡Éxito! Se ha copiado Corectamente.
-                            <span class="close" onclick="closeAlert()">×</span><br>
+                        <div class="plta-uno-backgraund-A">
+                            <h3 class="my-text-4">Codigo Fuente</h3><br>
+                            <p class="card3"><code>&lt;div class="wapper"&gt;</code></p>
+                            <p class="card3"><code>&lt;div class="container slider"&gt;</code></p>
+                            <p class="card3"><code>&lt;input class="slider" type="Radio" name="slide"
+                                    id="c1"&gt;</code>
+                            </p>
+                            <p class="card3"><code>&lt;label for="c4" class="carta"&gt;</code></p>
+                            <p class="card3"><code>&lt;div class="row"&gt;</code></p>
+                            <p class="card3"><code>&lt;div class="icon" &gt;</code></p>
+                            <p class="card3"><code>&lt;div class="descripcion" &gt;</code></p>
+                            <br><button class="copy-btn "
+                                onclick="copyCodeToClipboard('card3','success-alert-card3')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-card3" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
                         </div>
+
                     </div>
                     <br>
 
@@ -452,6 +587,7 @@
                 </div>
 
             </div>
+            <!-- ****************************************Layouts****************************************** -->
             <div class="Documentacion-seccion">
                 <h1 id="Layouts" class="Titulo_special">Layouts</h1>
 
@@ -470,194 +606,142 @@
                             porcentajes. Este tipo de contenedor mantiene un ancho constante independientemente del
                             tamaño de la ventana del navegador.</p><br>
 
-                                <p><strong>Usos:</strong></p>
-                                    
-                                    <p>- Controlar el diseño de la página en pantallas de tamaño específico.</p>
-                                    <p>- Mantener la legibilidad del contenido al limitar el ancho.</p><br>
-                                   
+                        <p><strong>Usos:</strong></p>
 
-                                <p><strong>Cómo se usa:</strong></p>
-                              
-                                    <div id="code" class="plta-uno-backgraund-A text-center">
-                                        <p>
-                                          <code>
-                                            &lt;div class="container-regular"&gt;<br>
-                                            &nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor regular&lt;/h2&gt;<br>
-                                            &nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del contenedor regular. Lorem ipsum dolo.&lt;/p&gt;<br>
-                                            &nbsp;&nbsp;&lt;button&gt;Botón de ejemplo&lt;/button&gt;<br>
-                                            &lt;/div&gt;
-                                          </code>
-                                        </p>
-                                        <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                          <span class="close" onclick="closeAlert()">×</span>
-                                        </div>
-                                      </div>
-                                      
-                                
+                        <p>- Controlar el diseño de la página en pantallas de tamaño específico.</p>
+                        <p>- Mantener la legibilidad del contenido al limitar el ancho.</p><br>
 
-                                 <p><strong>Ejemplos:</strong></p>
-                                    
-                                    <p>- Barra lateral de un sitio web que debe tener un ancho fijo.</p>
-                                    <p>- Contenedor para el cuerpo principal de una página que se desea mantener dentro de ciertos límites de ancho.</p>
-                                    <p>- Paneles de navegación o menús que deben mantenerse en un tamaño específico en todas las páginas.</p>
-                                    
+                        <p><strong>Cómo se usa:</strong></p>
 
-                                <br><h2>Fluid Container</h2><br>
+                        <div id="code" class="plta-uno-backgraund-A ">
+                            <p>
+                                <code>
+                                    <p class="cont1">&lt;div class="container-regular"&gt;</p>
+                                    <p class="cont1">&nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor
+                                        regular&lt;/h2&gt;</p>
+                                    <p class="cont1">&nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del
+                                        contenedor regular. Lorem ipsum dolo.&lt;/p&gt;</p>
+                                    <p class="cont1">&nbsp;&nbsp;&lt;button&gt;Botón de ejemplo&lt;/button&gt;</p>
+                                    <p class="cont1">&lt;/div&gt;</p>
 
-                                 <p><strong>Descripción:</strong> El contenedor fluido, también conocido como contenedor
-                                 líquido,
-                                 es un elemento de diseño web cuyo ancho se ajusta dinámicamente al ancho de la ventana
-                                 del
-                                navegador. Su ancho se define generalmente en porcentajes en lugar de píxeles.</p><br>
-
-                                <p><strong>Usos:</strong></p>
-                                    
-                                    <p>- Crear diseños más adaptables a diferentes tamaños de pantalla.</p>
-                                    <p>- Mejorar la experiencia del usuario en dispositivos con diferentes resoluciones de pantalla.</p><br>
-                                    
-
-                                <p><strong>Cómo se usa:</strong></p>
-                              
-
-                                <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="container-fluid"&gt;<br>
-                                        &nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor fluido&lt;/h2&gt;<br>
-                                        &nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del contenedor fluido. Lorem ipsum dolor sit .&lt;/p&gt;<br>
-                                        &nbsp;&nbsp;&lt;img src="ejemplo-imagen.jpg" alt="Imagen de ejemplo"&gt;<br>
-                                        &lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                  </div>
-                                  
-
-                                <p><strong>Ejemplos:</strong></p><br>
-                                    
-                                    <p>- Diseño de una página web que se adapta automáticamente al tamaño de la pantalla del dispositivo.</p>
-                                    <p>- Contenedor para el contenido principal de un blog que debe ajustarse para ser legible en dispositivos móviles y de escritorio.</p>
-                                    <p>- Secciones de una página que deben expandirse o contraerse según el tamaño de la ventana del navegador.</p><br>
-                                
-                                
-                                <br><h2>Full Width Container</h2>
-
-                                <p><strong>Descripción:</strong> El contenedor de ancho completo se extiende a lo ancho de
-                                la
-                                ventana del navegador sin márgenes laterales. Es ideal para elementos visuales
-                                llamativos
-                                que deben abarcar todo el ancho de la pantalla.</p><br>
-
-                                <p><strong>Usos:</strong></p>
-                                
-                                <p>- Crear secciones destacadas o elementos visuales que requieran ocupar todo el ancho de la pantalla.</p>
-                                <p>- Destacar elementos como encabezados, banners o imágenes de fondo.</p><br>
-                                
-
-                                <p><strong>Cómo se usa:</strong></p>
-                                
-                                <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="container-full-width"&gt;<br>
-                                        &nbsp;&nbsp;&lt;p&gt;Contenido dentro del contenedor de ancho completo.&lt;/p&gt;<br>
-                                        &lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                </div>
-                                  
-                                  
-                                 
-                                <p><strong>Ejemplos:</strong></p>
-
-                                <p>- Encabezado de una página que contiene el logotipo y el menú de navegación.</p>
-                                <p>- Banner publicitario que se muestra en la parte superior de una página web.</p>
-                                <p>- Sección de presentación en la página de inicio que incluye una imagen de fondo de ancho completo.</p><br>
-
-
-
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('cont1','success-alert-cont1')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-cont1" class="alert alert-success slide-in-right ocultar">¡Éxito!
+                                Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
                             </div>
-                            <div class="Documentacion-seccion">
-                                <h1 id="nabvar">Nabvar</h1>
-                
-                                <div class="Documentacion-container">
-                                    <h2 id="Navbarfijo" class="Font_Tema">Navbar Fijo</h2>
-                
-                                    <div class="Documentacion-info-container-content">
-                                      <br><strong>Descripcion</strong><br>
-                                      <p>
-                                        el navbar fijo se utiliza para proporcionar una navegación constante y accesible a los usuarios mientras exploran el contenido del sitio. Su funcionamiento es esencialmente mantenerse en la parte superior de la página, incluso cuando el usuario desplaza el contenido hacia abajo.
-                                      </p><br>
-                                        <strong>Como se usa:</strong><br>
-                                        <img class="Img_code" src="DripCSS/IMG/Code/carbonNV2.png" alt="" width="450" height="350" ><br>
-                                        <nav class="nav2">
-                                            <a href="#" class="logo">Drip_CSS</a>
-                                            <ul>
-                                              <li><a href="#inicio">Inicio</a></li>
-                                              <li><a href="#acerca">Acerca de</a></li>
-                                              <li><a href="#servicios">Servicios</a></li>
-                                              <li><a href="#contacto">Contacto</a></li>
-                                            </ul>
-                                          </nav><br>
-                                        <Strong>Ejemplos</Strong><br>
-                                        <p>- Sitios de una sola página</p>
-                                        <p>- Menu de navegacion de sitio web</p>
-                                        <br>
-                                    </div>
-                                </div>
-                
-                                <div class="Documentacion-container">
-                                    <h2 id="NavbarDesplegable" class="Font_Tema">Navbar Desplegable</h2>
-                
-                                    <div class="Documentacion-info-container-content">
-                                        <br><strong>Descripcion</strong><br>
-                                        <p>
-                                            El navbar desplegable es una característica común en proyectos web que permite conservar el espacio en la pantalla al ocultar las opciones de navegación cuando no se están utilizando. Su funcionamiento se basa en la interacción del usuario, activando y desactivando el menú desplegable según sea necesario.
-                                        </p><br>
-                                        <strong>Como se usa:</strong><br>
-                                        <img class="Img_code" src="DripCSS/IMG/Code/carbonNV4.png" alt="" width="450" height="350" ><br>
-                                        <nav class="nav4">
-                                            <header class="header">
-                                              <div class="logo">
-                                                <a href="#" class="logo">Drip_CSS</a>
-                                              </div>
-                                              <nav>
-                                                <ul>
-                                                  <li><a href="#">Inico</a></li>
-                                                  <li>
-                                                    <a href="#">Localizacion +</a>
-                                                    <ul class="drip">
-                                                      <li><a href="#">San Miguel</a></li>
-                                                      <li><a href="#">Corinto city</a></li>
-                                                      <li><a href="#">Chinameca</a></li>
-                                                      <li><a href="#">Nueva guadalupe</a></li>
-                                                    </ul>
-                                                  </li>
-                                                  <li><a href="#">Acerca de</a></li>
-                                                  <li><a href="#">Servicios</a></li>
-                                                  <li><a href="#">Contacto</a></li>
-                                                </ul>
-                                              </nav>
-                                          </nav>
-                                        </nav>
-                                        <strong>Ejemplos</strong><br>
-                                            <p>- Menú de navegación contextual</p>
-                                            <p>- Navegación con muchas opciones</p>
-                                            <br>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        
                         </div>
+
+                        <p><strong>Ejemplos:</strong></p>
+
+                        <p>- Barra lateral de un sitio web que debe tener un ancho fijo.</p>
+                        <p>- Contenedor para el cuerpo principal de una página que se desea mantener dentro de
+                            ciertos
+                            límites de ancho.</p>
+                        <p>- Paneles de navegación o menús que deben mantenerse en un tamaño específico en todas las
+                            páginas.</p>
+
+                        <br>
+                        <h2>Fluid Container</h2><br>
+
+                        <p><strong>Descripción:</strong> El contenedor fluido, también conocido como contenedor
+                            líquido,
+                            es un elemento de diseño web cuyo ancho se ajusta dinámicamente al ancho de la ventana
+                            del
+                            navegador. Su ancho se define generalmente en porcentajes en lugar de píxeles.</p><br>
+
+                        <p><strong>Usos:</strong></p>
+
+                        <p>- Crear diseños más adaptables a diferentes tamaños de pantalla.</p>
+                        <p>- Mejorar la experiencia del usuario en dispositivos con diferentes resoluciones de
+                            pantalla.
+                        </p><br>
+
+                        <p><strong>Cómo se usa:</strong></p>
+
+                        <div id="code" class="plta-uno-backgraund-A ">
+                            <p>
+                                <code>
+                                    <p class="cont2">&lt;div class="container-fluid"&gt;</p>
+                                    <p class="cont2">&nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor
+                                        fluido&lt;/h2&gt;</p>
+                                    <p class="cont2">&nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del
+                                        contenedor fluido. Lorem ipsum dolor sit .&lt;/p&gt;</p>
+                                    <p class="cont2">&nbsp;&nbsp;&lt;img src="ejemplo-imagen.jpg" alt="Imagen de
+                                        ejemplo"&gt;</p>
+                                    <p class="cont2">&lt;/div&gt;</p>
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('cont2','success-alert-cont2')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-cont2" class="alert alert-success slide-in-right ocultar">¡Éxito!
+                                Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div>
+
+                        <p><strong>Ejemplos:</strong></p><br>
+
+                        <p>- Diseño de una página web que se adapta automáticamente al tamaño de la pantalla del
+                            dispositivo.</p>
+                        <p>- Contenedor para el contenido principal de un blog que debe ajustarse para ser legible
+                            en
+                            dispositivos móviles y de escritorio.</p>
+                        <p>- Secciones de una página que deben expandirse o contraerse según el tamaño de la ventana
+                            del
+                            navegador.</p><br>
+
+                        <br>
+                        <h2>Full Width Container</h2>
+
+                        <p><strong>Descripción:</strong> El contenedor de ancho completo se extiende a lo ancho de
+                            la
+                            ventana del navegador sin márgenes laterales. Es ideal para elementos visuales
+                            llamativos
+                            que deben abarcar todo el ancho de la pantalla.</p><br>
+
+                        <p><strong>Usos:</strong></p>
+
+                        <p>- Crear secciones destacadas o elementos visuales que requieran ocupar todo el ancho de
+                            la
+                            pantalla.</p>
+                        <p>- Destacar elementos como encabezados, banners o imágenes de fondo.</p><br>
+
+                        <p><strong>Cómo se usa:</strong></p>
+
+                        <div id="code" class="plta-uno-backgraund-A">
+                            <p>
+                                <code>
+                                    <p class="cont3">&lt;div class="container-full-width"&gt;</p>
+                                    <p class="cont3">&nbsp;&nbsp;&lt;p&gt;Contenido dentro del contenedor de ancho
+                                        completo.&lt;/p&gt;</p>
+                                    <p class="cont3">&lt;/div&gt;</p>
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('cont3','success-alert-cont3')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-cont3" class="alert alert-success slide-in-right ocultar">¡Éxito!
+                                Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div>
+
+                        <p><strong>Ejemplos:</strong></p>
+
+                        <p>- Encabezado de una página que contiene el logotipo y el menú de navegación.</p>
+                        <p>- Banner publicitario que se muestra en la parte superior de una página web.</p>
+                        <p>- Sección de presentación en la página de inicio que incluye una imagen de fondo de ancho
+                            completo.</p><br>
+
+                    </div>
+
+                </div>
+                <div class="Documentacion-container">
                     <h2 id="Grids" class="Font_Tema">Grids</h2>
 
                     <div class="Documentacion-info-container-content">
@@ -672,6 +756,9 @@
                             experiencia de navegación intuitiva, atractiva y al día para tus visitantes.
                         </p>
                     </div>
+                </div>
+
+                <div class="Documentacion-container">
 
                     <h2 id="Gridarea" class="Font_Tema">Grid Style</h2>
                     <div class="Documentacion-info-container-content">
@@ -684,82 +771,100 @@
                             <div class="box2"></div>
                             <div class="box1"></div>
                         </div>
-                    </div>
 
-                    <br>
-
-                <div class="Documentation-container">
-                    <div class="Documentacion-info-container-content color-text text-justify ">
-                        <h3 class="my-text-4">Codigo Fuente</h3><br>
-                        <p class="t1"><code>&lt;div class="container-padre"&gt;</code></p>
-                        <p class="t1"><code>&lt;div class="box1"&gt;</code></p>
-                        <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
-                        <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
-                        <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
-                        <p class="t1"><code>&lt;div class="box1"  &gt;</code></p>
-                        <br><button class="copy-btn " onclick="copyCodeToClipboardt1('t1')"><i class="fa-regular fa-copy"></i></button>
-                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                            ¡Éxito! Se ha copiado Corectamente.
-                            <span class="close" onclick="closeAlert()">×</span><br>
+                        <div class="plta-uno-backgraund-A">
+                            <h3 class="my-text-4">Codigo Fuente</h3><br>
+                            <p class="t1"><code>&lt;div class="container-padre"&gt;</code></p>
+                            <p class="t1"><code>&lt;div class="box1"&gt;</code></p>
+                            <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
+                            <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
+                            <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
+                            <p class="t1"><code>&lt;div class="box1" &gt;</code></p>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('t1','success-alert-t1')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-t1" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
                         </div>
+
                     </div>
-                </div><br>
+                </div>
+
+                <div class="Documentacion-container">
 
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
-                        <div class="degradado">
-                            <div class="layout">
-                                <div class="header">Header</div>
-                                <div class="sidebar">Sidebar</div>
-                                <div class="main">Main</div>
-                                <div class="footer">Footer</div>
-                            </div>
+                        <div class="layout">
+                            <div class="header">Header</div>
+                            <div class="sidebar">Sidebar</div>
+                            <div class="main">Main</div>
+                            <div class="footer">Footer</div>
                         </div>
-                    </div><br>
-                    <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content color-text text-justify ">
+                    </div>
+                </div>
+
+                <div class="Documentacion-container">
+                    <h2 id="Gridarea" class="Font_Tema">Codigo Fuente</h2>
+                    <div class="Documentacion-info-container-content">
+
+                        <div class="plta-uno-backgraund-A">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
                             <p class="t2"><code>&lt;div class="degradado"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="layout"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="header"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="sidebar"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="Footer"  &gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i class="fa-regular fa-copy"></i></button>
+                            <p class="t2"><code>&lt;div class="Footer" &gt;</code></p>
+                            <br>
+                            <button class="copy-btn " onclick="copyCodeToClipboard('t2','success-alert-t2')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-t2" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Documentacion-container">
+                    <h2 id="Gridarea" class="Font_Tema">Plantilla #3</h2>
+                    <div class="Documentacion-info-container-content">
+                        <div class="container-padre2">
+                            <div class="boxs1"></div>
+                            <div class="boxs2"></div>
+                            <div class="boxs1"> </div>
+                            <div class="boxs3"></div>
+                            <div class="boxs4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Documentacion-container">
+
+                    <h2 id="Gridarea" class="Font_Tema">Codigo Fuente </h2>
+                    <div class="Documentacion-info-container-content">
+                        <div class="plta-uno-backgraund-A">
+                            <h3 class="my-text-4">Codigo Fuente</h3><br>
+                            <p class="t3"><code>&lt;div class="container-padre2"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs2"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs3" &gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs4" &gt;</code></p>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('t3','success-alert')"><i
+                                    class="fa-regular fa-copy"></i></button>
                             <div id="success-alert" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
                         </div>
-                    </div><br>
-
-                    <div class="Documentacion-info-container-content">
-                        <h3 class="my-text-4 ">Plantilla #3</h3>
-                        <div class="container-padre2">
-                            <div class="boxs1"></div>
-                            <div class="boxs2">
-                            </div>
-                            <div class="boxs1"> </div>
-                            <div class="boxs3"></div>
-                            <div class="boxs4"></div>
-                        </div>
-                    </div><br>
-                <div class="Documentacion-info-container-content color-text text-justify ">
-                    <h3 class="my-text-4">Codigo Fuente</h3><br>
-                    <p class="t3"><code>&lt;div class="container-padre2"&gt;</code></p>
-                    <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
-                    <p class="t3"><code>&lt;div class="boxs2"&gt;</code></p>
-                    <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
-                    <p class="t3"><code>&lt;div class="boxs3"  &gt;</code></p>
-                    <p class="t3"><code>&lt;div class="boxs4"  &gt;</code></p>
-                    <br><button class="copy-btn " onclick="copyCodeToClipboard('t3')"><i class="fa-regular fa-copy"></i></button>
-                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                        ¡Éxito! Se ha copiado Corectamente.
-                        <span class="close" onclick="closeAlert()">×</span><br>
                     </div>
                 </div>
+
                 <div class="Documentacion-container">
-                    <h2 class="my-text-4 " >Grids Utylities</h2>
+                    <h2 class="my-text-4 ">Grids Utylities</h2>
                     <div class="Documentacion-info-container-content">
                         <p>
                             Esta plantilla proporciona una manera efectiva y elegante de presentar información
@@ -770,227 +875,281 @@
                         </p>
                     </div>
 
-                        <h2 id="FlexBox" class="Font_Tema">FlexBox</h2>
+                    <h2 id="FlexBox" class="Font_Tema">FlexBox</h2>
 
-                        <div class="Documentacion-info-container-content">
+                    <div class="Documentacion-info-container-content">
+                        <p>
+                            REDACTAR
+
+                        </p>
+
+                    </div>
+
+                    <h2 id="Uilidades" class="Font_Tema">Uilidades</h2>
+
+                    <div class="Documentacion-info-container-content">
+                        <br>
+                        <h1>Tipos de Texto</h1><br>
+
+                        <h2>Descripción:</h2>
+                        <p>La utilidad de tipos de texto te permite definir fácilmente diferentes tamaños de
+                            fuente
+                            para tus elementos HTML, facilitando la creación de diseños responsivos y
+                            coherentes.
+                        </p>
+
+                        <br>
+                        <h2>Usos:</h2>
+                        <p>- Ajustar el tamaño del texto para que sea legible en diferentes dispositivos.</p>
+                        <p>- Mantener la consistencia en el diseño del sitio web al adaptar dinámicamente el
+                            tamaño
+                            del texto según el espacio disponible.</p>
+
+                        <br>
+                        <h2>Cómo se usa:</h2>
+                        <p>- Importa la utilidad de tipos de texto en tu archivo HTML.</p>
+                        <p>- Utiliza las clases de tamaño de texto proporcionadas en combinación con las
+                            etiquetas
+                            HTML
+                            para aplicar diferentes tamaños de fuente.</p>
+
+                        <br>
+                        <h2>Ejemplos:</h2><br>
+
+                        <div id="code" class="plta-uno-backgraund-A text-center">
                             <p>
-                                REDACTAR
-
+                                <code>
+                                    <p class="text-copy-1">&lt;div class="texto-pequeno"&gt;Texto
+                                        pequeño&lt;/div&gt;
+                                    </p>
+                                    <p class="text-copy-1">&lt;div class="texto-mediano"&gt;Texto
+                                        mediano&lt;/div&gt;
+                                    </p>
+                                    <p class="text-copy-1">&lt;div class="texto-grande"&gt;Texto
+                                        grande&lt;/div&gt;</p>
+                                </code>
                             </p>
-
+                            <button class="copy-btn"
+                                onclick="copyCodeToClipboard('text-copy-1','success-alert-text-copy-1')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-text-copy-1" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
                         </div>
 
-                        <h2 id="Uilidades" class="Font_Tema">Uilidades</h2>
+                        <style>
+                            /* Estilos para el contenedor principal */
+                            .contenedor-principal {
+                                background: linear-gradient(rgb(111, 1, 179), rgb(0, 0, 0));
+                                padding: 20px;
+                                display: flex;
+                                flex-wrap: wrap;
+                            }
 
-                        <div class="Documentacion-info-container-content">
-                            <br>
-                            <h1>Tipos de Texto</h1><br>
+                            /* Estilos para los contenedores de grupos de texto */
+                            .grupo-texto {
+                                flex: 1 1 30%;
+                                /* Esto asegura que los contenedores tengan un ancho máximo y se envuelvan */
+                                margin: 10px;
+                                padding: 10px;
+                                background-color: rgb(133, 133, 133);
+                                border: 1px solid #ccc;
+                            }
+                        </style>
 
-                            <h2>Descripción:</h2>
-                            <p>La utilidad de tipos de texto te permite definir fácilmente diferentes tamaños de fuente
-                                para tus elementos HTML, facilitando la creación de diseños responsivos y coherentes.
+                        <div>
+                            <div class="contenedor-principal">
+                                <!-- Contenedor para textos pequeños -->
+                                <div class="grupo-texto">
+                                    <h2 style="color: black">Tamaños de fuente pequeño</h2><br><br>
+                                    <div class="group-roboto">
+                                        <p class="my-text-1">Texto pequeño Roboto</p>
+                                        <p class="my-text-2">Texto pequeño Montserrat</p>
+                                        <p class="my-text-3">Texto pequeño Open Sans</p>
+                                        <p class="my-text-4">Texto pequeño Lato</p>
+                                    </div>
+                                </div>
+
+                                <!-- Contenedor para textos medianos -->
+                                <div class="grupo-texto">
+                                    <h2 style="color: black">Tamaños de fuente mediano</h2><br><br>
+                                    <div class="group-montserrat">
+                                        <p class="my-text-5">Texto mediano Roboto</p>
+                                        <p class="my-text-6">Texto mediano Montserrat</p>
+                                        <p class="my-text-7">Texto mediano Open Sans</p>
+                                        <p class="my-text-8">Texto mediano Lato</p>
+                                    </div>
+                                </div>
+
+                                <!-- Contenedor para textos grandes -->
+                                <div class="grupo-texto">
+                                    <h2 style="color: black">Tamaños de fuente grande</h2><br><br>
+                                    <div class="group-open-sans">
+                                        <p class="my-text-9">Texto grande Roboto</p>
+                                        <p class="my-text-10">Texto grande Montserrat</p>
+                                        <p class="my-text-11">Texto grande Open Sans</p>
+                                        <p class="my-text-12">Texto grande Lato</p>
+                                    </div>
+                                </div>
+
+                                <!-- Contenedor para textos extra grandes -->
+                                <div class="grupo-texto">
+                                    <h2 style="color: black">Tamaños de fuente extra grande</h2><br><br>
+                                    <div class="group-lato">
+                                        <p class="my-text-13">Texto extra grande Roboto</p>
+                                        <p class="my-text-14">Texto extra grande Montserrat</p>
+                                        <p class="my-text-15">Texto extra grande Open Sans</p>
+                                        <p class=" my-text-16">Texto extra grande Lato</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br><br>
+
+                        <br>
+                        <h1>Sombra para Elementos</h1><br>
+
+                        <h2>Descripción:</h2>
+                        <p>La utilidad de sombra para elementos te permite añadir sombras a tus elementos HTML
+                            de
+                            manera sencilla, agregando profundidad y realce visual a tu diseño.</p>
+
+                        <br>
+                        <h2>Usos:</h2>
+                        <p>- Destacar elementos importantes en tu página web.</p>
+                        <p>- Agregar profundidad y realismo a los elementos para mejorar la apariencia general
+                            del
+                            diseño.</p>
+
+                        <br>
+                        <h2>Cómo se usa:</h2>
+                        <p>- Importa la utilidad de sombras en tu archivo HTML.</p>
+                        <p>- Utiliza las clases de sombra proporcionadas para aplicar diferentes estilos de
+                            sombra a
+                            los
+                            elementos HTML.</p>
+
+                        <br>
+                        <h2>Ejemplos:</h2><br>
+
+                        <div id="code" class="plta-uno-backgraund-A text-center">
+                            <p>
+                                <code>
+                                    <p class="shadow-copy">&lt;div class="box sombra-basica"&gt;Sombra
+                                        Básica&lt;/div&gt;</p>
+                                    <p class="shadow-copy">&lt;div class="box sombra-interior"&gt;Sombra
+                                        Interior&lt;/div&gt;</p>
+                                    <p class="shadow-copy">&lt;div class="box sombra-redondeada"&gt;Sombra
+                                        Redondeada&lt;/div&gt;</p>
+                                    <p class="shadow-copy">&lt;div class="box sombra-contorno"&gt;Sombra
+                                        Contorno&lt;/div&gt;</p>
+                                    <p class="shadow-copy">&lt;div class="box sombra-sobreponer"&gt;Sombra
+                                        Sobreponer&lt;/div&gt;</p>
+                                    <p class="shadow-copy">&lt;div class="box sombra-enfocar"&gt;Sombra
+                                        Enfocar&lt;/div&gt;</p>
+
+                                </code>
                             </p>
+                            <button class="copy-btn"
+                                onclick="copyCodeToClipboard('shadow-copy','success-alert-shadow-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-shadow-copy" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div>
 
-                            <br>
-                            <h2>Usos:</h2>
-                            <p>- Ajustar el tamaño del texto para que sea legible en diferentes dispositivos.</p>
-                            <p>- Mantener la consistencia en el diseño del sitio web al adaptar dinámicamente el tamaño
-                                del texto según el espacio disponible.</p>
+                        <style>
+                            /* Estilos para el contenedor principal */
+                            .Muestras-sombras {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                /* Cambiar si deseas otro tipo de justificación */
+                            }
 
-                                <br><h2>Cómo se usa:</h2>
-                                <p>- Importa la utilidad de tipos de texto en tu archivo HTML.</p>
-                                <p>- Utiliza las clases de tamaño de texto proporcionadas en combinación con las etiquetas HTML para aplicar diferentes tamaños de fuente.</p>
+                            /* Estilos para los contenedores hijos */
+                            .box {
+                                width: calc(33.33% - 10px);
+                                /* Esto asegura que haya espacio entre los contenedores */
+                                margin-bottom: 20px;
+                                /* Espacio entre los contenedores */
+                                background-color: #f0f0f0;
+                                border: 1px solid #ccc;
+                                padding: 20px;
+                                box-sizing: border-box;
+                            }
+                        </style>
 
-                                <br><h2>Ejemplos:</h2><br>
-                                
-                                <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="texto-pequeno"&gt;Texto pequeño&lt;/div&gt;<br>
-                                        &lt;div class="texto-mediano"&gt;Texto mediano&lt;/div&gt;<br>
-                                        &lt;div class="texto-grande"&gt;Texto grande&lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                </div><br><br>
-                                  
+                        <H2 style="margin-bottom: 5%;" style="align-items: center;">Tipos de sombras</H2>
 
-                                <style>
-                                    /* Estilos para el contenedor principal */
-                                    .contenedor-principal {
-                                      background: linear-gradient(rgb(111, 1, 179), rgb(0, 0, 0));
-                                      padding: 20px;
-                                      display: flex;
-                                      flex-wrap: wrap;
-                                    }
-                                    
-                                    /* Estilos para los contenedores de grupos de texto */
-                                    .grupo-texto {
-                                      flex: 1 1 30%; /* Esto asegura que los contenedores tengan un ancho máximo y se envuelvan */
-                                      margin: 10px;
-                                      padding: 10px;
-                                      background-color: rgb(133, 133, 133);
-                                      border: 1px solid #ccc;
-                                    }
-                                  </style>
+                        <div class="Muestras-sombras">
 
-                                    <div>
-                                        <div class="contenedor-principal">
-                                            <!-- Contenedor para textos pequeños -->
-                                            <div class="grupo-texto">
-                                              <h2 style="color: black">Tamaños de fuente pequeño</h2><br><br>
-                                              <div class="group-roboto">
-                                                <p class="my-text-1">Texto pequeño Roboto</p>
-                                                <p class="my-text-2">Texto pequeño Montserrat</p>
-                                                <p class="my-text-3">Texto pequeño Open Sans</p>
-                                                <p class="my-text-4">Texto pequeño Lato</p>
-                                              </div>
-                                            </div>
-                                        
-                                            <!-- Contenedor para textos medianos -->
-                                            <div class="grupo-texto">
-                                              <h2 style="color: black">Tamaños de fuente mediano</h2><br><br>
-                                              <div class="group-montserrat">
-                                                <p class="my-text-5">Texto mediano Roboto</p>
-                                                <p class="my-text-6">Texto mediano Montserrat</p>
-                                                <p class="my-text-7">Texto mediano Open Sans</p>
-                                                <p class="my-text-8">Texto mediano Lato</p>
-                                              </div>
-                                            </div>
-                                        
-                                            <!-- Contenedor para textos grandes -->
-                                            <div class="grupo-texto">
-                                              <h2 style="color: black">Tamaños de fuente grande</h2><br><br>
-                                              <div class="group-open-sans">
-                                                <p class="my-text-9">Texto grande Roboto</p>
-                                                <p class="my-text-10">Texto grande Montserrat</p>
-                                                <p class="my-text-11">Texto grande Open Sans</p>
-                                                <p class="my-text-12">Texto grande Lato</p>
-                                              </div>
-                                            </div>
-                                        
-                                            <!-- Contenedor para textos extra grandes -->
-                                            <div class="grupo-texto">
-                                              <h2 style="color: black">Tamaños de fuente extra grande</h2><br><br>
-                                              <div class="group-lato">
-                                                <p class="my-text-13">Texto extra grande Roboto</p>
-                                                <p class="my-text-14">Texto extra grande Montserrat</p>
-                                                <p class="my-text-15">Texto extra grande Open Sans</p>
-                                                <p class=" my-text-16">Texto extra grande Lato</p>
-                                              </div>
-                                            </div>
-                                          </div>
-                                    </div><br><br>
+                            <div class="box sombra-basica" style="background-color: blueviolet;">Sombra Básica
+                            </div>
+                            <div class="box sombra-interior" style="background-color: blueviolet;">Sombra
+                                Interior
+                            </div>
+                            <div class="box sombra-redondeada" style="background-color: blueviolet;">Sombra
+                                Redondeada
+                            </div>
+                            <div class="box sombra-contorno" style="background-color: blueviolet;">Sombra
+                                Contorno
+                            </div>
+                            <div class="box sombra-sobreponer" style="background-color: blueviolet;">Sombra
+                                Sobreponer
+                                (hover)</div>
+                            <div class="box sombra-enfocar" style="background-color: blueviolet;" tabindex="0">
+                                Sombra
+                                Enfocar (focus)</div>
 
-                            <br>
-                            <h1>Sombra para Elementos</h1><br>
+                        </div><br>
 
-                            <h2>Descripción:</h2>
-                            <p>La utilidad de sombra para elementos te permite añadir sombras a tus elementos HTML de
-                                manera sencilla, agregando profundidad y realce visual a tu diseño.</p>
+                        <h1>Tipos de Margins</h1><br>
 
-                            <br>
-                            <h2>Usos:</h2>
-                            <p>- Destacar elementos importantes en tu página web.</p>
-                            <p>- Agregar profundidad y realismo a los elementos para mejorar la apariencia general del
-                                diseño.</p>
+                        <div class="section">
+                            <h2>Descripción</h2><br>
+                            <p>Las clases de margen predefinidas proporcionan una forma rápida y fácil de
+                                agregar
+                                márgenes a elementos en una página web.</p><br>
+                        </div>
 
-                                <br><h2>Cómo se usa:</h2>
-                                <p>- Importa la utilidad de sombras en tu archivo HTML.</p>
-                                <p>- Utiliza las clases de sombra proporcionadas para aplicar diferentes estilos de sombra a los elementos HTML.</p>
+                        <div class="section">
+                            <h2>Usos</h2><br>
+                            <p>Las clases de margen se utilizan para crear espacio entre elementos en una página
+                                web, lo
+                                que puede mejorar el diseño y la legibilidad.</p><br>
+                        </div>
 
-                                <br><h2>Ejemplos:</h2><br>
-                                
-                                <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="box sombra-basica"&gt;Sombra Básica&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-interior"&gt;Sombra Interior&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-redondeada"&gt;Sombra Redondeada&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-contorno"&gt;Sombra Contorno&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-sobreponer"&gt;Sombra Sobreponer&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-enfocar"&gt;Sombra Enfocar&lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                  </div><br><br>
-                                  
-
-                                <style>
-                                    /* Estilos para el contenedor principal */
-                                    .Muestras-sombras {
-                                      display: flex;
-                                      flex-wrap: wrap;
-                                      justify-content: space-between; /* Cambiar si deseas otro tipo de justificación */
-                                    }
-                                    
-                                    /* Estilos para los contenedores hijos */
-                                    .box {
-                                      width: calc(33.33% - 10px); /* Esto asegura que haya espacio entre los contenedores */
-                                      margin-bottom: 20px; /* Espacio entre los contenedores */
-                                      background-color: #f0f0f0;
-                                      border: 1px solid #ccc;
-                                      padding: 20px;
-                                      box-sizing: border-box;
-                                    }
-                                  </style>
-
-                                <H2 style="margin-bottom: 5%;" style="align-items: center;">Tipos de sombras</H2>
-
-                                <div class="Muestras-sombras">
-                                    
-
-                                    <div class="box sombra-basica" style="background-color: blueviolet;">Sombra Básica</div>
-                                    <div class="box sombra-interior" style="background-color: blueviolet;">Sombra Interior</div>
-                                    <div class="box sombra-redondeada" style="background-color: blueviolet;">Sombra Redondeada</div>
-                                    <div class="box sombra-contorno" style="background-color: blueviolet;">Sombra Contorno</div>
-                                    <div class="box sombra-sobreponer" style="background-color: blueviolet;">Sombra Sobreponer (hover)</div>
-                                    <div class="box sombra-enfocar" style="background-color: blueviolet;" tabindex="0">Sombra Enfocar (focus)</div>
-
-                                </div><br>
-
-
-                                <h1>Tipos de Margins</h1><br>
-  
-                                <div class="section">
-                                      <h2>Descripción</h2><br>
-                                      <p>Las clases de margen predefinidas proporcionan una forma rápida y fácil de agregar márgenes a elementos en una página web.</p><br>
+                        <div class="section">
+                            <h2>Cómo se usa</h2><br>
+                            <p>Simplemente agrega una de las siguientes clases a cualquier elemento HTML para
+                                aplicar el
+                                margen deseado:</p><br>
+                            <div id="code" class="plta-uno-backgraund-A text-center">
+                                <p>
+                                    <code>
+                                        &lt;div class="margin-pequeno"&gt;...&lt;/div&gt;<br>
+                                        &lt;div class="margin-mediano"&gt;...&lt;/div&gt;<br>
+                                        &lt;div class="margin-grande"&gt;...&lt;/div&gt;<br>
+                                        &lt;div class="margin-Xgrande"&gt;...&lt;/div&gt;
+                                    </code>
+                                </p>
+                                <button class="copy-btn" onclick="copyCodeToClipboard()"><i
+                                        class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito!
+                                    Se ha
+                                    copiado Correctamente.
+                                    <span class="close" onclick="closeAlert()">×</span>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="section">
-                                     <h2>Usos</h2><br>
-                                     <p>Las clases de margen se utilizan para crear espacio entre elementos en una página web, lo que puede mejorar el diseño y la legibilidad.</p><br>
-                                </div>
-
-                                <div class="section">
-                                     <h2>Cómo se usa</h2><br>
-                                     <p>Simplemente agrega una de las siguientes clases a cualquier elemento HTML para aplicar el margen deseado:</p><br>
-                                     <div id="code" class="plta-uno-backgraund-A text-center">
-                                            <p>
-                                              <code>
-                                                  &lt;div class="margin-pequeno"&gt;...&lt;/div&gt;<br>
-                                                  &lt;div class="margin-mediano"&gt;...&lt;/div&gt;<br>
-                                                  &lt;div class="margin-grande"&gt;...&lt;/div&gt;<br>
-                                                  &lt;div class="margin-Xgrande"&gt;...&lt;/div&gt;
-                                               </code>
-                                            </p>
-                                            <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                           <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Correctamente.
-                                                 <span class="close" onclick="closeAlert()">×</span>
-                                           </div>
-                                      </div>
-                                  </div>
-
-                                   <div class="section">
-                                       <h2>Ejemplos</h2><br>
-                                       <div class="code">
-                                            <pre>
+                        <div class="section">
+                            <h2>Ejemplos</h2><br>
+                            <div class="code">
+                                <pre>
                                                 <code>
                                                   &lt;div class="margin-pequeno"&gt;Elemento con margen pequeño&lt;/div&gt;
                                                   &lt;div class="margin-mediano"&gt;Elemento con margen mediano&lt;/div&gt;
@@ -998,16 +1157,102 @@
                                                   &lt;div class="margin-Xgrande"&gt;Elemento con margen Xgrande&lt;/div&gt;
                                                 </code>
                                             </pre>
-                                        </div>
-                                    </div>
-
+                            </div>
                         </div>
+
+                    </div>
 
                 </div>
 
-                
-
             </div>
+            <!-- ******************************************Nabvar**************************************** -->
+
+            <div class="Documentacion-seccion">
+                <h1 id="nabvar">Nabvar</h1>
+
+                <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+                <div class="Documentacion-container">
+                    <h2 id="Navbarfijo" class="Font_Tema">Navbar Fijo</h2>
+
+                    <div class="Documentacion-info-container-content">
+                        <br><strong>Descripcion</strong><br>
+                        <p>
+                            el navbar fijo se utiliza para proporcionar una navegación constante y accesible a
+                            los
+                            usuarios mientras exploran el contenido del sitio. Su funcionamiento es
+                            esencialmente
+                            mantenerse en la parte superior de la página, incluso cuando el usuario desplaza el
+                            contenido hacia abajo.
+                        </p><br>
+                        <strong>Como se usa:</strong><br>
+                        <img class="Img_code" src="DripCSS/IMG/Code/carbonNV2.png" alt="" width="450" height="350"><br>
+                        <nav class="nav2">
+                            <a href="#" class="logo">Drip_CSS</a>
+                            <ul>
+                                <li><a href="#inicio">Inicio</a></li>
+                                <li><a href="#acerca">Acerca de</a></li>
+                                <li><a href="#servicios">Servicios</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </nav><br>
+                        <Strong>Ejemplos</Strong><br>
+                        <p>- Sitios de una sola página</p>
+                        <p>- Menu de navegacion de sitio web</p>
+                        <br>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------------------------ -->
+                <div class="Documentacion-container">
+                    <h2 id="NavbarDesplegable" class="Font_Tema">Navbar Desplegable</h2>
+
+                    <div class="Documentacion-info-container-content">
+                        <br><strong>Descripcion</strong><br>
+                        <p>
+                            El navbar desplegable es una característica común en proyectos web que permite
+                            conservar
+                            el
+                            espacio en la pantalla al ocultar las opciones de navegación cuando no se están
+                            utilizando.
+                            Su funcionamiento se basa en la interacción del usuario, activando y desactivando el
+                            menú
+                            desplegable según sea necesario.
+                        </p><br>
+                        <strong>Como se usa:</strong><br>
+                        <img class="Img_code" src="DripCSS/IMG/Code/carbonNV4.png" alt="" width="450" height="350"><br>
+                        <nav class="nav4">
+                            <header class="header">
+                                <div class="logo">
+                                    <a href="#" class="logo">Drip_CSS</a>
+                                </div>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Inico</a></li>
+                                        <li>
+                                            <a href="#">Localizacion +</a>
+                                            <ul class="drip">
+                                                <li><a href="#">San Miguel</a></li>
+                                                <li><a href="#">Corinto city</a></li>
+                                                <li><a href="#">Chinameca</a></li>
+                                                <li><a href="#">Nueva guadalupe</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Acerca de</a></li>
+                                        <li><a href="#">Servicios</a></li>
+                                        <li><a href="#">Contacto</a></li>
+                                    </ul>
+                                </nav>
+                        </nav>
+                        </nav>
+                        <strong>Ejemplos</strong><br>
+                        <p>- Menú de navegación contextual</p>
+                        <p>- Navegación con muchas opciones</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- ****************************************Forms****************************************** -->
+
             <div class="Documentacion-seccion">
                 <h1 id="Forms">Forms</h1>
 
@@ -1225,6 +1470,7 @@
                 </div>
 
             </div>
+            <!-- *****************************************Buttons***************************************** -->
 
             <div class="Documentacion-seccion">
                 <h1 id="Buttons" class="Titulo_special">Buttons</h1>
@@ -1268,17 +1514,52 @@
                             </div>
 
                     </div>
-                </div>
 
+                    <h2 id="ButtonTypes" class="Font_Tema">Codigo fuente</h2>
+
+                    <div class="Documentacion-info-container-content">
+
+                        <div class="plta-uno-backgraund-A">
+                            <code>
+                                <p class="btn-copy">&gt;button
+                                    class="butontest_boxshadow_Th"&gt;test3&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy">&gt;button
+                                    class="butontest_boxshadow_Th2"&gt;test4&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy">&gt;button
+                                    class="butontest_boxshadow_Th3"&gt;test5&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy">&gt;button
+                                    class="butontest_boxshadow_Th4"&gt;test6&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy">&gt;button class="button-3"&gt;test7&lt;/button&gt;</p>
+                                <p class="btn-copy">&gt;button class="button_Squear_Th2"&gt;test8&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy">&gt;button class="Tap_Button_Th3"&gt;test9&lt;/button&gt;
+                                </p>
+                                <p class="btn-copy">&gt;button
+                                    class="butontest_round_Th2"&gt;test32&lt;/button&gt;</p>
+                            </code>
+                            <button class="copy-btn"
+                                onclick="copyCodeToClipboard('btn-copy','success-alert-btn-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-btn-copy" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito!
+                                Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="Documentacion-container">
                     <h2 id="ButtonUtilities" class="Font_Tema">Buttons Utylities</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Las utilidades relacionada con los botones comiensan con la palabra <p
-                                class="coment_green">
-                                set_ </p> por ejemplo para aumentar el tamano de un boton se puede utilizar <p
-                                class="coment_green"> set_btn_grande</p>
+                            Las utilidades relacionada con los botones comiensan con la palabra <p class="coment_green">
+                                set_ </p> por ejemplo para aumentar el tamano de un boton se puede utilizar
+                            <p class="coment_green"> set_btn_grande</p>
 
                         </p>
                         <div class="Display-flex" style="justify-items: center;">
@@ -1290,6 +1571,7 @@
                 </div>
 
             </div>
+            <!-- ******************************************Alerts**************************************** -->
 
             <div class="Documentacion-seccion">
                 <h1 id="Alerts" class="Titulo_special">Alerts</h1>
@@ -1297,116 +1579,144 @@
                 <div class="Documentacion-container">
                     <h2 id="AlertTypes" class="Font_Tema">Alert Types</h2>
 
-                            <div class="Documentacion-info-container-content">
-                        
-                                  <h1>Documentación de Alertas</h1><br>
-                                  
-                                  <h2>Descripción</h2>
-                                  <p>Las alertas Bootstrap son componentes de interfaz de usuario que se utilizan para mostrar mensajes de información, advertencia, éxito o error al usuario. Estas alertas son altamente personalizables y proporcionan una forma efectiva de comunicarse con los usuarios sobre eventos importantes.</p><br>
+                    <div class="Documentacion-info-container-content">
 
-                                 
-                                  <h2>Usos</h2>
-                                  <p>Las alertas Bootstrap se utilizan para:</p>
-                                  <p>- Informar al usuario sobre el resultado de una acción realizada, como enviar un formulario o procesar una solicitud.</p>
-                                  <p>- Alertar al usuario sobre errores en la entrada de datos o problemas con la aplicación.</p>
-                                  <p>- Proporcionar confirmación visual de que se ha realizado una acción correctamente.</p>
-                                  <p>- Advertir al usuario sobre situaciones importantes que requieren su atención.</p><br>
-                                  
-                                  <h2>Cómo se usa</h2>
-                                  <p>Las alertas Bootstrap se utilizan mediante la incorporación de las clases de alerta en el código HTML. 
-                                  <br>Estas clases incluyen <code>.alert</code>, <code>.alert-success</code>, <code>.alert-error</code>, <code>.alert-warning</code> y <code>.alert-info</code>.</p><br>
-                                  
-                                  <h2>Ejemplos</h2><br>
+                        <h1>Documentación de Alertas</h1><br>
 
-                                  <h3>Alerta de exito</h3><br>
-                                  <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="alert alert-success"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Éxito:&lt;/strong&gt; Tu mensaje ha sido enviado correctamente.<br>
-                                        &lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                  </div><br>
-                                  
-                                  <h3>Alerta de error</h3><br>
-                                  <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="alert alert-error"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Error:&lt;/strong&gt; Por favor, completa todos los campos obligatorios.<br>
-                                        &lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                  </div><br>
-                                  
-                                  <h3>Alerta de advertencia</h3><br>
-                                  <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="alert alert-warning"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Advertencia:&lt;/strong&gt; Tu sesión está a punto de expirar.<br>
-                                        &lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                  </div><br>
-                                  
-                                  <h3>Alerta de informacion</h3><br>
-                                  <div id="code" class="plta-uno-backgraund-A text-center">
-                                    <p>
-                                      <code>
-                                        &lt;div class="alert alert-info"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Información:&lt;/strong&gt; Recuerda guardar tus cambios antes de salir.<br>
-                                        &lt;/div&gt;
-                                      </code>
-                                    </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
-                                      <span class="close" onclick="closeAlert()">×</span>
-                                    </div>
-                                  </div><br>
-                                  
-                                  
-                                  <h2>Ejemplos</h2><br>
-                                  
-                                  <h3>Alerta de éxito:</h3>
-                                  <div class="alert alert-success">
-                                    <strong>Éxito:</strong> Tu mensaje ha sido enviado correctamente.
-                                    <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
-                                  </div><br>
-                                  
-                                  <h3>Alerta de error:</h3>
-                                  <div class="alert alert-error">
-                                    <strong>Error:</strong> Por favor, completa todos los campos obligatorios.
-                                    <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
-                                  </div><br>
-                                  
-                                  <h3>Alerta de advertencia:</h3>
-                                  <div class="alert alert-warning">
-                                    <strong>Advertencia:</strong> Tu sesión está a punto de expirar.
-                                    <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
-                                  </div><br>
-                                  
-                                  <h3>Alerta de información:</h3>
-                                  <div class="alert alert-info">
-                                    <strong>Información:</strong> Recuerda guardar tus cambios antes de salir.
-                                    <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
-                                  </div><br>
+                        <h2>Descripción</h2>
+                        <p>Las alertas Bootstrap son componentes de interfaz de usuario que se utilizan para
+                            mostrar
+                            mensajes de información, advertencia, éxito o error al usuario. Estas alertas
+                            son
+                            altamente
+                            personalizables y proporcionan una forma efectiva de comunicarse con los
+                            usuarios sobre
+                            eventos importantes.</p><br>
+
+                        <h2>Usos</h2>
+                        <p>Las alertas Bootstrap se utilizan para:</p>
+                        <p>- Informar al usuario sobre el resultado de una acción realizada, como enviar un
+                            formulario o
+                            procesar una solicitud.</p>
+                        <p>- Alertar al usuario sobre errores en la entrada de datos o problemas con la
+                            aplicación.
+                        </p>
+                        <p>- Proporcionar confirmación visual de que se ha realizado una acción
+                            correctamente.</p>
+                        <p>- Advertir al usuario sobre situaciones importantes que requieren su atención.
+                        </p><br>
+
+                        <h2>Cómo se usa</h2>
+                        <p>Las alertas Bootstrap se utilizan mediante la incorporación de las clases de
+                            alerta en el
+                            código HTML.
+                            <br>Estas clases incluyen <code>.alert</code>, <code>.alert-success</code>,
+                            <code>.alert-error</code>, <code>.alert-warning</code> y
+                            <code>.alert-info</code>.</p>
+                        <br>
+
+                        <h2>Ejemplos</h2><br>
+
+                        <h3>Alerta de exito</h3><br>
+                        <div id="code" class="plta-uno-backgraund-A text-center">
+                            <p>
+                                <code>
+                                    <p class="alert1">&lt;div class="alert alert-success"&gt;</p>
+                                    <p class="alert1">&nbsp;&nbsp;&lt;strong&gt;Éxito:&lt;/strong&gt; Tu
+                                        mensaje ha
+                                        sido
+                                        enviado correctamente.</p>
+                                    <p class="alert1">&lt;/div&gt;</p>
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('alert1','success-alert-alert1')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-alert1" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
                             </div>
-                        </div>
+                        </div><br>
+
+                        <h3>Alerta de error</h3><br>
+                        <div id="code" class="plta-uno-backgraund-A text-center">
+                            <p>
+                                <code>
+                                    <p class="alert2">&lt;div class="alert alert-error"&gt;</p><br>
+                                    <p class="alert2">&nbsp;&nbsp;&lt;strong&gt;Error:&lt;/strong&gt; Por
+                                        favor,
+                                        completa todos los campos obligatorios.</p>
+                                    <p class="alert2">&lt;/div&gt;</p>
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('alert2','success-alert-alert2')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-alert2" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div><br>
+
+                        <h3>Alerta de advertencia</h3><br>
+                        <div id="code" class="plta-uno-backgraund-A text-center">
+                            <p>
+                                <code>
+                                    <p class="alert3">&lt;div class="alert alert-warning"&gt;<br></p>
+                                    <p class="alert3">&nbsp;&nbsp;&lt;strong&gt;Advertencia:&lt;/strong&gt;
+                                        Tu
+                                        sesión
+                                        está a punto de expirar.</p>
+                                    <p class="alert3">&lt;/div&gt;</p>
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('alert3','success-alert-alert3')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-alert3" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div><br>
+
+                        <h3>Alerta de informacion</h3><br>
+                        <div id="code" class="plta-uno-backgraund-A text-center">
+                            <p>
+                                <code>
+                                    <p class="alert4">&lt;div class="alert alert-info"&gt;</p>
+                                    <p class="alert4">&nbsp;&nbsp;&lt;strong&gt;Información:&lt;/strong&gt;
+                                        Recuerda
+                                        guardar tus cambios antes de salir.</p>
+                                    <p class="alert4">&lt;/div&gt;</p>
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('alert4','success-alert-alert4')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-alert4" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div><br>
+
+                        <h2>Ejemplos</h2><br>
+
+                        <h3>Alerta de éxito:</h3>
+                        <div class="alert alert-success">
+                            <strong>Éxito:</strong> Tu mensaje ha sido enviado correctamente.
+                            <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                        </div><br>
+
+                        <h3>Alerta de error:</h3>
+                        <div class="alert alert-error">
+                            <strong>Error:</strong> Por favor, completa todos los campos obligatorios.
+                            <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                        </div><br>
+
                     </div>
+                </div>
+            </div>
+            <!-- ********************************************Badges************************************** -->
 
             <div class="Documentacion-seccion">
                 <h1 id="Alerts">Badges</h1>
@@ -1416,14 +1726,18 @@
 
                     <div class="Documentacion-info-container-content">
                         <p>
-                            Los badges son elementos gráficos compactos que sirven para presentar información
+                            Los badges son elementos gráficos compactos que sirven para presentar
+                            información
                             adicional
                             o resaltar características específicas en una interfaz de usuario, a menudo como
                             etiquetas o
-                            distintivos. Por otro lado, la clase `button_round` representa el botón predeterminado
+                            distintivos. Por otro lado, la clase `button_round` representa el botón
+                            predeterminado
                             en la
-                            biblioteca, el cual se adapta a una variedad de colores según la paleta establecida,
-                            ofreciendo así una integración visual armoniosa y coherente con el diseño general.<br />
+                            biblioteca, el cual se adapta a una variedad de colores según la paleta
+                            establecida,
+                            ofreciendo así una integración visual armoniosa y coherente con el diseño
+                            general.<br />
                         </p>
                     </div><br>
                     <h2 id="AlertTypes" class="Font_Tema">Badges Style</h2>
@@ -1436,18 +1750,23 @@
                             <br />
                         </p>
                     </div>
+
                     <br>
+
                     <div class="Documentacion-info-container-content color-text text-justify ">
                         <h3 class="my-text-4">Codigo Fuente</h3><br>
                         <p class="badges"><code>&lt;span class="badge1"&gt;</code></p>
                         <p class="badges"><code>&lt;span class="badge"&gt;</code></p>
                         <p class="badges"><code>&lt;span class="badge3"&gt;</code></p>
-                        <br><a href="#" class="copy-btn" onclick="copyCodeToClipboard('badges', 'success-alert-badges')"><i class="fa-regular fa-copy"></i></a><br>
+                        <br><a href="#" class="copy-btn"
+                            onclick="copyCodeToClipboard('badges', 'success-alert-badges')"><i
+                                class="fa-regular fa-copy"></i></a><br>
                         <div id="success-alert-badges" class="alert alert-success slide-in-right ocultar">
                             ¡Éxito! Se ha copiado Corectamente.
                             <span class="close" onclick="closeAlert()">×</span><br>
                         </div>
                     </div>
+
                     <h2 id="AlertTypes" class="Font_Tema">Badges Utylities</h2>
 
                     <div class="Documentacion-info-container-content">
@@ -1462,6 +1781,8 @@
                 </div>
             </div>
             <br>
+            <!-- *******************************************Animaciones*************************************** -->
+
             <div class="Documentacion-seccion">
                 <h1 id="Animations" class="Titulo_special">Animaciones</h1>
 
@@ -1554,7 +1875,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente
                                     cumque
                                     possimus, ab eum nemo animi
-                                    aspernatur doloremque odio inventore nihil corrupti cum porro est similique
+                                    aspernatur doloremque odio inventore nihil corrupti cum porro est
+                                    similique
                                     ad
                                     blanditiis amet ipsa.</p>
                                 <div class="link"><a href="#">Detalles</a></div>
@@ -1568,8 +1890,46 @@
             <!-- <div class="ItemList">ItemList</div>-->
         </div>
         <!------------------------------------------------------------------------------------------------->
+        
+        
+    </div>
+        <footer>
+            <div class="cell-footer ">
+                <footer class="pie-pagina plta-dos-backgraund-B">
+                  
+                  <div class="grupo-1">
+                    <div class="Fother-box">
+                      <figure>
+                        <a href="#">
+                          <img src="/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png" alt="Logo de drip.css">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="Fother-box">
+                      <h2>Universidad de el Salvador</h2>
+                      <p>Departamento de Ingenieria y Arquitectura</p>
+                      <p>Ingenieria de Sistemas Informaticos</p>
+                    </div>
+                    <div class="Fother-box">
+                      <h2>SIGUENOSnbhvn</h2>
+                      <div class="red-social">
+                        <a id="fb" href="#" class="fa fa-facebook fb"></a>
+                        <a id="ig" href="#" class="fa fa-instagram"></a>
+                        <a id="tw" href="#" class="fa fa-twitter"></a>
+                        <a id="yt" href="https://youtu.be/dQw4w9WgXcQ" class="fa fa-youtube"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grupo-2">
+                    <small>&copy; 2024 <b>Drip.css</b> - Todos los Derechos Reservados.</small>
+                  </div>
+                </footer>
+              </div>
+        
+          </div>
+        </footer>
+
 </body>
-<footer></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

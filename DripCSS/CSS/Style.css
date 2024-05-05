@@ -2408,6 +2408,7 @@
 /*tamanos de fuentes*/
 /*Heigths*/
 /*Width*/
+/*tamanos de margin*/
 /*tamanos de paddings*/
 /*tamanos de Buttons*/
 /*Border radius*/
@@ -3064,7 +3065,7 @@
 .my-text-4 {
   font-size: 18px;
   font-family: "Lato, sans-serif";
-  color: rgb(253, 253, 253);
+  color: black;
   font-weight: normal;
 }
 
@@ -3373,6 +3374,22 @@
     display: none;
   }
 }
+.margin-pequeno {
+  margin: 10px;
+}
+
+.margin-mediano {
+  margin: 15px;
+}
+
+.margin-grande {
+  margin: 25px;
+}
+
+.margin-Xgrande {
+  margin: 35px;
+}
+
 .container-img_fluid_set {
   height: 80vh;
   width: 100%;
@@ -3515,6 +3532,8 @@
   padding: 10px;
   border: 2px solid #ffffff;
   border-radius: 4px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .Documentacion-info-container-content h3 {
   font-family: "Lato";
@@ -3549,6 +3568,14 @@
 
 .justfy_center {
   justify-content: center;
+}
+
+.justfy_Between {
+  justify-content: space-between;
+}
+
+.justfy_Evenly {
+  justify-content: space-evenly;
 }
 
 .align_center {
@@ -4781,14 +4808,13 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  max-width: 600px;
-  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 5px 1px white;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
   color: white;
   gap: 8px;
+  width: 70vh;
 }
 @media (max-width: 800px) {
   .form1 {
@@ -4809,8 +4835,6 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  max-width: 600px;
-  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 5px 1px white;
@@ -4841,8 +4865,6 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  max-width: 600px;
-  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
@@ -4922,8 +4944,6 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  max-width: 600px;
-  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   border-radius: 5px;
@@ -4954,13 +4974,10 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  max-width: 600px;
-  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
-  max-width: 600px;
-  width: 90vh;
+  width: 110vh;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4970,7 +4987,6 @@ input[type=radio]:checked:after {
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 0px;
-  color: black;
 }
 @media (max-width: 800px) {
   .form4 {
@@ -5003,6 +5019,7 @@ input[type=radio]:checked:after {
   grid-area: img;
   background-image: url("/DripCSS/IMG/stock_red.jpg");
   height: 100%;
+  width: 100%;
   background-size: cover;
   padding: 0;
   border-radius: 0 4px 4px 0;
@@ -5034,8 +5051,6 @@ input[type=radio]:checked:after {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  max-width: 600px;
-  width: 90%;
   border-radius: 5px;
   padding-bottom: 10px;
   position: relative;
@@ -6269,6 +6284,7 @@ header a {
 .nav2 .header {
   background-color: rgb(255, 0, 0);
   justify-content: space-between;
+  width: auto;
 }
 .nav2 ul li {
   display: inline-block;
@@ -6320,6 +6336,7 @@ header a {
 .nav3 .header {
   background-color: rgb(83, 92, 145);
   justify-content: flex-end;
+  width: auto;
 }
 .nav3 ul li {
   display: inline-block;
@@ -6466,6 +6483,7 @@ header a {
 .nav4 .header {
   background-color: rgb(3, 6, 55);
   justify-content: center;
+  width: auto;
 }
 .nav4 ul li {
   display: inline-block;
@@ -7600,7 +7618,11 @@ header a {
 }
 
 .margin-grande {
-  margin: 20px;
+  margin: 25px;
+}
+
+.margin-Xgrande {
+  margin: 35px;
 }
 
 /*Paleta de colores A*/
@@ -7791,25 +7813,6 @@ body .container-F .footer .footer-col .social-links a:hover {
     width: 100%;
   }
 }
-
-/*MARGIN*/
-.margin-pequeno {
-  margin: 10px;
-}
-
-.margin-mediano {
-  margin: 15px;
-}
-
-.margin-grande {
-  margin: 25px;
-}
-
-.margin-Xgrande{
-  margin: 35px;
-}
-
-
 
 .emoji-cursor {
   cursor: url("/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png"), auto;
