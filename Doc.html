@@ -69,8 +69,8 @@
                         <li><a href="#Grids">Grids</a></li>
                         <li><a href="#Gridarea">Grids area</a></li>
                         <li><a href="#FlexBox">FlexBox</a></li>
-                        <li><a href="#Uilidades">Uilidades</a></li>
-
+                        <li><a href="#Utilidades">Utilidades</a></li>
+                        <li><a href="#Paddings">Paddings</a></li>
                         <br />
                     </ul>
                 </li>
@@ -594,8 +594,10 @@
                 <div class="Documentacion-container">
                     <h2 id="Containers" class="Font_Tema">Containers</h2>
 
+                    <!-- ****************************************CONTAINERS****************************************** -->
                     <div class="Documentacion-info-container-content">
 
+                        
                         <br>
                         <h2>Regular Container</h2><br>
 
@@ -885,10 +887,13 @@
 
                     </div>
 
-                    <h2 id="Uilidades" class="Font_Tema">Uilidades</h2>
+                    <h2 id="Utilidades" class="Font_Tema">Utilidades</h2>
 
                     <div class="Documentacion-info-container-content">
                         <br>
+
+                        <!-- ****************************************TIPOS DE TEXTOS****************************************** -->
+
                         <h1>Tipos de Texto</h1><br>
 
                         <h2>Descripción:</h2>
@@ -1006,6 +1011,8 @@
                             </div>
                         </div><br><br>
 
+                        <!-- ****************************************SOMBRA PARA ELEMENTOS****************************************** -->
+
                         <br>
                         <h1>Sombra para Elementos</h1><br>
 
@@ -1035,6 +1042,8 @@
                         <div id="code" class="plta-uno-backgraund-A text-center">
                             <p>
                                 <code>
+                                    <p class="shadow-copy">&lt;&gt;
+                                        &lt;&gt;</p>
                                     <p class="shadow-copy">&lt;div class="box sombra-basica"&gt;Sombra
                                         Básica&lt;/div&gt;</p>
                                     <p class="shadow-copy">&lt;div class="box sombra-interior"&gt;Sombra
@@ -1129,6 +1138,7 @@
                             <div id="code" class="plta-uno-backgraund-A text-center">
                                 <p>
                                     <code>
+                                        <p>&lt;&gt;...&lt;&gt;</p>
                                         <p class="margin-copy">&lt;div class="margin-pequeno"&gt;...&lt;/div&gt;</p>
                                         <p class="margin-copy">&lt;div class="margin-mediano"&gt;...&lt;/div&gt;</p>
                                         <p class="margin-copy">&lt;div class="margin-grande"&gt;...&lt;/div&gt;</p>
@@ -1148,12 +1158,124 @@
 
                         <div class="section">
                             <h2>Ejemplos</h2><br>
-                            <div class="margin-pequeno">Elemento con margen pequeño</div>
-                            <div class="margin-mediano">Elemento con margen mediano</div>
-                            <div class="margin-grande">Elemento con margen grande</div>
-                            <div class="margin-Xgrande">Elemento con margen Xgrande</div>
-                        </div>
+                            <div class="margin-pequeno" style="border: 2px solid black;">Elemento con margen pequeño</div>
+                            <div class="margin-mediano" style="border: 2px solid black;">Elemento con margen mediano</div>
+                            <div class="margin-grande" style="border: 2px solid black;">Elemento con margen grande</div>
+                            <div class="margin-Xgrande" style="border: 2px solid black;">Elemento con margen Xgrande</div>
+                        </div><br>
 
+                        <!-- ****************************************COLORES****************************************** -->
+
+                        <h1>Tipos de Colores</h1><br>
+
+                        <h2>Descripción</h2><br>
+                        <p>Las utilidades de color proporcionan clases que permiten aplicar rápidamente colores de fondo y de texto a elementos HTML.</p>
+
+                        <br><h2>Usos</h2><br>
+                        <p>Las clases de utilidades de color se pueden aplicar a cualquier elemento HTML para cambiar su color de fondo o de texto.</p>
+
+                        <br><h2>Cómo se usa</h2><br>
+                        <p>Simplemente agrega una o más clases de utilidades de color a un elemento HTML según el efecto deseado.</p><br>
+
+                        <div id="code" class="plta-uno-backgraund-A text-center">
+                            <p>
+                              <code>
+                                &lt;div class="container"&gt;<br>
+                                &nbsp;&nbsp;&lt;div class="box bg-primario-A text-primario-A"&gt;Fondo primario A - Texto primario A&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&lt;div class="box bg-secundario-A text-secundario-A"&gt;Fondo secundario A - Texto secundario A&lt;/div&gt;<br>
+                                &lt;/div&gt;
+                              </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Correctamente.
+                              <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                          </div>
+                        
+                        <br><h2>Ejemplos</h2><br>
+
+                        <br><h2>Paleta de Colores A</h2><br>
+                        
+                        <div class="bg-primario-A text-primario-A"  style="width: 350px; height: 120px;">Fondo primario A - Texto primario A</div>
+                        <div class="bg-secundario-A text-secundario-A" style="width: 350px; height: 120px;">Fondo secundario A - Texto secundario A</div>
+                        
+
+                        <br><h2>Paleta de Colores B</h2><br>
+                        
+                        <div class="bg-primario-B text-primario-B" style="width: 350px; height: 120px;">Fondo primario B - Texto primario B</div>
+                        <div class="bg-secundario-B text-secundario-B" style="width: 350px; height: 120px;">Fondo secundario B - Texto secundario B</div>
+                        
+
+                        <br><h2>Paleta de Colores C</h2><br>
+                        
+                        <div class="bg-primario-C !important text-primario-C" style="width: 350px; height: 120px;">Fondo primario C - Texto primario C</div>
+                        <div class="bg-secundario-C text-secundario-C" style="width: 350px; height: 120px;">Fondo secundario C - Texto secundario C</div>
+                        
+
+                        <br><h2>Paleta de Colores D</h2><br>
+                        
+                        <div class="bg-primario-D text-primario-D" style="width: 350px; height: 120px;">Fondo primario D - Texto primario D</div>
+                        <div class="bg-secundario-D text-secundario-D" style="width: 350px; height: 120px;">Fondo secundario D - Texto secundario D</div>
+                        
+
+                        <br><h2>Colores para Texto</h2><br>
+                        
+                        <div class="font-color-base" style="width: 350px; height: 120px;">Texto base</div>
+                        <div class="color-form-primario" style="width: 350px; height: 120px;">Texto color primario</div>
+                        <div class="color-form-secundario" style="width: 350px; height: 120px;">Texto color secundario</div>
+                        
+
+
+
+                    </div>
+
+                    <!-- ****************************************PADDINGS****************************************** -->
+
+                    <div class="Documentacion-container">
+                        <h2 id="Paddings" class="Font_Tema">Paddings</h2>
+    
+                        <div class="Documentacion-info-container-content"> 
+
+                            <h1>Tipos de Paddings</h1><br>
+    
+                            <br><h2>Descripción</h2><br>
+                            <p>Las utilidades de paddings proporcionan clases predefinidas para agregar relleno a los elementos de tu sitio web. Estas clases te permiten aplicar rápidamente diferentes tamaños de padding a tus elementos sin necesidad de escribir CSS personalizado.</p>
+    
+                            <br><h2>Usos</h2><br>
+                            <p>Puedes utilizar las clases de paddings para agregar espacios uniformes alrededor del contenido de tus elementos HTML. Esto es útil para mejorar la legibilidad y la estética de tu diseño.</p>
+    
+                            <br><h2>Cómo se usa</h2><br>
+                            <p>Simplemente agrega una de las clases de paddings a cualquier elemento HTML que desees. Cada clase tiene un nombre que indica el tamaño del padding que se aplicará. Por ejemplo:</p>
+    
+                            <br><div id="code" class="plta-uno-backgraund-A text-center">
+                                <p>
+                                  <code>
+                                    &lt;div class="padding-Xpequeno"&gt;Contenido&lt;/div&gt;<br>
+                                    &lt;div class="padding-pequeno"&gt;Contenido&lt;/div&gt;<br>
+                                    &lt;div class="padding-mediano"&gt;Contenido&lt;/div&gt;<br>
+                                    &lt;div class="padding-grande"&gt;Contenido&lt;/div&gt;<br>
+                                    &lt;div class="padding-Xgrande"&gt;Contenido&lt;/div&gt;
+                                  </code>
+                                </p>
+                                <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado correctamente.
+                                  <span class="close" onclick="closeAlert()">×</span>
+                                </div>
+                              </div><br>
+                              
+                              
+    
+                            <h2>Ejemplos</h2><br>
+                            <div class="padding-Xpequeno padding-example" style="border: 2px solid black; background-color: #b197fc;">Padding Xpequeno</div>
+                            <div class="padding-pequeno padding-example" style="border: 2px solid black; background-color: #b197fc;">Padding Pequeno</div>
+                            <div class="padding-mediano padding-example" style="border: 2px solid black; background-color: #b197fc;">Padding Mediano</div>
+                            <div class="padding-grande padding-example" style="border: 2px solid black; background-color: #b197fc;">Padding Grande</div>
+                            <div class="padding-Xgrande padding-example" style="border: 2px solid black; background-color: #b197fc;">Padding Xgrande</div>
+                        
+                        </div>
+                    
+                    
+                    
                     </div>
 
                 </div>
@@ -1547,7 +1669,7 @@
                     </div>
                 </div>
                 <div class="Documentacion-container">
-                    <h2 id="ButtonUtilities" class="Font_Tema">Buttons Utylities</h2>
+                    <h2 id="ButtonUtilities" class="Font_Tema">Buttons Utilities</h2>
 
                     <div class="Documentacion-info-container-content">
                         <p>
@@ -1704,6 +1826,18 @@
                         <h3>Alerta de error:</h3>
                         <div class="alert alert-error">
                             <strong>Error:</strong> Por favor, completa todos los campos obligatorios.
+                            <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                        </div><br>
+
+                        <h3>Alerta de Advertencia:</h3>
+                        <div class="alert alert-error">
+                            <strong>Advertencia:</strong> Tu sesión está a punto de expirar.
+                            <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                        </div><br>
+
+                        <h3>Alerta de Información:</h3>
+                        <div class="alert alert-error">
+                            <strong>Información:</strong> Recuerda guardar tus cambios antes de salir.
                             <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
                         </div><br>
 
