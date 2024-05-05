@@ -1,11 +1,18 @@
 @import 'Variables';
 
-.welcome
-{
+.welcome {
     border: rgb(133, 133, 133) solid 1px;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 5%;
-    border-radius: 12px  ;
-    box-shadow: 0px 0px 4px 4px $color-secundario; 
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 4px $color-secundario;
+}
+
+.div_full_md {
+    width: 90%;
+    height: 40vh;
+    margin: 4% auto;
+    padding: 5% 8%;
+    justify-self: center;
 }

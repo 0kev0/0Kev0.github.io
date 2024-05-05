@@ -96,10 +96,47 @@ $FontPack1: ('Titulo': 'Lato', 'Tema': 'Raleway','Texto': 'Source Sans Pro');
 $FontPack2: ('Titulo': 'Playfair Display','Tema': 'Merriweather',   'Texto': 'Oswald');
 $FontPack4: ('Titulo': 'Roboto','Tema': 'Montserrat','Texto': 'Open Sans');
 
+.txt_colorDsecond
+{
+        color: $color-secundarioD;
+}
+
+.txt_colorWhite
+{
+        color: white;
+}
+
+.txt_colorPrimaryD
+{
+        color: $color-primario;
+}
+
+
+
+.txt_colorWhite
+{
+        color: white;
+}
+
+.txt_bold
+{
+    font-weight: bold;
+}
+
 .Inicial_Resaltada_h1
 {
     &::first-letter {
-        font-size: 130%;
+        font-size: 150%;
+        font-style: italic;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+}
+
+.Inicial_Resaltada_h2
+{
+    &::first-letter {
+        font-size: 150%;
         font-style: italic;
         font-weight: 500;
         margin-right: 10px;
@@ -224,6 +261,24 @@ $FontPack4: ('Titulo': 'Roboto','Tema': 'Montserrat','Texto': 'Open Sans');
 }
 
 .contenido-article {
+    small
+    {
+            font-size: map-get($map: $FontSize, $key: "mediano");
+    font-weight: 200;
+    font-family: map-get($map: $FontPack1, $key: Texto);
+    text-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    text-align: center;
+
+    &::first-letter {
+        font-style: italic;
+        font-size: 22px;
+    }
+
+    }
+
     font-size: map-get($map: $FontSize, $key: "mediano");
     font-weight: 200;
     font-family: map-get($map: $FontPack1, $key: Titulo);

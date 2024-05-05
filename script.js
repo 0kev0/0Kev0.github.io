@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Intervalo para avanzar automáticamente cada 3 segundos
-  setInterval(autoAdvance, 3000);
+  setInterval(autoAdvance, 2000);
 });
 
 
@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Intervalo para avanzar automáticamente cada 3 segundos
-  setInterval(autoAdvance, 3000);
+  setInterval(autoAdvance, 2000);
 });
 
 
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Actualizar el carrusel para mostrar el slide actual
   function updateCarousel() {
-    carouselInner.style.transform = `translateX(-${slideIndex *10}%)`;
+    carouselInner.style.transform = `translateX(-${slideIndex *9}%)`;
   }
 
   // Eventos de clic para los botones de navegación
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Intervalo para avanzar automáticamente cada 3 segundos
-  setInterval(autoAdvance, 3000);
+  setInterval(autoAdvance, 2000);
 });
 
 
@@ -284,7 +284,6 @@ document.addEventListener("DOMContentLoaded", function() {
     tempInput.value = code;
     document.body.appendChild(tempInput);
     tempInput.select();
-    document.execCommand("copy");
     document.body.removeChild(tempInput);
 
     var successAlert = document.getElementById("success-alert");
