@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="DripCSS/CSS/Style.css" />
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-html.min.js"></script>
     <title>Documentacion</title>
 </head>
 
@@ -179,10 +182,39 @@
                 <div class="Documentacion-container">
                     <h2 id="Glosario" class="Font_Tema">Glosarios</h2>
 
-                    <div class="Documentacion-info-container-content">
-                        <p>
-                            REDACTAR
-                        </p>
+                    <div class="Documentacion-info-container-content GRID-col-2 GRID-row-1 pa1">
+                        <div>
+                            <p>Font-family = fnt-famly</p>
+                            <p>Cursor = cursor</p>
+                            <p>Padding = pd</p>
+                            <p>Margin = mg</p>
+                            <p>Display = disply</p>
+                            <p>Justify = justf</p>
+                            <p>Align = alig</p>
+                            <p>Text-decoration = txt-decor</p>
+                            <p>Display-direction = disply_direct</p>
+                            <p>Font-weight = fnt_weight</p>
+                            <p>BORDER = brd</p>
+                            <p>Radius = rad</p>
+                            <p>Gap = gap</p>
+                            <p>Z-index = z_indx</p>
+                        </div>    
+                        <div>
+                            <p>Gradient-lineael = grd-lineal</p>
+                            <p>Height = height</p>
+                            <p>Width = width</p>
+                            <p>Max-width = max - width</p>
+                            <p>Shadow = shadw</p>
+                            <p>Box = box</p>
+                            <p>Flx-wrp = flx-wrp</p>
+                            <p>Font-style = fnt-styl</p>
+                            <p>Text-overflow = txt-overflow</p>
+                            <p>Hover = hovr</p>
+                            <p>Transition = transit</p>
+                            <p>Text-shadow = txt-shadw</p>
+                            <p>Self-align = self-align</p>
+                            <p>Object-fit = obj-fit</p>
+                        </div>
                     </div>
                 </div>
 
@@ -206,13 +238,34 @@
                             cómo combinar estos paquetes de fuentes para maximizar su impacto visual y funcionalidad en
                             diversos proyectos de diseño.
                         </p>
-                        <img class="Img_code" src="DripCSS/IMG/Code/fonts pack.png" alt=""><br>
+                        
                         <p class="coment_green">$FontPack1: ('Titulo': Lato, 'Tema': Raleway, 'Texto': Source
                             Sans Pro);
                         </p>
                         <h4 class="Titulo1">Fuente para titulos pack1</h4>
                         <h4 class="Tema1">Fuente para temas pack1</h4>
                         <h4 class="contenido1">Fuente para sub-temas pack1</h4>
+                        <br>
+                        <div class="plta-uno-backgraund-A">
+                            <p class="FontPack1-copy">
+                                <code>&lt;p class="coment_green"&gt;$FontPack1: ('Titulo': Lato, 'Tema': Raleway, 'Texto': Source Sans Pro);&lt;/p&gt;</code>
+                            </p>
+                            <p class="FontPack1-copy">
+                                <code>&lt;h4 class="Titulo1"&gt;Fuente para titulos pack1&lt;/h4&gt;</code>
+                            </p>
+                            <p class="FontPack1-copy">
+                                <code>&lt;h4 class="Tema1"&gt;Fuente para temas pack1&lt;/h4&gt;</code>
+                            </p>
+                            <p class="FontPack1-copy">
+                                <code>&lt;h4 class="contenido1"&gt;Fuente para sub-temas pack1&lt;/h4&gt;</code>
+                            </p>
+                            <button class="copy-btn " onclick="copyCodeToClipboard('FontPack1-copy','success-alert-FontPack1-copy')"><i
+                                class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert-FontPack1-copy" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito! Se ha copiado Corectamente.
+                                    <span class="close" onclick="closeAlert()">×</span><br>
+                                </div>
+                        </div>
                         <br>
                         <p class="coment_green">$FontPack2: ('Titulo': Playfair Display, 'Tema': Merriweather,
                             'Texto':
@@ -223,16 +276,33 @@
                         <h4 class="Tema2">Fuente para temas pack1</h4>
                         <h4 class="contenido2">Fuente para sub-temas pack1</h4>
                         <br>
-                        <p class="coment_green">$FontPack3: ('Titulo': Poppins, 'Tema': Nunito,
-                            'Texto':Quicksand);
-                        </p>
+                        <div class="plta-uno-backgraund-A">
+                            <p class="FontPack2-copy">
+                                <code>&lt;p class="coment_green"&gt;$FontPack2: ('Titulo': Lato, 'Tema': Raleway, 'Texto': Source Sans Pro);&lt;/p&gt;</code>
+                            </p>
+                            <p class="FontPack2-copy">
+                                <code>&lt;h4 class="Titulo1"&gt;Fuente para titulos pack2&lt;/h4&gt;</code>
+                            </p>
+                            <p class="FontPack2-copy">
+                                <code>&lt;h4 class="Tema1"&gt;Fuente para temas pack2&lt;/h4&gt;</code>
+                            </p>
+                            <p class="FontPack2-copy">
+                                <code>&lt;h4 class="contenido1"&gt;Fuente para sub-temas pack2&lt;/h4&gt;</code>
+                            </p>
+                            <button class="copy-btn " onclick="copyCodeToClipboard('FontPack2-copy','success-alert-FontPack2-copy')"><i
+                                class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert-FontPack2-copy" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito! Se ha copiado Corectamente.
+                                    <span class="close" onclick="closeAlert()">×</span><br>
+                                </div>
+                        </div>
 
                         <h4 class="Titulo3">Fuente para titulos pack1</h4>
                         <h4 class="Tema3">Fuente para temas pack1</h4>
                         <h4 class="contenido3">Fuente para sub-temas pack1</h4>
                         <br>
 
-                        <p class="contenido">Fuente para contenidos.</p>
+                        <p class="contenido">Fuente para contenidos.</p><br>
                     </div>
                 </div>
 
@@ -243,14 +313,43 @@
                         <p>
                             la libreria cuenta con estilos predisenados para hacer resaltar tu creatividad.
                         </p><br>
-                        <img class="Img_code" src="DripCSS/IMG/Code/lettergradient..png" alt="codigo fuente">
                         <h1 class="letter-Gradient Titulo1">letra-Gradient </h1>
-
-                        <img class="Img_code" src="DripCSS/IMG/Code/Titulo.png" alt="codigo fuente">
+                        <br>
+                        <div class="plta-uno-backgraund-A">
+                            <p class="gradinet-copy">
+                                <code>&lt;h1 class="letter-Gradient Titulo1"&gt;letra-Gradient &lt;/h1&gt;</code>
+                            </p>
+                            <button class="copy-btn " onclick="copyCodeToClipboard('gradinet-copy','success-alert-gradinet-copy')"><i
+                                class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert-gradinet-copy" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito! Se ha copiado Corectamente.
+                                    <span class="close" onclick="closeAlert()">×</span><br>
+                                </div>
+                        </div><br>
                         <h4 class="titulo">letra-con sombra </h4>
-
-                        <img class="Img_code" src="DripCSS/IMG/Code/texto_sombra.png" alt="codigo fuente">
+                        <div class="plta-uno-backgraund-A">
+                            <p class="shadowTxt-copy">
+                                <code>&lt;h1 class="titulo "&gt;letra-con sombra &lt;/h1&gt;</code>
+                            </p>
+                            <button class="copy-btn " onclick="copyCodeToClipboard('shadowTxt-copy','success-alert-shadowTxt-copy')"><i
+                                class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert-shadowTxt-copy" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito! Se ha copiado Corectamente.
+                                    <span class="close" onclick="closeAlert()">×</span><br>
+                                </div>
+                        </div><br>
                         <h4 class="texto-sombra Titulo3">letra sombra difuminada</h4>
+                        <div class="plta-uno-backgraund-A">
+                            <p class="gradinet-shadow-copy">
+                                <code>&lt;h1 class="texto-sombra Titulo3"&gt;letra sombra difuminada &lt;/h1&gt;</code>
+                            </p>
+                            <button class="copy-btn " onclick="copyCodeToClipboard('gradinet-shadow-copy','success-alert-gradinet-shadow-copy')"><i
+                                class="fa-regular fa-copy"></i></button>
+                                <div id="success-alert-gradinet-shadow-copy" class="alert alert-success slide-in-right ocultar">
+                                    ¡Éxito! Se ha copiado Corectamente.
+                                    <span class="close" onclick="closeAlert()">×</span><br>
+                                </div>
+                        </div>
                     </div>
                 </div>
 
@@ -288,7 +387,7 @@
                         <h3 class="my-text-4 ">Plantilla #1</h3>
                         <div class="tarjeta ">
                             <div class="front">
-                                <img src="/WhatsApp Image 2024-04-30 at 9.34.35 PM.jpeg" alt="">
+                                <img src="/WhatsApp_Image_2024-04-30_at_9.34.35_PM-removebg-preview.png" alt="">
                                 <h3>Drip</h3>
                             </div>
                             <div class="back">
@@ -299,24 +398,23 @@
                                 <div class="link"><a href="#">Detalles</a></div>
                             </div>
                         </div>
-                    </div><br>
-                    <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content color-text text-justify ">
+                        <div class="plta-uno-backgraund-A">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
-                            <p class="t2"><code>&lt;div class="tarjeta"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="front"&gt;</code></p>
-                            <p class="t2"><code>&lt;img&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="back"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
-                            <p class="t2"><code>&lt;div class="Footer" &gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i
-                                    class="fa-regular fa-copy"></i></button>
-                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                            <p class="card1"><code>&lt;div class="tarjeta"&gt;</code></p>
+                            <p class="card1"><code>&lt;div class="front"&gt;</code></p>
+                            <p class="card1"><code>&lt;img&gt;</code></p>
+                            <p class="card1"><code>&lt;div class="back"&gt;</code></p>
+                            <p class="card1"><code>&lt;div class="Main"&gt;</code></p>
+                            <p class="card1"><code>&lt;div class="Footer" &gt;</code></p><br>
+                            <a class="copy-btn " onclick="copyCodeToClipboard('card1','success-alert-card1')"><i
+                                    class="fa-regular fa-copy"></i></a>
+                            <div id="success-alert-card1" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
-                            </div>
+                            </div><br><br>
                         </div>
                     </div><br>
+                    <br>
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
 
@@ -356,10 +454,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div><br>
-                    <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content  text-justify ">
+                        </div><br>
+                        <div class="plta-uno-backgraund-A">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
                             <p class="card2"><code>&lt;div class="card"&gt;</code></p>
                             <p class="card2"><code>&lt;div class="contenido-card"&gt;</code></p>
@@ -369,9 +465,9 @@
                             <p class="card2"><code>&lt;h4&gt;</code></p>
                             <p class="card2"><code>&lt;h6&gt;</code></p>
                             <p class="card2"><code>&lt;p&gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboard('card2')"><i
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('card2','success-alert-card2')"><i
                                     class="fa-regular fa-copy"></i></button>
-                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                            <div id="success-alert-card2" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
@@ -423,29 +519,28 @@
                                     </div>
                                 </label>
                             </div>
+                        </div><br>
+                        <div class="plta-uno-backgraund-A">
+                            <h3 class="my-text-4">Codigo Fuente</h3><br>
+                            <p class="card3"><code>&lt;div class="wapper"&gt;</code></p>
+                            <p class="card3"><code>&lt;div class="container slider"&gt;</code></p>
+                            <p class="card3"><code>&lt;input class="slider" type="Radio" name="slide" id="c1"&gt;</code>
+                            </p>
+                            <p class="card3"><code>&lt;label for="c4" class="carta"&gt;</code></p>
+                            <p class="card3"><code>&lt;div class="row"&gt;</code></p>
+                            <p class="card3"><code>&lt;div class="icon" &gt;</code></p>
+                            <p class="card3"><code>&lt;div class="descripcion" &gt;</code></p>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('card3','success-alert-card3')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-card3" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
                         </div>
+                        <br>
                     </div>
                 </div>
                 <div class="Documentacion-container">
-                    <div class="Documentacion-info-container-content color-text text-justify ">
-                        <h3 class="my-text-4">Codigo Fuente</h3><br>
-                        <p class="card3"><code>&lt;div class="wapper"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="container slider"&gt;</code></p>
-                        <p class="card3"><code>&lt;input class="slider" type="Radio" name="slide" id="c1"&gt;</code>
-                        </p>
-                        <p class="card3"><code>&lt;label for="c4" class="carta"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="row"&gt;</code></p>
-                        <p class="card3"><code>&lt;div class="icon" &gt;</code></p>
-                        <p class="card3"><code>&lt;div class="descripcion" &gt;</code></p>
-                        <br><button class="copy-btn " onclick="copyCodeToClipboard('card3')"><i
-                                class="fa-regular fa-copy"></i></button>
-                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                            ¡Éxito! Se ha copiado Corectamente.
-                            <span class="close" onclick="closeAlert()">×</span><br>
-                        </div>
-                    </div>
-                    <br>
-
                     <h2 class="my-text-4 ">Card Utylities</h2>
                     <div class="Documentacion-info-container-content">
                         <p>
@@ -483,18 +578,19 @@
 
                                 <p><strong>Cómo se usa:</strong></p>
                               
-                                    <div id="code" class="plta-uno-backgraund-A text-center">
+                                    <div id="code" class="plta-uno-backgraund-A ">
                                         <p>
                                           <code>
-                                            &lt;div class="container-regular"&gt;<br>
-                                            &nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor regular&lt;/h2&gt;<br>
-                                            &nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del contenedor regular. Lorem ipsum dolo.&lt;/p&gt;<br>
-                                            &nbsp;&nbsp;&lt;button&gt;Botón de ejemplo&lt;/button&gt;<br>
-                                            &lt;/div&gt;
+                                            <p class="cont1">&lt;div class="container-regular"&gt;</p>
+                                            <p class="cont1">&nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor regular&lt;/h2&gt;</p>
+                                            <p class="cont1">&nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del contenedor regular. Lorem ipsum dolo.&lt;/p&gt;</p>
+                                            <p class="cont1">&nbsp;&nbsp;&lt;button&gt;Botón de ejemplo&lt;/button&gt;</p>
+                                            <p class="cont1">&lt;/div&gt;</p>
+
                                           </code>
                                         </p>
-                                        <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                        <button class="copy-btn" onclick="copyCodeToClipboard('cont1','success-alert-cont1')"><i class="fa-regular fa-copy"></i></button>
+                                        <div id="success-alert-cont1" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                           <span class="close" onclick="closeAlert()">×</span>
                                         </div>
                                       </div>
@@ -525,21 +621,21 @@
                                 <p><strong>Cómo se usa:</strong></p>
                               
 
-                                <div id="code" class="plta-uno-backgraund-A text-center">
+                                <div id="code" class="plta-uno-backgraund-A ">
                                     <p>
                                       <code>
-                                        &lt;div class="container-fluid"&gt;<br>
-                                        &nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor fluido&lt;/h2&gt;<br>
-                                        &nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del contenedor fluido. Lorem ipsum dolor sit .&lt;/p&gt;<br>
-                                        &nbsp;&nbsp;&lt;img src="ejemplo-imagen.jpg" alt="Imagen de ejemplo"&gt;<br>
-                                        &lt;/div&gt;
+                                        <p class="cont2">&lt;div class="container-fluid"&gt;</p>
+                                        <p class="cont2">&nbsp;&nbsp;&lt;h2&gt;Este es un título dentro del contenedor fluido&lt;/h2&gt;</p>
+                                        <p class="cont2">&nbsp;&nbsp;&lt;p&gt;Este es un párrafo de ejemplo dentro del contenedor fluido. Lorem ipsum dolor sit .&lt;/p&gt;</p>
+                                        <p class="cont2">&nbsp;&nbsp;&lt;img src="ejemplo-imagen.jpg" alt="Imagen de ejemplo"&gt;</p>
+                                        <p class="cont2">&lt;/div&gt;</p>
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('cont2','success-alert-cont2')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-cont2" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
-                                  </div>
+                                </div>
                                   
 
                                 <p><strong>Ejemplos:</strong></p><br>
@@ -565,16 +661,16 @@
 
                                 <p><strong>Cómo se usa:</strong></p>
                                 
-                                <div id="code" class="plta-uno-backgraund-A text-center">
+                                <div id="code" class="plta-uno-backgraund-A">
                                     <p>
                                       <code>
-                                        &lt;div class="container-full-width"&gt;<br>
-                                        &nbsp;&nbsp;&lt;p&gt;Contenido dentro del contenedor de ancho completo.&lt;/p&gt;<br>
-                                        &lt;/div&gt;
+                                        <p class="cont3">&lt;div class="container-full-width"&gt;</p>
+                                        <p class="cont3">&nbsp;&nbsp;&lt;p&gt;Contenido dentro del contenedor de ancho completo.&lt;/p&gt;</p>
+                                        <p class="cont3">&lt;/div&gt;</p>
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('cont3','success-alert-cont3')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-cont3" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
                                 </div>
@@ -617,13 +713,8 @@
                             <div class="box2"></div>
                             <div class="box2"></div>
                             <div class="box1"></div>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content color-text text-justify ">
+                        </div><br>
+                        <div class="plta-uno-backgraund-A">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
                             <p class="t1"><code>&lt;div class="container-padre"&gt;</code></p>
                             <p class="t1"><code>&lt;div class="box1"&gt;</code></p>
@@ -631,14 +722,16 @@
                             <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
                             <p class="t1"><code>&lt;div class="box2"&gt;</code></p>
                             <p class="t1"><code>&lt;div class="box1" &gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboardt1('t1')"><i
+                            <br><button class="copy-btn " onclick="copyCodeToClipboardt1('t1','success-alert-t1')"><i
                                     class="fa-regular fa-copy"></i></button>
-                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                            <div id="success-alert-t1" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
                         </div>
-                    </div><br>
+                    </div>
+
+                    <br>
 
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
@@ -649,10 +742,8 @@
                                 <div class="main">Main</div>
                                 <div class="footer">Footer</div>
                             </div>
-                        </div>
-                    </div><br>
-                    <div class="Documentation-container">
-                        <div class="Documentacion-info-container-content color-text text-justify ">
+                        </div><br>
+                        <div class="plta-uno-backgraund-A">
                             <h3 class="my-text-4">Codigo Fuente</h3><br>
                             <p class="t2"><code>&lt;div class="degradado"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="layout"&gt;</code></p>
@@ -660,14 +751,14 @@
                             <p class="t2"><code>&lt;div class="sidebar"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="Main"&gt;</code></p>
                             <p class="t2"><code>&lt;div class="Footer" &gt;</code></p>
-                            <br><button class="copy-btn " onclick="copyCodeToClipboardt2('t2')"><i
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('t2','success-alert-t2')"><i
                                     class="fa-regular fa-copy"></i></button>
-                            <div id="success-alert" class="alert alert-success slide-in-right ocultar">
+                            <div id="success-alert-t2" class="alert alert-success slide-in-right ocultar">
                                 ¡Éxito! Se ha copiado Corectamente.
                                 <span class="close" onclick="closeAlert()">×</span><br>
                             </div>
                         </div>
-                    </div><br>
+                    </div><br><br>
 
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #3</h3>
@@ -678,21 +769,21 @@
                             <div class="boxs1"> </div>
                             <div class="boxs3"></div>
                             <div class="boxs4"></div>
-                        </div>
-                    </div><br>
-                    <div class="Documentacion-info-container-content color-text text-justify ">
-                        <h3 class="my-text-4">Codigo Fuente</h3><br>
-                        <p class="t3"><code>&lt;div class="container-padre2"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs2"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs3" &gt;</code></p>
-                        <p class="t3"><code>&lt;div class="boxs4" &gt;</code></p>
-                        <br><button class="copy-btn " onclick="copyCodeToClipboard('t3')"><i
-                                class="fa-regular fa-copy"></i></button>
-                        <div id="success-alert" class="alert alert-success slide-in-right ocultar">
-                            ¡Éxito! Se ha copiado Corectamente.
-                            <span class="close" onclick="closeAlert()">×</span><br>
+                        </div><br>
+                        <div class="plta-uno-backgraund-A">
+                            <h3 class="my-text-4">Codigo Fuente</h3><br>
+                            <p class="t3"><code>&lt;div class="container-padre2"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs2"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs1"&gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs3" &gt;</code></p>
+                            <p class="t3"><code>&lt;div class="boxs4" &gt;</code></p>
+                            <br><button class="copy-btn " onclick="copyCodeToClipboard('t3','success-alert-t3')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-t3" class="alert alert-success slide-in-right ocultar">
+                                ¡Éxito! Se ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span><br>
+                            </div>
                         </div>
                     </div>
                     <div class="Documentacion-container">
@@ -711,8 +802,13 @@
 
                         <div class="Documentacion-info-container-content">
                             <p>
-                                REDACTAR
-
+                                El Módulo de Caja Flexible, comúnmente llamado flexbox, 
+                                fue diseñado como un modelo unidimensional de layout, y 
+                                como un método que pueda ayudar a distribuir el espacio 
+                                entre los ítems de una interfaz y mejorar las capacidades 
+                                de alineación. Este artículo hace un repaso de las principales
+                                 características de flexbox, las que exploraremos con mayor 
+                                 detalle en el resto de estas guías.
                             </p>
 
                         </div>
@@ -743,13 +839,13 @@
                                 <div id="code" class="plta-uno-backgraund-A text-center">
                                     <p>
                                       <code>
-                                        &lt;div class="texto-pequeno"&gt;Texto pequeño&lt;/div&gt;<br>
-                                        &lt;div class="texto-mediano"&gt;Texto mediano&lt;/div&gt;<br>
-                                        &lt;div class="texto-grande"&gt;Texto grande&lt;/div&gt;
+                                        <p class="text-copy-1">&lt;div class="texto-pequeno"&gt;Texto pequeño&lt;/div&gt;</p>
+                                        <p class="text-copy-1">&lt;div class="texto-mediano"&gt;Texto mediano&lt;/div&gt;</p>
+                                        <p class="text-copy-1">&lt;div class="texto-grande"&gt;Texto grande&lt;/div&gt;</p>
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('text-copy-1','success-alert-text-copy-1')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-text-copy-1" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
                                 </div><br><br>
@@ -844,16 +940,17 @@
                                 <div id="code" class="plta-uno-backgraund-A text-center">
                                     <p>
                                       <code>
-                                        &lt;div class="box sombra-basica"&gt;Sombra Básica&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-interior"&gt;Sombra Interior&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-redondeada"&gt;Sombra Redondeada&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-contorno"&gt;Sombra Contorno&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-sobreponer"&gt;Sombra Sobreponer&lt;/div&gt;<br>
-                                        &lt;div class="box sombra-enfocar"&gt;Sombra Enfocar&lt;/div&gt;
+                                        <p class="shadow-copy">&lt;div class="box sombra-basica"&gt;Sombra Básica&lt;/div&gt;</p>
+                                        <p class="shadow-copy">&lt;div class="box sombra-interior"&gt;Sombra Interior&lt;/div&gt;</p>
+                                        <p class="shadow-copy">&lt;div class="box sombra-redondeada"&gt;Sombra Redondeada&lt;/div&gt;</p>
+                                        <p class="shadow-copy">&lt;div class="box sombra-contorno"&gt;Sombra Contorno&lt;/div&gt;</p>
+                                        <p class="shadow-copy">&lt;div class="box sombra-sobreponer"&gt;Sombra Sobreponer&lt;/div&gt;</p>
+                                        <p class="shadow-copy">&lt;div class="box sombra-enfocar"&gt;Sombra Enfocar&lt;/div&gt;</p>
+
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('shadow-copy','success-alert-shadow-copy')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-shadow-copy" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
                                   </div><br><br>
@@ -916,7 +1013,6 @@
                                 <input class="input_XGr" type="text" id="nombre" name="nombre" required="required"
                                     placeholder="Introduzca su nombre">
 
-<<<<<<< Updated upstream
                     <div class="Documentacion-info-container-content">
                         <p>
                             contamos con una seleccion de forms para ser utilizados en la recolecion de datos
@@ -925,11 +1021,6 @@
                         <h2>Ejemplo #1</h2>
                         <div class="form1">
                             <h2 class="TituloForm">Formulario p</h2>
-=======
-                                <label class="label_sm " for="email">Email:</label>
-                                <input class="input_XGr" type="email" id="email" name="email" required="required"
-                                    placeholder="Introduzca su email">
->>>>>>> Stashed changes
 
                                 <label class="label_sm " for="frutas">Ingrese departamento :</label>
                                 <input class="input_Gr  " type="text" id="frutas" list="lista-frutas"
@@ -1072,7 +1163,6 @@
                                 REDACTAR
                             </p>
                             <img class="Img_code" src="DripCSS/IMG/Code/input__sm.png" alt="">
-<<<<<<< Updated upstream
                         </div>
 
                     </div>
@@ -1210,9 +1300,23 @@
                                 <button class="button_Squear_Th2">test8</button>
                                 <button class="Tap_Button_Th3">test9</button>
                                 <button class="butontest_round_Th2 ">test32</button>
-
                             </div>
 
+                            <div class="plta-uno-backgraund-A">
+                                <code>
+                                    <p class="btn-copy">&gt;button class="butontest_boxshadow_Th"&gt;test3&lt;/button&gt;</p>
+                                    <p class="btn-copy">&gt;button class="butontest_boxshadow_Th2"&gt;test4&lt;/button&gt;</p>
+                                    <p class="btn-copy">&gt;button class="butontest_boxshadow_Th3"&gt;test5&lt;/button&gt;</p>
+                                    <p class="btn-copy">&gt;button class="butontest_boxshadow_Th4"&gt;test6&lt;/button&gt;</p>
+                                    <p class="btn-copy">&gt;button class="button-3"&gt;test7&lt;/button&gt;</p>
+                                    <p class="btn-copy">&gt;button class="button_Squear_Th2"&gt;test8&lt;/button&gt;</p>
+                                    <p class="btn-copy">&gt;button class="Tap_Button_Th3"&gt;test9&lt;/button&gt;</p>
+                                    <p class="btn-copy">&gt;button class="butontest_round_Th2"&gt;test32&lt;/button&gt;</p>
+                                </code>
+                                <button class="copy-btn" onclick="copyCodeToClipboard('btn-copy','success-alert-btn-copy')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-btn-copy" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                      <span class="close" onclick="closeAlert()">×</span>
+                            </div>
                     </div>
                 </div>
 
@@ -1268,13 +1372,13 @@
                                   <div id="code" class="plta-uno-backgraund-A text-center">
                                     <p>
                                       <code>
-                                        &lt;div class="alert alert-success"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Éxito:&lt;/strong&gt; Tu mensaje ha sido enviado correctamente.<br>
-                                        &lt;/div&gt;
+                                        <p  class="alert1">&lt;div class="alert alert-success"&gt;</p>
+                                        <p class="alert1">&nbsp;&nbsp;&lt;strong&gt;Éxito:&lt;/strong&gt; Tu mensaje ha sido enviado correctamente.</p>
+                                        <p class="alert1">&lt;/div&gt;</p>
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('alert1','success-alert-alert1')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-alert1" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
                                   </div><br>
@@ -1283,13 +1387,13 @@
                                   <div id="code" class="plta-uno-backgraund-A text-center">
                                     <p>
                                       <code>
-                                        &lt;div class="alert alert-error"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Error:&lt;/strong&gt; Por favor, completa todos los campos obligatorios.<br>
-                                        &lt;/div&gt;
+                                        <p class="alert2">&lt;div class="alert alert-error"&gt;</p><br>
+                                        <p class="alert2">&nbsp;&nbsp;&lt;strong&gt;Error:&lt;/strong&gt; Por favor, completa todos los campos obligatorios.</p>
+                                        <p class="alert2">&lt;/div&gt;</p>
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('alert2','success-alert-alert2')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-alert2" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
                                   </div><br>
@@ -1298,13 +1402,13 @@
                                   <div id="code" class="plta-uno-backgraund-A text-center">
                                     <p>
                                       <code>
-                                        &lt;div class="alert alert-warning"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Advertencia:&lt;/strong&gt; Tu sesión está a punto de expirar.<br>
-                                        &lt;/div&gt;
+                                        <p class="alert3">&lt;div class="alert alert-warning"&gt;<br></p>
+                                        <p class="alert3">&nbsp;&nbsp;&lt;strong&gt;Advertencia:&lt;/strong&gt; Tu sesión está a punto de expirar.</p>
+                                        <p class="alert3">&lt;/div&gt;</p>
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('alert3','success-alert-alert3')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-alert3" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
                                   </div><br>
@@ -1313,13 +1417,13 @@
                                   <div id="code" class="plta-uno-backgraund-A text-center">
                                     <p>
                                       <code>
-                                        &lt;div class="alert alert-info"&gt;<br>
-                                        &nbsp;&nbsp;&lt;strong&gt;Información:&lt;/strong&gt; Recuerda guardar tus cambios antes de salir.<br>
-                                        &lt;/div&gt;
+                                        <p class="alert4">&lt;div class="alert alert-info"&gt;</p>
+                                        <p class="alert4">&nbsp;&nbsp;&lt;strong&gt;Información:&lt;/strong&gt; Recuerda guardar tus cambios antes de salir.</p>
+                                        <p class="alert4">&lt;/div&gt;</p>
                                       </code>
                                     </p>
-                                    <button class="copy-btn" onclick="copyCodeToClipboard()"><i class="fa-regular fa-copy"></i></button>
-                                    <div id="success-alert" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
+                                    <button class="copy-btn" onclick="copyCodeToClipboard('alert4','success-alert-alert4')"><i class="fa-regular fa-copy"></i></button>
+                                    <div id="success-alert-alert4" class="alert alert-success slide-in-right ocultar">¡Éxito! Se ha copiado Corectamente.
                                       <span class="close" onclick="closeAlert()">×</span>
                                     </div>
                                   </div><br>
@@ -1402,8 +1506,6 @@
                             la organización y la visualización de la información en una interfaz de
                             usuario, proporcionando una manera rápida y efectiva de comunicar diversos
                             tipos de información o acciones a los usuarios.
-=======
->>>>>>> Stashed changes
                             <br>
 
                             <input class="rangeimput_Sm" type="range" name="" value="50" min="0" max="100" step="1"><br>
@@ -1497,8 +1599,10 @@
                                     <button class="Tap_Button_Th3">test9</button>
                                     <button class="butontest_round_Th2 ">test32</button>
 
-                                </div>
+                                    
 
+                                </div>
+                        
                         </div>
                     </div>
 
