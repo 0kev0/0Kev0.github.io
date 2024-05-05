@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Intervalo para avanzar automáticamente cada 3 segundos
-  setInterval(autoAdvance, 3000);
+  setInterval(autoAdvance, 2000);
 });
 
 
@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Intervalo para avanzar automáticamente cada 3 segundos
-  setInterval(autoAdvance, 3000);
+  setInterval(autoAdvance, 2000);
 });
 
 
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Actualizar el carrusel para mostrar el slide actual
   function updateCarousel() {
-    carouselInner.style.transform = `translateX(-${slideIndex *10}%)`;
+    carouselInner.style.transform = `translateX(-${slideIndex *9}%)`;
   }
 
   // Eventos de clic para los botones de navegación
@@ -270,28 +270,39 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Intervalo para avanzar automáticamente cada 3 segundos
-  setInterval(autoAdvance, 3000);
+  setInterval(autoAdvance, 2000);
 });
 
 
 
 
-  function copyCodeToClipboard() {
-    var codeElement = document.getElementById("code");
-    var code = codeElement.textContent;
+function copyCodeToClipboard(type, id) {
+  var codeCopied = false;
 
-    var tempInput = document.createElement("textarea");
-    tempInput.value = code;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
+  var codeElements = document.querySelectorAll("p."+type);
+  var code = "";
+  codeElements.forEach(function(element) {
+      code += element.textContent.trim() + "\n";
+  });
 
-    var successAlert = document.getElementById("success-alert");
-    successAlert.style.display = "block";
-    setTimeout(function() {
-      successAlert.style.display = "none";
-  }, 2000); 
+  var tempInput = document.createElement("textarea");
+  tempInput.value = code;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("id");
+  document.body.removeChild(tempInput);
+  codeCopied = true
+  
+  var successAlert = document.getElementById(id);
+  if (codeCopied == true) {
+      successAlert.style.display = "block";
+      setTimeout(function() {
+          successAlert.style.display = "none";
+      }, 2000);
+  } else {
+      alert("No se encontró el elemento con ID 'success-alert'.");
+  }
+  
 }
 
 function toggleNav() {

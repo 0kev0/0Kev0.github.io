@@ -421,6 +421,7 @@ $color1: rgb(83, 92, 145);
 .webtema1 {
   display: grid;
   height: 100%;
+  width: 100%;
   grid-template-columns: 1.5fr 2fr 1.5fr;
   grid-template-rows: auto auto .25fr;
   grid-template-areas:
@@ -436,6 +437,7 @@ $color1: rgb(83, 92, 145);
 
 .cell-info {
   grid-area: info;
+  width: auto;
 }
 
 .cell-form {
@@ -456,12 +458,23 @@ $color1: rgb(83, 92, 145);
 .webtema2 {
   display: grid;
   height: 90vh;
-  width: 187vh;
-  grid-template-columns: 1fr 1fr 1fr .75fr;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr auto;
 
 }
 
+@media only screen and (max-width: 768px) {
+  .webtema2 {
+    display: grid;
+    height: 90vh;
+    width: 100%;
+    grid-template-columns: repeat(3, .75) 1.25fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    background-color: red;
+  
+  }
+}
 .cell-carrucel2 {
   grid-area: 2/1/2/5;
   background-color: $colorBg-secundarioC;
@@ -473,6 +486,7 @@ $color1: rgb(83, 92, 145);
   button {
     z-index: 2;
   }
+
 }
 
 .sideImagen {
@@ -485,7 +499,11 @@ $color1: rgb(83, 92, 145);
     object-fit: cover;
   }
 
+  
 }
+
+
+
 
 
 
@@ -509,4 +527,14 @@ $color1: rgb(83, 92, 145);
   row-gap: 10px;
   border-radius: rgb(255, 255, 255) solid 4px;
 
+}
+
+.grid_col
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 80%;
+  
 }

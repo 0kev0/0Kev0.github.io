@@ -29,8 +29,6 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    max-width: 600px;
-    width: 90%;
     border-radius: 5px;
     padding-bottom: 10px;
     @media (max-width: 800px) {
@@ -48,6 +46,7 @@
     background: $GrayRdBg;
     color: white;
     gap: 8px;
+    width: 70vh;
 }
 
 .form1Test {
@@ -143,8 +142,7 @@
     @include boxmodelStandar;
     @include shadow-difum_color($color-primarioB);
     @extend .form3;
-    max-width: 600px;
-    width: 90vh;
+    width: 110vh;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -157,7 +155,6 @@
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 0px;
-    color: black;
 }
 
 .title4 {
@@ -178,6 +175,7 @@
     grid-area: img;
     background-image: url('/DripCSS/IMG/stock_red.jpg');
     height: 100%;
+    width: 100%;
     background-size: cover;
     padding: 0;
     border-radius: 0 4px 4px 0;

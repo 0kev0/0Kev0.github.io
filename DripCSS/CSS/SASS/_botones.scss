@@ -6,9 +6,11 @@
 @import 'FontsStyles';
 
 .buttontest {
-  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  display: inline-block;
+  /* Hace que el botón se ajuste al ancho del texto */
   height: map-get($map: $BtHeight, $key: pequeno);
-  width: auto; /* El ancho se ajustará automáticamente al texto */
+  width: auto;
+  /* El ancho se ajustará automáticamente al texto */
   margin: 2%;
   font-family: monospace;
   font-size: 1.5rem;
@@ -68,10 +70,12 @@
 .butontest_round {
 
   margin: 2%;
-  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
+  display: inline-block;
+  /* Hace que el botón se ajuste al ancho del texto */
   height: map-get($map: $BtHeight, $key: pequeno);
-  width: auto; /* El ancho se ajustará automáticamente al texto */
-  font-family: map-get($map: $FontPack2, $key: Tema );
+  width: auto;
+  /* El ancho se ajustará automáticamente al texto */
+  font-family: map-get($map: $FontPack2, $key: Tema);
   font-size: 1.5rem;
   color: #FAFAFA;
   line-height: 2px;
@@ -83,11 +87,13 @@
   background: $color-secundario;
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
+
   &:hover {
     transition: .45s all ease-out;
     background: lighten($color: $color-secundario, $amount: 5);
     transform: translate(1px, 1px);
   }
+
   &:active {
     transition: .05s all ease-in;
     box-shadow: none;
@@ -136,9 +142,11 @@
   color: #FAFAFA;
   text-transform: uppercase;
   height: 5vh;
-  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
-  width: auto; /* El ancho se ajustará automáticamente al texto */
-    padding: 5px 10px;
+  display: inline-block;
+  /* Hace que el botón se ajuste al ancho del texto */
+  width: auto;
+  /* El ancho se ajustará automáticamente al texto */
+  padding: 5px 10px;
   border: 2px solid #FAFAFA;
   background: $color-secundario;
   box-shadow: 3px 3px #fafafa;
@@ -187,10 +195,12 @@
 
 /*button_animated*/
 .button_animated_Th {
-  display: inline-block; /* Hace que el botón se ajuste al ancho del texto */
-  width: auto; /* El ancho se ajustará automáticamente al texto */
+  display: inline-block;
+  /* Hace que el botón se ajuste al ancho del texto */
+  width: auto;
+  /* El ancho se ajustará automáticamente al texto */
   height: map-get($map: $BtHeight, $key: pequeno);
-    margin: 10px;
+  margin: 10px;
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -244,7 +254,7 @@
 .button_animated_Th2 {
   @extend .button_animated_Th;
   color: $colorbg-primarioB;
-  
+
 
   &:before {
     background-color: $color-primarioB;
@@ -280,9 +290,10 @@
   cursor: pointer;
   margin: 30px 5px;
   font-weight: 200;
-  display: inline-block; 
+  display: inline-block;
   height: map-get($map: $BtHeight, $key: pequeno);
-  width: auto; /* El ancho se ajustará automáticamente al texto */
+  width: auto;
+  /* El ancho se ajustará automáticamente al texto */
 
   &:hover {
     transition: .45s all ease-out;
@@ -359,6 +370,11 @@ $color-boton-defecto: #3498db;
   @include boton-estilos($color-boton-defecto);
 }
 
+@mixin centrar_txt_botones {
+  display: flex;
+  justify-content: center;
+}
+
 /*Tap Button*/
 .Tap_Button {
   --button_radius: 0.75em;
@@ -369,7 +385,6 @@ $color-boton-defecto: #3498db;
   font-weight: bold;
   border: none;
   border-radius: var(--button_radius);
-  background: $color-primario;
   color: #FAFAFA;
   @include shadow-bottom_imput_color(white);
 
@@ -392,21 +407,20 @@ $color-boton-defecto: #3498db;
     transform: translateY(0);
   }
 
-  // Centrar el texto
-  display: flex;
-  justify-content: center;
+  // Centrar el texto en botones
+  @include centrar_txt_botones;
 }
 
 
 .Tap_Button_Th2 {
   @extend .Tap_Button;
   background: $color-primarioB;
-width: 20vh;
+
 }
 
 .Tap_Button_Th3 {
   @extend .Tap_Button;
-  background: $color-primarioC
+  background: $color-primarioC;
 }
 
 .Tap_Button_Th4 {
@@ -418,7 +432,7 @@ width: 20vh;
 /*before * editado sobre limo buttons*/
 .boton-primario_Th {
   @include boton-estilos($color-primario, 10px);
-  height:map-get($map: $BtHeight, $key:pequeno );
+  height: map-get($map: $BtHeight, $key:pequeno);
   width: auto+5px;
   display: inline-block;
   border: 2px solid lighten($color: $color-primario, $amount: 20);
@@ -477,8 +491,8 @@ width: 20vh;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
 
   // Centrar el texto
-  display: flex;
-  justify-content: center;
+  @include centrar_txt_botones;
+
 }
 
 
