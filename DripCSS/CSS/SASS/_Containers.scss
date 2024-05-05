@@ -158,8 +158,9 @@
 
     p {
         font-family: map-get($map: $FontPack2, $key: Texto);
-        &:hover{
+
+        &:hover {
             box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
-          }
+        }
     }
 }

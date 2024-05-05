@@ -15,8 +15,7 @@ $color-secundario : rgb(112, 11, 151);
   background-color: $color-primario;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
-  //overflow: hidden;
-  height: 100%;
+  overflow: hidden;
 
   ul {
     list-style-type: none;
@@ -136,14 +135,6 @@ $color-secundario : rgb(112, 11, 151);
       text-decoration: underline;
     }
   }
-}
-
-.nav2 ul {
-  display: none;
-}
-
-.nav2.open ul {
-  display: block;
 }
 
 .nav3 {
