@@ -91,67 +91,59 @@
     src: url('https://fonts.googleapis.com/css2?family=Oswald&display=swap') format('woff2');
 }
 
-$FontPack3: ('Titulo': 'Poppins','Tema': 'Nunito','Texto': 'Quicksand');
-$FontPack1: ('Titulo': 'Lato', 'Tema': 'Raleway','Texto': 'Source Sans Pro');
-$FontPack2: ('Titulo': 'Playfair Display','Tema': 'Merriweather',   'Texto': 'Oswald');
-$FontPack4: ('Titulo': 'Roboto','Tema': 'Montserrat','Texto': 'Open Sans');
+$FontPack3: ('Titulo': 'Poppins', 'Tema': 'Nunito', 'Texto': 'Quicksand');
+$FontPack1: ('Titulo': 'Lato', 'Tema': 'Raleway', 'Texto': 'Source Sans Pro');
+$FontPack2: ('Titulo': 'Playfair Display', 'Tema': 'Merriweather', 'Texto': 'Oswald');
+$FontPack4: ('Titulo': 'Roboto', 'Tema': 'Montserrat', 'Texto': 'Open Sans');
 
-.txt_colorDsecond
-{
-        color: $color-secundarioD;
+.txt_colorDsecond {
+    color: $color-secundarioD;
 }
 
-.txt_colorWhite
-{
-        color: white;
+.txt_colorWhite {
+    color: white;
 }
 
-.txt_colorPrimaryD
-{
-        color: $color-primario;
+.txt_colorPrimaryD {
+    color: $color-primario;
 }
 
 
 
-.txt_colorWhite
-{
-        color: white;
+.txt_colorWhite {
+    color: white;
 }
 
-.txt_bold
-{
+.txt_bold {
     font-weight: bold;
 }
 
-.Inicial_Resaltada_h1
-{
+.Inicial_Resaltada_h1 {
     &::first-letter {
         font-size: 150%;
         font-style: italic;
         font-weight: 500;
         margin-right: 10px;
-      }
+    }
 }
 
-.Inicial_Resaltada_h2
-{
+.Inicial_Resaltada_h2 {
     &::first-letter {
         font-size: 150%;
         font-style: italic;
         font-weight: 500;
         margin-right: 10px;
-      }
+    }
 }
 
-.Inicial_Resaltada_h1_dashed
-{
+.Inicial_Resaltada_h1_dashed {
     &::first-letter {
         font-size: 130%;
         font-style: italic;
         text-decoration: underline;
         font-weight: 500;
         margin-right: 0px;
-      }
+    }
 }
 
 
@@ -261,21 +253,20 @@ $FontPack4: ('Titulo': 'Roboto','Tema': 'Montserrat','Texto': 'Open Sans');
 }
 
 .contenido-article {
-    small
-    {
-            font-size: map-get($map: $FontSize, $key: "mediano");
-    font-weight: 200;
-    font-family: map-get($map: $FontPack1, $key: Texto);
-    text-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: white;
-    text-align: center;
+    small {
+        font-size: map-get($map: $FontSize, $key: "mediano");
+        font-weight: 200;
+        font-family: map-get($map: $FontPack1, $key: Texto);
+        text-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: white;
+        text-align: center;
 
-    &::first-letter {
-        font-style: italic;
-        font-size: 22px;
-    }
+        &::first-letter {
+            font-style: italic;
+            font-size: 22px;
+        }
 
     }
 
@@ -307,15 +298,16 @@ $FontPack4: ('Titulo': 'Roboto','Tema': 'Montserrat','Texto': 'Open Sans');
     display: block;
     height: auto;
     color: $FontColorBase;
+    @include shadow-difum_txt(white) ;
     font-size: map-get($map: $FontSize, $key: Xgrande);
     font-weight: bold;
     padding-top: 10px;
 
     @media screen and (max-width: 480px) {
-    h3 {
-      font-size: 15px
+        h3 {
+            font-size: 15px
+        }
     }
-  }
 }
 
 .Font_Tema {

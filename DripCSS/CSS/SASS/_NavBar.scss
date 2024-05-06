@@ -44,8 +44,8 @@ $color-secundario : rgb(112, 11, 151);
 //FALTA AGREGAR EXPLICACION DE USO Y SUGERENCIAS PARA ESTILOS 
 @mixin AplicarTemasNavbar($colorBG, $colorBGItems, $ColorHover_A, $SetSombrasLogo, $SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) {
   .header {
-    background-color: $colorBGItems;
-    justify-content: $Justify;
+    background-color: $colorBGItems !important;
+    justify-content: $Justify !important;
     width: auto;
     color: #eceff1;
   }
@@ -56,27 +56,27 @@ $color-secundario : rgb(112, 11, 151);
   }
 
   ul {
-    background: $colorBG;
+    background: $colorBG !important;
   }
 
   justify-content: $Justify;
-  font-family: map-get($map: $FontPack3, $key:Titulo);
-  font-size: map-get($map: $FontSize, $key: $key);
-  background-color: $colorBG;
+  font-family: map-get($map: $FontPack3 , $key:Titulo ) !important;
+  font-size: map-get($map: $FontSize , $key: $key )!important;
+  background-color: $colorBG !important;
 
   ul li a {
-    font-family: map-get($map: $FontPack_A, $key:$Font_A);
+    font-family: map-get($map: $FontPack_A , $key:$Font_A )!important;
 
     &:hover {
-      transition: .20s all ease-in;
+      transition: .20s all ease-in; 
       font-weight: 500;
-      background-color: $ColorHover_A;
+      background-color: $ColorHover_A !important;
     }
   }
 
   ul li ul.drip {
     width: 100%;
-    background: $colorBG;
+    background: $colorBG !important;
     position: absolute;
     z-index: 999;
     display: none;
@@ -84,17 +84,18 @@ $color-secundario : rgb(112, 11, 151);
 
   .logo {
     @extend .titulo;
-    font-family: map-get($map: $FontPackLogo, $key: $FontLogo);
+    font-family: map-get($map: $FontPackLogo , $key: $FontLogo ) !important;
     font-size: 32px;
     color: white;
-    text-shadow: 3px 4px $SetSombrasLogo;
+    text-shadow: 3px 4px 1px $SetSombrasLogo !important;
     text-decoration: none;
     margin-left: 15px;
 
+
     &::first-letter {
-      color: white;
+      color: white !important;
       margin-right: 10px;
-      text-shadow: 3px 4px $SetSombrasLetra;
+      text-shadow: 4px 4px 2px lighten($color: $SetSombrasLetra, $amount: 15) !important;
       font-size: 40px;
     }
   }
@@ -138,17 +139,30 @@ $color-secundario : rgb(112, 11, 151);
   }
 }
 
+.nav2_Ver2 {
+  @extend .nav;
+  @include center;
+  //VARIABLES @mixin AplicarTemasNavbar($colorBG,$colorBGItems, $ColorHover_A, $SetSombrasLogo,$SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) 
+  @include AplicarTemasNavbar($color-secundario, $color-primario, lighten($color: $color-secundario, $amount: 20), $color-primario, $color-primario, $FontPack3, Texto, $FontPack2, Texto, space-between, grande);
+
+  //ESTILOS DISTINTIVOS
+  ul li a {
+    &:hover {
+      transition: .20s all ease-in;
+      text-decoration: underline;
+    }
+  }
+}
+
 .nav3 {
   //VARIABLES @mixin AplicarTemasNavbar($colorBG,$colorBGItems, $ColorHover_A, $SetSombrasLogo,$SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) 
-  @include AplicarTemasNavbar($color-secundarioC, $color-secundarioC, $color-secundarioC, $color-primarioC, $color-primarioC, $FontPack2, Texto, $FontPack4, Texto, flex-end, grande);
+  @include AplicarTemasNavbar($color-secundarioC, $color-secundarioC, $color-secundarioC, $color-primarioC, $color-primarioC, $FontPack2, Tema, $FontPack2, Titulo, flex-end, grande);
 
   .header {
-    height: 85px; 
+    height: 85px;
     padding: 5px 10%;
 
-    Button {
-      font-family: map-get($map: $FontPack1, $key: Tema);
-    }
+
   }
 
   .header .logo {
@@ -197,7 +211,7 @@ $color-secundario : rgb(112, 11, 151);
       padding: 5px 5px;
 
       Button {
-        font-size:10px;
+        font-size: 10px;
         width: 10vh;
         Display: flex;
         text-align: center;
@@ -273,7 +287,7 @@ $color-secundario : rgb(112, 11, 151);
 
 .nav4 {
   //VARIABLES @mixin AplicarTemasNavbar($colorBG,$colorBGItems, $ColorHover_A, $SetSombrasLogo,$SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) 
-  @include AplicarTemasNavbar($color-secundarioD, $colorbg-primarioD, lighten($color: $color-secundarioD, $amount: 20), $color-primarioD, $color-secundarioD, $FontPack3, Tema, $FontPack3, Texto, center, grande);
+  @include AplicarTemasNavbar($color-secundarioD, $colorbg-primarioD, lighten($color: $color-secundarioD, $amount: 20), $color-primarioD, $color-secundarioD, $FontPack2, Tema, $FontPack3, Texto, center, grande);
 
   .header .logo {
     order: 3;

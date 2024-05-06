@@ -1,20 +1,6 @@
-// Definición de colores como variables
-$alert-success-bg: #d4edda;
-$alert-success-border: #c3e6cb;
-$alert-success-text: #155724;
-
-$alert-error-bg: #f8d7da;
-$alert-error-border: #f5c6cb;
-$alert-error-text: #721c24;
-
-$alert-warning-bg: #fff3cd;
-$alert-warning-border: #ffeeba;
-$alert-warning-text: #856404;
-
-$alert-info-bg: #d1ecf1;
-$alert-info-border: #bee5eb;
-$alert-info-text: #0c5460;
+@import 'Variables';
 // Estilos base para todas las alertas
+
 .alert {
   padding: 10px 15px;
   border-radius: 4px;
@@ -112,7 +98,7 @@ $alert-info-text: #0c5460;
   }
 }
 
-// Aplicar animación a las alertas
+// Aplicar animación de movimiento a las alertas
 .alert.slide-in-right {
   animation: slideInRight 0.5s forwards;
 }

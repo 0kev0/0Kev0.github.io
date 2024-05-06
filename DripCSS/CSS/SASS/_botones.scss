@@ -1,16 +1,13 @@
 @import 'Shadow';
 @import 'Variables';
 @import 'FontsStyles';
-
 @import 'Variables';
 @import 'FontsStyles';
 
 .buttontest {
   display: inline-block;
-  /* Hace que el botón se ajuste al ancho del texto */
   height: map-get($map: $BtHeight, $key: pequeno);
   width: auto;
-  /* El ancho se ajustará automáticamente al texto */
   margin: 2%;
   font-family: monospace;
   font-size: 1.5rem;
@@ -109,7 +106,7 @@
 
 .butontest_round_Th3 {
   @extend .butontest_round;
-  
+
   background: $color-secundarioC !important;
 
   &:hover {
@@ -119,7 +116,7 @@
 
 .butontest_round_Th4 {
   @extend .butontest_round;
-  
+
   background: $color-secundarioD !important;
 
   &:hover {
@@ -342,9 +339,7 @@
 }
 
 
-/*utilidad*/
 
-/*otras opciones de botones*/
 
 $color-boton-defecto: #3498db;
 
@@ -558,7 +553,6 @@ $color-boton-defecto: #3498db;
   --color: White;
 
   margin: 2%;
-
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
@@ -567,10 +561,11 @@ $color-boton-defecto: #3498db;
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: .6em;
-  font-size: 16px;
+  font-size: map-get($map: $FontSize, $key:Xpequeno);
   width: auto;
   display: inline-block;
   height: 50px;
+  font-weight: 600;
 
   border: 0;
 

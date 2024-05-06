@@ -9,10 +9,7 @@
 
 }
 
-.Txt_overImg
-{
-
-}
+.Txt_overImg {}
 
 .container-regular {
     height: 60vh;
@@ -34,6 +31,7 @@
 .container-regular {
     border: 1px solid $colorBg-secundario;
     box-shadow: 0 0.5% 1% rgba(0, 0, 0, 0.1);
+    background-color: $GrayRdBg;
 
     p {
         color: $colorForm-primario;
@@ -114,7 +112,7 @@
 .Titulo_special {
     margin-top: 10px;
     font-family: map-get($map: $FontPack1, $key: Titulo);
-    text-shadow: -4px 0px $color-secundario;
+    text-shadow: -5px 0px $color-secundario;
     display: block;
     height: auto;
     color: $FontColorBase;

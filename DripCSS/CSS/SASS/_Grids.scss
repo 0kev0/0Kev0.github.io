@@ -472,9 +472,10 @@ $color1: rgb(83, 92, 145);
     grid-template-columns: repeat(3, .75) 1.25fr;
     grid-template-rows: 1fr 1fr 1fr auto;
     background-color: red;
-  
+
   }
 }
+
 .cell-carrucel2 {
   grid-area: 2/1/2/5;
   background-color: $colorBg-secundarioC;
@@ -499,7 +500,7 @@ $color1: rgb(83, 92, 145);
     object-fit: cover;
   }
 
-  
+
 }
 
 
@@ -517,7 +518,7 @@ $color1: rgb(83, 92, 145);
   align-content: center;
   row-gap: 10px;
   height: auto;
-  grid-area: 3/1/5/4; 
+  grid-area: 3/1/5/4;
   background-color: whitesmoke;
 }
 
@@ -529,12 +530,11 @@ $color1: rgb(83, 92, 145);
 
 }
 
-.grid_col
-{
+.grid_col {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30vh;
   width: 80%;
-  
+
 }

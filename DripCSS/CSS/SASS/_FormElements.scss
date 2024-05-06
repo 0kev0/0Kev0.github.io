@@ -136,9 +136,10 @@
     color: $color-primarioB;
     align-self: self-start;
     margin-left: 10px;
+
     @media (max-width: 600px) {
-        font-size: medium; 
-        padding: 10px; 
+        font-size: medium;
+        padding: 10px;
     }
 }
 
@@ -174,6 +175,7 @@
     &:hover {
         @include shadow-difum_imputs(lighten($color: $color-primarioB, $amount: 25));
     }
+
     @media (max-width: 600px) {
         width: 70%;
     }
@@ -193,9 +195,8 @@
         outline: none;
         @include Hover_shadow-difum_imput;
     }
-    @media (max-width: 600px) {
-        width: 70%;
-    }
+
+
 }
 
 .txtarea2 {
@@ -212,6 +213,18 @@
     &:focus {
         outline: none;
         @include Hover_shadow-difum_imput;
+    }
+
+    @media (max-width: 800px) {
+        height: auto;
+        width: 70%;
+        background-color: red;
+
+    }
+
+    @media (max-width: 400px) {
+        width: 50%;
+        background-color: red;
     }
 }
 
@@ -335,6 +348,7 @@
     align-self: flex-start;
     margin-left: 10px
 }
+
 //ESTILO BASE
 .rangeimput {
     border-radius: map-get($map: $borders, $key: grande);
@@ -345,7 +359,7 @@
 
 .rangeimput_Gr {
     @extend .rangeimput;
-    width: map-get($map: $RangeSizes, $key:grande );
+    width: map-get($map: $RangeSizes, $key:grande);
     accent-color: $color-primario;
 }
 
@@ -408,7 +422,7 @@ input[type='radio']:checked:after {
 }
 
 .self-center {
-    margin: 0  5%;
+    margin: 0 5%;
     align-self: center;
 }
 

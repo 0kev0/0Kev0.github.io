@@ -1,91 +1,95 @@
 Prism.highlightAll();
 
-const gradienteMouse = document.getElementById('welcome');
+const gradienteMouse = document.getElementById("welcome");
 
-document.addEventListener('mousemove', (event) => {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-//trakea posicion del mouse
-    const percentX = (mouseX / window.innerWidth) * 100;
-    const percentY = (mouseY / window.innerHeight) * 100;
+document.addEventListener("mousemove", (event) => {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  //trakea posicion del mouse
+  const percentX = (mouseX / window.innerWidth) * 100;
+  const percentY = (mouseY / window.innerHeight) * 100;
 
-    gradienteMouse.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%, rgb(146, 144, 195), rgb(62, 6, 95))`;
+  gradienteMouse.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%, rgb(146, 144, 195), rgb(62, 6, 95))`;
 });
 
-const gradienteMouse_bento = document.getElementById('bento');
+const gradienteMouse_bento = document.getElementById("bento");
 
-document.addEventListener('mousemove', (event) => {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
+document.addEventListener("mousemove", (event) => {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
 
-    const percentX = (mouseX / window.innerWidth) * 100;
-    const percentY = (mouseY / window.innerHeight) * 100;
+  const percentX = (mouseX / window.innerWidth) * 100;
+  const percentY = (mouseY / window.innerHeight) * 100;
 
-    gradienteMouse_bento.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%,rgb(62, 6, 95), rgb(112, 11, 151), rgb(142, 5, 194)`;
+  gradienteMouse_bento.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%,rgb(62, 6, 95), rgb(112, 11, 151), rgb(142, 5, 194)`;
 });
 
-const gradienteMouse_bentoA = document.getElementById('bentoA');
+const gradienteMouse_bentoA = document.getElementById("bentoA");
 
-document.addEventListener('mousemove', (event) => {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
+document.addEventListener("mousemove", (event) => {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
 
-    const percentX = (mouseX / window.innerWidth) * 100;
-    const percentY = (mouseY / window.innerHeight) * 100;
+  const percentX = (mouseX / window.innerWidth) * 100;
+  const percentY = (mouseY / window.innerHeight) * 100;
 
-    gradienteMouse_bentoA.style.boxShadow = ` 1px 1px radial-gradient(circle at ${percentX}% ${percentY}%,rgb(62, 6, 95), rgb(112, 11, 151), rgb(142, 5, 194)`;
+  gradienteMouse_bentoA.style.boxShadow = ` 1px 1px radial-gradient(circle at ${percentX}% ${percentY}%,rgb(62, 6, 95), rgb(112, 11, 151), rgb(142, 5, 194)`;
 });
-
 function nav() {
-    var side = document.getElementById('sidebar');
-    if (side.style.display === 'none' || side.style.display === '') {
-        side.style.display = 'block';
-    } else {
-        side.style.display = 'none';
-    }
+  var side = document.getElementById("sidebar");
+  var icon = document.getElementById("EYEicon");
+  
+  if (side.style.display === "none" || side.style.display === "") {
+    side.style.display = "block";
+    icon.classList.remove("fa-eye-slash");
+    icon.classList.add("fa-eye");
+  } else {
+    side.style.display = "none";
+    icon.classList.remove("fa-eye");
+    icon.classList.add("fa-eye-slash");
+  }
 }
 
 function copyCodeToClipboard(type, id) {
-    var codeCopied = false;
+  var codeCopied = false;
 
-    var codeElements = document.querySelectorAll("p."+type);
-    var code = "";
-    codeElements.forEach(function(element) {
-        code += element.textContent.trim() + "\n";
-    });
+  var codeElements = document.querySelectorAll("p." + type);
+  var code = "";
+  codeElements.forEach(function (element) {
+    code += element.textContent.trim() + "\n";
+  });
 
-    var tempInput = document.createElement("textarea");
-    tempInput.value = code;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-    codeCopied = true
-    
-    var successAlert = document.getElementById(id);
-    if (codeCopied == true) {
-        successAlert.style.display = "block";
-        setTimeout(function() {
-            successAlert.style.display = "none";
-        }, 2000);
-    } else {
-        alert("No se encontró el elemento con ID 'success-alert'.");
-    }
-    
+  var tempInput = document.createElement("textarea");
+  tempInput.value = code;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  codeCopied = true;
+
+  var successAlert = document.getElementById(id);
+  if (codeCopied == true) {
+    successAlert.style.display = "block";
+    setTimeout(function () {
+      successAlert.style.display = "none";
+    }, 2000);
+  } else {
+    alert("No se encontró el elemento con ID 'success-alert'.");
+  }
 }
 
-function ocultar(){
-    var x = document.getElementById('sidebar');
-    x.style.display="none"
+function ocultar() {
+  var x = document.getElementById("sidebar");
+  x.style.display = "none";
 }
 
 function menu() {
-    var items = document.querySelectorAll("a.item");
-    for (var i = 0; i < items.length; i++) {
-        if (items[i].style.display === "none") {
-            items[i].style.display = "block"; // o el estilo que corresponda
-        } else {
-            items[i].style.display = "none";
-        }
+  var items = document.querySelectorAll("a.item");
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].style.display === "none") {
+      items[i].style.display = "block"; // o el estilo que corresponda
+    } else {
+      items[i].style.display = "none";
     }
+  }
 }

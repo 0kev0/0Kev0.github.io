@@ -1,5 +1,5 @@
-@import 'Variables';
-@import 'Shadow';
+@import "Variables";
+@import "Shadow";
 
 @mixin Display-flex {
     margin-left: auto;
@@ -32,12 +32,11 @@
     border-radius: 5px;
     padding-bottom: 10px;
     @media (max-width: 800px) {
-        max-width: 90%; 
-        input{
+        max-width: 90%;
+        input {
             display: none;
         }
     }
-    
 }
 
 .form1 {
@@ -84,7 +83,7 @@
         width: 70vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: .5fr 2fr .5fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
         grid-template-areas:
             "title title"
             "info card"
@@ -94,7 +93,6 @@
 
 .title {
     grid-area: title;
-
 }
 
 .informacion {
@@ -103,7 +101,6 @@
     width: 100%;
     padding: 0;
     grid-area: info;
-
 }
 
 .cardinfo {
@@ -111,19 +108,13 @@
     grid-area: card;
     gap: 8px;
     width: 100%;
-
-
 }
-
-
 
 .end {
     grid-area: final;
     display: flex;
     align-items: center;
-    justify-content: flex-end ;
-
-
+    justify-content: flex-end;
 }
 
 .form3 {
@@ -146,7 +137,7 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 3fr .5fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
     grid-template-areas:
         "title img "
         "info img"
@@ -168,12 +159,11 @@
     gap: 8px;
     grid-area: info;
     padding: 5%;
-
 }
 
 .img {
     grid-area: img;
-    background-image: url('/DripCSS/IMG/stock_red.jpg');
+    background-image: url("/DripCSS/IMG/stock_red.jpg");
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -181,10 +171,8 @@
     border-radius: 0 4px 4px 0;
 }
 
-
-
 .end {
-    grid-area: final ;
+    grid-area: final;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,12 +180,11 @@
 
 .img_FormBehind {
     height: auto;
-    background-image: url('/DripCSS/IMG/pexels-joaojesusdesign-925706.jpg');
+    background-image: url("/DripCSS/IMG/pexels-joaojesusdesign-925706.jpg");
     background-size: 100%;
     background-size: contain;
     padding: 0;
     border-radius: 0 4px 4px 0;
-
 }
 
 .formReserva {
@@ -208,5 +195,4 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     gap: 20px;
-
 }

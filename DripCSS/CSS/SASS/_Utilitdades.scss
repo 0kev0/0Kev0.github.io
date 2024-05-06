@@ -1,6 +1,11 @@
 @import 'Variables';
 @import 'botones';
 
+.txt_Xg
+{
+font-size: map-get($map: $FontSize, $key: Xgrande);
+font-weight: 700;
+}
 
 //Estilo para imagenes de codigos
 .Img_code {
@@ -15,6 +20,11 @@
   height: 50%;
   object-fit: contain;
   scale: .8;
+}
+.sobreponer
+{
+  position: absolute;
+  z-index: 3;
 }
 
 .overlay {
@@ -37,6 +47,11 @@
   }
 }
 
+.img_shadow
+{
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+
+}
 
 .overlay img {
   object-fit: contain;
@@ -171,18 +186,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100%;
   max-height: 400px;
   width: 90%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 10vh auto 0 auto;
+  background-color: rgba(0, 0, 0, 0.08); /* Cambia el valor de opacidad según tus necesidades */
+
 }
 
 .backgraund-img {
   background-image: url(/DripCSS/IMG/Purple_cloack.jpg);
   opacity: .9;
-  //background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .bottom-responsive {
@@ -214,18 +232,21 @@
 }
 
 //
-.Size_sm {
+.Img_Size_sm {
   height: auto;
   width: 40vh;
+  object-fit: contain;
 }
 
-.Size_md {
+.Img_Size_md {
   height: auto;
+  object-fit: contain;
   width: 80vh;
 }
 
-.Size_gr {
+.Img_Size_gr {
   height: auto;
+  object-fit: contain;
   width: 100vh;
 }
 

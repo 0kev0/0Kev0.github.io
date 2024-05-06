@@ -56,6 +56,9 @@
 @mixin shadow-difum_imputs($color) {
     box-shadow: 0px 3px 1px 0px $color;
 }
+@mixin shadow-difum_txt($color) {
+   text-shadow: 4px 4px 1px 0px $color !important;
+}
 
 @mixin shadow-difum_Forms($color) {
     box-shadow: 0px 0px 5px 1px $color;

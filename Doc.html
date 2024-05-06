@@ -11,23 +11,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="DripCSS/CSS/Style.css" />
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="DripCSS/IMG/Drip_Css_Icon.ico">
+
     <title>Documentacion</title>
 </head>
 
-<header class="Display-flex -left Pd-lf-rg-meduium Gap-sm header-responsive">
-    <i id="bars" onclick="menu()" class="fa-solid fa-bars color-white"></i>
-    <a class="item Letter_hover" href="">Document</a>
-    <a class="item Letter_hover" href="">Ejemplos</a>
-    <a class="item Letter_hover" href="">Temas</a>
-    <a class="item Letter_hover" href="">Conocenos</a>
-</header>
+<nav class="nav2_Ver2" style="position: relative;">
+    <a href="#" class="logo">Drip_CSS</a>
+    <ul>
+        <li><a href="/inicio.html">inicio</a></li>
+      <li><a href="/temas.html">Temas</a></li>
+      <li><a href="/Doc.html">Documentacion</a></li>
+      <li><a href="/abaut.html">Contacto</a></li>
+    </ul>
+  </nav>
 
 <!------------------------------------------------------------------------------------------------->
 
 <body class="Bg-Base ">
-    <i class="fa-solid fa-house" onclick="nav()" style="color: #b197fc"></i>
     <div class="doc">
         <!--------------------------------------SIDEBAR----------------------------------------------------------->
+        <i id="EYEicon" class="fa-solid fa-eye-slash sobreponer" onclick="nav()" style="color: #b197fc"></i>
         <div id="sidebar" class="Sidebar_content sidebar-responsive pa">
             <ul>
                 <li>
@@ -47,7 +51,6 @@
                         <li><a href="#Fonts">Fonts</a></li>
                         <li><a href="#FontsStyles">Styles</a></li>
                         <li><a href="#Highliters">Highliters</a></li>
-
 
                         <br />
                     </ul>
@@ -1567,11 +1570,14 @@
                                 class="buttontest"
                             </p> <br>
 
-                            <div class="bottom-responsive Display-flex flex-row  flex-wrap" style="justify-items: center;">
-                                <button class="butontest_boxshadow_Th set_butontest_boxshadow_colorlightGreen">test3</button>
+                            <div class="bottom-responsive Display-flex flex-row  flex-wrap"
+                                style="justify-items: center;">
+                                <button
+                                    class="butontest_boxshadow_Th set_butontest_boxshadow_colorlightGreen">test3</button>
                                 <button class="button_animated_Th2 set_button_animated_Th_color_purple">test4</button>
                                 <button class="boton-primario_Th3 set_boton-primario_Th_color_yellow">test5</button>
-                                <button class="boton-secundario_Th4 set_boton-secundario_th_color_blue">test6 </button><br>
+                                <button class="boton-secundario_Th4 set_boton-secundario_th_color_blue">test6
+                                </button><br>
                                 <button class="button-3 set_button-3_color_orange">test7</button>
                                 <button class="button_Squear_Th2 set_button_Squear_color_pink">test8</button>
                                 <button class="Tap_Button_Th3  set_boton-primario_Th_color_yellow">test9</button>
@@ -1632,14 +1638,14 @@
                             <p class="coment_green"> butontest_boxshadow_Th set_butontest_boxshadow_colorblue</p>
 
                         </p>
-                        <div class="Display-flex" style="justify-items: center;">
+                        <div class="Display-flex justfy_center">
                             <button class="button_Squear_Th ">normal</button>
                             <button class=" button_Squear_Th set_button_Squear_color_green">cambiado</button>
                             <button class=" button_Squear_Th set_button_Squear_color_yellow">cambiado</button>
                             <button class=" button_Squear_Th set_button_Squear_color_pink">cambiado</button>
                         </div>
 
-                        <div class="Display-flex" style="justify-items: center;">
+                        <div class="Display-flex justfy_center">
                             <button class=" butontest_boxshadow_Th">normal</button>
                             <button class=" butontest_boxshadow_Th set_butontest_boxshadow_colorblue">cambiado</button>
                             <button class=" butontest_boxshadow_Th set_butontest_boxshadow_colorgreen">cambiado</button>
@@ -1822,7 +1828,7 @@
                     </div><br>
                     <h2 id="AlertTypes" class="Font_Tema">Badges Style</h2>
 
-                    <div class="Documentacion-info-container-content">
+                    <div class="Documentacion-info-container-content Display-flex justfy_center">
                         <p>
                             <span class="badge1">badge1</span><br><br>
                             <span class="badge2">badge2</span><br><br>

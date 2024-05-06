@@ -308,7 +308,9 @@ function copyCodeToClipboard(type, id) {
 function toggleNav() {
   var nav = document.querySelectorAll('.nav');
   nav.classList.toggle('active');
+
 }
+
 function toggleNavbar(id) {
   var navbar = document.getElementById(id);
   

@@ -1,28 +1,49 @@
 @import 'Variables';
-.article {
-    margin-top: 0;
-    margin-left: 10%;
+.article-col_1 {
+    margin: 0 15%;
     align-items: center;
 }
 
-.article-2-col {
-  column-count: 2; /* Divide el contenido en dos columnas */
-  column-gap: 10px; /* Espacio entre las columnas */
+
+.article-col_2 {
+  column-count: 2; 
   margin: 20px 40px;
 
 }
 
-.article-1-col {
-    column-count: 1; /* Divide el contenido en dos columnas */
-    margin: 20px 10%;
-
-  
-  }
-
-
-.article-3-col {
+.article-col_3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+}
+
+.txt-subrayado {
+    background-color: $color-primarioB;
+}
+
+.txt-subrayadoB {
+    background-color: $color-primarioB;
+}
+
+.txt-subrayadoC {
+    background-color: $color-primarioC;
+}
+
+.txt-subrayadoD {
+    background-color: $color-primarioD;
+}
+
+.txt-subrayado_block {
+    background-color: $color-primarioB;
+    display: block;
+}
+
+.txt-subrayado_inlineD {
+    background-color: $colorBg-secundarioD;
+    display: inline;
+}
+
+.article-bordered {
+    border: 1px solid black;
 }
 

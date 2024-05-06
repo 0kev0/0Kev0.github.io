@@ -54,6 +54,7 @@ GLOSARIO:
  	text-shadow = txt-shadw
 	self-align = self-align
 	object-fit = obj-fit
+	alert = alert
 
 agreguen mas si faltan
 	
