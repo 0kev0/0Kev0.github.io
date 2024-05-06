@@ -1,7 +1,5 @@
 $color-primario : rgb(142, 5, 194);
 $color-secundario : rgb(112, 11, 151);
-@import 'FontsStyles';
-@import 'Shadow';
 
 @mixin center {
   display: flex;
@@ -9,13 +7,13 @@ $color-secundario : rgb(112, 11, 151);
   align-items: center;
 }
 
-
 .nav {
   @include center;
   background-color: $color-primario;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   overflow: hidden;
+  box-sizing: border-box; // Agregamos box-sizing
 
   ul {
     list-style-type: none;
@@ -41,7 +39,22 @@ $color-secundario : rgb(112, 11, 151);
   }
 }
 
-//FALTA AGREGAR EXPLICACION DE USO Y SUGERENCIAS PARA ESTILOS 
+// Media Query para dispositivos móviles
+@media only screen and (max-width: 768px) {
+  .nav ul li {
+    float: none;
+    width: 100%; // Establecemos el ancho completo para que se apilen verticalmente
+  }
+
+  .nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0; // Ajustamos el padding
+  }
+}
+
+// Resto del código sin cambios
+
 @mixin AplicarTemasNavbar($colorBG, $colorBGItems, $ColorHover_A, $SetSombrasLogo, $SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) {
   .header {
     background-color: $colorBGItems;
@@ -60,12 +73,12 @@ $color-secundario : rgb(112, 11, 151);
   }
 
   justify-content: $Justify;
-  font-family: map-get($map: $FontPack3, $key:Titulo);
+  font-family: map-get($map: $FontPack3, $key: Titulo);
   font-size: map-get($map: $FontSize, $key: $key);
   background-color: $colorBG;
 
   ul li a {
-    font-family: map-get($map: $FontPack_A, $key:$Font_A);
+    font-family: map-get($map: $FontPack_A, $key: $Font_A);
 
     &:hover {
       transition: .20s all ease-in;
@@ -98,8 +111,6 @@ $color-secundario : rgb(112, 11, 151);
       font-size: 40px;
     }
   }
-
-
 }
 
 .Drip_logo_TemaC {
@@ -120,7 +131,6 @@ $color-secundario : rgb(112, 11, 151);
       font-size: 40px;
     }
   }
-
 }
 
 .nav2 {
@@ -268,12 +278,9 @@ $color-secundario : rgb(112, 11, 151);
   }
 }
 
-
-
-
 .nav4 {
   //VARIABLES @mixin AplicarTemasNavbar($colorBG,$colorBGItems, $ColorHover_A, $SetSombrasLogo,$SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) 
-  @include AplicarTemasNavbar($color-secundarioD, $colorbg-primarioD, lighten($color: $color-secundarioD, $amount: 20), $color-primarioD, $color-secundarioD, $FontPack3, Tema, $FontPack3, Texto, center, grande);
+  @include AplicarTemasNavbar($color-secundarioD, $color-primarioD, lighten($color: $color-secundarioD, $amount: 20), $color-primarioD, $color-secundarioD, $FontPack3, Tema, $FontPack3, Texto, center, grande);
 
   .header .logo {
     order: 3;
@@ -296,5 +303,4 @@ $color-secundario : rgb(112, 11, 151);
       box-shadow: inset 0 -4px #ccc;
     }
   }
-
 }
