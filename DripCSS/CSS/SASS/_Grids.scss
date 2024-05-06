@@ -333,8 +333,11 @@ $color1: rgb(83, 92, 145);
   width: 100%;
   display: grid;
   grid-template-columns: .75fr 4fr 1fr;
+  grid-row: auto auto;
   grid-template-areas:
-    "Sidebar  Content Content";
+    "Sidebar  Content Content"
+    "Footer Footer Footer";
+
   margin: 0;
 }
 
@@ -415,6 +418,8 @@ $color1: rgb(83, 92, 145);
   grid-area: ItemList;
   color: white;
 }
+
+
 
 //grid para la web tema 1
 .webtema1 {

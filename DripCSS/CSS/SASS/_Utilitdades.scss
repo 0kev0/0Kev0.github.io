@@ -1,19 +1,38 @@
 @import 'Variables';
 @import 'botones';
 
-.txt_Xg
-{
-font-size: map-get($map: $FontSize, $key: Xgrande);
-font-weight: 700;
+.scrole {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+  }
 }
 
-.text_justify-self_center
-{
+
+.txt_Xg {
+  font-size: map-get($map: $FontSize, $key: Xgrande);
+  font-weight: 700;
+}
+
+.text_justify-self_center {
   justify-self: center;
 }
 
-.text_align-self_center
-{
+.text_align-self_center {
   align-self: center;
 }
 
@@ -31,8 +50,8 @@ font-weight: 700;
   object-fit: contain;
   scale: .8;
 }
-.sobreponer
-{
+
+.sobreponer {
   position: absolute;
   z-index: 3;
 }
@@ -57,8 +76,7 @@ font-weight: 700;
   }
 }
 
-.img_shadow
-{
+.img_shadow {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 
 }
@@ -201,7 +219,8 @@ font-weight: 700;
   width: 90%;
   max-width: 600px;
   margin: 10vh auto 0 auto;
-  background-color: rgba(0, 0, 0, 0.08); /* Cambia el valor de opacidad según tus necesidades */
+  background-color: rgba(0, 0, 0, 0.08);
+  /* Cambia el valor de opacidad según tus necesidades */
 
 }
 
@@ -212,7 +231,8 @@ font-weight: 700;
   background-repeat: no-repeat;
   height: 100%;
 }
-.Documentacion-responsive{
+
+.Documentacion-responsive {
   @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -251,8 +271,8 @@ font-weight: 700;
   }
 
   @media screen and (max-width: 550px) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .sidebar-responsive {
@@ -333,8 +353,9 @@ font-weight: 700;
     width: 100%;
     object-fit: cover;
   }
+
   @media screen and (max-width: 800px) {
-    img{
+    img {
       display: none;
     }
   }
@@ -379,11 +400,15 @@ font-weight: 700;
   z-index: 0;
 }
 
-
+.txt_start {
+  text-justify: newspaper;
+}
 
 .self-start {
+  Display: flex;
   margin-left: 10px;
   align-self: flex-start;
+
 }
 
 .self-right {
@@ -412,20 +437,22 @@ font-weight: 700;
   border: 2px solid #000;
 }
 
-.theme3-responsive{
+.theme3-responsive {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 10%;
+
   @media screen and (max-width: 800px) {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3,0.75fr);
+    grid-template-rows: repeat(3, 0.75fr);
     align-items: center;
     justify-content: center;
     grid-column-gap: 10px;
     margin: 0;
-    .img-container_flat{
-      img{
+
+    .img-container_flat {
+      img {
         display: none;
       }
     }
@@ -995,12 +1022,12 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   }
 }
 
-.responsive-themes{
-  @media screen and (max-width:950px){
+.responsive-themes {
+  @media screen and (max-width:950px) {
     grid-template-areas:
-    "carrucel carrucel carrucel"
-    "info form form"
-    "footer footer  footer";
+      "carrucel carrucel carrucel"
+      "info form form"
+      "footer footer  footer";
   }
 }
 
@@ -1280,7 +1307,9 @@ $fonts: (Roboto: 'Roboto, sans-serif',
 .color-form-secundario {
   color: $colorForm-secundario;
 }
+
 $lightgreen : rgb(42, 165, 114);
+
 //utilidades de botones
 //button_Squear_btn
 .set_button_Squear_btn_color_lightgreen {
@@ -1839,7 +1868,7 @@ $lightgreen : rgb(42, 165, 114);
 
 /*Buttons rounded*/
 
-.set_butontest_round_color_lightgreen{
+.set_butontest_round_color_lightgreen {
   @extend .butontest_round;
   background: $lightgreen;
 
@@ -2015,37 +2044,31 @@ $lightgreen : rgb(42, 165, 114);
   border: 1px solid black;
 }
 
-.txt-color_white
-{
+.txt-color_white {
   color: white;
 }
 
 
-.txt-color_gray
-{
+.txt-color_gray {
   color: gray;
 }
 
-.txt-color_blue
-{
+.txt-color_blue {
   color: blue;
 }
 
-.txt-color_temaA
-{
+.txt-color_temaA {
   color: $color-primario;
 }
 
-.txt-color_temaB
-{
+.txt-color_temaB {
   color: $color-primarioB;
 }
-.txt-color_temaC
-{
+
+.txt-color_temaC {
   color: $color-primarioC;
 }
 
-.txt-color_temaD
-{
+.txt-color_temaD {
   color: $color-primarioD;
 }

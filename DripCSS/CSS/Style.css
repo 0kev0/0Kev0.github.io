@@ -463,6 +463,10 @@
   background-color: rgb(60, 7, 83);
 }
 
+.Bg_temaWeb3 {
+  background-color: rgb(60, 7, 83);
+}
+
 .Bg-dark {
   background-color: rgba(0, 0, 0, 0.668);
 }
@@ -4120,6 +4124,22 @@
   width: 18vh;
 }
 
+.scrole *::-webkit-scrollbar {
+  display: none;
+}
+.scrole body {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.scrole body::-webkit-scrollbar {
+  display: none;
+}
+.scrole body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .txt_Xg {
   font-size: 50px;
   font-weight: 700;
@@ -4313,7 +4333,8 @@
   width: 90%;
   max-width: 600px;
   margin: 10vh auto 0 auto;
-  background-color: rgba(0, 0, 0, 0.08); /* Cambia el valor de opacidad según tus necesidades */
+  background-color: rgba(0, 0, 0, 0.08);
+  /* Cambia el valor de opacidad según tus necesidades */
 }
 
 .backgraund-img {
@@ -4495,7 +4516,12 @@
   z-index: 0;
 }
 
+.txt_start {
+  text-justify: newspaper;
+}
+
 .self-start {
+  Display: flex;
   margin-left: 10px;
   align-self: flex-start;
 }
@@ -6217,6 +6243,9 @@
 }
 .Documentacion-info-container-content p {
   font-family: "Oswald";
+}
+.Documentacion-info-container-content pre {
+  justify-items: flex-start;
 }
 
 /*Paleta de colores A*/
@@ -8389,7 +8418,8 @@ input[type=radio]:checked:after {
   width: 100%;
   display: grid;
   grid-template-columns: 0.75fr 4fr 1fr;
-  grid-template-areas: "Sidebar  Content Content";
+  grid-row: auto auto;
+  grid-template-areas: "Sidebar  Content Content" "Footer Footer Footer";
   margin: 0;
 }
 
@@ -11136,6 +11166,22 @@ header a {
   width: 18vh;
 }
 
+.scrole *::-webkit-scrollbar {
+  display: none;
+}
+.scrole body {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.scrole body::-webkit-scrollbar {
+  display: none;
+}
+.scrole body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .txt_Xg {
   font-size: 50px;
   font-weight: 700;
@@ -11329,7 +11375,8 @@ header a {
   width: 90%;
   max-width: 600px;
   margin: 10vh auto 0 auto;
-  background-color: rgba(0, 0, 0, 0.08); /* Cambia el valor de opacidad según tus necesidades */
+  background-color: rgba(0, 0, 0, 0.08);
+  /* Cambia el valor de opacidad según tus necesidades */
 }
 
 .backgraund-img {
@@ -11511,7 +11558,12 @@ header a {
   z-index: 0;
 }
 
+.txt_start {
+  text-justify: newspaper;
+}
+
 .self-start {
+  Display: flex;
   margin-left: 10px;
   align-self: flex-start;
 }

@@ -30,7 +30,7 @@ function ButtonCarrucelShow() {
     Frase1.style.display = 'block';
     Frase2.style.display = 'block';
     
-    txtpregunta.innerHTML  = '&#9733;Te tenemos cubierto...&#9733;'; // Cambia 'Nuevo texto' por el texto que desees mostrar
+    txtpregunta.innerHTML  = 'Te tenemos cubierto...&#9733;'; // Cambia 'Nuevo texto' por el texto que desees mostrar
     txtBtn.innerHTML  = ':)'; // Cambia 'Nuevo texto' por el texto que desees mostrar
     
   } else {

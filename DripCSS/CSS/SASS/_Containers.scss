@@ -157,7 +157,10 @@
 
     p {
         font-family: map-get($map: $FontPack2, $key: Texto);
+    }
 
-
+    pre
+    {
+        justify-items: flex-start;
     }
 }
