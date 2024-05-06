@@ -7,6 +7,15 @@
   gap: 10px;
 }
 
+.Display-flex-row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: auto;
+}
+
 .Display-flex-column {
   display: flex;
   flex-direction: column;
