@@ -42,6 +42,10 @@ $color-secundario : rgb(112, 11, 151);
 }
 
 //FALTA AGREGAR EXPLICACION DE USO Y SUGERENCIAS PARA ESTILOS 
+//Preferiblemente combinar los primeros 2 colores, el tercer color debe hacer contraste con los anteriores
+//PARA EL NAVBAR 2 PUEDE USAR EL MISMO COLOR EN LOS PRIEROS 2 PARAMETROS
+//J=PUEDE ADAPTAR EL JUSTIFICADO A SU PREFERENCIA
+//PREFERIBLEMENTE USAR FUENTES TITULO O TEMA
 @mixin AplicarTemasNavbar($colorBG, $colorBGItems, $ColorHover_A, $SetSombrasLogo, $SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) {
   .header {
     background-color: $colorBGItems !important;
@@ -327,7 +331,7 @@ $color-secundario : rgb(112, 11, 151);
     display: block;
   }
 
-  // Reglas de medios para pantallas pequeñas
+  // Reglas de medios para pantallas pequeas
   @media screen and (max-width: 800px) {
     .nav4 ul {
       display: none; // Oculta el menú principal en pantallas pequeñas

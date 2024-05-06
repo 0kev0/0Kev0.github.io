@@ -309,7 +309,8 @@
     background: lighten($color: $color-primarioB, $amount: 5);
 
   }
-  @media screen and (max-width:900px){
+
+  @media screen and (max-width:900px) {
     font-size: 14px;
   }
 }
