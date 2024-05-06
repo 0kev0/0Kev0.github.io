@@ -2590,62 +2590,12 @@
   display: none;
 }
 
-.center-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  max-height: 400px;
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.backgraund-img {
-  background-image: url(/DripCSS/IMG/Purple_cloack.jpg);
-  opacity: 0.9;
-  background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 1000px) {
-  .Documentacion-responsive {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.tarjeta {
-  width: calc(50% - 20px);
-  margin: 10px;
-}
-@media screen and (max-width: 768px) {
-  .tarjeta {
-    width: 100%;
-  }
-}
-
 @media (max-width: 900px) {
   .bottom-responsive {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     background: #000;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .navbar-responsive nav {
-    display: none;
-    font-size: 12px;
-    background-color: #000;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 550px) {
-  .navbar-responsive {
-    display: none;
   }
 }
 
@@ -3320,33 +3270,6 @@
   top: 50%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 25px;
-  align-items: center;
-}
-@media screen and (max-width: 1100px) {
-  .flex {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .responsive-themes {
-    grid-template-areas: "carrucel carrucel carrucel" "info form form" "footer footer  footer";
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .responsive {
-    width: auto;
-  }
-  .responsive a {
-    font-size: 12px;
-  }
 }
 
 .pa {
@@ -6426,7 +6349,7 @@ header a {
   background-color: rgb(142, 5, 194);
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  height: 100%;
+  overflow: hidden;
 }
 .nav ul, .nav2 ul {
   list-style-type: none;
@@ -6482,6 +6405,7 @@ header a {
   background-color: rgb(255, 0, 0);
   justify-content: space-between;
   width: auto;
+  color: #eceff1;
 }
 .nav2 ul li {
   display: inline-block;
@@ -6524,14 +6448,6 @@ header a {
   text-decoration: underline;
 }
 
-.nav2 ul {
-  display: none;
-}
-
-.nav2.open ul {
-  display: block;
-}
-
 .nav3 {
   justify-content: flex-end;
   font-family: "Poppins";
@@ -6543,6 +6459,7 @@ header a {
   background-color: rgb(83, 92, 145);
   justify-content: flex-end;
   width: auto;
+  color: #eceff1;
 }
 .nav3 ul li {
   display: inline-block;
@@ -6717,6 +6634,7 @@ header a {
   background-color: rgb(3, 6, 55);
   justify-content: center;
   width: auto;
+  color: #eceff1;
 }
 .nav4 ul li {
   display: inline-block;
