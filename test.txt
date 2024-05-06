@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="DripCSS/CSS/Style.css" />
+  <title>Document</title>
+</head>
+
+<header class="Display-flex -left Pd-lf-rg-meduium Gap-sm">
+  <a class="Letter_hover" href="">Document</a>
+  <a class="Letter_hover" href="">Ejemplos</a>
+  <a class="Letter_hover" href="">Temas</a>
+  <a class="Letter_hover" href="">Conocenos</a>
+</header>
+
+<nav class="nav">
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#acerca">Acerca de</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<nav class="nav2">
+  <a href="#" class="logo">Drip_CSS</a>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#acerca">Acerca de</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<nav class="nav3">
+  <header class="header">
+    <div class="logo">
+      <a href="#" class="logo">Drip_CSS</a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#"><button>Contacto</button></a>
+  </header>
+</nav>
+
+<nav class="nav4">
+  <header class="header">
+    <div class="logo">
+      <a href="#" class="logo">Drip_CSS</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inidasdco</a></li>
+        <li>
+          <a href="#">Localizacion +</a>
+          <ul class="drip">
+            <li><a href="#">San Miguel</a></li>
+            <li><a href="#">Corinto city</a></li>
+            <li><a href="#">Chinameca</a></li>
+            <li><a href="#">Nueva guadalupe</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+</nav>
+
+</div>
+
+<body class="Bg-Base ">
+  <div class="img_FormBehind">
+    <br>
+    <form action="" class="formReserva">
+      <output name="x" for="a b"></output>
+
+      <input type="month">
+
+      <h1 class="TituloFormReserva">Reservar Habitacion</h1>
+      <fieldset>
+        <legend>info:</legend>
+        <label class="label_smReserva" for="Nombre">Nombre:</label>
+        <input class="input_mdReserva" type="text" id="nombre contactanos" name="nombre" required="required"
+          placeholder="Introduzca su nombre">
+
+        <label class="label_smReserva" for="Nombre">Telefono:</label>
+        <input class="input_mdReserva" type="text" id="Email contactanos" name="nombre" required="required"
+          placeholder="Introduzca su nombre">
+      </fieldset>
+
+      <label class="label_smReserva " class=" " for="edad">Adultos:</label>
+      <input class="input_smReserva" type="number" id="edad" name="edad" min="18" max="99" required="required">
+
+      <label class="label_smReserva " class=" " for="edad">Ninos:</label>
+      <input class="input_smReserva" type="number" id="edad" name="edad" min="18" max="99" required="required">
+
+      <input class="rangeimput" type="range" name="rangeInput" value="50" min="0" max="100" step="1">
+
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+
+    </form>
+  </div>
+
+  <form class="form4">
+    <div class="title4">
+      <h2 class="TituloForm2 ">Registro</h2>
+    </div>
+
+    <div class="info">
+
+      <label class="lable_sm2" for="Nombre">Nombre:</label>
+      <input class="input_md2" type="text" id="nombre contactanos" name="nombre" required="required"
+        placeholder="Introduzca su nombre">
+
+      <label class="lable_sm2" for="Nombre">Email:</label>
+      <input class="input_md2" type="text" id="Email contactanos" name="nombre" required="required"
+        placeholder="Introduzca su nombre">
+
+      <label class="lable_sm2" for="Nombre">Password:</label>
+      <input type="password" class="input_md2" id="nombre contactanos" name="nombre" required="required"
+        placeholder="Introduzca su nombre">
+
+      <label class="lable_sm2" for="Nombre">Reapet Password:</label>
+      <input type="password" class="input_md2" id="nombre contactanos" name="nombre" required="required"
+        placeholder="Introduzca su nombre">br
+
+      <fieldset class="lable_sm2">
+        <legend>Selecciona una opción:</legend>
+        <label for="radioOption1">
+          <input type="radio" name="radioGroup" id="radioOption1">
+          Opción 1
+        </label>
+        <label for="radioOption2">
+          <input type="radio" name="radioGroup" id="radioOption2">
+          Opción 2
+        </label>
+        <label for="radioOption3">
+          <input type="radio" name="radioGroup" id="radioOption3">
+          Opción 3
+        </label>
+      </fieldset>
+
+      <br>
+
+    </div>
+
+    <div class="img"> </div>
+
+    <div class="end">
+      <button class="button_Squear_Th2">registrarte</button>
+      <input class="button_Squear_Th2" type="reset">
+    </div>
+
+  </form>
+
+  <form class="form3">
+    <h2 class="TituloForm2">Contactanos</h2>
+    <label class="lable_sm2" for="Nombre">Nombre:</label>
+    <input class="input_md2" type="text" id="nombre contactanos" name="nombre" required="required"
+      placeholder="Introduzca su nombre">
+
+    <label class="lable_sm2" for="Nombre">Email:</label>
+    <input class="input_md2" type="text" id="Email contactanos" name="nombre" required="required"
+      placeholder="Introduzca su nombre">
+
+    <label class="lable_sm2" class="temasm2 " for="comentarios">Comentarios:</label>
+    <textarea class="txtarea2" id="comentarios contactanos" name="comentarios" rows="3" cols="50">
+            Escribe tus comentarios aquí...
+          </textarea>
+
+    <button class="button_Squear_Th2">ENVIAR Comentarios</button>
+  </form>
+
+  <form class="form2">
+
+    <div class="title">
+      <h2 class="TituloForm title">Formulario de compra</h2>
+    </div>
+
+    <div class="informacion">
+      <label class="temasm " for="nombre">Nombres:</label>
+      <input class="input_XGr" type="text" id="nombre" name="nombre" required="required"
+        placeholder="Introduzca su nombre">
+      <!-- texto genial   <span id="textHelpBlock" class="form-text text-muted">introduzca su nombre completo</span>-->
+
+      <label class="temasm " for="email">Email:</label>
+      <input class="input_XGr" type="email" id="email" name="email" required="required"
+        placeholder="Introduzca su email">
+
+      <label class="temasm " class=" " for="edad">Edad:</label>
+      <input class="input_md" type="number" id="edad" name="edad" min="18" max="99" required="required">
+
+      <label class="temasm " for="pais">País:</label>
+      <select class="input_md" id="pais" name="pais" required="required" placeholder="Introduzca su pais de origen">
+        <option value="">Selecciona un país</option>
+        <option value="es">España</option>
+        <option value="mx">México</option>
+        <option value="ar">Argentina</option>
+      </select>
+
+    </div>
+
+    <div class="cardinfo">
+      <label class="temasm " for="titular">Titular de la terjeta:</label>
+      <input class="input_XGr" type="text" id="titular" name="nombre" required="required"
+        placeholder="DIEGO MORATAYA GUSTAVO MARINO">
+
+      <label class="temasm " for="num tarjeta">Numero de tarjeta:</label>
+      <input class="input_XGr" type="text" id="num tarjeta" name="nombre" required="required"
+        placeholder="#### #### #### ####">
+
+      <label class="temasm " for="vencimiento">Fecha de vencimiento:</label>
+      <input class="input_md" type="email" id="vencimiento" name="email" required="required" placeholder="##/##">
+
+      <label class="temasm " class=" " for="CVC">csv:</label>
+      <input class=" input_md" type="number" id="CVC" name="edad" min="18" max="99" required="required"
+        placeholder="***">
+
+    </div>
+
+    <div class="end">
+      <button class=" buttontest" type="submit">Realizar compra</button>
+    </div>
+
+  </form>
+
+  <div class="form1 ">
+    <h2 class="TituloForm">Formulario p</h2>
+
+    <label class="label_sm " for="nombre">Nombre:</label>
+    <input class="input_XGr" type="text" id="nombre" name="nombre" required="required"
+      placeholder="Introduzca su nombre">
+
+    <label class="label_sm " for="email">Email:</label>
+    <input class="input_XGr" type="email" id="email" name="email" required="required" placeholder="Introduzca su email">
+
+    <label class="label_sm " for="frutas">Ingrese departamento :</label>
+    <input class="input_Gr  " type="text" id="frutas" list="lista-frutas" placeholder="Departamento">
+
+    <datalist id="lista-frutas">
+      <option value="Manzana">
+      <option value="Banana">
+      <option value="Naranja">
+      <option value="Uva">
+      <option value="Pera">
+    </datalist>
+
+    <label class="label_sm " for="pais">País:</label>
+    <select class="input_Gr " id="pais" name="pais" required="required" placeholder="Introduzca su pais de origen">
+      <option value="">Selecciona un país</option>
+      <option value="es">España</option>
+      <option value="mx">México</option>
+      <option value="ar">Argentina</option>
+    </select>
+
+    <label class="label_sm " class=" " for="edad">Edad:</label>
+    <input class=" input_sm" type="number" id="edad" name="edad" min="18" max="99" required="required">
+
+    <label class="label_sm " for="comentarios">Comentarios:</label>
+    <textarea class="txtarea" id="comentarios" name="comentarios" rows="3" cols="50">
+        Escribe tus comentarios aquí...
+      </textarea>
+
+    <button class="self-right button_st1" type="submit">Enviar</button>
+
+  </div>
+
+  <div id="welcome" class=" Display-flex -center -col mid_screen Pd-lf-rg-large welcome div_graded  ">
+    <h1 class="Font-base titulo big-letter">{Drip_CSS }</h1>
+    <br />
+    <h3 class="Font-base contenido">
+      ¿Listo para sumergirte en el Drip? Bienvenido a nuestra librería, donde
+      la simplicidad se encuentra con la sofisticación. ¡Prepárate para un
+      viaje minimalista y lleno de creatividad!
+    </h3>
+  </div>
+
+  </div>
+  <div class="img-set ">
+    <article class="article ">
+      <h1 class="Font-base tema big-letter ">{Drip_CSS }</h1>
+      <p class="contenido-article">
+        Una librería CSS basada en estilo y flujo es una colección de estilos
+        predefinidos y componentes que puedes utilizar en tus proyectos web para
+        darles un aspecto visual atractivo y mejorar el flujo de diseño. Estas
+        librerías suelen incluir estilos para elementos comunes de una página
+        web, como botones, tarjetas, barras de navegación, entre otros.
+      </p>
+
+      <p class="contenido-article">
+        Al utilizar una librería CSS, puedes ahorrar tiempo y esfuerzo al no
+        tener que escribir todos los estilos desde cero. Simplemente agregas la
+        librería a tu proyecto y puedes comenzar a utilizar los estilos y
+        componentes proporcionados de inmediato. Esto te permite enfocarte más
+        en la funcionalidad y contenido de tu sitio web, en lugar de tener que
+        preocuparte por los detalles de diseño.
+      </p>
+    </article>
+  </div>
+
+  <div id="bento" class="Bento_grid ">
+    <div id="bentoA" class="bentoAx3">
+      <h1 class="big-letter">“Expresión Creativa”</h1>
+      <ul class="li-content">
+        <li>
+          Drip Canvas: Un lienzo con efectos de pintura goteando desde la
+          parte superior.
+        </li><br />
+        <li>
+          Drip Colors: Tarjetas que representan diferentes colores de pintura
+          goteando.
+        </li><br />
+        <li>
+          Drip Brushes: Tarjetas con imágenes de pinceles y brochas de
+          pintura.
+        </li>
+      </ul>
+    </div>
+    <div class="bentoBx2">
+      <h1 class="big-letter">“Arte Urbano”</h1>
+      <p class="contenido-article">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        similique fugiat earum illum, eaque, eos beatae a vel voluptatibus
+        aliquam perferendis at cumque! Ipsum, consequuntur! Repellendus
+        provident eius temporibus dolores!
+      </p>
+    </div>
+    <div class="bentoCx3">
+      <h1 class="big-letter">“Interacción Dinámica”</h1>
+      <p class="contenido-article">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        similique fugiat earum illum, eaque, eos beatae a vel voluptatibus
+        aliquam perferendis at cumque! Ipsum, consequuntur! Repellendus
+        provident eius temporibus dolores!
+      </p>
+    </div>
+    <div class="bentoDx3">
+      <h1 class="big-letter">“Letras en Movimiento”</h1>
+      <p class="contenido-article">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        similique fugiat earum illum, eaque, eos beatae a vel voluptatibus
+        aliquam perferendis at cumque! Ipsum, consequuntur! Repellendus
+        provident eius temporibus dolores!
+      </p>
+    </div>
+    <div class="bentoXx1">
+      <h1 class="">{Drip_CSS}</h1>
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <!--Badgest-->
+  <h3 class="badge1" data-badge="10">Badge 1</h3><br><br>
+  <h3 class="badge3" data-badge="100">Badge 2</h3><br><br>
+  <h3 class="badge2" data-badge="20">Badge 1</h3>
+  <h3 class="badgeCorinto" data-badge="100">Badge Corinto</h3>
+  <!--Badgest-->
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <!--Template tarjetas 1-->
+  <div class="tarjeta">
+    <div class="front">
+      <img src="" alt="">
+      <h3>Target 1</h3>
+    </div>
+    <div class="back">
+      <h3>Target 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente cumque possimus, ab eum nemo animi
+        aspernatur doloremque odio inventore nihil corrupti cum porro est similique ad blanditiis amet ipsa.</p>
+      <div class="link"><a href="#">Detalles</a></div>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="front">
+      <img src="" alt="">
+      <h3>Target 2</h3>
+    </div>
+    <div class="back">
+      <h3>Target 2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reiciendis? Illum rerum velit iusto ipsam
+        excepturi quia debitis inventore minus temporibus, cum omnis ullam cupiditate quibusdam dicta. Quidem,
+        aspernatur quod.</p>
+      <div class="link"><a href="#">Detalles</a></div>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="front">
+      <img src="" alt="">
+      <h3>Target 3</h3>
+    </div>
+    <div class="back">
+      <h3>Target 3</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, quam debitis! Ducimus, eum est. Doloremque quos
+        quam rem vero perferendis officia cumque facilis quaerat vitae molestias, dolores exercitationem unde officiis!
+      </p>
+      <div class="link"><a href="#">Detalles</a></div>
+    </div>
+  </div>
+  <!--Fin Template tarjetas 1-->
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <!--Template tarjetas 2-->
+  <div class="card">
+    <div class="contenido">
+      <span></span>
+      <div class="img ">
+        <img src="" alt="">
+        <h4>Name</h4>
+        <h6>Profesion</h6>
+        <p>Descripcion</p>
+      </div>
+      <div class="links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="contenido">
+      <span></span>
+      <div class="img">
+        <img src="" alt="">
+        <h4>Name</h4>
+        <h6>Profesion</h6>
+        <p>Descripcion</p>
+      </div>
+      <div class="links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="contenido">
+      <span></span>
+      <div class="img">
+        <img src="" alt="">
+        <h4>Name</h4>
+        <h6>Profesion</h6>
+        <p>Descripcion</p>
+      </div>
+      <div class="links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <!--Fin Template tarjetas 2-->
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <br>
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <!--Tarjetas 3-->
+
+  <div class="wapper">
+    <div class="container  slider" id="i1">
+      <input class="slider" type="Radio" name="slide" id="c1" checked>
+      <label for="c1" class="carta">
+        <div class="row">
+          <div class="icon">1</div>
+          <div class="descripcion">
+            <h4>Text 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Harum eius quae minima exercitationem corrupti,
+              culpa dolorem nesciunt ea a minus fuga, voluptatibus
+              maiores amet illum.
+            </p>
+          </div>
+        </div>
+      </label>
+      <input class="slider" type="Radio" name="slide" id="c2">
+      <label for="c2" class="carta">
+        <div class="row">
+          <div class="icon">2</div>
+          <div class="descripcion">
+            <h4>Text 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Harum eius quae minima exercitationem corrupti,
+              culpa dolorem nesciunt ea a minus fuga, voluptatibus
+              maiores amet illum.
+            </p>
+          </div>
+        </div>
+      </label>
+      <input type="Radio" class="slider" name="slide" id="c3">
+      <label for="c3" class="carta">
+        <div class="row">
+          <div class="icon">3</div>
+          <div class="descripcion">
+            <h4>Text 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Harum eius quae minima exercitationem corrupti,
+              culpa dolorem nesciunt ea a minus fuga, voluptatibus
+              maiores amet illum.
+            </p>
+          </div>
+        </div>
+      </label>
+      <input type="Radio" class="slider" name="slide" id="c4">
+      <label for="c4" class="carta">
+        <div class="row">
+          <div class="icon">4</div>
+          <div class="descripcion">
+            <h4>Text 4</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Harum eius quae minima exercitationem corrupti,
+              culpa dolorem nesciunt ea a minus fuga, voluptatibus
+              maiores amet illum.
+            </p>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+  <!--Fin Tarjetas 3-->
+  <!------------------------------------------------------------------------------------------------------------------------------->
+
+  <!--Container 1-->
+  <div class="container-padre">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box1"></div>
+  </div>
+
+  <div class="container2">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div class="container-padre2">
+    <div class="boxs1"></div>
+    <div class="boxs2"></div>
+    <div class="boxs1"></div>
+    <div class="boxs3"></div>
+    <div class="boxs4"></div>
+  </div>
+  <!--Fin Container 1-->
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <br>
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <!--Container 2-->
+  <div class="degradado">
+    <div class="layout">
+      <div class="header">Header</div>
+      <div class="sidebar">fffffffffffffLorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus similique nisi iure
+        eligendi inventore voluptas, delectus eum quisquam, quibusdam sunt atque illo fugit. Laboriosam, assumenda
+        ratione doloribus inventore totam laudantium.
+        Vitae eligendi consectetur totam ratione autem saepe veniam similique asperiores quis quod repellat, recusandae
+        odit quisquam eos doloribus? Iure repellendus tempore aperiam animi ducimus neque obcaecati. Possimus ad illum
+        nemo.
+        Nihil totam aspernatur, sapiente quasi quam nobis repudiandae maiores dolor sit culpa reprehenderit? Obcaecati,
+        fugit dicta voluptates dolores molestiae consequatur ab, omnis assumenda vitae expedita at consectetur eum
+        perspiciatis cupiditate?
+        Dolorum assumenda impedit accur doloribus itaque labore praesentium corporis explicabo velit odit error
+        distinctio nihil, nam tenetur vel optio amet commodi corrupti officia minima dolorum totam. Mollitia.
+        Laudantium quo, iusto cum maiores corporis, est enim harum ut dolorem voluptatum doloribus ex unde quaerat!
+        Corrupti modi fugiat eos excepturi quos inventore, nemo, praesentium illo, nesciunt asperiores qui unde?
+        Iste ipsum adipisci, libero rerum, obcaecati facere cumque aut atque harum, ea nam. Provident alias, minus
+        dolorem laborum cum eligendi quos sit suscipit consequatur obcaecati blanditiis a illum ab nisi?</div>
+      <div class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora id beatae ducimus at?
+        Molestiae aliquid impedit quaerat magni tenetur consequuntur rerum rem sequi, minima laborum voluptatum.
+        Recusandae, similique accusamus!
+        Rerum accusamus incidunt nemo exercitationem neque, officiis eligendi magni illo molestiae sunt eaque provident
+        ratione deserunt, saepe mollitia modi consectetur reiciendis voluptatem cum repudiandae, error sequi ab eveniet.
+        Ullam, suscipit?
+        Sequi est molestias autem? Dolorem, unde ipsa voluptate voluptatem repellendus magnam, magni dolor reiciendis
+        minima illo sunt ratione? Est repudiandae repellat quis cumque saepe debitis maxime aspernatur dolor sunt
+        fugiat.
+        Dolores vel id eius quas. Optio laboriosam expedita maiores magni vitae nihil repudiandae, porro sequi, quo ut
+        laudantium odio ipsa exercitationem eaque neque cupiditate, a enim nam sint eos. Qui!
+        Officiis incidunt illum asperioresores vitae alias ipsam odit similique dignissimos non nulla repudiandae
+        distinctio magnam, minus quas recusandae est ad nemo aperiam, nesciunt iste tenetur inventore facere?
+        Repellendus.
+        Dolorem molestiae id ratione necello voluptatibus sit vitae, velit voluptates nobis commodi numquam dignissimos?
+        Molestias nostrum nihil sapiente nisi velit magni eaque temporibus fugit, saepe iusto commodi.
+        Velit fugit nulla atque ratione asperiores eum, quaerat aut sint illum, quibusdam officiis. In cum consequuntur
+        autem dolorem vitae reprehenderit beatae aperiam rerum? Accusamus, praesentium facilis laudantium voluptates quo
+        magnam.
+        Facere non, natus maiores corporis deserunt nostrum eveniet dolores, inventore eligendi necessitatibus sed
+        repellat rem quia accusantium quas mollitia quae illum reiciendis molestias neque, doloremque voluptates
+        molestiae minima? Amet, aliquid!
+        Facilis eius nobis dolore nulla doloribus, est sequi nobis quae optio vitae quia porro, vel ipsa. Hic, itaque
+        voluptatibus.</div>
+      <div class="footer">Lorem ipsum dolor sit amet consecteturcidunt debitis nisi praesentium inventore maiores?</div>
+    </div>
+  </div>
+  <!--Fin Container 2-->
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <br><br><br><br><br><br>
+  <!------------------------------------------------------------------------------------------------------------------------------->
+  <!-- Container 3-->
+
+  <div class="info-container">
+    <h2 class="Font_Tema">Información Importante</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo vel ex pulvinar posuere. Donec auctor neque
+      sit amet tincidunt congue.</p>
+    <p>Maecenas euismod urna et dolor placerat, sed suscipit leo semper. Nullam auctor efficitur nulla, sed blandit
+      felis feugiat vel.</p>
+    <div class="info-container-content">
+      <h3>Contenido</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa qui harum dolores! Suscipit quae sequi
+        obcaecati exercitationem natus error perferendis, nostrum, deserunt laboriosam odio, quibusdam vitae corrupti
+        dolorem nulla!
+        Quidem quae, nobis esse beatae cupiditate quo vitae quam illum tempora iusto minus quasi corrupti ipsa magnam
+        quos? Expedita saepe iste dolorum sit temporibus nisi magni beatae explicabo rem inventore.
+        Quas atque corporis cum corrupti culpa magni, molestias quam expedita natus, molestiae qui modi dolor incidunt
+        doloremque perspiciatis. Atque enim hic est nesciunt ex perferendis voluptatum beatae ipsam obcaecati fugit!
+        Nesciunt quisquam, quis corrupti quaerat esse eligendi officiis. Ut in repudiandae veniam sint harum
+        exercitationem molestias error consequuntur voluptas ratione ad nobis ipsa laborum ducimus, atque ullam delectus
+        quasi eos?
+        Iste perspiciatis reprehenderit inventore cumque maiores necessitatibus suscipit exercitationem rem molestias
+        aspernatur placeat expedita ullam molestiae modi quia illo quam facilis magni sapiente cupiditate minus earum,
+        veniam iusto. Numquam, consequuntur.
+      </p>
+    </div>
+  </div>
+
+  <button class="button_st1">ejemplo</button>
+
+  
+  <h1 style="color: white;">Prueba de sombras</h1>
+
+  <div class="box sombra-basica" style="background-color: blueviolet;">Sombra Básica</div>
+  <div class="box sombra-interior" style="background-color: blueviolet;">Sombra Interior</div>
+  <div class="box sombra-redondeada" style="background-color: blueviolet;">Sombra Redondeada</div>
+  <div class="box sombra-contorno" style="background-color: blueviolet;">Sombra Contorno</div>
+  <div class="box sombra-sobreponer" style="background-color: blueviolet;">Sombra Sobreponer (hover)</div>
+  <div class="box sombra-enfocar" style="background-color: blueviolet;" tabindex="0">Sombra Enfocar (focus)</div>
+
+  <div style="background-color: lightgray">
+  <h1 style="color: black">Prueba de clases de texto</h1>
+
+  <!-- Tamaños de fuente pequeño -->
+  <div class="group-roboto">
+    <p class="my-text-1">Texto pequeño Roboto</p>
+    <p class="my-text-2">Texto pequeño Montserrat</p>
+    <p class="my-text-3">Texto pequeño Open Sans</p>
+    <p class="my-text-4">Texto pequeño Lato</p>
+  </div>
+
+  <!-- Tamaños de fuente mediano -->
+  <div class="group-montserrat">
+    <p class="my-text-5">Texto mediano Roboto</p>
+    <p class="my-text-6">Texto mediano Montserrat</p>
+    <p class="my-text-7">Texto mediano Open Sans</p>
+    <p class="my-text-8">Texto mediano Lato</p>
+  </div>
+
+  <!-- Tamaños de fuente grande -->
+  <div class="group-open-sans">
+    <p class="my-text-9">Texto grande Roboto</p>
+    <p class="my-text-10">Texto grande Montserrat</p>
+    <p class="my-text-11">Texto grande Open Sans</p>
+    <p class="my-text-12">Texto grande Lato</p>
+  </div>
+
+  <!-- Tamaños de fuente extra grande -->
+  <div class="group-lato">
+    <p class="my-text-13">Texto extra grande Roboto</p>
+    <p class="my-text-14">Texto extra grande Montserrat</p>
+    <p class="my-text-15">Texto extra grande Open Sans</p>
+    <p class="my-text-16">Texto extra grande Lato</p>
+  </div>
+</div>
+
+<div class="box margin-pequeno">Margin pequeño</div>
+<div class="box margin-mediano">Margin mediano</div>
+<div class="box margin-grande">Margin grande</div>
+<div class="box margin-Xgrande">Margin Xgrande</div>
+
+  <h1 style="text-align: center;">Tipos de Contenedores</h1>
+
+  <div class="container-regular">
+    <h2>Contenedor Regular</h2>
+    <p>Este es un contenedor regular con un ancho máximo definido para diferentes tamaños de pantalla.</p>
+  </div>
+
+  <div class="container-fluid">
+    <h2>Contenedor Fluid</h2>
+    <p>Este es un contenedor fluido que se expande para ocupar todo el ancho del viewport.</p>
+  </div>
+
+  <div class="container-full-width">
+    <h2>Contenedor Ancho Total</h2>
+    <p>Este es un contenedor de ancho completo que se extiende hasta los bordes de la ventana del navegador.</p>
+  </div>
+
+  <!-- Fin container full width -->
+
+  <h1 style="text-align: center;">ALERTAS!!!</h1>
+  <div class="Contenedor_Alertas">
+    <div class="container">
+      <div class="alert alert-success slide-in-right">
+        ¡Éxito! Esta es una alerta de éxito.
+        <span class="close">×</span>
+      </div>
+
+      <div class="alert alert-error slide-in-right closeable">
+        ¡Error! Esta es una alerta de error.
+        <span class="close">×</span>
+      </div>
+
+      <div class="alert alert-warning slide-in-right closeable">
+        ¡Advertencia! Esta es una alerta de advertencia.
+        <span class="close">×</span>
+      </div>
+
+      <div class="alert alert-info slide-in-right closeable">
+        ¡Información! Esta es una alerta de información.
+        <span class="close">×</span>
+      </div>
+    </div>
+    <span class="badge1 rounded-top">badge1</span>
+    <span class="badge2 rounded-circulo-pequeño">badge2</span>
+    <span class="badge3 rounded-circulo-pequeño">badge3</span>
+    <span class="plta-tres-backgraund-A rounded-50">Plataforma 2</span>
+    <span class="rounded-circulo-grande"></span>
+  </div>
+
+</body>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="DripCSS/js.js"></script>
+
+</html>
