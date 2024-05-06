@@ -40,6 +40,9 @@ function nav() {
     var side = document.getElementById('sidebar');
     if (side.style.display === 'none' || side.style.display === '') {
         side.style.display = 'block';
+        side.style.padding = '0px';
+        side.style.fontSize = '15px';
+
     } else {
         side.style.display = 'none';
     }
@@ -89,3 +92,18 @@ function menu() {
         }
     }
 }
+
+function checkScreenSize() {
+    var n = document.getElementById('show');
+    if (window.innerWidth <= 800) {
+      n.style.display = "none";
+    } else {
+      n.style.display = "block";
+    }
+  }
+  
+  // Call the function on page load
+  checkScreenSize();
+  
+  // Add event listener for window resize
+  window.addEventListener('resize', checkScreenSize);

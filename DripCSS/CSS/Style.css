@@ -742,7 +742,9 @@
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1110,7 +1112,9 @@
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1407,6 +1411,11 @@
 }
 .button_Squear_Th2:hover {
   background: #ff1a1a;
+}
+@media screen and (max-width: 900px) {
+  .button_Squear_Th2 {
+    font-size: 14px;
+  }
 }
 
 .button_Squear_Th3 {
@@ -2365,7 +2374,9 @@
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -2435,12 +2446,24 @@
 
 .overlay {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 40%;
-  height: 40%;
+  height: 60%;
+}
+@media screen and (max-width: 768px) {
+  .overlay {
+    width: 90%;
+    height: 70%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .overlay {
+    width: 95%;
+    height: 80%;
+  }
 }
 
 .overlay img {
@@ -2567,12 +2590,62 @@
   display: none;
 }
 
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  max-height: 400px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.backgraund-img {
+  background-image: url(/DripCSS/IMG/Purple_cloack.jpg);
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+  .Documentacion-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .bottom-responsive {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     background: #000;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-responsive nav {
+    display: none;
+    font-size: 12px;
+    background-color: #000;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navbar-responsive {
+    display: none;
   }
 }
 
@@ -2651,6 +2724,11 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 800px) {
+  .img-container_flat img {
+    display: none;
+  }
+}
 
 .img-overlay {
   position: absolute;
@@ -2722,6 +2800,26 @@
 
 .contenido {
   border: 2px solid #000;
+}
+
+.theme3-responsive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 10%;
+}
+@media screen and (max-width: 800px) {
+  .theme3-responsive {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 0.75fr);
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 10px;
+    margin: 0;
+  }
+  .theme3-responsive .img-container_flat img {
+    display: none;
+  }
 }
 
 .contenido {
@@ -3219,8 +3317,36 @@
 }
 
 .flex {
+  top: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .responsive-themes {
+    grid-template-areas: "carrucel carrucel carrucel" "info form form" "footer footer  footer";
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .responsive {
+    width: auto;
+  }
+  .responsive a {
+    font-size: 12px;
+  }
 }
 
 .pa {
@@ -3560,6 +3686,15 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+.Display-flex-row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: auto;
 }
 
 .justfy_center {
@@ -3958,7 +4093,9 @@
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -4326,7 +4463,9 @@
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -4515,9 +4654,9 @@
   outline: none;
   box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .input_md2, .input_mdReserva, .input_smReserva {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -4810,18 +4949,16 @@ input[type=radio]:checked:after {
   height: auto;
   border-radius: 5px;
   padding-bottom: 10px;
+  width: 100%;
+  max-width: 70vh;
   box-shadow: 0px 0px 5px 1px white;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
   color: white;
   gap: 8px;
-  width: 70vh;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .form1 {
-    max-width: 90%;
-  }
-  .form1 input {
-    display: none;
+    max-width: 80%;
   }
 }
 
@@ -4837,6 +4974,8 @@ input[type=radio]:checked:after {
   height: auto;
   border-radius: 5px;
   padding-bottom: 10px;
+  width: 100%;
+  max-width: 70vh;
   box-shadow: 0px 0px 5px 1px white;
   background: rgba(68, 68, 68, 0.5);
   -webkit-backdrop-filter: blur(39px);
@@ -4845,12 +4984,9 @@ input[type=radio]:checked:after {
   color: white;
   gap: 8px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .form1Test {
-    max-width: 90%;
-  }
-  .form1Test input {
-    display: none;
+    max-width: 80%;
   }
 }
 
@@ -4867,6 +5003,8 @@ input[type=radio]:checked:after {
   height: auto;
   border-radius: 5px;
   padding-bottom: 10px;
+  width: 100%;
+  max-width: 70vh;
   background: radial-gradient(at left top, #373737, #4f4f4f, #5a5a5a, #636363, #929292);
   width: 90vh;
   height: auto;
@@ -4879,22 +5017,20 @@ input[type=radio]:checked:after {
   margin-bottom: 5%;
   padding: 10px;
   color: white;
+  /*@media (min-width: 768px) {
+      width: 70vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: .5fr 2fr .5fr;
+      grid-template-areas:
+          "title title"
+          "info card"
+          "final final";
+  }*/
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .form2 {
-    max-width: 90%;
-  }
-  .form2 input {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .form2 {
-    width: 70vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    grid-template-areas: "title title" "info card" "final final";
+    max-width: 80%;
   }
 }
 
@@ -4908,7 +5044,6 @@ input[type=radio]:checked:after {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 60vh;
   gap: 8px;
   width: 100%;
   padding: 0;
@@ -4921,7 +5056,6 @@ input[type=radio]:checked:after {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 60vh;
   grid-area: card;
   gap: 8px;
   width: 100%;
@@ -4946,21 +5080,28 @@ input[type=radio]:checked:after {
   height: auto;
   border-radius: 5px;
   padding-bottom: 10px;
+  width: 100%;
+  max-width: 70vh;
   border-radius: 5px;
   height: 70%;
-  width: 80vh;
+  width: 100%;
   padding: 20px;
   align-items: center;
   justify-content: center;
   gap: 15px;
   background-color: white;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .form3, .form4 {
-    max-width: 90%;
+    max-width: 80%;
   }
-  .form3 input, .form4 input {
-    display: none;
+}
+@media screen and (max-width: 768px) {
+  .form3, .form4 {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -4976,6 +5117,8 @@ input[type=radio]:checked:after {
   height: auto;
   border-radius: 5px;
   padding-bottom: 10px;
+  width: 100%;
+  max-width: 70vh;
   box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
   width: 110vh;
   height: auto;
@@ -4988,12 +5131,23 @@ input[type=radio]:checked:after {
   margin-bottom: 5%;
   padding: 0px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .form4 {
-    max-width: 90%;
+    max-width: 80%;
   }
-  .form4 input {
-    display: none;
+}
+@media (max-width: 1700px) {
+  .form4 {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1000px) {
+  .form4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title" "info" "final" "img";
+    align-items: center;
+    margin-left: 40px;
   }
 }
 
@@ -5009,10 +5163,16 @@ input[type=radio]:checked:after {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 60vh;
+  flex-wrap: wrap;
   gap: 8px;
   grid-area: info;
   padding: 5%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  .info {
+    padding: 3%;
+  }
 }
 
 .img {
@@ -5053,6 +5213,8 @@ input[type=radio]:checked:after {
   height: auto;
   border-radius: 5px;
   padding-bottom: 10px;
+  width: 100%;
+  max-width: 70vh;
   position: relative;
   z-index: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -5062,12 +5224,9 @@ input[type=radio]:checked:after {
   padding: 10px;
   gap: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .formReserva {
-    max-width: 90%;
-  }
-  .formReserva input {
-    display: none;
+    max-width: 80%;
   }
 }
 
@@ -5603,9 +5762,29 @@ input[type=radio]:checked:after {
   grid-template-rows: auto auto 0.25fr;
   grid-template-areas: "carrucel info info" "carrucel form form" "footer footer  footer";
 }
+@media screen and (max-width: 800px) {
+  .webtema1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 0.5fr auto;
+    grid-template-areas: "carrucel carrucel" "info info" "form form" "footer footer";
+  }
+  .webtema1 .carousel_md {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+  }
+  .webtema1 .carousel_md img {
+    height: 70vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .cell-carrucel {
   grid-area: carrucel;
+  justify-content: center;
+  align-items: center;
 }
 
 .cell-info {
@@ -5642,7 +5821,17 @@ input[type=radio]:checked:after {
     width: 100%;
     grid-template-columns: repeat(3, 0.75) 1.25fr;
     grid-template-rows: 1fr 1fr 1fr auto;
-    background-color: red;
+  }
+  .webtema2 .sideImagen {
+    display: none;
+  }
+  .webtema2 .cell-info2 {
+    margin-left: 70px;
+    text-align: center;
+    justify-content: center;
+  }
+  .webtema2 .cell-infoBottom {
+    margin-left: 70px;
   }
 }
 .cell-carrucel2 {
@@ -6123,7 +6312,9 @@ header a {
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -6271,6 +6462,12 @@ header a {
   text-shadow: 3px 4px black;
   font-size: 40px;
 }
+@media screen and (max-width: 1000px) {
+  .Drip_logo_TemaC h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
 
 .nav2 {
   display: flex;
@@ -6340,6 +6537,7 @@ header a {
   font-family: "Poppins";
   font-size: 30px;
   background-color: rgb(83, 92, 145);
+  font-size: small;
 }
 .nav3 .header {
   background-color: rgb(83, 92, 145);
@@ -6384,7 +6582,7 @@ header a {
 }
 .nav3 .header {
   height: 85px;
-  padding: 5px 10%;
+  padding: 3px 5%;
 }
 .nav3 .header Button {
   font-family: "Raleway";
@@ -6428,13 +6626,21 @@ header a {
   }
   .nav3 .header Button {
     font-size: 10px;
-    width: 10vh;
+    width: 8vh;
     Display: flex;
     text-align: center;
     align-items: center;
     padding: 2px;
     margin: 2px 2px;
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 700px) {
+  .nav3 .header a {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
   .nav3 .header .logo {
     order: 3;
     padding: 5px 5px;
@@ -6446,10 +6652,28 @@ header a {
     padding: 0;
     margin: 0;
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 800px) {
+  .nav3 ul li a {
+    display: none;
+  }
+  .nav3 ul li a #ubicaciones:hover {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
   .nav3 ul li a:hover {
     transition: 0.2s all ease-in;
     font-weight: 500;
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 800px) {
+  .nav3 .header {
+    height: 70px;
+    padding: 5px 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
   .nav3 .header .nav-links li {
     padding: 0 5px;
   }
@@ -6487,6 +6711,7 @@ header a {
   font-family: "Poppins";
   font-size: 30px;
   background-color: #910a67;
+  background-color: rgb(112, 11, 151);
 }
 .nav4 .header {
   background-color: rgb(3, 6, 55);
@@ -6534,15 +6759,19 @@ header a {
 }
 .nav4 ul li a {
   display: block;
-  padding: 20px 25px;
-  font-size: 20px;
+  padding: 15px 20px;
+  font-size: 18px;
 }
 .nav4 ul li:hover ul.drip {
   display: block;
 }
-.nav4 ul li a:hover {
-  transition: 0.2s all ease-in;
-  box-shadow: inset 0 -4px #ccc;
+@media screen and (max-width: 800px) {
+  .nav4 .nav4 ul {
+    display: none;
+  }
+  .nav4 #ubicaciones:hover {
+    display: none;
+  }
 }
 
 /*Paleta de colores A*/
@@ -6839,6 +7068,23 @@ header a {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1000px) {
+  .Documentacion-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .bottom-responsive {
     display: grid;
@@ -6856,6 +7102,11 @@ header a {
     height: auto;
     display: flex;
     flex-direction: row;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navbar-responsive {
+    display: none;
   }
 }
 
@@ -6934,6 +7185,11 @@ header a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 800px) {
+  .img-container_flat img {
+    display: none;
+  }
+}
 
 .img-overlay {
   position: absolute;
@@ -7005,6 +7261,26 @@ header a {
 
 .contenido {
   border: 2px solid #000;
+}
+
+.theme3-responsive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 10%;
+}
+@media screen and (max-width: 800px) {
+  .theme3-responsive {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 0.75fr);
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 10px;
+    margin: 0;
+  }
+  .theme3-responsive .img-container_flat img {
+    display: none;
+  }
 }
 
 .contenido {
@@ -7516,6 +7792,12 @@ header a {
     align-items: center;
     gap: 25px;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .responsive-themes {
+    grid-template-areas: "carrucel carrucel carrucel" "info form form" "footer footer  footer";
   }
 }
 

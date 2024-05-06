@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 60vh;
 }
 
 @mixin Display-flex-row {
@@ -31,11 +30,10 @@
     height: auto;
     border-radius: 5px;
     padding-bottom: 10px;
-    @media (max-width: 800px) {
-        max-width: 90%; 
-        input{
-            display: none;
-        }
+    width: 100%;
+    max-width: 70vh;
+    @media (max-width: 1000px) {
+        max-width: 80%; 
     }
     
 }
@@ -46,7 +44,6 @@
     background: $GrayRdBg;
     color: white;
     gap: 8px;
-    width: 70vh;
 }
 
 .form1Test {
@@ -80,7 +77,7 @@
     margin-bottom: 5%;
     padding: 10px;
     color: white;
-    @media (min-width: 768px) {
+    /*@media (min-width: 768px) {
         width: 70vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -89,7 +86,7 @@
             "title title"
             "info card"
             "final final";
-    }
+    }*/
 }
 
 .title {
@@ -130,12 +127,18 @@
     @include boxmodelStandar();
     border-radius: 5px;
     height: 70%;
-    width: 80vh;
+    width: 100%;
     padding: 20px;
     align-items: center;
     justify-content: center;
     gap: 15px;
     background-color: white;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        height: auto; 
+        padding: 10px; 
+        grid-template-columns: 1fr;
+      }
 }
 
 .form4 {
@@ -155,6 +158,21 @@
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 0px;
+    @media (max-width: 1700px) {
+        max-width: 80%; 
+    }
+
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title"
+            "info"
+            "final"
+            "img";
+        align-items: center;
+        margin-left: 40px;
+    }
 }
 
 .title4 {
@@ -165,10 +183,14 @@
 
 .info {
     @include Display-flex;
+    flex-wrap: wrap;
     gap: 8px;
     grid-area: info;
     padding: 5%;
-
+    box-sizing: border-box;
+    @media screen and (max-width:1000px) {
+        padding: 3%;
+    }
 }
 
 .img {

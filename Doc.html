@@ -380,10 +380,9 @@
 
                 <div class="Documentacion-container">
                     <h2 id="Plantilla" class="Font_Tema">Plantillas</h2>
-
-                    <div class="Documentacion-info-container-content Display-flex  ">
-                        <h3 class="my-text-4 self-start">Plantilla #1</h3>
-
+                   
+                    <div class="Documentacion-info-container-content Documentacion-responsive Display-flex  ">  
+                        <h3 class="my-text-4 self-start">Plantilla #1</h3><br>
                         <div class="tarjeta ">
                             <div class="front">
                                 <img src="DRIP CSS (1).png" alt="">
@@ -439,7 +438,7 @@
                     <div class="Documentacion-info-container-content">
                         <h3 class="my-text-4 ">Plantilla #2</h3>
 
-                        <div class="Display-flex justfy_center">
+                        <div class="Display-flex justfy_center Documentacion-responsive ">
 
                             <div class="card">
                                 <div class="contenido-card plta-uno-backgraund-A">
@@ -1180,16 +1179,38 @@
                             contenido hacia abajo.
                         </p><br>
                         <strong>Como se usa:</strong><br>
-                        <img class="Img_code" src="DripCSS/IMG/Code/carbonNV2.png" alt="" width="450" height="350"><br>
                         <nav class="nav2">
-                            <a href="#" class="logo">Drip_CSS</a>
-                            <ul>
+                            <a href="#" id="nav-show" onclick="show_navs()" class="logo">Drip_CSS</a>
+                            <ul id="show">
                                 <li><a href="#inicio">Inicio</a></li>
                                 <li><a href="#acerca">Acerca de</a></li>
                                 <li><a href="#servicios">Servicios</a></li>
                                 <li><a href="#contacto">Contacto</a></li>
                             </ul>
                         </nav><br>
+                        <div id="code" class="plta-uno-backgraund-A ">
+                            <p>
+                                <code>
+                                    <p class="nav-copy">&lt;nav class="nav2"&gt;</p>
+                                    <p class="nav-copy">&nbsp;&nbsp;&lt;a class="logo"&gt;&lt;/a&gt;</p>
+                                    <p class="nav-copy">&nbsp;&nbsp;&lt;ul&gt;</p>
+                                    <p class="nav-copy">&lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li&gt;&lt;a href="#acerca"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li&gt;&lt;a href="#servicios"&gt;Servicios&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                                    </p>
+                                    <p class="nav-copy">&nbsp;&nbsp;&lt;/ul&gt;</p>
+                                        
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('nav-copy','success-alert-nav-copy')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-nav-copy" class="alert alert-success slide-in-right ocultar">¡Éxito!
+                                Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div>
                         <Strong>Ejemplos</Strong><br>
                         <p>- Sitios de una sola página</p>
                         <p>- Menu de navegacion de sitio web</p>
@@ -1214,30 +1235,44 @@
                         </p><br>
                         <strong>Como se usa:</strong><br>
                         <img class="Img_code" src="DripCSS/IMG/Code/carbonNV4.png" alt="" width="450" height="350"><br>
-                        <nav class="nav4">
+                        <nav class="nav3">
                             <header class="header">
-                                <div class="logo">
-                                    <a href="#" class="logo">Drip_CSS</a>
-                                </div>
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">Inico</a></li>
-                                        <li>
-                                            <a href="#">Localizacion +</a>
-                                            <ul class="drip">
-                                                <li><a href="#">San Miguel</a></li>
-                                                <li><a href="#">Corinto city</a></li>
-                                                <li><a href="#">Chinameca</a></li>
-                                                <li><a href="#">Nueva guadalupe</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Acerca de</a></li>
-                                        <li><a href="#">Servicios</a></li>
-                                        <li><a href="#">Contacto</a></li>
-                                    </ul>
-                                </nav>
-                        </nav>
-                        </nav>
+                              <div class="logo">
+                                <a href="#" class="logo">Drip_CSS</a>
+                              </div>
+                              <nav>
+                                <ul class="nav-links">
+                                  <li><a  href="#">Inicio</a></li>
+                                  <li><a  href="#">Acerca de</a></li>
+                                  <li><a  href="#">Servicios</a></li>
+                                  <li><a  href="#">Contacto</a></li>
+                                </ul>
+                              </nav>
+                            </header>
+                          </nav><br>
+                          <div id="code" class="plta-uno-backgraund-A ">
+                            <p>
+                                <code>
+                                    <p class="nav-copy-2">&lt;nav class="nav3"&gt;</p>
+                                    <p class="nav-copy-2">&nbsp;&nbsp;&lt;a class="logo"&gt;&lt;/a&gt;</p>
+                                    <p class="nav-copy-2">&nbsp;&nbsp;&lt;ul&gt;</p>
+                                    <p class="nav-copy-2">&lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li&gt;&lt;a href="#acerca"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li&gt;&lt;a href="#servicios"&gt;Servicios&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                                    </p>
+                                    <p class="nav-copy-2">&nbsp;&nbsp;&lt;/ul&gt;</p>
+                                        
+                                </code>
+                            </p>
+                            <button class="copy-btn" onclick="copyCodeToClipboard('nav-copy-2','success-alert-nav-copy-2')"><i
+                                    class="fa-regular fa-copy"></i></button>
+                            <div id="success-alert-nav-copy-2" class="alert alert-success slide-in-right ocultar">¡Éxito!
+                                Se
+                                ha copiado Corectamente.
+                                <span class="close" onclick="closeAlert()">×</span>
+                            </div>
+                        </div>
                         <strong>Ejemplos</strong><br>
                         <p>- Menú de navegación contextual</p>
                         <p>- Navegación con muchas opciones</p>
@@ -1482,19 +1517,19 @@
                             asegurando
                             coherencia y una integración visual atractiva.
                         </p>
-
+                        <br>
                         <div class="bottom-responsive Display-flex flex-row">
                             <button class="buttontest">test1</button>
                             <button class="buttontest_Th2">test1</button>
                             <button class="buttontest_Th3">test1</button>
                             <button class="buttontest_Th4">test1</button>
                         </div>
-
+                        <br>
                         <p class="coment">
                             por ejemplo, el boton base pertenese a la clase <p class="coment_green">
                                 class="buttontest"
                             </p> <br>
-
+                            <br>
                             <div class="bottom-responsive Display-flex flex-row " style="justify-items: center;">
                                 <button class="butontest_boxshadow_Th">test3</button>
                                 <button class="button_animated_Th2">test4</button>
@@ -1707,6 +1742,18 @@
                             <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
                         </div><br>
 
+                        <h3>Alerta de advertencia:</h3>
+                        <div class="alert alert-warning">
+                            <strong>Error:</strong> Por favor, completa todos los campos obligatorios.
+                            <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                        </div><br>
+
+                        <h3>Alerta de Información:</h3>
+                        <div class="alert alert-info">
+                            <strong>Error:</strong> Por favor, completa todos los campos obligatorios.
+                            <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                        </div><br>
+
                     </div>
                 </div>
             </div>
@@ -1805,7 +1852,7 @@
                 <div class="Documentacion-container">
                     <h2 id="Transitions" class="Font_Tema">Transiciones</h2>
 
-                    <div class="Documentacion-info-container-content">
+                    <div class="Documentacion-info-container-content Documentacion-responsive  ">
                         <p>
                             REDACTAR
                         </p>
