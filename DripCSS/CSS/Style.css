@@ -252,6 +252,16 @@
   grid-gap: 20px;
 }
 
+.txt-subrayadoTemaA_block {
+  background-color: rgb(142, 5, 194);
+  display: block;
+}
+
+.txt-subrayadoTemaA_inline {
+  background-color: rgb(142, 5, 194);
+  display: inline !important;
+}
+
 .txt-subrayado {
   background-color: rgb(255, 0, 0);
 }
@@ -317,7 +327,7 @@
   color: rgb(117, 107, 91);
   background: burlywood;
   border-radius: 5px;
-  box-shadow: 3px -20px 24px -10px shadoColor;
+  box-shadow: 3px -20px 24px -10px rgba(0, 0, 0, 0.75);
 }
 .badge1::before {
   content: attr(data-badge);
@@ -334,7 +344,7 @@
   color: rgb(1, 191, 255);
   background: rgb(67, 0, 67);
   border-radius: 5px;
-  box-shadow: 3px -20px 24px -10px shadoColor;
+  box-shadow: 3px -20px 24px -10px rgba(5, 93, 147, 0.747);
 }
 .badge2::before {
   content: attr(data-badge);
@@ -348,10 +358,10 @@
 }
 
 .badge3 {
-  color: rgb(0, 0, 0);
-  background: inear-gradient(45deg, #48d42b, #d3f803);
+  color: rgb(7, 15, 43);
+  background: rgb(146, 144, 195);
   border-radius: 5px;
-  box-shadow: 3px -20px 24px -10px shadoColor;
+  box-shadow: 3px -20px 24px -10px rgb(83, 92, 145);
 }
 .badge3::before {
   content: attr(data-badge);
@@ -369,6 +379,7 @@
   color: #fff;
   padding: 5px 10px;
   border-radius: 10px;
+  font-family: "Cursive", sans-serif;
   font-family: "Cursive", sans-serif;
 }
 
@@ -659,7 +670,27 @@
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -772,11 +803,9 @@
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -1030,7 +1059,27 @@
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -1143,11 +1192,9 @@
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -2311,7 +2358,27 @@
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -2424,11 +2491,9 @@
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -2765,7 +2830,27 @@
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -2878,11 +2963,9 @@
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -2934,7 +3017,9 @@
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -3134,7 +3219,27 @@
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -3247,11 +3352,9 @@
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -3303,7 +3406,9 @@
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -3590,6 +3695,11 @@
 }
 .button_Squear_Th2:hover {
   background: #ff1a1a;
+}
+@media screen and (max-width: 900px) {
+  .button_Squear_Th2 {
+    font-size: 14px;
+  }
 }
 
 .button_Squear_Th3 {
@@ -3967,6 +4077,14 @@
   font-weight: 700;
 }
 
+.text_justify-self_center {
+  justify-self: center;
+}
+
+.text_align-self_center {
+  align-self: center;
+}
+
 .Img_code {
   border-radius: 3px;
   margin: 2%;
@@ -4142,17 +4260,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100%;
   max-height: 400px;
   width: 90%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 10vh auto 0 auto;
+  background-color: rgba(0, 0, 0, 0.08); /* Cambia el valor de opacidad según tus necesidades */
 }
 
 .backgraund-img {
   background-image: url(/DripCSS/IMG/Purple_cloack.jpg);
   opacity: 0.9;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .Documentacion-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -4160,7 +4298,22 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    background: #000;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-responsive nav {
+    display: none;
+    font-size: 12px;
+    background-color: #000;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navbar-responsive {
+    display: none;
   }
 }
 
@@ -4841,6 +4994,33 @@
   top: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .responsive-themes {
+    grid-template-areas: "carrucel carrucel carrucel" "info form form" "footer footer  footer";
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .responsive {
+    width: auto;
+  }
+  .responsive a {
+    font-size: 12px;
+  }
 }
 
 .pa {
@@ -6011,6 +6191,82 @@
   gap: 10px;
 }
 
+.Display-flex-row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: auto;
+}
+
+.Display-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Display-flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.Display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.Display-flex-justify-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.Display-flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.Display-flex-justify-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.Display-flex-justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.Display-flex-align-start {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.Display-flex-align-end {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.Display-flex-align-baseline {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
 .justfy_center {
   justify-content: center;
   justify-items: center;
@@ -6273,7 +6529,27 @@
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -6386,11 +6662,9 @@
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -6644,7 +6918,27 @@
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -6757,11 +7051,9 @@
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -7004,9 +7296,9 @@
   outline: none;
   box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .input_md2, .input_mdReserva, .input_smReserva {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -7384,7 +7676,7 @@ input[type=radio]:checked:after {
       width: 70vw;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: .5fr 2fr .5fr;
+      grid-template-rows: 0.5fr 2fr 0.5fr;
       grid-template-areas:
           "title title"
           "info card"
@@ -8507,7 +8799,27 @@ header a {
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -8620,11 +8932,9 @@ header a {
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -8947,9 +9257,10 @@ header a {
 
 .nav3 {
   justify-content: flex-end;
-  font-family: "Poppins";
-  font-size: 30px;
-  background-color: rgb(83, 92, 145);
+  font-family: "Poppins" !important;
+  font-size: 30px !important;
+  background-color: rgb(83, 92, 145) !important;
+  font-size: small;
 }
 .nav3 .header {
   background-color: rgb(83, 92, 145) !important;
@@ -8995,7 +9306,7 @@ header a {
 }
 .nav3 .header {
   height: 85px;
-  padding: 3px 5%;
+  padding: 5px 10%;
 }
 .nav3 .header .logo {
   order: 3;
@@ -9118,9 +9429,10 @@ header a {
 
 .nav4 {
   justify-content: center;
-  font-family: "Poppins";
-  font-size: 30px;
-  background-color: #910a67;
+  font-family: "Poppins" !important;
+  font-size: 30px !important;
+  background-color: #910a67 !important;
+  background-color: rgb(112, 11, 151);
 }
 .nav4 .header {
   background-color: rgb(3, 6, 55) !important;
@@ -9535,7 +9847,27 @@ header a {
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -9648,11 +9980,9 @@ header a {
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -9704,7 +10034,9 @@ header a {
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -9904,7 +10236,27 @@ header a {
 }
 
 .txt_bold {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+.txt-weight_Xsm {
+  font-weight: 200;
+}
+
+.txt-weight_sm {
+  font-weight: 400;
+}
+
+.txt-weight_md {
+  font-weight: 600;
+}
+
+.txt-weight_gr {
+  font-weight: 800;
+}
+
+.txt-weight_Xgr {
+  font-weight: 900;
 }
 
 .Inicial_Resaltada_h1::first-letter {
@@ -10017,11 +10369,9 @@ header a {
 
 .contenido {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contenido-article {
@@ -10073,7 +10423,9 @@ header a {
 }
 @media screen and (max-width: 480px) {
   .Font_Titulo h3 {
-    font-size: 15px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -10360,6 +10712,11 @@ header a {
 }
 .button_Squear_Th2:hover {
   background: #ff1a1a;
+}
+@media screen and (max-width: 900px) {
+  .button_Squear_Th2 {
+    font-size: 14px;
+  }
 }
 
 .button_Squear_Th3 {
@@ -10737,6 +11094,14 @@ header a {
   font-weight: 700;
 }
 
+.text_justify-self_center {
+  justify-self: center;
+}
+
+.text_align-self_center {
+  align-self: center;
+}
+
 .Img_code {
   border-radius: 3px;
   margin: 2%;
@@ -10950,7 +11315,6 @@ header a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    background: #000;
   }
 }
 

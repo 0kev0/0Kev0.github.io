@@ -7,6 +7,16 @@ font-size: map-get($map: $FontSize, $key: Xgrande);
 font-weight: 700;
 }
 
+.text_justify-self_center
+{
+  justify-self: center;
+}
+
+.text_align-self_center
+{
+  align-self: center;
+}
+
 //Estilo para imagenes de codigos
 .Img_code {
   border-radius: 3px;
@@ -225,7 +235,6 @@ font-weight: 700;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    background: #000;
   }
 }
 
