@@ -40,7 +40,7 @@ Luego, puedes comenzar a utilizar los estilos y componentes proporcionados por D
 
 ## Documentación
 
-Para obtener más detalles sobre cómo usar Drip_CSS y ver ejemplos de su uso, visita nuestra web de documentación en [enlace_a_la_web](https://example.com).
+Para obtener más detalles sobre cómo usar Drip_CSS y ver ejemplos de su uso, visita nuestra web de documentación en [enlace_a_la_web](https://0kev0.github.io/).
 
 ## Glosario
 
