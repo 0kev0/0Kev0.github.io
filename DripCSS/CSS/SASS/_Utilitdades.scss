@@ -1166,6 +1166,89 @@ $fonts: (Roboto: 'Roboto, sans-serif',
   margin: map-get($MarginSizes, Xgrande) 0;
 }
 
+
+//COLORS
+// Definición de las utilidades de color utilizando las variables de paleta de colores
+/* Paleta de colores A */
+.bg-primario-A {
+  background-color: $colorbg-primario;
+}
+
+.bg-secundario-A {
+  background-color: $colorBg-secundario;
+}
+
+.text-primario-A {
+  color: $color-primario;
+}
+
+.text-secundario-A {
+  color: $color-secundario;
+}
+
+/* Paleta de colores B */
+.bg-primario-B {
+  background-color: $colorbg-primarioB;
+}
+
+.bg-secundario-B {
+  background-color: $colorBg-secundarioB;
+}
+
+.text-primario-B {
+  color: $color-primarioB;
+}
+
+.text-secundario-B {
+  color: $color-secundarioB;
+}
+
+/* Paleta de colores C */
+.bg-primario-C {
+  background-color: $colorbg-primarioC;
+}
+
+.bg-secundario-C {
+  background-color: $colorBg-secundarioC;
+}
+
+.text-primario-C {
+  color: $color-primarioC;
+}
+
+.text-secundario-C {
+  color: $color-secundarioC;
+}
+
+/* Paleta de colores D */
+.bg-primario-D {
+  background-color: $colorbg-primarioD;
+}
+
+.bg-secundario-D {
+  background-color: $colorBg-secundarioD;
+}
+
+.text-primario-D {
+  color: $color-primarioD;
+}
+
+.text-secundario-D {
+  color: $color-secundarioD;
+}
+
+/* Colores para texto */
+.font-color-base {
+  color: $FontColorBase;
+}
+
+.color-form-primario {
+  color: $colorForm-primario;
+}
+
+.color-form-secundario {
+  color: $colorForm-secundario;
+}
 $lightgreen : rgb(42, 165, 114);
 //utilidades de botones
 //button_Squear_btn
