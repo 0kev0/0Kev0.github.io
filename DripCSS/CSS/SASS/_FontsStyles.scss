@@ -304,10 +304,12 @@ $FontPack4: ('Titulo': 'Roboto', 'Tema': 'Montserrat', 'Texto': 'Open Sans');
     padding-top: 10px;
 
     @media screen and (max-width: 480px) {
-        h3 {
-            font-size: 15px
-        }
+    h3 {
+      font-size: 14px;
+      align-items: center;
+      justify-content: center;
     }
+  }
 }
 
 .Font_Tema {

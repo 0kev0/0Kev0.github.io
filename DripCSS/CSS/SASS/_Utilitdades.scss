@@ -202,6 +202,23 @@ font-weight: 700;
   background-repeat: no-repeat;
   height: 100%;
 }
+.Documentacion-responsive{
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+.tarjeta {
+  width: calc(50% - 20px); // Establecer el ancho de cada tarjeta, considerando el margen entre ellas
+  margin: 10px; // Establecer un margen entre las tarjetas
+
+  @media screen and (max-width: 768px) {
+    width: 100%; // Cambiar el ancho a 100% en pantallas más pequeñas para que las tarjetas se apilen una encima de la otra
+  }
+}
+
 
 .bottom-responsive {
   @media (max-width: 900px) {
@@ -223,6 +240,10 @@ font-weight: 700;
       flex-direction: row;
     }
   }
+
+  @media screen and (max-width: 550px) {
+      display: none;
+    }
 }
 
 .sidebar-responsive {
@@ -279,7 +300,6 @@ font-weight: 700;
     width: 100%;
     object-fit: cover;
   }
-
 }
 
 .img-container_gr {
@@ -303,6 +323,11 @@ font-weight: 700;
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  @media screen and (max-width: 800px) {
+    img{
+      display: none;
+    }
   }
 }
 
@@ -378,9 +403,25 @@ font-weight: 700;
   border: 2px solid #000;
 }
 
-
-
-
+.theme3-responsive{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 10%;
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,0.75fr);
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 10px;
+    margin: 0;
+    .img-container_flat{
+      img{
+        display: none;
+      }
+    }
+  }
+}
 
 .contenido {
   display: flex;
@@ -970,6 +1011,15 @@ $fonts: (Roboto: 'Roboto, sans-serif',
     align-items: center;
     gap: 25px;
     flex-direction: column;
+  }
+}
+
+.responsive-themes{
+  @media screen and (max-width:950px){
+    grid-template-areas:
+    "carrucel carrucel carrucel"
+    "info form form"
+    "footer footer  footer";
   }
 }
 

@@ -181,6 +181,8 @@
     }
 }
 
+
+
 .input_md2 {
     width: 90%;
     height: map-get($map: $inputHeigtSizes, $key: "pequeno");
@@ -195,8 +197,9 @@
         outline: none;
         @include Hover_shadow-difum_imput;
     }
-
-
+    @media (max-width: 1000px) {
+        width: 80%; 
+    }
 }
 
 .txtarea2 {

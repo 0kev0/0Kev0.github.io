@@ -99,8 +99,6 @@ $color-secundario : rgb(112, 11, 151);
       font-size: 40px;
     }
   }
-
-
 }
 
 .Drip_logo_TemaC {
@@ -119,6 +117,11 @@ $color-secundario : rgb(112, 11, 151);
       margin-right: 10px;
       text-shadow: 3px 4px black;
       font-size: 40px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 24px; 
+      margin: 0;
     }
   }
 
@@ -157,7 +160,7 @@ $color-secundario : rgb(112, 11, 151);
 .nav3 {
   //VARIABLES @mixin AplicarTemasNavbar($colorBG,$colorBGItems, $ColorHover_A, $SetSombrasLogo,$SetSombrasLetra, $FontPackLogo, $FontLogo, $FontPack_A, $Font_A, $Justify, $key) 
   @include AplicarTemasNavbar($color-secundarioC, $color-secundarioC, $color-secundarioC, $color-primarioC, $color-primarioC, $FontPack2, Tema, $FontPack2, Titulo, flex-end, grande);
-
+  font-size: small;
   .header {
     height: 85px;
     padding: 5px 10%;
@@ -207,17 +210,23 @@ $color-secundario : rgb(112, 11, 151);
   @media only screen and (max-width: 768px) {
 
     .header {
-      height: 85px; //agregar altura de header
+      height: 85px; 
       padding: 5px 5px;
 
       Button {
-        font-size: 10px;
-        width: 10vh;
+        font-size:10px;
+        width: 8vh;
         Display: flex;
         text-align: center;
         align-items: center;
         padding: 2px;
         margin: 2px 2px;
+      }
+      @media screen and (max-width: 700px) {
+        a{
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
 
@@ -234,6 +243,14 @@ $color-secundario : rgb(112, 11, 151);
       font-size: map-get($map:$FontSize, $key: pequeno);
       padding: 0;
       margin: 0;
+      @media screen and (max-width:800px) {
+        display: none;
+        #ubicaciones{
+          &:hover{
+            display: none;
+          }
+        }
+      }
 
       &:hover {
         transition: .20s all ease-in;
@@ -241,7 +258,12 @@ $color-secundario : rgb(112, 11, 151);
       }
     }
 
-
+    @media only screen and (max-width: 800px) {
+      .header {
+        height: 70px;
+        padding: 5px 5px
+      }
+    }
     .header .nav-links li {
       padding: 0 5px;
 
@@ -293,22 +315,26 @@ $color-secundario : rgb(112, 11, 151);
     order: 3;
   }
 
+  background-color: rgb(112, 11, 151); // No necesitas dos puntos aquí
+
   ul li a {
     display: block;
-    padding: 20px 25px;
-    font-size: 20px;
+    padding: 15px 20px;
+    font-size: 18px;
   }
 
   ul li:hover ul.drip {
     display: block;
   }
 
-  ul li a {
+  // Reglas de medios para pantallas pequeñas
+  @media screen and (max-width: 800px) {
+    .nav4 ul {
+      display: none; // Oculta el menú principal en pantallas pequeñas
+    }
 
-    &:hover {
-      transition: .20s all ease-in;
-      box-shadow: inset 0 -4px #ccc;
+    #ubicaciones:hover {
+      display: none; // Oculta el menú desplegable de ubicaciones al pasar el ratón sobre él en pantallas pequeñas
     }
   }
-
 }
