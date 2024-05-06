@@ -4124,6 +4124,68 @@
   width: 18vh;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar-responsive {
+    font-size: 15px !important;
+    padding: 0 0 !important;
+  }
+  .navbar-responsive header {
+    padding: 10px;
+  }
+  .navbar-responsive a {
+    font-size: 20px !important;
+    padding: 0 25px !important;
+  }
+  .navbar-responsive nav {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav header {
+    padding: 10px;
+  }
+  .navbar-responsive nav ul li a {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav ul li a:hover {
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar-responsive nav {
+    font-size: 12px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-responsive {
+    font-size: 15px !important;
+    padding: 0 0 !important;
+  }
+  .navbar-responsive a {
+    font-size: 15px !important;
+    padding: 0 10px !important;
+  }
+  .navbar-responsive nav {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav ul li a {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav ul li a:hover {
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navbar-responsive {
+    display: none;
+  }
+}
+
 .scrole *::-webkit-scrollbar {
   display: none;
 }
@@ -9234,6 +9296,7 @@ header a {
   justify-content: space-between !important;
   width: auto;
   color: #eceff1;
+  padding: 10px 20px;
 }
 .nav2 ul li {
   display: inline-block;
@@ -9290,6 +9353,7 @@ header a {
   justify-content: space-between !important;
   width: auto;
   color: #eceff1;
+  padding: 10px 20px;
 }
 .nav2_Ver2 ul li {
   display: inline-block;
@@ -9344,6 +9408,7 @@ header a {
   justify-content: flex-end !important;
   width: auto;
   color: #eceff1;
+  padding: 10px 20px;
 }
 .nav3 ul li {
   display: inline-block;
@@ -9383,7 +9448,7 @@ header a {
 }
 .nav3 .header {
   height: 85px;
-  padding: 5px 10%;
+  padding: 5px 3%;
 }
 .nav3 .header .logo {
   order: 3;
@@ -9417,66 +9482,22 @@ header a {
   color: #ffbc0e;
   transform: scale(1.1);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .nav3 .header {
     height: 85px;
-    padding: 5px 5px;
+    padding: 3px 3px;
   }
-  .nav3 .header Button {
-    font-size: 10px;
-    width: 8vh;
-    Display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 2px;
-    margin: 2px 2px;
-  }
-}
-@media only screen and (max-width: 768px) and (max-width: 700px) {
-  .nav3 .header a {
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 768px) {
   .nav3 .header .logo {
     order: 3;
-    padding: 5px 5px;
+    padding: 3px 3px;
     margin: 0;
     font-size: 18px;
   }
-  .nav3 ul li a {
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-  }
-}
-@media only screen and (max-width: 768px) and (max-width: 800px) {
-  .nav3 ul li a {
-    display: none;
-  }
-  .nav3 ul li a #ubicaciones:hover {
-    display: none;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .nav3 ul li a:hover {
-    transition: 0.2s all ease-in;
-    font-weight: 500;
-  }
-}
-@media only screen and (max-width: 768px) and (max-width: 800px) {
-  .nav3 .header {
-    height: 70px;
-    padding: 5px 5px;
-  }
-}
-@media only screen and (max-width: 768px) {
   .nav3 .header .nav-links li {
-    padding: 0 5px;
+    padding: 0 3px;
   }
   .nav3 .header .nav-links li:hover {
-    transition: 0.2S all ease-in;
+    transition: 0.2s all ease-in;
     transform: scale(1.1);
   }
   .nav3 .header .nav-links li a:hover {
@@ -9489,7 +9510,49 @@ header a {
     font-weight: 700;
     margin: 0;
     color: #1b3039;
-    padding: 2px 2px;
+    padding: 1px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: center;
+  }
+  .nav3 .header .btn button:hover {
+    color: #ffbc0e;
+    transform: scale(1.1);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav3 .header {
+    height: 85px;
+    padding: 5px 3px;
+  }
+  .nav3 .header .logo {
+    order: 3;
+    padding: 5px 53px;
+    margin: 0;
+    font-size: 12px;
+  }
+  .nav3 .header .nav-links li {
+    padding: 0 3px;
+  }
+  .nav3 .header .nav-links li:hover {
+    transition: 0.2s all ease-in;
+    transform: scale(1.1);
+  }
+  .nav3 .header .nav-links li a:hover {
+    color: #ffbc0e;
+  }
+  .nav3 .header .btn {
+    order: 2;
+  }
+  .nav3 .header .btn button {
+    font-weight: 600;
+    margin: 0;
+    color: #1b3039;
+    padding: 2px 1px;
     background: #eceff1;
     border: none;
     border-radius: 50px;
@@ -9516,6 +9579,7 @@ header a {
   justify-content: center !important;
   width: auto;
   color: #eceff1;
+  padding: 10px 20px;
 }
 .nav4 ul li {
   display: inline-block;
@@ -11164,6 +11228,68 @@ header a {
 .set_btn_grande {
   height: 8vh;
   width: 18vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-responsive {
+    font-size: 15px !important;
+    padding: 0 0 !important;
+  }
+  .navbar-responsive header {
+    padding: 10px;
+  }
+  .navbar-responsive a {
+    font-size: 20px !important;
+    padding: 0 25px !important;
+  }
+  .navbar-responsive nav {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav header {
+    padding: 10px;
+  }
+  .navbar-responsive nav ul li a {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav ul li a:hover {
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar-responsive nav {
+    font-size: 12px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-responsive {
+    font-size: 15px !important;
+    padding: 0 0 !important;
+  }
+  .navbar-responsive a {
+    font-size: 15px !important;
+    padding: 0 10px !important;
+  }
+  .navbar-responsive nav {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav ul li a {
+    font-size: 15px !important;
+    padding: auto 0 !important;
+  }
+  .navbar-responsive nav ul li a:hover {
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navbar-responsive {
+    display: none;
+  }
 }
 
 .scrole *::-webkit-scrollbar {

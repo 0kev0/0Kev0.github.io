@@ -1,10 +1,94 @@
 @import 'Variables';
 @import 'botones';
 
+
+.navbar-responsive {
+  @media screen and (max-width: 1024px) {
+    header
+    {
+      padding: 10px;
+    }
+    a
+    {
+    
+      font-size: 20px !important;
+      padding: 0 25px !important;
+    }
+
+    font-size: 15px !important;
+    padding: 0 0 !important;
+
+    nav {
+      font-size: 15px !important;
+      padding: auto 0 !important;
+      header
+      {
+        padding: 10px;
+      }
+
+      ul li a {
+        font-size: 15px !important;
+        padding: auto 0 !important;
+
+
+        &:hover {
+          font-weight: 200;
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    nav {
+      font-size: 12px;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    a
+    {
+    
+      font-size: 15px !important;
+      padding: 0 10px !important;
+    }
+
+    font-size: 15px !important;
+    padding: 0 0 !important;
+
+    nav {
+      font-size: 15px !important;
+      padding: auto 0 !important;
+
+
+      ul li a {
+        font-size: 15px !important;
+        padding: auto 0 !important;
+
+
+        &:hover {
+          font-weight: 200;
+        }
+      }
+
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
+
+}
+
 .scrole {
   *::-webkit-scrollbar {
     display: none;
   }
+
   body {
     overflow: hidden;
     overflow-y: hidden;
