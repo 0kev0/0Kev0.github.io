@@ -4054,7 +4054,7 @@
 
 .inner_carousel_md {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 .carousel_md img {
@@ -10804,7 +10804,7 @@ header a {
 
 .inner_carousel_md {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 .carousel_md img {

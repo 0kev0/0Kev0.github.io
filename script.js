@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     // Intervalo para avanzar automáticamente cada 3 segundos
-    setInterval(autoAdvance, 3000);
+    setInterval(autoAdvance, 2000);
   });
   
   
